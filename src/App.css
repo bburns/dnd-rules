@@ -47,17 +47,17 @@
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
-  margin-left: -15px;
-  margin-right: -15px;
+  /* margin-left: -15px; */
+  /* margin-right: -15px; */
   padding-bottom: 3px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 3px;
+  padding-top: 15px;
   text-decoration: none;
   text-decoration-color: rgb(26, 188, 156);
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-shadow: none;  
+  text-shadow: none;
 }
 .toc a {
   cursor: pointer;
