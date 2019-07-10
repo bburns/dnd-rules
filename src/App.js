@@ -22,7 +22,6 @@ function groupBy(arr, key) {
   const ret = []
   for (let keyValue of Object.keys(d)) {
     const group = { [key]: keyValue, values: d[keyValue] }
-    // ret[keyValue] = d[keyValue]
     ret.push(group)
   }
   return ret
@@ -30,14 +29,9 @@ function groupBy(arr, key) {
 
 
 const rulesByLevel = groupBy(rules, 'Level')
-console.log(rulesByLevel);
 
 
-// unified()
-//   .use(markdown)
-//   .use(remark2rehype)
-//   .use(html)
-
+// using https://github.com/remarkjs/remark-react
 function markdownToReact(md) {
   return (
     <div id="preview">
