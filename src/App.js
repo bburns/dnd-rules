@@ -24,9 +24,9 @@ function App() {
               {rules.map(rule => (
                 <div className="h3-section">
                   <h3>{rule.Topic}</h3>
-                  <div className="body">
+                  {rule.Notes && <div className="body">
                     {rule.Notes}
-                  </div>
+                  </div>}
                 </div>
               ))}
             </div>
