@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // const [rules, setRules] = React.useState([])
+  // React.useEffect(async () => {
+  //   const data = await axios.get(url)
+  // }, [])
   return (
     <div className="App">
       <header className="App-header">
