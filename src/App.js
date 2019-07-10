@@ -69,22 +69,25 @@ function App() {
           <h1 className="h1">D&amp;D Rules <em>Cheatsheet</em></h1>
         </header>
         <main className="post-content MarkdownBody-wrapified">
-          <div className="h2-sect">
-            <div className="body h3-section-list">
-              {rules.map(rule => (
-                <div key={rule.Topic} className="h3-section">
-                  <h3>{rule.Topic}</h3>
-                  {rule.Notes && <div className="body">
-                    {markdownToReact(rule.Notes)}
-                  </div>}
-                </div>
-              ))}
+          {rulesByLevel.map(level => (
+            <div className="h2-sect">
+              <h2 className="body-level">Level {level.Level}</h2>
+              <div className="body h3-section-list">
+                {level.values.map(rule => (
+                  <div key={rule.Topic} className="h3-section">
+                    <h3>{rule.Topic}</h3>
+                    {rule.Notes && <div className="body">
+                      {markdownToReact(rule.Notes)}
+                    </div>}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </main>
       </div>
-    </div>
-  );
-}
-
-export default App;
+      </div>
+      );
+    }
+    
+    export default App;
