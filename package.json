@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "prepare": "csvtojson \"data/Rules-Rules by Level.csv\" > src/assets/rules.json",
+    "deploy": "cp -r build docs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

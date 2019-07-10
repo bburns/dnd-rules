@@ -65,9 +65,12 @@
 .toc a:hover {
   background-color: #ecf0f1;
 }
+.toc-rule {
+  margin-left: 1em;
+}
 
 .body {
-  font-weight: 300;
+  /* font-weight: 300; */
   padding: 0.5em 1em;
 }
 
