@@ -38,6 +38,34 @@
 }
 
 
+.toc {
+  color: rgb(26, 188, 156);
+  display: block;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 21px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-decoration-color: rgb(26, 188, 156);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-shadow: none;  
+}
+.toc a {
+  cursor: pointer;
+}
+.toc a:hover {
+  background-color: #ecf0f1;
+}
+
 .body {
   font-weight: 300;
   padding: 0.5em 1em;

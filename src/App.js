@@ -14,6 +14,13 @@ function App() {
   // }, [])
   return (
     <div className="app">
+      <div className="toc">
+        {rules.map(rule => (
+          <div className="toc-rule">
+            {rule.Topic}
+          </div>
+        ))}
+      </div>
       <div className="body-area">
         <header class="main-heading -center" role="banner">
           <h1 class="h1">D&amp;D Rules <em>Cheatsheet</em></h1>
