@@ -4,7 +4,7 @@
   "homepage": "https://bburns.github.io/dnd-rules/",
   "private": true,
   "scripts": {
-    "predeploy": "yarn run build",
+    "//predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "prepare": "csvtojson \"data/Rules-Rules by Level.csv\" > src/assets/rules.json",
     "start": "react-scripts start",
