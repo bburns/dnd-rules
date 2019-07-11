@@ -73,25 +73,22 @@ function App() {
             </div>
           ))}
         </div>
-        {/* <div className="body-area"> */}
         <div className="app-rules">
-          {/* <main className="post-content MarkdownBody-wrapified"> */}
-            {rulesByLevel.map(level => (
-              <div className="h2-sect">
-                <h2 className="body-level">Level {level.Level}</h2>
-                <div className="body h3-section-list">
-                  {level.values.map(rule => (
-                    <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
-                      <h3>{rule.Topic}</h3>
-                      {rule.Notes && <div className="body">
-                        {markdownToReact(rule.Notes)}
-                      </div>}
-                    </div>
-                  ))}
-                </div>
+          {rulesByLevel.map(level => (
+            <div className="h2-sect">
+              <h2 className="body-level">Level {level.Level}</h2>
+              <div className="body h3-section-list">
+                {level.values.map(rule => (
+                  <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
+                    <h3>{rule.Topic}</h3>
+                    {rule.Notes && <div className="body">
+                      {markdownToReact(rule.Notes)}
+                    </div>}
+                  </div>
+                ))}
               </div>
-            ))}
-          {/* </main> */}
+            </div>
+          ))}
         </div>
       </div>
     </div>
