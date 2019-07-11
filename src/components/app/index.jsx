@@ -69,6 +69,15 @@ function TableOfContents({ rulesByLevel }) {
 }
 
 
+function Rules({ rulesByLevel }) {
+  return (
+    <div className="app-rules">
+      {rulesByLevel.map(level => <Level key={level.name} level={level} />)}
+    </div>
+  )
+}
+
+
 function Level({ level }) {
   return (
     <div className="h2-sect">
@@ -106,9 +115,7 @@ function App() {
       </header>
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
-        <div className="app-rules">
-          {rulesByLevel.map(level => <Level key={level.name} level={level} />)}
-        </div>
+        <Rules rulesByLevel={rulesByLevel} />
       </div>
     </div>
   );
