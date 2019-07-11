@@ -7,6 +7,7 @@ import 'sanitize.css'
 import rules from '../../assets/rules.json'
 import './devhints.css'
 import './styles.css';
+import dragon from '../../assets/dragon-192x192x256.png'
 
 
 function idize(s) {
@@ -47,6 +48,18 @@ function markdownToReact(md) {
 }
 
 
+function Rule({rule}) {
+  return (
+    <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
+      <h3>{rule.Topic}</h3>
+      {rule.Notes && <div className="body">
+        {markdownToReact(rule.Notes)}
+      </div>}
+    </div>
+  )
+}
+
+
 function App() {
   // const [rules, setRules] = React.useState([])
   // React.useEffect(async () => {
@@ -56,7 +69,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header" role="banner">
-        <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
+        <h1 className="h1"><img src={dragon} alt=""/>Dungeons &amp; Dragons Rules</h1>
       </header>
       <div className="app-contents">
         <div className="toc">
@@ -78,14 +91,7 @@ function App() {
             <div className="h2-sect">
               <h2 className="body-level">Level {level.Level}</h2>
               <div className="body h3-section-list">
-                {level.values.map(rule => (
-                  <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
-                    <h3>{rule.Topic}</h3>
-                    {rule.Notes && <div className="body">
-                      {markdownToReact(rule.Notes)}
-                    </div>}
-                  </div>
-                ))}
+                {level.values.map(rule => <Rule key={rule.Topic} rule={rule} />)}
               </div>
             </div>
           ))}

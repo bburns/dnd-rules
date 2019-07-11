@@ -11,6 +11,10 @@
   margin: 0 0 0.5em;
   font-weight: bold;
 }
+.app-header img {
+  height: 42px;
+  width: 42px;
+}
 
 .app-contents {
   display: flex;
