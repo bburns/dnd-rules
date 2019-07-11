@@ -49,6 +49,15 @@ function markdownToReact(md) {
 const rulesByLevel = groupBy(rules, 'level')
 
 
+function Header() {
+  return (
+    <header className="app-header" role="banner">
+      <h1 className="h1"><img src={dragon} alt=""/>Dungeons &amp; Dragons Rules</h1>
+    </header>
+  )
+}
+
+
 function TableOfContents({ rulesByLevel }) {
   return (
     <div className="toc">
@@ -110,9 +119,7 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header" role="banner">
-        <h1 className="h1"><img src={dragon} alt=""/>Dungeons &amp; Dragons Rules</h1>
-      </header>
+      <Header />
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
         <Rules rulesByLevel={rulesByLevel} />
