@@ -62,7 +62,7 @@
 }
 
 
-.body.h3-section-list {
+.body.rule-list {
   /* columns: 100px 2; */
 }
 .body-level {
@@ -88,3 +88,232 @@
 .body li p {
   display: inline;
 }
+
+
+/* this was h3-section-list - cut it down */
+.rule-list {
+  margin-left:-16px;
+  margin-right:-16px;
+  margin-top:0;
+  margin-bottom:0
+ }
+ @media(max-width:1264px) {
+  .rule-list {
+   margin-left:-8px
+  }
+ }
+ @media(max-width:1264px) {
+  .rule-list {
+   margin-right:-8px
+  }
+ }
+ .rule-list::after {
+  content:'';
+  display:table;
+  clear:both;
+  zoom:1
+ }
+ .rule-list>.rule {
+  padding:16px;
+  float:left;
+  width:100%
+ }
+ @media(max-width:1264px) {
+  .rule-list>.rule {
+   padding:8px
+  }
+ }
+ @media(min-width:769px) {
+  .rule-list>.rule {
+   padding-top:0
+  }
+ }
+ @media(min-width:769px) {
+  .rule-list>.rule,
+  .rule-list.-two-column>.rule {
+   width:50%
+  }
+ }
+ .rule-list.-one-column>.rule {
+  width:100%
+ }
+ .rule-list.-one-column>.rule+.rule {
+  margin-top:16px
+ }
+ @media(min-width:769px) {
+  .rule-list.-three-column>.rule {
+   width:50%
+  }
+ }
+ @media(min-width:961px) {
+  .rule-list.-three-column>.rule {
+   width:33.33%
+  }
+ }
+ @media(min-width:769px) {
+  .rule-list.-left-reference>.rule {
+   width:50%
+  }
+ }
+ @media(min-width:961px) {
+  .rule-list.-left-reference>.rule {
+   width:66.67%
+  }
+  .rule-list.-left-reference>.rule:first-child {
+   width:33.33%
+  }
+ }
+ 
+
+/* this was h3-section - cut it down */
+.rule>.body>pre {
+  margin:0;
+  padding:16px
+ }
+ @media(max-width:768px) {
+  .rule>.body {
+   overflow-x:auto
+  }
+ }
+ .rule>.body {
+  background:#fff;
+  box-shadow:0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3)
+ }
+ @media(max-width:480px) {
+  .rule>.body {
+   margin:0 -16px;
+   box-shadow:0 1px 1px rgba(102,119,136,.55)
+  }
+ }
+ @media(min-width:481px) {
+  .rule>.body {
+   border-radius:2px
+  }
+  .rule>.body>:first-child {
+   border-top-left-radius:3px;
+   border-top-right-radius:3px
+  }
+  .rule>.body>:last-child {
+   border-bottom-left-radius:3px;
+   border-bottom-right-radius:3px
+  }
+ }
+ .rule>h3 {
+  margin-top:8px;
+  margin-bottom:16px;
+  white-space:nowrap;
+  overflow:hidden
+ }
+ @media(max-width:768px) {
+  .rule>h3 {
+   margin-top:0
+  }
+ }
+ .rule>h3::after {
+  margin-left:24px;
+  content:'';
+  display:inline-block;
+  vertical-align:middle;
+  width:100%;
+  height:1px;
+  background:linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%)
+ }
+ .rule>.body>ul {
+  margin:0;
+  padding:0;
+  list-style-type:none
+ }
+ .rule>.body>ul>li {
+  padding:8px;
+  padding-left:36px;
+  position:relative
+ }
+ .rule>.body>ul>li>p {
+  margin:0;
+  padding:0
+ }
+ .rule>.body>ul>li::before {
+  content:'';
+  position:absolute;
+  display:inline-block;
+  width:4px;
+  height:4px;
+  background:#678;
+  border-radius:50%;
+  left:16px;
+  top:18px
+ }
+ .rule>.body>ul>li+li {
+  border-top:solid 1px rgba(102,119,136,.05)
+ }
+ .rule>.body>p {
+  padding:16px;
+  margin:0
+ }
+ .rule>.body>h4 {
+  font-size:11px;
+  margin:0;
+  padding:4px 16px;
+  font-weight:400;
+  background:#f8f9fa;
+  color:#678
+ }
+ @media(min-width:480px) and (max-width:768px) {
+  .rule>.body>h4 {
+   font-size:calc( 11px + 1 * ( ( 100vw - 480px)/288 ) )
+  }
+ }
+ @media(min-width:768px) and (max-width:1280px) {
+  .rule>.body>h4 {
+   font-size:calc( 12px + 0 * ( ( 100vw - 768px)/512 ) )
+  }
+ }
+ @media(min-width:1280px) {
+  .rule>.body>h4 {
+   font-size:12px
+  }
+ }
+ .rule>.body>h4+* {
+  border-top:solid 1px rgba(102,119,136,.05)
+ }
+ .rule>.body>pre~p,
+ .rule>.body>ul~p,
+ .rule>.body>iframe~p,
+ .rule>.body>table~p {
+  background:#f8f9fa;
+  color:#678
+ }
+ .rule>.body>pre~p a,
+ .rule>.body>pre~p a:visited,
+ .rule>.body>ul~p a,
+ .rule>.body>ul~p a:visited,
+ .rule>.body>iframe~p a,
+ .rule>.body>iframe~p a:visited,
+ .rule>.body>table~p a,
+ .rule>.body>table~p a:visited {
+  color:#345;
+  text-decoration:none;
+  border-bottom:solid 1px rgba(102,119,136,.05)
+ }
+ .rule>.body>pre~p a:hover,
+ .rule>.body>ul~p a:hover,
+ .rule>.body>iframe~p a:hover,
+ .rule>.body>table~p a:hover {
+  color:#26648e
+ }
+ .rule>.body>*:not(:first-child) {
+  border-top:solid 1px rgba(102,119,136,.05)
+ }
+ .rule>.body>p+p,
+ .rule>.body>p+p:not(:first-child) {
+  margin-top:-1.5em;
+  border-top:0
+ }
+ @media(min-width:481px) {
+  .rule.-prime>.body {
+   border-radius:2px;
+   box-shadow:0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3),0 8px 12px rgba(58,193,203,.1)
+  }
+ }
+
+ 

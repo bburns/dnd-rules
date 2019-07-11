@@ -1,4 +1,4 @@
-﻿Topic,Level,Notes,dnd,aime,urls,type
+﻿name,level,description,dnd,aime,urls,type
 Ability Score,0,"Measures of different abilities: 
 * Strength
 * Dexterity
@@ -59,8 +59,9 @@ Conditions,1,"Alter capabilities in various ways.
 
 Due to starvation etc. Effects are cumulative. Long rests reduce level by 1. 
 
+
 | Level | Effect                                         |
-|     1 | Disadvantage on ability checks                 |
+| ----------- | ----------- ||     1 | Disadvantage on ability checks                 |
 |     2 | Speed halved                                   |
 |     3 | Disadvantage on attack rolls and saving throws |
 |     4 | Hit point maximum halved                       |
@@ -78,8 +79,24 @@ Due to starvation etc. Effects are cumulative. Long rests reduce level by 1.
 * Restrained
 * Stunned
 * Unconscious
-",phAppA,,,play
-Damage Types,1,"Types of Damage include Acid, Bludgeoning, Cold, Fire, Force (magic), Lightning, Necrotic (withers matter and soul), Piercing, Poison, Psychic, Radiant (fire/spirit), Slashing (swords), Thunder (sound). 
+",ph290,,,play
+Damage Types,1,"Types of Damage include 
+
+
+* Acid
+* Bludgeoning
+* Cold
+* Fire
+* Force - magic
+* Lightning
+* Necrotic - withers matter and soul
+* Piercing - teeth
+* Poison
+* Psychic
+* Radiant - fire/spirit
+* Slashing - swords
+* Thunder - sound
+
 Can have Resistance to different Damage Types - damage is halved, or Vulnerability - damage is doubled.",ph196,,,play
 Difficulty Class (DC),1,"The difficulty of a task from 1 to 20 - used for Ability Checks, Saving Throws. Like Armor Class (AC).",ph174,,,play
 Flaws,1,,,,,char
@@ -124,7 +141,7 @@ Carrying Capacity,2,Amount of weight you can carry - Speed is affected as you ca
 Cover,2,"Can hide behind things during Combat. Half Cover gives +2 AC. Three quarters gives +5, and Total Cover can't be attacked except by certain spells.",,,,play
 Crafting,2,"Can craft adventuring equipment, works of art. Must be Proficient with tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plat armor (1500gp) takes 300 days to craft alone. Others can help.",ph187,,,play
 Downtime,2,"Between adventures - spend money each day for lifestyle expenses. Can Craft items, eg armor, work at a Profession to earn money, Rest to recover from poisons, do Research to find information, Train to learn new Language or Tool Skill.",ph187,,,play
-Exhaustion,2,See Conditions,phAppA,,,play
+Exhaustion,2,See Conditions,ph290,,,play
 Feats,2,,ph165,,,char
 Food / Water,2,"Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of Exhaustion. [has detailed rules]",ph185,,,play
 Habits,2,,,,,char
