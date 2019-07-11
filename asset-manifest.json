@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/dnd-rules/static/css/main.94b0c379.chunk.css",
-    "main.js": "/dnd-rules/static/js/main.edd4af4f.chunk.js",
-    "main.js.map": "/dnd-rules/static/js/main.edd4af4f.chunk.js.map",
+    "main.css": "/dnd-rules/static/css/main.048e5e0d.chunk.css",
+    "main.js": "/dnd-rules/static/js/main.49bc8d2e.chunk.js",
+    "main.js.map": "/dnd-rules/static/js/main.49bc8d2e.chunk.js.map",
     "runtime~main.js": "/dnd-rules/static/js/runtime~main.ee0ad39f.js",
     "runtime~main.js.map": "/dnd-rules/static/js/runtime~main.ee0ad39f.js.map",
-    "static/js/2.214c4bba.chunk.js": "/dnd-rules/static/js/2.214c4bba.chunk.js",
-    "static/js/2.214c4bba.chunk.js.map": "/dnd-rules/static/js/2.214c4bba.chunk.js.map",
+    "static/css/2.bb342caa.chunk.css": "/dnd-rules/static/css/2.bb342caa.chunk.css",
+    "static/js/2.4feca2c4.chunk.js": "/dnd-rules/static/js/2.4feca2c4.chunk.js",
+    "static/js/2.4feca2c4.chunk.js.map": "/dnd-rules/static/js/2.4feca2c4.chunk.js.map",
     "index.html": "/dnd-rules/index.html",
-    "precache-manifest.c6e1d17b3c74133a94534be6fbad2424.js": "/dnd-rules/precache-manifest.c6e1d17b3c74133a94534be6fbad2424.js",
+    "precache-manifest.0610a7b0e9829097dfd87f7d817d115b.js": "/dnd-rules/precache-manifest.0610a7b0e9829097dfd87f7d817d115b.js",
     "service-worker.js": "/dnd-rules/service-worker.js",
-    "static/css/main.94b0c379.chunk.css.map": "/dnd-rules/static/css/main.94b0c379.chunk.css.map"
+    "static/css/2.bb342caa.chunk.css.map": "/dnd-rules/static/css/2.bb342caa.chunk.css.map",
+    "static/css/main.048e5e0d.chunk.css.map": "/dnd-rules/static/css/main.048e5e0d.chunk.css.map"
   }
 }
