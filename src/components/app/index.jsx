@@ -1,15 +1,14 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
-import rules from './assets/rules.json'
-import './css/devhints1.css'
-import './css/devhints2.css'
-import './css/devhints3.css'
-import './css/devhints4.css'
-
 import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
+
+import rules from '../../assets/rules.json'
+import '../../css/devhints1.css'
+import '../../css/devhints2.css'
+import '../../css/devhints3.css'
+import '../../css/devhints4.css'
+import './styles.css';
 
 
 function groupBy(arr, key) {
