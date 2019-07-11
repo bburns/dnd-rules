@@ -316,4 +316,7 @@
   }
  }
 
- 
+ .rule-dnd {
+   text-align: right;
+   color: #ccc;
+}

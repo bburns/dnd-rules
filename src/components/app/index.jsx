@@ -103,9 +103,14 @@ function Rule({ rule }) {
   return (
     <div key={rule.name} id={idize(rule.name)} className="rule">
       <h3>{rule.name}</h3>
-      {rule.description && <div className="body">
-        {markdownToReact(rule.description)}
-      </div>}
+      {(rule.description || rule.dnd) && 
+        <div className="body">
+          <div>
+              {markdownToReact(rule.description)}
+            <div className="rule-dnd">{rule.dnd}</div>
+          </div>
+        </div>
+      }
     </div>
   )
 }
