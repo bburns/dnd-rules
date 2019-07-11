@@ -61,14 +61,17 @@
   text-decoration-style: solid;
   text-shadow: none;
 }
-.toc a {
-  cursor: pointer;
-}
-.toc a:hover {
-  background-color: #ecf0f1;
-}
 .toc-rule {
   margin-left: 1em;
+  padding: 1px 5px;
+}
+.toc-rule a {
+  color: rgb(26, 188, 156);
+  cursor: pointer;
+  text-decoration: none;
+}
+.toc-rule:hover {
+  background-color: #dbedff;
 }
 
 
