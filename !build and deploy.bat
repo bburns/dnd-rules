@@ -1,1 +1,2 @@
-title build && yarn build && title deploy && yarn deploy
+title build && yarn build && title deploy && yarn deploy && beep && pause
+
