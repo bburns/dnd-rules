@@ -1,4 +1,4 @@
-﻿Topic,Level,Notes,ogl,ph,dmg,mepg,melmg
+﻿Topic,Level,Notes,basic,ph,dmg,mepg,melmg
 Ability Score,0,"* Strength
 * Dexterity
 * Constitution
@@ -6,7 +6,8 @@ Ability Score,0,"* Strength
 * Wisdom
 * Charisma
 
-Max 20 for characters, 30 for monsters/divines. Used to calculate Ability Modifiers",,173,,,
+
+Max 20 for characters, 30 for monsters/divines. Used to calculate Ability Modifiers. Each has associated Skills, e.g. Strength has Athletics.",,173,,,
 Attack,0,"* Choose target
 * Determine modifiers - eg if target has Cover, if have Advantage/Disadvantage, etc
 * Do Attack Roll, and on hit do Damage Roll",,193,,,
@@ -17,6 +18,7 @@ Melee attacks should be within 5 feet. If no weapon can roll with Advantage to d
 
 
 Ranged attacks must be within range of weapon - normal vs long range - if long range or within 5ft gives Disadvantage.",,194,,,
+Class,0,"Fighter, Druid, Ranger, etc",,,,,
 Combat,0,"Establish physical positions and roll Initiative to determine turn order (including adversaries). Then take turns doing Actions. Each round lasts 6 seconds.
 During your turn can move a distance up to your Speed AND take one Action. Can break up movement around action. Difficult terrain or obstructions takes up extra foot per foot moved. Can talk/gesture and interact with one object for free (e.g. drawing sword). ",,189+,,,
 Damage Roll,0,"Roll dice appropriate for weapon, add Ability Modifier (same as for Attack Roll). If got Critical Hit, roll all damage dice twice, add, then add modifiers. ",,196,,,
@@ -26,9 +28,11 @@ Hit Points (HP),0,"Represents health. At first level, HP = max of Hit Dice + Con
 
 
 When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When unconscious must make Saving Throws against death [see p197]",,197,,,
+Initiative,0,"Everyone in Combat (incl monsters) rolls for Initiative at beginning of Combat, which determines the order they take Turns. ",,189,,,
+Level,0,"Character Levels are based on Experience Points (XP) - as reach higher levels gain more abilities, skills, spells, etc.",,,,,
+Race,0,"Human, Elf, Hobbit, etc - determines Hit Dice etc",,,,,
+Speed,0,How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal Movement is slower. ,,,,,
 Ability Check,1,"Do to test innate talent/training to overcome a challenge. Difficulty of task is the Difficulty Class (DC), 1-20. Very easy 5, Easy 10, etc.",,174,,,
-Ability Modifier,1,"Based on raw Ability Scores - these come up more often in play than raw ones. Range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). 
-So e.g. if Strength = 13 then Strength Modifier = +1",,173,,,
 Action,1,"Available actions during Combat include 
 * Attack
 * Cast Spell
@@ -42,15 +46,44 @@ Action,1,"Available actions during Combat include
 * Search - make Wisdom (Perception) or Intelligence (Investigation) Check
 * Use - if want to use more than one object in your turn
 * Other - improvise!",,192,,,
-Advantage/Disadvantage,1,"For Advantage, roll twice and take best score. For Disadvantage take worst. ",,173,,,
+Advantage / Disadvantage,1,"For Advantage, roll twice and take best score. For Disadvantage take worst. ",,173,,,
 Difficulty Class (DC),1,"The difficulty of a task from 1 to 20 - used for Ability Checks, Saving Throws. Like Armor Class (AC).",,174,,,
-Initiative,1,"Everyone in Combat (incl monsters) rolls for Initiative at beginning of Combat, which determines the order they take Turns. ",,189,,,
 Inspiration,1,"DM can grant Inspiration when player does something in character, or inspiring. Player can spend it for Advantage on a roll, or give it to another character.",,,,,
 Saving Throw,1,"Roll d20 to resist spells, traps, poison, disease etc - Difficulty Class (DC) determined by effect causing it.",,179,,,
 Searching,1,Use a Wisdom (Perception) Ability Check. Must say specifically where are searching to find hidden things.,,178,,,
+Conditions,2,"Alter capabilities in various ways.
+
+* Blinded
+* Charmed
+* Deafened
+* Exhaustion
+
+Due to starvation etc. Effects are cumulative. Long rests reduce level by 1. 
+
+| Level | Effect                                         |
+|     1 | Disadvantage on ability checks                 |
+|     2 | Speed halved                                   |
+|     3 | Disadvantage on attack rolls and saving throws |
+|     4 | Hit point maximum halved                       |
+|     5 | Speed reduced to 0                             |
+|     6 | Death                                          |
+
+* Frightened
+* Grappled
+* Incapacitated
+* Invisible
+* Paralyzed
+* Petrified
+* Poisoned
+* Prone
+* Restrained
+* Stunned
+* Unconscious
+",,AppA,,,
+Cover,2,"Can hide behind things during Combat. Half Cover gives +2 AC. Three quarters gives +5, and Total Cover can't be attacked except by certain spells.",,,,,
 Damage Types,2,"Types of Damage include Acid, Bludgeoning, Cold, Fire, Force (magic), Lightning, Necrotic (withers matter and soul), Piercing, Poison, Psychic, Radiant (fire/spirit), Slashing (swords), Thunder (sound). 
 Can have Resistance to different Damage Types - damage is halved, or Vulnerability - damage is doubled.",,196,,,
-Hiding,2,,,177,,,
+Hiding,2,aka Stealth - make a Dexterity (Stealth) check when attempting to hide from enemies etc.,,177,,,
 Passive Checks,2,"For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have Advantage, -5 if Disadvantage.",,175,,,
 Proficiencies,2,Can have Proficiency in different weapons - during Combat can add Proficiency Bonus to Attack Rolls and Damage Rolls. ,,173,,,
 Proficiency Bonus,2,Value added to rolls when player is Proficient in a relevant skill. Based on player's Level - first level is +2.,,173,,,
@@ -59,34 +92,58 @@ Long Rests need at least 8 hours, and restore all Hit Points.
 Optionally, both require use of one Healer's Kit first. 
 
 You can use Downtime between adventures to recover from debilitating injury, disease, or poison. After 3 days of downtime can make DC 15 Constitution Saving Throw. On success can gain Advantage on Saving Throws against one disease or poison.",,186-7,,,
-Skills,2,"Each Ability Score covers a set of Skills you can be Proficient in, and referred to like Strength (Athletics). For Ability Checks can add Proficiency Bonus if a Skill is relevant.",,174,,,
-Travel,2,"Can travel at normal, fast, or slow pace. [table pg182] Can only do half speed in Difficult Terrain.",,181,,,
+Skills,2,"Each Ability Score covers a set of Skills you can be Proficient in, and referred to like Strength (Athletics). For Ability Checks can add Proficiency Bonus if a Skill is relevant.
+
+Strength
+* Athletics
+
+Dexterity
+* Acrobatics
+* Sleight of Hand
+* Stealth
+
+Intelligence
+* Arcana
+* History
+* Investigation
+* Nature
+* Religion
+
+Wisdom
+* Animal Handling
+* Insight
+* Medicine
+* Perception
+* Survival
+
+Charisma
+* Deception
+* Intimidation
+* Performance
+* Persuasion
+",,174,,,
 Crafting,3,"Can craft adventuring equipment, works of art. Must be Proficient with tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plat armor (1500gp) takes 300 days to craft alone. Others can help.",,187,,,
 Downtime,3,"Between adventures - spend money each day for lifestyle expenses. Can Craft items, eg armor, work at a Profession to earn money, Rest to recover from poisons, do Research to find information, Train to learn new Language or Tool Skill.",,187,,,
-Exhaustion,3,[table],,,,,
-Food/Water,3,"Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of Exhaustion. [has detailed rules]",,185,,,
-Mounts/Vehicles,3,,,155,,,
-Tools,3,,,154,,,
+Exhaustion,3,See Conditions,,AppA,,,
+Food / Water,3,"Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of Exhaustion. [has detailed rules]",,185,,,
 Training,3,"Can train to learn new Language, Tool Skill Proficiency - must find instructor. Training lasts 250 days and costs 1gp per day.",,187,,,
-Weather,3,,,,,,
+Travel,3,"Can travel at normal, fast, or slow pace. [table pg182] Can only do half speed in Difficult Terrain.",,181,,,
+Ability Modifier,4,"Based on raw Ability Scores - these come up more often in play than raw ones. Range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). 
+So e.g. if Strength = 13 then Strength Modifier = +1",,173,,,
 Alignment,4,,,,,,
-Background,4,,,,,,
+Background,4,,https://www.dndbeyond.com/backgrounds,,,,
 Bonds,4,,,,,,
 Carrying Capacity,4,Amount of weight you can carry - Speed is affected as you carry more.,,176,,,
-Class,4,,,,,,
 Feats,4,,,165,,,
 Flaws,4,,,,,,
 Habits,4,,,,,,
 Ideals,4,,,,,,
 Languages,4,,,,,,
-Level,4,"Character Levels are based on Experience Points (XP) - as reach higher levels gain more abilities, skills, spells, etc.",,,,,
 Mannerisms,4,,,,,,
 Multiclassing,4,,,163,,,
 Personality Traits,4,,,,,,
 Pet Peeves,4,,,,,,
 Quotes,4,,,,,,
-Race,4,,,,,,
-Speed,4,How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal Movement is slower. ,,,,,
 Subclass,4,,,,,,
 Subrace,4,,,,,,
 Vices,4,,,,,,
