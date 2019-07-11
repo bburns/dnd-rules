@@ -55,8 +55,8 @@ function App() {
 
   return (
     <div className="app">
-      <header className="main-heading -center" role="banner">
-        <h1 className="h1">D&amp;D Rules <em>Cheatsheet</em></h1>
+      <header className="app-header" role="banner">
+        <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
       </header>
       <div className="app-contents">
         <div className="toc">

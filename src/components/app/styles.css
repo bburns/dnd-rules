@@ -32,6 +32,13 @@
   }
 } */
 
+.app {
+  padding: 1em;
+}
+
+.app-header {
+  text-align: center;
+}
 
 .app-contents {
   display: flex;
@@ -49,15 +56,11 @@
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
-  padding-bottom: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  text-decoration: none;
-  text-decoration-color: rgb(26, 188, 156);
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-shadow: none;
+  /* text-decoration: none; */
+  /* text-decoration-color: rgb(26, 188, 156); */
+  /* text-decoration-line: none; */
+  /* text-decoration-style: solid; */
+  /* text-shadow: none; */
 }
 .toc a {
   display: block;
