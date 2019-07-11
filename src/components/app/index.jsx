@@ -55,39 +55,41 @@ function App() {
 
   return (
     <div className="app">
-      <div className="toc">
-        {rulesByLevel.map(level => (
-          <div className="toc-level">
-            <div className="toc-level">Level {level.Level}</div>
-            {level.values.map(rule => (
-              <a className="toc-rule" key={rule.Topic} href={"#" + idize(rule.Topic)}>
-                {rule.Topic}
-              </a>
-            ))}
-          </div>
-        ))}
-      </div>
-      <div className="body-area">
-        <header className="main-heading -center" role="banner">
-          <h1 className="h1">D&amp;D Rules <em>Cheatsheet</em></h1>
-        </header>
-        <main className="post-content MarkdownBody-wrapified">
+      <header className="main-heading -center" role="banner">
+        <h1 className="h1">D&amp;D Rules <em>Cheatsheet</em></h1>
+      </header>
+      <div className="app-contents">
+        <div className="toc">
           {rulesByLevel.map(level => (
-            <div className="h2-sect">
-              <h2 className="body-level">Level {level.Level}</h2>
-              <div className="body h3-section-list">
-                {level.values.map(rule => (
-                  <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
-                    <h3>{rule.Topic}</h3>
-                    {rule.Notes && <div className="body">
-                      {markdownToReact(rule.Notes)}
-                    </div>}
-                  </div>
-                ))}
-              </div>
+            <div className="toc-level">
+              <div className="toc-level">Level {level.Level}</div>
+              {level.values.map(rule => (
+                <a className="toc-rule" key={rule.Topic} href={"#" + idize(rule.Topic)}>
+                  {rule.Topic}
+                </a>
+              ))}
             </div>
           ))}
-        </main>
+        </div>
+        <div className="body-area">
+          <main className="post-content MarkdownBody-wrapified">
+            {rulesByLevel.map(level => (
+              <div className="h2-sect">
+                <h2 className="body-level">Level {level.Level}</h2>
+                <div className="body h3-section-list">
+                  {level.values.map(rule => (
+                    <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
+                      <h3>{rule.Topic}</h3>
+                      {rule.Notes && <div className="body">
+                        {markdownToReact(rule.Notes)}
+                      </div>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </main>
+        </div>
       </div>
     </div>
   );
