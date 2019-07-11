@@ -48,7 +48,20 @@ function markdownToReact(md) {
 
 const rulesByLevel = groupBy(rules, 'level')
 
-function Rule({rule}) {
+
+function Level({ level }) {
+  return (
+    <div className="h2-sect">
+      <h2 className="body-level">Level {level.level}</h2>
+      <div className="body rule-list">
+        {level.values.map(rule => <Rule key={rule.name} rule={rule} />)}
+      </div>
+    </div>
+  )
+}
+
+
+function Rule({ rule }) {
   return (
     <div key={rule.name} id={idize(rule.name)} className="rule">
       <h3>{rule.name}</h3>
@@ -75,7 +88,7 @@ function App() {
         <div className="toc">
           {rulesByLevel.map(level => (
             <div className="toc-level">
-              <a className="toc-level-title" key={level.Level} href={"#" + level.Level}>Level {level.Level}</a>
+              <a className="toc-level-title" key={level.level} href={"#" + level.level}>Level {level.level}</a>
               <div className="toc-rules">
                 {level.values.map(rule => (
                   <a className="toc-rule" key={rule.name} href={"#" + idize(rule.name)}>
@@ -87,14 +100,7 @@ function App() {
           ))}
         </div>
         <div className="app-rules">
-          {rulesByLevel.map(level => (
-            <div className="h2-sect">
-              <h2 className="body-level">Level {level.Level}</h2>
-              <div className="body rule-list">
-                {level.values.map(rule => <Rule key={rule.name} rule={rule} />)}
-              </div>
-            </div>
-          ))}
+          {rulesByLevel.map(level => <Level key={level.name} level={level} />)}
         </div>
       </div>
     </div>
