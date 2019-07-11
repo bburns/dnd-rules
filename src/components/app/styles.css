@@ -39,18 +39,16 @@
 
 
 .toc {
-  flex-basis: 10em;
+  flex-basis: 14em;
   flex-shrink: 0;
   color: rgb(26, 188, 156);
   display: block;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-size: 17px;
   line-height: 21px;
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
-  /* margin-left: -15px; */
-  /* margin-right: -15px; */
   padding-bottom: 3px;
   padding-left: 15px;
   padding-right: 15px;
@@ -78,6 +76,7 @@
   margin-bottom: 1em;
 }
 .toc-level-title {
+  font-weight: bold;
 }
 .toc-rule {
   margin-left: 1em;
@@ -91,6 +90,20 @@
 .body.h3-section-list {
   /* columns: 100px 2; */
 }
+.body-level {
+  font-size: 1.8em;
+  border-bottom: 1px solid gray;
+}
+/* 
+.body-level::after {
+	margin-left: 24px;
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%);
+} */
 
 .body {
   /* font-weight: 300; */
