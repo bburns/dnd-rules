@@ -61,19 +61,26 @@
   text-decoration-style: solid;
   text-shadow: none;
 }
-.toc-rule {
+.toc a {
   display: block;
-  margin-left: 1em;
   padding: 1px 5px;
   color: rgb(26, 188, 156);
   cursor: pointer;
   text-decoration: none;
 }
-.toc-rule:visited {
+.toc a:visited {
   color: rgb(26, 188, 156);
 }
-.toc-rule:hover {
+.toc a:hover {
   background-color: #dbedff;
+}
+.toc-level {
+  margin-bottom: 1em;
+}
+.toc-level-title {
+}
+.toc-rule {
+  margin-left: 1em;
 }
 
 

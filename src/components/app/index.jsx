@@ -62,12 +62,14 @@ function App() {
         <div className="toc">
           {rulesByLevel.map(level => (
             <div className="toc-level">
-              <div className="toc-level">Level {level.Level}</div>
-              {level.values.map(rule => (
-                <a className="toc-rule" key={rule.Topic} href={"#" + idize(rule.Topic)}>
-                  {rule.Topic}
-                </a>
-              ))}
+              <a className="toc-level-title" key={level.Level} href={"#" + level.Level}>Level {level.Level}</a>
+              <div className="toc-rules">
+                {level.values.map(rule => (
+                  <a className="toc-rule" key={rule.Topic} href={"#" + idize(rule.Topic)}>
+                    {rule.Topic}
+                  </a>
+                ))}
+              </div>
             </div>
           ))}
         </div>
