@@ -9,6 +9,10 @@ import './devhints.css'
 import './styles.css';
 
 
+function idize(s) {
+  return s.replace(/ /g, '-').toLowerCase()
+}
+
 function groupBy(arr, key) {
   const d = {}
   arr.forEach(el => {
@@ -56,7 +60,11 @@ function App() {
           <div className="toc-level">
             <div className="toc-level">Level {level.Level}</div>
             {level.values.map(rule => (
-              <div key={rule.Topic} className="toc-rule">{rule.Topic}</div>
+              <div key={rule.Topic} className="toc-rule">
+                <a href={"#" + idize(rule.Topic)}>
+                  {rule.Topic}
+                </a>
+              </div>
             ))}
           </div>
         ))}
@@ -71,7 +79,7 @@ function App() {
               <h2 className="body-level">Level {level.Level}</h2>
               <div className="body h3-section-list">
                 {level.values.map(rule => (
-                  <div key={rule.Topic} className="h3-section">
+                  <div key={rule.Topic} id={idize(rule.Topic)} className="h3-section">
                     <h3>{rule.Topic}</h3>
                     {rule.Notes && <div className="body">
                       {markdownToReact(rule.Notes)}
