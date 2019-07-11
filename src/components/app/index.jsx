@@ -73,8 +73,9 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="body-area">
-          <main className="post-content MarkdownBody-wrapified">
+        {/* <div className="body-area"> */}
+        <div className="app-rules">
+          {/* <main className="post-content MarkdownBody-wrapified"> */}
             {rulesByLevel.map(level => (
               <div className="h2-sect">
                 <h2 className="body-level">Level {level.Level}</h2>
@@ -90,7 +91,7 @@ function App() {
                 </div>
               </div>
             ))}
-          </main>
+          {/* </main> */}
         </div>
       </div>
     </div>
