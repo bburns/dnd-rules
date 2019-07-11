@@ -33,11 +33,17 @@
 } */
 
 .app {
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .app-header {
+  background: black;
+  color: #eee;
   text-align: center;
+}
+.app-header h1 {
+  margin: 0 0 0.5em;
+  font-weight: bold;
 }
 
 .app-contents {
