@@ -2,12 +2,10 @@ import React from 'react';
 import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
+import 'sanitize.css'
 
 import rules from '../../assets/rules.json'
-import '../../css/devhints1.css'
-import '../../css/devhints2.css'
-import '../../css/devhints3.css'
-import '../../css/devhints4.css'
+import './devhints.css'
 import './styles.css';
 
 
