@@ -60,11 +60,9 @@ function App() {
           <div className="toc-level">
             <div className="toc-level">Level {level.Level}</div>
             {level.values.map(rule => (
-              <div key={rule.Topic} className="toc-rule">
-                <a href={"#" + idize(rule.Topic)}>
-                  {rule.Topic}
-                </a>
-              </div>
+              <a className="toc-rule" key={rule.Topic} href={"#" + idize(rule.Topic)}>
+                {rule.Topic}
+              </a>
             ))}
           </div>
         ))}
@@ -91,8 +89,8 @@ function App() {
           ))}
         </main>
       </div>
-      </div>
-      );
-    }
-    
-    export default App;
+    </div>
+  );
+}
+
+export default App;
