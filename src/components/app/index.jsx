@@ -89,7 +89,7 @@ function Rules({ rulesByLevel }) {
 
 function Level({ level }) {
   return (
-    <div className="h2-sect">
+    <div>
       <h2 className="body-level">Level {level.level}</h2>
       <div className="body rule-list">
         {level.values.map(rule => <Rule key={rule.name} rule={rule} />)}
@@ -105,10 +105,8 @@ function Rule({ rule }) {
       <h3>{rule.name}</h3>
       {(rule.description || rule.dnd) && 
         <div className="body">
-          <div>
-              {markdownToReact(rule.description)}
-            <div className="rule-dnd">{rule.dnd}</div>
-          </div>
+          {markdownToReact(rule.description)}
+          <div className="rule-dnd">{rule.dnd}</div>
         </div>
       }
     </div>
