@@ -3,6 +3,7 @@ import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
 import 'sanitize.css'
+// import remarkGridTables from 'remark-grid-tables'
 
 import rules from '../../assets/rules.json'
 import './devhints.css'
@@ -37,6 +38,7 @@ function markdownToReact(md) {
       {
         unified()
           .use(parse)
+          // .use(remarkGridTables)
           .use(remark2react)
           .processSync(md).contents
       }
@@ -45,7 +47,8 @@ function markdownToReact(md) {
 }
 
 
-const rulesByLevel = groupBy(rules, 'level')
+const dndRules = rules.filter(rule => !!rule.dnd) // ie just include dnd rules
+const rulesByLevel = groupBy(dndRules, 'level')
 
 const levelNames = {
   0: "Basic",

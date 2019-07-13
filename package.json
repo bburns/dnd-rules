@@ -19,6 +19,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "rehype-stringify": "^6.0.0",
+    "remark-grid-tables": "^1.6.1",
     "remark-parse": "^6.0.3",
     "remark-react": "^5.0.1",
     "remark-rehype": "^4.0.1",
