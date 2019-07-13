@@ -5,7 +5,9 @@
   margin-left: 0.5in;
   margin-right: 0.5in;
 }
-
+div {
+  page-break-inside: avoid;
+}
 
 li {
 	margin-left: -1em;
@@ -45,7 +47,7 @@ li {
   list-style-position: outside;
   list-style-type: none;
 }
-@media (min-width: 500px) {
+@media not print and (min-width: 500px) {
   .toc {
     display: block;
   }
