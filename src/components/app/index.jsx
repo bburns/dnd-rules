@@ -70,6 +70,7 @@ function Header() {
 function TableOfContents({ rulesByLevel }) {
   return (
     <div className="toc">
+      {/* <div className="toc-title">Table of Contents</div> */}
       {rulesByLevel.map(level => (
         <div className="toc-level">
           <a className="toc-level-title" key={level.level} href={"#" + level.level}>
