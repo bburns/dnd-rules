@@ -26,9 +26,13 @@ li {
 }
 
 .app-contents {
-  display: flex;
+  display: flex; /* horizontal children */
 }
 
+.app-footer {
+  padding: 4px;
+  float: right;
+}
 
 .toc {
   display: none;

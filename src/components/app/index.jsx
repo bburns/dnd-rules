@@ -69,6 +69,14 @@ function Header() {
   )
 }
 
+function Footer() {
+  return (
+    <div className="app-footer">
+      Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a>
+    </div>
+  )
+}
+
 
 function TableOfContents({ rulesByLevel }) {
   return (
@@ -146,6 +154,7 @@ function App() {
         <TableOfContents rulesByLevel={rulesByLevel} />
         <Rules rulesByLevel={rulesByLevel} />
       </div>
+      <Footer />
     </div>
   );
 }
