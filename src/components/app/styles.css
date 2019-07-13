@@ -15,6 +15,7 @@ li {
   background: black;
   color: white;
   text-align: center;
+  height: 42px;
 }
 .app-header h1 {
   margin: 0;
@@ -30,12 +31,15 @@ li {
 }
 
 .app-footer {
-  padding: 4px;
+  padding: 1em;
   float: right;
+  /* margin-bottom: 1em; */
 }
 
 .toc {
   display: none;
+  overflow-y: scroll;
+  height: calc(100vh - 42px);
   flex-basis: 14em;
   flex-shrink: 0;
   color: rgb(26, 188, 156);
@@ -81,6 +85,13 @@ li {
 }
 
 
+.app-rules {
+  margin-left: 1em;
+}
+
+/* //. clean this stuff up */
+
+
 .body.rule-list {
   /* columns: 100px 2; */
 }
@@ -105,6 +116,7 @@ li {
 	background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%);
 } */
 
+
 .body.rule-list {
   /* font-weight: 300; */
 }
@@ -112,10 +124,16 @@ li {
   padding: 0.5em 1em;
   margin-right: 1em;
 }
-
 .body li p {
   display: inline;
 }
+
+.rule-dnd {
+  text-align: right;
+  color: #ccc;
+}
+
+
 
 
 .rule-list > .rule {
@@ -328,8 +346,3 @@ li {
    box-shadow:0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3),0 8px 12px rgba(58,193,203,.1)
   }
  }
-
- .rule-dnd {
-   text-align: right;
-   color: #ccc;
-}
