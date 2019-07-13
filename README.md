@@ -1,8 +1,8 @@
-# Dungeons and Dragons Rules Cheatsheet
+# Dungeons and Dragons Rules
 
-This is an attempt to summarize the 5th edition rules, starting with the most basic and moving to the more complex rules.
+This is an attempt to summarize the 5th edition rules, starting with the most basic and moving to more complex rules.
 
-Still a work in progress.
+A work in progress.
 
 https://bburns.github.io/dnd-rules/
 
@@ -11,10 +11,14 @@ https://bburns.github.io/dnd-rules/
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn run prepare`
+
+Convert the `data/rules.csv` file to `src/assets/rules.json`, which gets bundled up into the site code. 
+
+### `yarn start`
 
 Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
 
-### `npm run deploy`
+### `yarn deploy`
 
 Deploys the site to GitHub Pages, https://bburns.github.io/dnd-rules/.
