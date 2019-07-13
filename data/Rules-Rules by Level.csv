@@ -8,38 +8,28 @@ Ability Score,0,"Measures of different abilities:
 * Charisma
 
 
-Max 20 for characters, 30 for monsters/divines. Used to calculate Ability Modifiers. Each has associated Skills, e.g. Strength has Athletics.","ph12,173",,,char
-Attack,0,"* Choose target
-* Determine modifiers - eg if target has Cover, if have Advantage/Disadvantage, etc
-* Do Attack Roll, and on hit do Damage Roll",ph193,,,play
-Attack Roll,0,"Roll d20 + Ability Modifier (Strength for melee weapon, Dexterity for ranged) + Proficiency Bonus (if Proficient with weapon) + Advantage (if they can't see you) - Disadvantage (if you can't see them).
-Rolling a 20 is a Critical Hit, 1 is always a miss.
-
-Melee attacks should be within 5 feet. If no weapon can roll with Advantage to do bludgeon damage of 1+Strength Modifier.
-
-
-Ranged attacks must be within range of weapon - normal vs long range - if long range or within 5ft gives Disadvantage.",ph194,,,play
+Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.","ph12,173",,,char
 Class,0,"Fighter, Druid, Ranger, etc",ph45,,,char
-Combat,0,"Establish physical positions and roll Initiative to determine turn order (including adversaries). Then take turns doing Actions. Each round lasts 6 seconds.
-During your turn can move a distance up to your Speed AND take one Action. Can break up movement around action. Difficult terrain or obstructions takes up extra foot per foot moved. Can talk/gesture and interact with one object for free (e.g. drawing sword). ",ph189+,,,play
-Damage Roll,0,"Roll dice appropriate for weapon, add Ability Modifier (same as for Attack Roll). If got Critical Hit, roll all damage dice twice, add, then add modifiers. ",ph196,,,play
+Combat,0,"* Choose a target
+* Roll d20 for attack
+* Add [Proficiency Bonus] if proficient with current weapon
+* If score >= target's [Armor Class], it's a hit - roll appropriate dice (based on weapon) for damage
+* Roll natural 20 is a [Critical Hit] - always hits - roll damage twice and add. Natural 1 is a [Critical Miss] - always misses.","ph189+,194",,,play
+Culture,0,"Corresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan",,pg30,,char
 Experience Points (XP),0,"Represent character's experience and determines their Level. Gain for monsters kills, significant actions etc. See table.",ph15,,,char
-Hit Dice (HD),0,"These determine how many Hit Points a character has. Different races have different types of hit dice, e.g. d8, d10. ",ph12,,,char
-Hit Points (HP),0,"Represents health. At first level, HP = max of Hit Dice + Constitution Modifier (see Ability Score Modifiers). At subsequent levels, roll Hit Dice and add that with Constitution Modifier to obtain new HP. 
+Hit Dice (HD),0,"These determine how many Hit Points a character has. Different Classes have different types of hit dice, e.g. d8, d10. ",ph12,,,char
+Hit Points (HP),0,"Represents health. At first level, HP = max of Hit Dice + Constitution Modifier (see Ability Score Modifiers). At subsequent levels, roll Hit Dice and add that with Constitution Modifier to obtain new HP, OR add half of Hit Dice max +1 + Constitution Modifier (avoids randomness).
 
-
-When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When unconscious must make Saving Throws against death [see p197]","ph12,197",,,char
-Initiative,0,"Everyone in Combat (incl monsters) rolls for Initiative at beginning of Combat, which determines the order they take Turns. ",ph189,,,play
+When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When unconscious must make Saving Throws against death [see ph197]","ph12,197",,,char
 Level,0,"Character Levels are based on Experience Points (XP) - as reach higher levels gain more abilities, skills, spells, etc.",ph15,,,char
-Race,0,"Human, Elf, Hobbit, etc - determines Hit Dice etc",ph17,,,char
-Speed,0,How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal Movement is slower. ,,,,char
+Race,0,"Human, Elf, Halfling, etc - determines Hit Dice etc",ph17,,,char
+Speed,0,How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal Movement is slower. ,ph,,,char
 Ability Check,1,"Do to test innate talent/training to overcome a challenge. Difficulty of task is the Difficulty Class (DC), 1-20. Very easy 5, Easy 10, etc.",ph174,,,play
 Ability Modifier,1,Based on raw Ability Scores - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1,"ph13,173",,,char
 Action,1,"Available actions during Combat include 
 * Attack
 * Cast Spell
 * Dash - move at double speed
-
 * Disengage - avoid Opportunity Attacks
 * Dodge - any attack against you has disadvantage if you can see them, and make Dexterity Saving Throws with Advantage
 * Help - aid someone and they gain Advantage on next Ability Check you're helping them with. or aid in Attack so they gain Advantage.
@@ -48,26 +38,26 @@ Action,1,"Available actions during Combat include
 * Search - make Wisdom (Perception) or Intelligence (Investigation) Check
 * Use - if want to use more than one object in your turn
 * Other - improvise!",ph192,,,play
-Advantage / Disadvantage,1,"For Advantage, roll twice and take best score. For Disadvantage take worst. ",ph173,,,play
-Background,1,,,,https://www.dndbeyond.com/backgrounds,char
+Advantage / Disadvantage,1,"Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. 
+
+If some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.
+
+Can use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations. 
+",ph173,,,play
+Background,1,,ph,,https://www.dndbeyond.com/backgrounds,char
+Combat,1,"In addition to Basic rules,
+
+* Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon
+* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have Cover (see [Conditions])
+* Roll d20 twice if have Advantage or Disadvantage and take best/worst score
+* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
+* For damage roll, add [Ability Modifier] (same as for attack roll)","ph189+,194",,,play
 Conditions,1,"Alter capabilities in various ways.
 
 * Blinded
 * Charmed
 * Deafened
-* Exhaustion
-
-Due to starvation etc. Effects are cumulative. Long rests reduce level by 1. 
-
-
-| Level | Effect                                         |
-| ----------- | ----------- ||     1 | Disadvantage on ability checks                 |
-|     2 | Speed halved                                   |
-|     3 | Disadvantage on attack rolls and saving throws |
-|     4 | Hit point maximum halved                       |
-|     5 | Speed reduced to 0                             |
-|     6 | Death                                          |
-
+* Exhaustion - which see for table
 * Frightened
 * Grappled
 * Incapacitated
@@ -99,10 +89,22 @@ Damage Types,1,"Types of Damage include
 
 Can have Resistance to different Damage Types - damage is halved, or Vulnerability - damage is doubled.",ph196,,,play
 Difficulty Class (DC),1,"The difficulty of a task from 1 to 20 - used for Ability Checks, Saving Throws. Like Armor Class (AC).",ph174,,,play
-Flaws,1,,,,,char
-Inspiration,1,"DM can grant Inspiration when player does something in character, or inspiring. Player can spend it for Advantage on a roll, or give it to another character.",,,,play
+Exhaustion,1,"Due to starvation etc. Effects are cumulative. Long rests reduce level by 1. 
+
+
+| Level | Effect                                         |
+| ----------- | ----------- ||     1 | Disadvantage on ability checks                 |
+|     2 | Speed halved                                   |
+|     3 | Disadvantage on attack rolls and saving throws |
+|     4 | Hit point maximum halved                       |
+|     5 | Speed reduced to 0                             |
+|     6 | Death                                          |
+
+",ph290,,,play
+Flaws,1,,ph,,,char
+Inspiration,1,"DM can grant Inspiration when player does something in character, or inspiring. Player can spend it for Advantage on a roll, or give it to another character.",ph,,,play
 Proficiencies,1,Can have Proficiency in different weapons - during Combat can add Proficiency Bonus to Attack Rolls and Damage Rolls. ,ph173,,,char
-Proficiency Bonus,1,Value added to rolls when player is Proficient in a relevant skill. Based on player's Level - first level is +2.,ph173,,,char
+Proficiency Bonus,1,Value added to rolls when player is Proficient in a relevant skill. Based on player's Level - e.g. first level is +2.,ph173,,,char
 Saving Throw,1,"Roll d20 to resist spells, traps, poison, disease etc - Difficulty Class (DC) determined by effect causing it.",ph179,,,play
 Searching,1,Use a Wisdom (Perception) Ability Check. Must say specifically where are searching to find hidden things.,ph178,,,play
 Skills,1,"Each Ability Score covers a set of Skills you can be Proficient in, and referred to like Strength (Athletics). For Ability Checks can add Proficiency Bonus if a Skill is relevant.
@@ -135,23 +137,34 @@ Charisma
 * Performance
 * Persuasion
 ",ph174,,,char
-Alignment,2,,,,,char
-Bonds,2,,,,,char
+Alignment,2,,ph,,,char
+Bonds,2,,ph,,,char
+Bonus Action,2,"An additional action you take on your turn depending on various class features, spells, or other abilities - e.g. a Rogue can do an additional action due to their Cunning Action feature. ",ph189,,,play
 Carrying Capacity,2,Amount of weight you can carry - Speed is affected as you carry more.,ph176,,,char
-Cover,2,"Can hide behind things during Combat. Half Cover gives +2 AC. Three quarters gives +5, and Total Cover can't be attacked except by certain spells.",,,,play
+Combat,2,"In addition to Basic and Intermediate rules,
+
+* Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity Modifier
+* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)
+* If no weapon can use fists etc - on hit do Bludgeon damage of 1+Strength Modifier
+* Can move a distance up to your [Speed] AND take one [Action]. Can break up movement around action. Difficult terrain or obstructions takes up extra foot per foot moved. 
+* Can talk/gesture and interact with one object for free (e.g. drawing sword)
+* Take one [Bonus Action] if allowed
+* Each complete round lasts 6 seconds in the game world.
+","ph189+,194",,,play
+Cover,2,"Can hide behind things during Combat. Half Cover gives +2 AC. Three quarters gives +5, and Total Cover can't be attacked except by certain spells.",ph,,,play
 Crafting,2,"Can craft adventuring equipment, works of art. Must be Proficient with tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plat armor (1500gp) takes 300 days to craft alone. Others can help.",ph187,,,play
 Downtime,2,"Between adventures - spend money each day for lifestyle expenses. Can Craft items, eg armor, work at a Profession to earn money, Rest to recover from poisons, do Research to find information, Train to learn new Language or Tool Skill.",ph187,,,play
-Exhaustion,2,See Conditions,ph290,,,play
 Feats,2,,ph165,,,char
 Food / Water,2,"Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of Exhaustion. [has detailed rules]",ph185,,,play
 Habits,2,,,,,char
 Hiding,2,aka Stealth - make a Dexterity (Stealth) check when attempting to hide from enemies etc.,ph177,,,play
-Ideals,2,,,,,char
-Languages,2,,,,,char
+Ideals,2,,ph,,,char
+Initiative,2,See [Combat],ph189,,,play
+Languages,2,,ph,,,char
 Mannerisms,2,,,,,char
 Multiclassing,2,,ph163,,,char
 Passive Checks,2,"For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have Advantage, -5 if Disadvantage.",ph175,,,play
-Personality Traits,2,,,,,char
+Personality Traits,2,,ph,,,char
 Pet Peeves,2,,,,,char
 Quotes,2,,,,,char
 Rest,2,"Short Rests need at least an hour. Can roll Hit Dice n times, where n = your Level number - add that plus your Constitution Modifier each time to your Hit Points. 
@@ -159,8 +172,8 @@ Long Rests need at least 8 hours, and restore all Hit Points.
 Optionally, both require use of one Healer's Kit first. 
 
 You can use Downtime between adventures to recover from debilitating injury, disease, or poison. After 3 days of downtime can make DC 15 Constitution Saving Throw. On success can gain Advantage on Saving Throws against one disease or poison.",ph186-7,,,play
-Subclass,2,,,,,char
-Subrace,2,,,,,char
+Subclass,2,,ph,,,char
+Subrace,2,,ph,,,char
 Training,2,"Can train to learn new Language, Tool Skill Proficiency - must find instructor. Training lasts 250 days and costs 1gp per day.",ph187,,,play
 Travel,2,"Can travel at normal, fast, or slow pace. [table pg182] Can only do half speed in Difficult Terrain.",ph181,,,play
 Vices,2,,,,,char
