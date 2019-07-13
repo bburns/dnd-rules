@@ -30,8 +30,6 @@ function groupBy(arr, key) {
   return ret
 }
 
-
-
 // using https://github.com/remarkjs/remark-react
 function markdownToReact(md) {
   return (
@@ -49,11 +47,21 @@ function markdownToReact(md) {
 
 const rulesByLevel = groupBy(rules, 'level')
 
+const levelNames = {
+  0: "Basic",
+  1: "Intermediate",
+  2: "Advanced",
+  3: "Optional",
+}
+
 
 function Header() {
   return (
     <div className="app-header" role="banner">
-      <h1 className="h1"><img src={dragon} alt=""/>Dungeons &amp; Dragons Rules</h1>
+      <h1 className="h1">
+        <img src={dragon} alt=""/>
+        Dungeons &amp; Dragons Rules
+      </h1>
     </div>
   )
 }
@@ -64,7 +72,10 @@ function TableOfContents({ rulesByLevel }) {
     <div className="toc">
       {rulesByLevel.map(level => (
         <div className="toc-level">
-          <a className="toc-level-title" key={level.level} href={"#" + level.level}>Level {level.level}</a>
+          <a className="toc-level-title" key={level.level} href={"#" + level.level}>
+            {/* Level {level.level} */}
+            {levelNames[level.level]}
+          </a>
           <div className="toc-rules">
             {level.values.map(rule => (
               <a className="toc-rule" key={rule.name} href={"#" + idize(rule.name)}>
@@ -91,7 +102,10 @@ function Rules({ rulesByLevel }) {
 function Level({ level }) {
   return (
     <div>
-      <h2 className="body-level">Level {level.level}</h2>
+      <h2 className="body-level">
+        {/* Level {level.level} */}
+        {levelNames[level.level]}
+      </h2>
       <div className="body rule-list">
         {level.values.map(rule => <Rule key={rule.name} rule={rule} />)}
       </div>
