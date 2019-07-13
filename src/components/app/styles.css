@@ -27,21 +27,20 @@ li {
 
 
 .toc {
+  display: none;
   flex-basis: 14em;
   flex-shrink: 0;
   color: rgb(26, 188, 156);
-  display: block;
-  /* font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-size: 17px;
-  line-height: 21px;
+  /* font-size: 17px; */
+  /* line-height: 21px; */
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
-  /* text-decoration: none; */
-  /* text-decoration-color: rgb(26, 188, 156); */
-  /* text-decoration-line: none; */
-  /* text-decoration-style: solid; */
-  /* text-shadow: none; */
+}
+@media (min-width: 500px) {
+  .toc {
+    display: block;
+  }
 }
 .toc a {
   display: block;

@@ -61,19 +61,19 @@ function Header() {
 function TableOfContents({ rulesByLevel }) {
   return (
     <div className="toc">
-    {rulesByLevel.map(level => (
-      <div className="toc-level">
-        <a className="toc-level-title" key={level.level} href={"#" + level.level}>Level {level.level}</a>
-        <div className="toc-rules">
-          {level.values.map(rule => (
-            <a className="toc-rule" key={rule.name} href={"#" + idize(rule.name)}>
-              {rule.name}
-            </a>
-          ))}
+      {rulesByLevel.map(level => (
+        <div className="toc-level">
+          <a className="toc-level-title" key={level.level} href={"#" + level.level}>Level {level.level}</a>
+          <div className="toc-rules">
+            {level.values.map(rule => (
+              <a className="toc-rule" key={rule.name} href={"#" + idize(rule.name)}>
+                {rule.name}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
+      ))}
+    </div>
   )
 }
 
