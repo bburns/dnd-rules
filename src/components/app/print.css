@@ -1,0 +1,24 @@
+
+@page {
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
+  margin-left: 0.5in;
+  margin-right: 0.5in;
+}
+
+@media print {
+
+  .app-header {
+    background: white;
+    color: black;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+  }
+  .app-header h1 {
+    font-size: 1.5em;
+  }
+  .app-header img {
+    display: none;
+  }
+
+}

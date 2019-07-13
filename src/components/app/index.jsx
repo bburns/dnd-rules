@@ -6,7 +6,8 @@ import 'sanitize.css'
 
 import rules from '../../assets/rules.json'
 import './devhints.css'
-import './styles.css';
+import './styles.css'
+import './print.css'
 import dragon from '../../assets/dragon-192x192x256.png'
 
 
@@ -51,9 +52,9 @@ const rulesByLevel = groupBy(rules, 'level')
 
 function Header() {
   return (
-    <header className="app-header" role="banner">
+    <div className="app-header" role="banner">
       <h1 className="h1"><img src={dragon} alt=""/>Dungeons &amp; Dragons Rules</h1>
-    </header>
+    </div>
   )
 }
 
