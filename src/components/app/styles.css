@@ -120,6 +120,17 @@ li {
   /* overflow-y: scroll; */
 }
 
+.body-level {
+  font-size: 1.8em;
+  padding-bottom: 4px;
+}
+h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
 /* //. clean this stuff up */
 
 
@@ -131,21 +142,6 @@ li {
   font-weight: normal;
 }
 
-.body-level {
-  font-size: 1.8em;
-  padding-bottom: 4px;
-  border-bottom: 1px solid gray;
-}
-/* 
-.body-level::after {
-	margin-left: 24px;
-	content: '';
-	display: inline-block;
-	vertical-align: middle;
-	width: 100%;
-	height: 1px;
-	background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%);
-} */
 
 
 .body.rule-list {
@@ -169,6 +165,7 @@ li {
 
 .rule-list > .rule {
   margin-bottom: 1.5em;
+  float: left;
 }
 
 /* this was h3-section-list - cut it down */
@@ -198,11 +195,6 @@ li {
   /* padding:16px; */
   float:left;
   width:100%
- }
- @media(max-width:1264px) {
-  .rule-list>.rule {
-   /* padding:8px */
-  }
  }
  @media(min-width:769px) {
   .rule-list>.rule {
@@ -286,7 +278,7 @@ li {
    margin-top:0
   }
  }
- .rule>h3::after {
+ /* .rule>h3::after {
   margin-left:24px;
   content:'';
   display:inline-block;
@@ -294,7 +286,7 @@ li {
   width:100%;
   height:1px;
   background:linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%)
- }
+ } */
  .rule>.body>ul {
   margin:0;
   padding:0;

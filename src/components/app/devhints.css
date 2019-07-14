@@ -6,7 +6,7 @@ body {
  color:#345;
  font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
  font-size:14px;
- line-height: 1.4em;
+ /* line-height: 1.4em; */
 }
 
 /* subpixel smoothing types - see https://www.zachleat.com/web/font-smooth/ */
