@@ -133,7 +133,7 @@ function Rule({ rule }) {
       {(rule.description || rule.dnd) && 
         <div className="body">
           {markdownToReact(rule.description)}
-          <div className="rule-dnd">{rule.dnd}</div>
+          <div className="rule-reference-dnd">{rule.dnd}</div>
         </div>
       }
     </div>

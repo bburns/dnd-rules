@@ -151,7 +151,7 @@ h2 {
   display: inline;
 }
 
-.rule-dnd {
+.rule-reference-dnd {
   text-align: right;
   color: #ccc;
 }
@@ -181,42 +181,8 @@ h2 {
  }
  @media(min-width:769px) {
   .rule-list>.rule {
-   padding-top:0
-  }
- }
- @media(min-width:769px) {
-  .rule-list>.rule,
-  .rule-list.-two-column>.rule {
-   width:50%
-  }
- }
- .rule-list.-one-column>.rule {
-  width:100%
- }
- .rule-list.-one-column>.rule+.rule {
-  margin-top:16px
- }
- @media(min-width:769px) {
-  .rule-list.-three-column>.rule {
-   width:50%
-  }
- }
- @media(min-width:961px) {
-  .rule-list.-three-column>.rule {
-   width:33.33%
-  }
- }
- @media(min-width:769px) {
-  .rule-list.-left-reference>.rule {
-   width:50%
-  }
- }
- @media(min-width:961px) {
-  .rule-list.-left-reference>.rule {
-   width:66.67%
-  }
-  .rule-list.-left-reference>.rule:first-child {
-   width:33.33%
+   padding-top:0;
+   width:33%;
   }
  }
  
