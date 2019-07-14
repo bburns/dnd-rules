@@ -10,6 +10,9 @@ li {
 html, body {
   height: 100%;
 }
+body {
+  /* overflow-y: hidden; */
+}
 
 .app {
   height: 100%;
@@ -21,12 +24,12 @@ html, body {
   background: black;
   color: white;
   text-align: center;
-  /* height: 42px; */
-  /* position: fixed; */
-  /* top: 0; */
-  flex-basis: 42px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  height: 42px;
+  position: fixed;
+  top: 0;
+  /* flex-basis: 42px; */
+  /* flex-shrink: 0; */
+  /* flex-grow: 0; */
   width: 100%;
 }
 .app-header h1 {
@@ -39,6 +42,7 @@ html, body {
 }
 
 .app-contents {
+  margin-top: 42px;
   display: flex;
   flex-direction: row;
   /* position: fixed; */
