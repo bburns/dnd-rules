@@ -119,11 +119,6 @@ div {
   margin-left: 1em;
 }
 
-h2 {
-  border-bottom: 1px solid #ccc;
-}
-
-
 .app-rules-section {
   clear: both;
 }
@@ -131,6 +126,7 @@ h2 {
 .app-rules-section>h2 {
   font-size: 1.8em;
   padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
 }
 
 
@@ -163,7 +159,6 @@ h2 {
   padding: 0.5em 1em;
   margin-right: 1em;
 }
-
 
 .rule-body ul {
   margin-left: 1em;
