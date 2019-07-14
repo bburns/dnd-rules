@@ -113,7 +113,7 @@ function Rules({ rulesByLevel }) {
 
 function Level({ level }) {
   return (
-    <div>
+    <div className="app-rules-section">
       <h2 className="body-level">
         {/* Level {level.level} */}
         {levelNames[level.level]}
@@ -131,7 +131,7 @@ function Rule({ rule }) {
     <div key={rule.name} id={idize(rule.name)} className="rule">
       <h3>{rule.name}</h3>
       {(rule.description || rule.dnd) && 
-        <div className="body">
+        <div className="rule-body">
           {markdownToReact(rule.description)}
           <div className="rule-reference-dnd">{rule.dnd}</div>
         </div>
