@@ -152,7 +152,7 @@ function App() {
       <Header />
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
-        <div className="app-contents-main">
+        <div className="app-page">
           <Rules rulesByLevel={rulesByLevel} />
           <Footer />
         </div>
