@@ -1,0 +1,40 @@
+---------------------------------------------------------------------------# Basic #
+---------------------------------------------------------------------------
+
+The basic rules include simple character and combat mechanics, enough to get started with.
+
+
+---------------------------------------------------------------------------
+## Class ##
+---------------------------------------------------------------------------
+
+Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also. 
+
+type: char
+dnd: ph45
+
+# wikilinks in [] or [[]]? [[]] works automatically in orgmode! could even program the text in orgmode. ehh. make our own mode in atom? vstudio? yahhhh
+# grab name from header
+# can intersperse property values in the text
+# have comments that are ignored
+
+
+---------------------------------------------------------------------------
+## Combat (Basic) ##
+---------------------------------------------------------------------------
+
+Players and adversaries take turns -
+
+* Choose a target
+* Roll d20 for base [Attack Roll] score
+* Add [Proficiency Bonus] if [Proficient] with current weapon
+* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]
+* Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.
+
+See other sections for more advanced rules.
+
+# can have lists and tables as in markdown
+
+type: play
+dnd: ph189+,194
+

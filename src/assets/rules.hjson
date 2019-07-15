@@ -1,0 +1,616 @@
+[
+  {
+    aime: ""
+    description:
+      '''
+      Measures of different abilities: 
+
+      * Strength
+      * Dexterity
+      * Constitution
+      * Intelligence
+      * Wisdom
+      * Charisma
+
+      Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
+      '''
+    dnd: ph12,173
+    level: "0"
+    name: Ability Score
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.
+    dnd: ph45
+    level: "0"
+    name: Class
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Players and adversaries take turns -
+
+      * Choose a target
+      * Roll d20 for base [Attack Roll] score
+      * Add [Proficiency Bonus] if [Proficient] with current weapon
+      * If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]
+      * Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.
+
+      See other sections for more advanced rules.
+      '''
+    dnd: ph189+,194
+    level: "0"
+    name: Combat (Basic)
+    type: play
+    urls: ""
+  }
+  {
+    aime: pg30
+    description: Corresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan
+    dnd: ""
+    level: "0"
+    name: Culture
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Represent character's experience and determines their [Level]. Gain for monsters kills, significant actions etc. See table for when to advance a [Level].
+    dnd: ph15
+    level: "0"
+    name: Experience Points (XP)
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: These determine how many [Hit Points (HP)] a character has. Different [Class]es have different types of Hit Dice, e.g. d8, d10.
+    dnd: ph12
+    level: "0"
+    name: Hit Dice (HD)
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Represents health. At first level, Hit Points = max of [Hit Dice] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice] max +1 + Constitution Modifier (avoids randomness).
+
+      When reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]
+      '''
+    dnd: ph12,197
+    level: "0"
+    name: Hit Points (HP)
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Character Levels are based on [Experience Points (XP)] - as reach higher levels gain more abilities, skills, spells, etc.
+    dnd: ph15
+    level: "0"
+    name: Level
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
+    dnd: ph17
+    level: "0"
+    name: Race
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.
+    dnd: ph181
+    level: "0"
+    name: Speed
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.
+    dnd: ph174
+    level: "1"
+    name: Ability Check
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1
+    dnd: ph13,173
+    level: "1"
+    name: Ability Modifier
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Available actions during [Combat] include 
+      * Attack
+      * Cast Spell
+      * Dash - move at double speed
+      * Disengage - avoid [Opportunity Attacks]
+      * Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw]s with [Advantage]
+      * Help - aid someone and they gain [Advantage] on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.
+      * Hide - make Dexterity (Stealth) Ability Check to hide
+      * Ready - lets you act immediately on some trigger before start of your next turn
+      * Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check
+      * Use - if want to use more than one object in your turn
+      * Other - improvise!
+      '''
+    dnd: ph192
+    level: "1"
+    name: Action
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. 
+
+      If some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.
+
+      Can use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.
+      '''
+    dnd: ph173
+    level: "1"
+    name: Advantage / Disadvantage
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features], [Proficiencies], and [Languages]), and roleplaying suggestions. 
+
+      Each Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.
+
+      Also provides a package of starting [Equipment].
+      '''
+    dnd: ph125
+    level: "1"
+    name: Background
+    type: char
+    urls: https://www.dndbeyond.com/backgrounds
+  }
+  {
+    aime: ""
+    description:
+      '''
+      In addition to Basic rules,
+
+      * Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon
+      * Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]
+      * Roll d20 twice if have Advantage or Disadvantage and take best/worst score
+      * For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
+      * For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])
+      '''
+    dnd: ph189+,194
+    level: "1"
+    name: Combat (Intermediate)
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Alter capabilities in various ways.
+
+      * Blinded
+      * Charmed
+      * Deafened
+      * Exhaustion - see for table
+      * Frightened
+      * Grappled
+      * Incapacitated
+      * Invisible
+      * Paralyzed
+      * Petrified
+      * Poisoned
+      * Prone
+      * Restrained
+      * Stunned
+      * Unconscious
+
+      '''
+    dnd: ph290
+    level: "1"
+    name: Conditions
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Types of Damage include 
+
+
+      * Acid
+      * Bludgeoning - e.g. from a mace
+      * Cold
+      * Fire
+      * Force - magic
+      * Lightning
+      * Necrotic - withers matter and soul
+      * Piercing - e.g. teeth
+      * Poison
+      * Psychic
+      * Radiant - fire/spirit
+      * Slashing - e.g. sword
+      * Thunder - sound
+
+
+      Can have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.
+      '''
+    dnd: ph196
+    level: "1"
+    name: Damage Types
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.
+    dnd: ph174
+    level: "1"
+    name: Difficulty Class (DC)
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest]s reduce Exhaustion level by 1. 
+
+
+      | Level | Effect  |
+      | ----------- | ----------- |
+      |     1 | [Disadvantage] on [Ability Check]s                 |
+      |     2 | [Speed] halved                                   |
+      |     3 | [Disadvantage] on [Attack Rolls] and [Saving Throws] |
+      |     4 | [Hit Point] maximum halved                       |
+      |     5 | [Speed] reduced to 0                             |
+      |     6 | [Death]                                          |
+      '''
+    dnd: ph290
+    level: "1"
+    name: Exhaustion
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?
+    dnd: ph124
+    level: "1"
+    name: Flaws
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.
+    dnd: ph125
+    level: "1"
+    name: Inspiration
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier.
+    dnd: ph
+    level: "1"
+    name: Modifier
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.
+    dnd: ph173
+    level: "1"
+    name: Proficiencies
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.
+    dnd: ph173
+    level: "1"
+    name: Proficiency Bonus
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success.
+    dnd: ph179
+    level: "1"
+    name: Saving Throw
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.
+    dnd: ph178
+    level: "1"
+    name: Searching
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like "Strength (Athletics)". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.
+
+      | Ability      | Skills          |
+      |--------------|-----------------|
+      | Strength     | Athletics       |
+      | Constitution | (none)  |
+      | Dexterity    | Acrobatics      |
+      |              | Sleight of Hand |
+      |              | Stealth         |
+      | Intelligence | Arcana          |
+      |              | History         |
+      |              | Investigation   |
+      |              | Nature          |
+      |              | Religion        |
+      | Wisdom       | Animal Handling |
+      |              | Insight         |
+      |              | Medicine        |
+      |              | Perception      |
+      |              | Survival        |
+      | Charisma     | Deception       |
+      |              | Intimidation    |
+      |              | Performance     |
+      |              | Persuasion      |
+      '''
+    dnd: ph174
+    level: "1"
+    name: Skills
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
+    dnd: ph122
+    level: "2"
+    name: Alignment
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Connection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.
+    dnd: ph124
+    level: "2"
+    name: Bonds
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: An additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.
+    dnd: ph189
+    level: "2"
+    name: Bonus Action
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Amount of weight you can carry - [Speed] is affected as you carry more.
+    dnd: ph176
+    level: "2"
+    name: Carrying Capacity
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      In addition to Basic and Intermediate rules,
+
+      * Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier]
+      * Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)
+      * If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier]
+      * Can move a distance up to your [Speed] AND take one [Action]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. 
+      * Can talk/gesture and interact with one object for free (e.g. drawing a sword)
+      * Take one [Bonus Action] if allowed
+      * Each complete round lasts 6 seconds in the game world.
+      '''
+    dnd: ph189+,194
+    level: "2"
+    name: Combat (Advanced)
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
+    dnd: ph
+    level: "2"
+    name: Cover
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.
+    dnd: ph187
+    level: "2"
+    name: Crafting
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].
+    dnd: ph187
+    level: "2"
+    name: Downtime
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.
+    dnd: ph165
+    level: "2"
+    name: Feats
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).
+    dnd: ph185
+    level: "2"
+    name: Food / Water
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Just something to flesh out a character
+    dnd: none
+    level: "2"
+    name: Habits
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.
+    dnd: ph177
+    level: "2"
+    name: Hiding
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.
+    dnd: ph124
+    level: "2"
+    name: Ideals
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Determines order of turns taken in [Combat].
+    dnd: ph189
+    level: "2"
+    name: Initiative
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Default language is given by [Race], can learn others - see [Training].
+    dnd: ph123
+    level: "2"
+    name: Languages
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
+    dnd: ph163
+    level: "2"
+    name: Multiclassing
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].
+    dnd: ph175
+    level: "2"
+    name: Passive Checks
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.
+    dnd: ph123
+    level: "2"
+    name: Personality Traits
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description:
+      '''
+      Short Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. 
+
+      Long Rests need at least 8 hours, and restore all [Hit Points].
+
+      Optionally, both require use of one Healer's Kit first. 
+
+      You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.
+      '''
+    dnd: ph186-7
+    level: "2"
+    name: Rest
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Some [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
+    dnd: ph17
+    level: "2"
+    name: Subrace
+    type: char
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can train to learn new [Language], tool [Skill] [Proficiency] - must find instructor. Training lasts 250 days and costs 1gp per day.
+    dnd: ph187
+    level: "2"
+    name: Training
+    type: play
+    urls: ""
+  }
+  {
+    aime: ""
+    description: Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.
+    dnd: ph181
+    level: "2"
+    name: Travel
+    type: play
+    urls: ""
+  }
+]
