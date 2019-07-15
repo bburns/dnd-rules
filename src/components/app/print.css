@@ -8,6 +8,10 @@
 
 @media print {
 
+  div {
+    page-break-inside: avoid;
+  }
+  
   .app-header {
     background: white;
     color: black;
