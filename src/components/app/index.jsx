@@ -140,7 +140,7 @@ function Rule({ rule }) {
 }
 
 
-function App() {
+export default function() {
   // const [rules, setRules] = React.useState([])
   // React.useEffect(async () => {
   //   const data = await axios.get(url)
@@ -159,5 +159,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
