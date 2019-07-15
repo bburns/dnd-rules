@@ -10,7 +10,9 @@ Ability Score,0,"Measures of different abilities:
 
 Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.","ph12,173",,,char
 Class,0,"Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.",ph45,,,char
-Combat,0,"* Choose a target
+Combat (Basic),0,"Players and adversaries take turns -
+
+* Choose a target
 * Roll d20 for base [Attack Roll] score
 * Add [Proficiency Bonus] if [Proficient] with current weapon
 * If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]
@@ -51,7 +53,7 @@ Background,1,"Where character came from, how came to be an adventurer, their pla
 Each Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.
 
 Also provides a package of starting [Equipment].",ph125,,https://www.dndbeyond.com/backgrounds,char
-Combat,1,"In addition to Basic rules,
+Combat (Intermediate),1,"In addition to Basic rules,
 
 * Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon
 * Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]
@@ -115,41 +117,35 @@ Proficiencies,1,"Can have Proficiency in different weapons - during [Combat] can
 Proficiency Bonus,1,Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.,ph173,,,char
 Saving Throw,1,"Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success. ",ph179,,,play
 Searching,1,Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.,ph178,,,play
-Skills,1,"Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like ""Intelligence (History)"". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.
+Skills,1,"Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like ""Strength (Athletics)"". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.
 
-Strength
-* Athletics
-
-Dexterity
-* Acrobatics
-* Sleight of Hand
-* Stealth
-
-Intelligence
-* Arcana
-* History
-* Investigation
-* Nature
-* Religion
-
-Wisdom
-* Animal Handling
-* Insight
-* Medicine
-* Perception
-* Survival
-
-Charisma
-* Deception
-* Intimidation
-* Performance
-* Persuasion
+| Ability      | Skills          |
+|--------------|-----------------|
+| Strength     | Athletics       |
+| Constitution | (none)  |
+| Dexterity    | Acrobatics      |
+|              | Sleight of Hand |
+|              | Stealth         |
+| Intelligence | Arcana          |
+|              | History         |
+|              | Investigation   |
+|              | Nature          |
+|              | Religion        |
+| Wisdom       | Animal Handling |
+|              | Insight         |
+|              | Medicine        |
+|              | Perception      |
+|              | Survival        |
+| Charisma     | Deception       |
+|              | Intimidation    |
+|              | Performance     |
+|              | Persuasion      |
 ",ph174,,,char
 Alignment,2,"Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc. ",ph122,,,char
 Bonds,2,"Connection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.",ph124,,,char
 Bonus Action,2,"An additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature. ",ph189,,,play
 Carrying Capacity,2,Amount of weight you can carry - [Speed] is affected as you carry more.,ph176,,,char
-Combat,2,"In addition to Basic and Intermediate rules,
+Combat (Advanced),2,"In addition to Basic and Intermediate rules,
 
 * Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier]
 * Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)
@@ -167,17 +163,15 @@ Food / Water,2,"Need one pound food and one gallon water/day, two gallons if hot
 Habits,2,Just something to flesh out a character,none,,,char
 Hiding,2,aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.,ph177,,,play
 Ideals,2,"Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.",ph124,,,char
-Initiative,2,Determines order of [Combat] turns.,ph189,,,play
+Initiative,2,Determines order of turns taken in [Combat].,ph189,,,play
 Languages,2,"Default language is given by [Race], can learn others - see [Training].",ph123,,,char
-Mannerisms,2,Something to flesh out character,none,,,char
 Multiclassing,2,Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.,ph163,,,char
 Passive Checks,2,"For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].",ph175,,,play
-Personality Traits,2,"Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions.",ph123,,,char
-Pet Peeves,2,Just something to flesh out a character,none,,,char
-Quotes,2,"A character's favorite sayings, inspiring words, etc.",none,,,char
+Personality Traits,2,"Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.",ph123,,,char
 Rest,2,"Short Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. 
 
 Long Rests need at least 8 hours, and restore all [Hit Points].
+
 Optionally, both require use of one Healer's Kit first. 
 
 You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.",ph186-7,,,play
