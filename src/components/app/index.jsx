@@ -36,7 +36,7 @@ function markdownToReact(md) {
     <div id="preview">
       {
         unified()
-          .use(parse)
+          .use(parse) // remark-parse
           // .use(remarkGridTables)
           .use(remark2react)
           .processSync(md).contents
