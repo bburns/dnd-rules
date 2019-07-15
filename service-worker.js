@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dnd-rules/precache-manifest.504407be2f5d200b59f44c7320484177.js"
+  "/dnd-rules/precache-manifest.d2c074406c7c86a3ecbf618275edaa56.js"
 );
 
 self.addEventListener('message', (event) => {

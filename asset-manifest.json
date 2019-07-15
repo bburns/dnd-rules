@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dnd-rules/static/css/main.c6b46a26.chunk.css",
-    "main.js": "/dnd-rules/static/js/main.4f2a3e26.chunk.js",
-    "main.js.map": "/dnd-rules/static/js/main.4f2a3e26.chunk.js.map",
+    "main.css": "/dnd-rules/static/css/main.7e35199b.chunk.css",
+    "main.js": "/dnd-rules/static/js/main.60bc8487.chunk.js",
+    "main.js.map": "/dnd-rules/static/js/main.60bc8487.chunk.js.map",
     "runtime~main.js": "/dnd-rules/static/js/runtime~main.ee0ad39f.js",
     "runtime~main.js.map": "/dnd-rules/static/js/runtime~main.ee0ad39f.js.map",
     "static/css/2.bb342caa.chunk.css": "/dnd-rules/static/css/2.bb342caa.chunk.css",
     "static/js/2.5025555a.chunk.js": "/dnd-rules/static/js/2.5025555a.chunk.js",
     "static/js/2.5025555a.chunk.js.map": "/dnd-rules/static/js/2.5025555a.chunk.js.map",
     "index.html": "/dnd-rules/index.html",
-    "precache-manifest.504407be2f5d200b59f44c7320484177.js": "/dnd-rules/precache-manifest.504407be2f5d200b59f44c7320484177.js",
+    "precache-manifest.d2c074406c7c86a3ecbf618275edaa56.js": "/dnd-rules/precache-manifest.d2c074406c7c86a3ecbf618275edaa56.js",
     "service-worker.js": "/dnd-rules/service-worker.js",
     "static/css/2.bb342caa.chunk.css.map": "/dnd-rules/static/css/2.bb342caa.chunk.css.map",
-    "static/css/main.c6b46a26.chunk.css.map": "/dnd-rules/static/css/main.c6b46a26.chunk.css.map"
+    "static/css/main.7e35199b.chunk.css.map": "/dnd-rules/static/css/main.7e35199b.chunk.css.map"
   }
 }
