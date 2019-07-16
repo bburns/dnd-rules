@@ -7,13 +7,13 @@
 ---------------------------------------------------------------------------
 
 Measures of different abilities: 
+
 * Strength
 * Dexterity
 * Constitution
 * Intelligence
 * Wisdom
 * Charisma
-
 
 Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
 
