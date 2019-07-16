@@ -1,5 +1,6 @@
 // read json, spit out as formatted neomem text
-//. initially this will also translate csvjson format to tree structure
+// this version is specific to the dnd rules ontology
+// also translates csvjson format to tree structure by grouping on Level value (0,1,2)
 
 const fs = require('fs-extra')
 
@@ -16,7 +17,7 @@ for (let rule of rules) {
     const groupName = groupNames[groupValue]
     console.log(line)
     console.log('# ' + groupName + ' #')
-    console.log(line)  
+    console.log(line)
     console.log()
   }
   console.log(line)
