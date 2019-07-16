@@ -25,5 +25,10 @@ for (let rule of rules) {
   console.log()
   console.log(rule.description)
   console.log()
+  if (rule.dnd) console.log('dnd: ' + rule.dnd)
+  if (rule.aime) console.log('aime: ' + rule.aime)
+  if (rule.type) console.log('subtype: ' + rule.type)
+  if (rule.urls) console.log('urls: ' + rule.urls)
+  console.log()
   console.log()
 }
