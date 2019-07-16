@@ -3,19 +3,19 @@
 
 const fs = require('fs-extra')
 
-// const packageObj = fs.readJsonSync('./package.json')
-// console.log(packageObj.version) 
+const groupBy = 'level'
+const groupNames = ['Basic', 'Intermediate', 'Advanced']
 
 const rules = fs.readJsonSync('./src/assets/rules.json')
 const line = '---------------------------------------------------------------------------'
 
-let level = -1
-const levelNames = ['Basic', 'Intermediate', 'Advanced']
+let groupValue = undefined
 for (let rule of rules) {
-  if (rule.level !== level) {
-    level = rule.level
+  if (rule[groupBy] !== groupValue) {
+    groupValue = rule[groupBy]
+    const groupName = groupNames[groupValue]
     console.log(line)
-    console.log('# ' + levelNames[level] + ' #')
+    console.log('# ' + groupName + ' #')
     console.log(line)  
     console.log()
   }
