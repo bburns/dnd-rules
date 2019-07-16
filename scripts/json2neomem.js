@@ -9,10 +9,21 @@ const fs = require('fs-extra')
 const rules = fs.readJsonSync('./src/assets/rules.json')
 const line = '---------------------------------------------------------------------------'
 
+let level = -1
+const levelNames = ['Basic', 'Intermediate', 'Advanced']
 for (let rule of rules) {
-  // console.log(rule)
+  if (rule.level !== level) {
+    level = rule.level
+    console.log(line)
+    console.log('# ' + levelNames[level] + ' #')
+    console.log(line)  
+    console.log()
+  }
   console.log(line)
-  console.log(rule.name)
+  console.log('## ' + rule.name + ' ##')
   console.log(line)
-
+  console.log()
+  console.log(rule.description)
+  console.log()
+  console.log()
 }
