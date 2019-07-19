@@ -10,7 +10,9 @@ const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
 parser.feed(`-----
 trinity
 -----
+type: person
 nickname: ducky
+height: 6ft
 `)
 
 // parser.feed(`
