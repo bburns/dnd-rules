@@ -16,6 +16,12 @@ height: 6ft
 
 so trinity aka ducky goes to sunnydale high school.
 
+--------
+neo
+--------
+height: 7ft
+neo is 'the one'
+
 `)
 
 // parser.feed(`
@@ -31,3 +37,6 @@ so trinity aka ducky goes to sunnydale high school.
 console.log('results', parser.results.length)
 console.log(parser.results[0]) // [[[[ "foo" ],"\n" ]]]
 // console.log(JSON.stringify(parser.results)) // [[[[ "foo" ],"\n" ]]]
+const s = parser.results[0]
+console.log(JSON.parse(s))
+

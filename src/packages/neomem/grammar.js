@@ -5,6 +5,9 @@ function id(x) { return x[0]; }
 var grammar = {
     Lexer: undefined,
     ParserRules: [
+    {"name": "main$ebnf$1", "symbols": []},
+    {"name": "main$ebnf$1", "symbols": ["main$ebnf$1", "block"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "main", "symbols": ["main$ebnf$1"], "postprocess": d=>`[${d.join(', ')}]`},
     {"name": "block", "symbols": ["line", "name", "line", "props", "contents"], "postprocess": d=>`{${d[1]}, ${d[3]}, ${d[4]}}`},
     {"name": "line$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "line$ebnf$1", "symbols": []},
@@ -23,9 +26,9 @@ var grammar = {
     {"name": "prop", "symbols": ["prop$ebnf$1", /[:]/, "prop$ebnf$2", {"literal":"\n"}], "postprocess": d => `"${d[0].join('').trim()}":"${d[2].join('').trim()}"`},
     {"name": "contents$ebnf$1", "symbols": [/[^:]/]},
     {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", /[^:]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", {"literal":"\n"}], "postprocess": d => `"description": "${d[0].join('')}"`}
+    {"name": "contents", "symbols": ["contents$ebnf$1", {"literal":"\n"}], "postprocess": d => `"description": "${d[0].join('').trim()}"`}
 ]
-  , ParserStart: "block"
+  , ParserStart: "main"
 }
 if (typeof module !== 'undefined'&& typeof module.exports !== 'undefined') {
    module.exports = grammar;
