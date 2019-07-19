@@ -5,9 +5,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "parser": "npm run parser:build && npm run parser:test",
+    "parser:build": "nearleyc src/packages/neomem/grammar.ne -o src/packages/neomem/grammar.js",
+    "parser:test": "node src/packages/neomem/testGrammar.js",
     "//predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "//prepare": "csvtojson \"data/Rules-Rules by Level.csv\" > src/assets/rules.json",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
