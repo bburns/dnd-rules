@@ -16,8 +16,9 @@ height: 6ft
 
 so trinity aka ducky goes to sunnydale high school.
 
+
 --------
-neo
+# Neo #
 --------
 height: 7ft
 neo is 'the one'
