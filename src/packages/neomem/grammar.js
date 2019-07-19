@@ -23,6 +23,9 @@ var grammar = {
     {"name": "name$ebnf$1", "symbols": [/[a-zA-Z0-9#'.,!@&() ]/]},
     {"name": "name$ebnf$1", "symbols": ["name$ebnf$1", /[a-zA-Z0-9#'.,!@&() ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "name", "symbols": ["name$ebnf$1", {"literal":"\n"}], "postprocess": d => `"name":"${d[0].join('')}"`},
+    {"name": "contents$ebnf$1", "symbols": [/[^:]/]},
+    {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", /[^:]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "contents", "symbols": ["contents$ebnf$1", {"literal":"\n"}], "postprocess": d => `"description": "${d[0].join('').trim()}"`},
     {"name": "props$ebnf$1", "symbols": []},
     {"name": "props$ebnf$1", "symbols": ["props$ebnf$1", "prop"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "props", "symbols": ["props$ebnf$1"], "postprocess": d=>d[0].join(', ')},
@@ -30,10 +33,7 @@ var grammar = {
     {"name": "prop$ebnf$1", "symbols": ["prop$ebnf$1", /[a-z]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "prop$ebnf$2", "symbols": [/[a-z0-9 ]/]},
     {"name": "prop$ebnf$2", "symbols": ["prop$ebnf$2", /[a-z0-9 ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "prop", "symbols": ["prop$ebnf$1", /[:]/, "prop$ebnf$2", {"literal":"\n"}], "postprocess": d => `"${d[0].join('').trim()}":"${d[2].join('').trim()}"`},
-    {"name": "contents$ebnf$1", "symbols": [/[^:]/]},
-    {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", /[^:]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", {"literal":"\n"}], "postprocess": d => `"description": "${d[0].join('').trim()}"`}
+    {"name": "prop", "symbols": ["prop$ebnf$1", /[:]/, "prop$ebnf$2", {"literal":"\n"}], "postprocess": d => `"${d[0].join('').trim()}":"${d[2].join('').trim()}"`}
 ]
   , ParserStart: "main"
 }

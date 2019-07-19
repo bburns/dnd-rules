@@ -13,8 +13,8 @@ trinity
 type: person
 nickname: ducky
 height: 6ft
-
 so trinity aka ducky goes to sunnydale high school.
+
 
 
 --------
@@ -38,6 +38,6 @@ neo is 'the one'
 console.log('results', parser.results.length)
 console.log(parser.results[0]) // [[[[ "foo" ],"\n" ]]]
 // console.log(JSON.stringify(parser.results)) // [[[[ "foo" ],"\n" ]]]
-const s = parser.results[0]
-console.log(JSON.parse(s))
+// const s = parser.results[0]
+// console.log(JSON.parse(s))
 
