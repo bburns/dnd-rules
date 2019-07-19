@@ -13,6 +13,9 @@ trinity
 type: person
 nickname: ducky
 height: 6ft
+
+so trinity aka ducky goes to sunnydale high school.
+
 `)
 
 // parser.feed(`

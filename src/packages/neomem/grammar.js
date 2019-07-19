@@ -5,7 +5,7 @@ function id(x) { return x[0]; }
 var grammar = {
     Lexer: undefined,
     ParserRules: [
-    {"name": "block", "symbols": ["line", "name", "line", "props"], "postprocess": d=>`{${d[1]}, ${d[3]}}`},
+    {"name": "block", "symbols": ["line", "name", "line", "props", "contents"], "postprocess": d=>`{${d[1]}, ${d[3]}, ${d[4]}}`},
     {"name": "line$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "line$ebnf$1", "symbols": []},
     {"name": "line$ebnf$1", "symbols": ["line$ebnf$1", {"literal":"-"}], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
@@ -20,7 +20,10 @@ var grammar = {
     {"name": "prop$ebnf$1", "symbols": ["prop$ebnf$1", /[a-z]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "prop$ebnf$2", "symbols": [/[a-z0-9 ]/]},
     {"name": "prop$ebnf$2", "symbols": ["prop$ebnf$2", /[a-z0-9 ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "prop", "symbols": ["prop$ebnf$1", /[:]/, "prop$ebnf$2", {"literal":"\n"}], "postprocess": d => `"${d[0].join('').trim()}":"${d[2].join('').trim()}"`}
+    {"name": "prop", "symbols": ["prop$ebnf$1", /[:]/, "prop$ebnf$2", {"literal":"\n"}], "postprocess": d => `"${d[0].join('').trim()}":"${d[2].join('').trim()}"`},
+    {"name": "contents$ebnf$1", "symbols": [/[^:]/]},
+    {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", /[^:]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "contents", "symbols": ["contents$ebnf$1", {"literal":"\n"}], "postprocess": d => `"description": "${d[0].join('')}"`}
 ]
   , ParserStart: "block"
 }
