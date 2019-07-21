@@ -25,8 +25,7 @@ var grammar = {
     {"name": "name", "symbols": ["name$ebnf$1", {"literal":"\n"}], "postprocess": d => `"name":"${d[0].join('')}"`},
     {"name": "contents$ebnf$1", "symbols": [/./]},
     {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", /./], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents$string$1", "symbols": [{"literal":"\n"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", "contents$string$1"], "postprocess": d => `"description": "${d[0].join('').trim()}"`}
+    {"name": "contents", "symbols": ["contents$ebnf$1", "line"], "postprocess": d => `"description": "${d[0].join('').trim()}"`}
 ]
   , ParserStart: "main"
 }

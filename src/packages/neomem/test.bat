@@ -1,0 +1,1 @@
+nearley-test grammar.js %* 
