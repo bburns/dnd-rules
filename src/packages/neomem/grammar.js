@@ -15,23 +15,24 @@ var grammar = {
     {"name": "main$ebnf$1", "symbols": []},
     {"name": "main$ebnf$1", "symbols": ["main$ebnf$1", "block"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "main", "symbols": ["main$ebnf$1"], "postprocess": d=>`[${d.join(', ')}]`},
-    {"name": "block", "symbols": ["_", "dashes", "name", "dashes", "contents"], "postprocess": d=>`{${d[2]}, ${d[4]}}`},
-    {"name": "dashes$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
-    {"name": "dashes$ebnf$1", "symbols": []},
-    {"name": "dashes$ebnf$1", "symbols": ["dashes$ebnf$1", {"literal":"-"}], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "dashes", "symbols": ["dashes$string$1", "dashes$ebnf$1", {"literal":"\n"}], "postprocess": d=>null},
-    {"name": "name$ebnf$1", "symbols": [/[#a-zA-Z0-9'.,!@&(): ]/]},
-    {"name": "name$ebnf$1", "symbols": ["name$ebnf$1", /[#a-zA-Z0-9'.,!@&(): ]/], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "name", "symbols": ["name$ebnf$1", {"literal":"\n"}], "postprocess": d => `"name":"${d[0].join('')}"`},
+    {"name": "block", "symbols": ["_", "line", "name", "line", "contents"], "postprocess": d=>`{${d[2]}, ${d[4]}}`},
+    {"name": "line$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
+    {"name": "line$ebnf$1", "symbols": []},
+    {"name": "line$ebnf$1", "symbols": ["line$ebnf$1", {"literal":"-"}], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "line", "symbols": ["line$string$1", "line$ebnf$1", /[\n]/], "postprocess": d=>null},
+    {"name": "name$ebnf$1", "symbols": [/./]},
+    {"name": "name$ebnf$1", "symbols": ["name$ebnf$1", /./], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
+    {"name": "name", "symbols": ["name$ebnf$1", /[\n]/], "postprocess":  
+        d => `"name":"${d[0].join('')}"` 
+        },
     {"name": "char", "symbols": [/./]},
     {"name": "char", "symbols": [/[\n]/]},
     {"name": "contents$ebnf$1", "symbols": []},
     {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", "char"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", "contents$string$1"], "postprocess":  
+    {"name": "contents", "symbols": ["contents$ebnf$1", "line"], "postprocess":  
         function(d) {
-          const value = d[0]
-          return `"description": "${d[0].join('')}"` 
+          // const value = d[0]
+          return `"description": "${d[0].join('').trim()}"` 
         }
         },
     {"name": "props$ebnf$1", "symbols": []},

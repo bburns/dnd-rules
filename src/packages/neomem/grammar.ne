@@ -16,38 +16,47 @@ main -> block:* {% d=>`[${d.join(', ')}]` %}
 # ----------------------------------------------------
 # block
 # ----------------------------------------------------
-# block -> _ dashes name dashes props contents {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
-# block -> _ dashes name dashes contents props {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
-block -> _ dashes name dashes contents {% d=>`{${d[2]}, ${d[4]}}` %}
+# block -> _ line name line props contents {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
+# block -> _ line name line contents props {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
+block -> _ line name line contents {% d=>`{${d[2]}, ${d[4]}}` %}
 
 
 # ----------------------------------------------------
-# dashes
+# line
 # ----------------------------------------------------
-dashes -> "----" "-":* "\n"   {% d=>null %}
+line -> "----" "-":* [\n]   {% d=>null %}
 
 
 # ----------------------------------------------------
 # name
 # ----------------------------------------------------
-name -> [#a-zA-Z0-9'.,!@&(): ]:+ "\n"   {% d => `"name":"${d[0].join('')}"` %}
+# will want to somehow convert the leading ##'s to indentation level / parentId etc
+
+# name -> [#a-zA-Z0-9'.,!@&(): ]:+ "\n"   {% d => `"name":"${d[0].join('')}"` %}
+# name -> [#a-zA-Z0-9'.,!@&(): ]:+ "\n"   
+
+name -> .:+ [\n]
+
+{% 
+  d => `"name":"${d[0].join('')}"` 
+%}
 
 
 # ----------------------------------------------------
 # contents
 # ----------------------------------------------------
 # contents -> (. | [\n]):* line  {% d => `"description": "${d[0].join('').trim()}"` %}
-# contents -> (.:* [\n]):* dashes
+# contents -> (.:* [\n]):* line
 
 # paragraph -> .:* [\n]   {% null %}
-# contents -> paragraph:* dashes
+# contents -> paragraph:* line
 
 char -> . | [\n]
-contents -> char:* "----"
+contents -> char:* line
 
 {% 
   function(d) {
-    const value = d[0]
+    // const value = d[0]
     return `"description": "${d[0].join('').trim()}"` 
   }
 %}
