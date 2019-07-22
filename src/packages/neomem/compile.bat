@@ -1,1 +1,1 @@
-nearleyc grammar.ne -o grammar.js 
+@nearleyc grammar.ne -o grammar.js 
