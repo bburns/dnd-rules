@@ -28,7 +28,7 @@ var grammar = {
     {"name": "main$ebnf$1", "symbols": ["main$ebnf$1", "block"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "main", "symbols": ["main$ebnf$1"], "postprocess": d=>`[${d.join(', ')}]`},
     {"name": "block", "symbols": ["_", (lexer.has("line") ? {type: "line"} : line), "name", (lexer.has("line") ? {type: "line"} : line), "contents"], "postprocess": d=>`{${d[2]}, ${d[4]}}`},
-    {"name": "line", "symbols": [(lexer.has("line") ? {type: "line"} : line), /[\n]/]},
+    {"name": "line", "symbols": [(lexer.has("line") ? {type: "line"} : line)], "postprocess": d=>null},
     {"name": "name$ebnf$1", "symbols": [/./]},
     {"name": "name$ebnf$1", "symbols": ["name$ebnf$1", /./], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "name", "symbols": ["name$ebnf$1", /[\n]/], "postprocess":  
