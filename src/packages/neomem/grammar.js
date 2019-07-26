@@ -2,8 +2,20 @@
 // http://github.com/Hardmath123/nearley
 (function () {
 function id(x) { return x[0]; }
+
+
+const moo = require('moo')
+
+let lexer = moo.compile({
+    //space: {match: /\s+/, lineBreaks: true},
+    //true: 'true',
+    //false: 'false',
+    //null: 'null',
+    line: { match: /----*\n/ }
+})
+
 var grammar = {
-    Lexer: undefined,
+    Lexer: lexer,
     ParserRules: [
     {"name": "_$ebnf$1", "symbols": []},
     {"name": "_$ebnf$1", "symbols": ["_$ebnf$1", "wschar"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
@@ -15,11 +27,8 @@ var grammar = {
     {"name": "main$ebnf$1", "symbols": []},
     {"name": "main$ebnf$1", "symbols": ["main$ebnf$1", "block"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "main", "symbols": ["main$ebnf$1"], "postprocess": d=>`[${d.join(', ')}]`},
-    {"name": "block", "symbols": ["_", "line", "name", "line", "contents"], "postprocess": d=>`{${d[2]}, ${d[4]}}`},
-    {"name": "line$string$1", "symbols": [{"literal":"-"}, {"literal":"-"}, {"literal":"-"}, {"literal":"-"}], "postprocess": function joiner(d) {return d.join('');}},
-    {"name": "line$ebnf$1", "symbols": []},
-    {"name": "line$ebnf$1", "symbols": ["line$ebnf$1", {"literal":"-"}], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "line", "symbols": ["line$string$1", "line$ebnf$1", /[\n]/], "postprocess": d=>null},
+    {"name": "block", "symbols": ["_", (lexer.has("line") ? {type: "line"} : line), "name", (lexer.has("line") ? {type: "line"} : line), "contents"], "postprocess": d=>`{${d[2]}, ${d[4]}}`},
+    {"name": "line", "symbols": [(lexer.has("line") ? {type: "line"} : line), /[\n]/]},
     {"name": "name$ebnf$1", "symbols": [/./]},
     {"name": "name$ebnf$1", "symbols": ["name$ebnf$1", /./], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "name", "symbols": ["name$ebnf$1", /[\n]/], "postprocess":  
@@ -29,7 +38,7 @@ var grammar = {
     {"name": "char", "symbols": [/[\n]/]},
     {"name": "contents$ebnf$1", "symbols": []},
     {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", "char"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", "line"], "postprocess":  
+    {"name": "contents", "symbols": ["contents$ebnf$1", (lexer.has("line") ? {type: "line"} : line)], "postprocess":  
         function(d) {
           // const value = d[0]
           return `"description": "${d[0].join('').trim()}"` 
