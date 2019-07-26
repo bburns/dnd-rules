@@ -35,7 +35,10 @@ var grammar = {
     {"name": "name", "symbols": ["name$ebnf$1", /[\n]/], "postprocess":  
         d => `"name":"${d[0].join('')}"` 
         },
-    {"name": "contents", "symbols": [(lexer.has("words") ? {type: "words"} : words), {"literal":"----"}]},
+    {"name": "contents", "symbols": [(lexer.has("words") ? {type: "words"} : words)], "postprocess":  
+        // d => `"description": "${d[0].join('').trim()}"` 
+        d => `"description": "${d[0].text.trim()}"` 
+        },
     {"name": "props$ebnf$1", "symbols": []},
     {"name": "props$ebnf$1", "symbols": ["props$ebnf$1", "prop"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "props", "symbols": ["props$ebnf$1"], "postprocess": 

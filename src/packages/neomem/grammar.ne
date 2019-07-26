@@ -76,12 +76,11 @@ name -> .:+ [\n]
 # # contents -> char:* %line [\n]:*
 # contents -> %words line
 contents -> %words
-#  %line
 
-# {% 
-  # //d => `"description": "${d[0].join('').trim()}"` 
-  # d => 312312
-# %}
+{% 
+  // d => `"description": "${d[0].join('').trim()}"` 
+  d => `"description": "${d[0].text.trim()}"` 
+%}
 
 
 # ----------------------------------------------------
