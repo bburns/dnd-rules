@@ -11,7 +11,8 @@ let lexer = moo.compile({
     //true: 'true',
     //false: 'false',
     //null: 'null',
-    line: { match: /----*\n/ }
+    line: { match: /----*\n/ },
+    words: { match: /[^]+/, lineBreaks: true },
 })
 
 var grammar = {
@@ -34,16 +35,7 @@ var grammar = {
     {"name": "name", "symbols": ["name$ebnf$1", /[\n]/], "postprocess":  
         d => `"name":"${d[0].join('')}"` 
         },
-    {"name": "char", "symbols": [/./]},
-    {"name": "char", "symbols": [/[\n]/]},
-    {"name": "contents$ebnf$1", "symbols": []},
-    {"name": "contents$ebnf$1", "symbols": ["contents$ebnf$1", "char"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
-    {"name": "contents", "symbols": ["contents$ebnf$1", (lexer.has("line") ? {type: "line"} : line)], "postprocess":  
-        function(d) {
-          // const value = d[0]
-          return `"description": "${d[0].join('').trim()}"` 
-        }
-        },
+    {"name": "contents", "symbols": [(lexer.has("words") ? {type: "words"} : words), {"literal":"----"}]},
     {"name": "props$ebnf$1", "symbols": []},
     {"name": "props$ebnf$1", "symbols": ["props$ebnf$1", "prop"], "postprocess": function arrpush(d) {return d[0].concat([d[1]]);}},
     {"name": "props", "symbols": ["props$ebnf$1"], "postprocess": 

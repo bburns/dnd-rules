@@ -11,7 +11,8 @@ let lexer = moo.compile({
     //true: 'true',
     //false: 'false',
     //null: 'null',
-    line: { match: /----*\n/ }
+    line: { match: /----*\n/ },
+    words: { match: /[^]+/, lineBreaks: true },
 })
 
 %}
@@ -69,16 +70,18 @@ name -> .:+ [\n]
 # paragraph -> .:* [\n]   {% null %}
 # contents -> paragraph:* line
 
-char -> . | [\n]
-# contents -> char:* line
-contents -> char:* %line
+# char -> . | [\n]
+# # contents -> char:* line
+# contents -> char:* %line
+# # contents -> char:* %line [\n]:*
+# contents -> %words line
+contents -> %words
+#  %line
 
-{% 
-  function(d) {
-    // const value = d[0]
-    return `"description": "${d[0].join('').trim()}"` 
-  }
-%}
+# {% 
+  # //d => `"description": "${d[0].join('').trim()}"` 
+  # d => 312312
+# %}
 
 
 # ----------------------------------------------------
