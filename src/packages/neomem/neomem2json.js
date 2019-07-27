@@ -12,25 +12,55 @@ const lines = s.split('\n')
 
 // const states = {}
 
-let state = 0
 
 // lines.forEach(line => {
 //   console.log(line)
 // })
 
-const reg = /foo/
+const regexps = {
+  dashes: /----+/,
+}
 
+let state = 'start'
+let obj = {}
+
+const objs = []
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i]
-  const lineType = getLineType(line)
-  console.log(line, lineType)
+  const linetype = getLineType(line)
+  console.log(line, linetype)
+  if (state === 'start') {
+    if (linetype === 'dashes') {
+      state = 'inheader'
+    }
+  } else if (state === 'inheader') {
+    if (linetype === 'text') {
+      state = 'outheader'
+      obj.name = line //. strip #'s
+    }
+  } else if (state === 'outheader') {
+    if (linetype === 'dashes') {
+      state = 'incontents'
+    }
+  } else if (state === 'incontents') {
+    if (linetype === 'dashes') {
+      state = 'inheader'
+      console.log(obj)
+      obj = {}
+    } else {
+      obj.contents += line + '\n'
+    }
+  }
 }
 
 
 // get type of line based on regexp and current state
 function getLineType(line, state) {
-  const lineType = reg.test(line)
-  return lineType
+  let linetype = 'text'
+  if (regexps.dashes.test(line)) {
+    linetype = 'dashes'
+  }
+  return linetype
 }
 
 
