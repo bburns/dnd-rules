@@ -46,6 +46,8 @@ for (let i = 0; i < lines.length; i++) {
   } else if (state === 'inContents') {
     if (linetype === 'dashes') {
       state = 'startHeader'
+      // finish object
+      if (!obj.id) obj.id = encodeURI(obj.name.replace(/ /g, '-'))
       objs.push(obj)
       obj = createObj()
     } else if (linetype === 'prop') {
@@ -65,6 +67,10 @@ objs.push(obj)
 
 console.log(objs)
 
+
+// function esc(s) {
+//   encodeURI
+// }
 
 // get type of line based on regexp and current state
 function getLineType(line, state) {
