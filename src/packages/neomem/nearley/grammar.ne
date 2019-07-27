@@ -2,22 +2,23 @@
 # parse with nearley
 # converts neomem text to json string
 
-@{%
+# @{%
 
-const moo = require('moo')
+# const moo = require('moo')
 
-let lexer = moo.compile({
-    //space: {match: /\s+/, lineBreaks: true},
-    //true: 'true',
-    //false: 'false',
-    //null: 'null',
-    line: { match: /----*\n/ },
-    words: { match: /[^]+/, lineBreaks: true },
-})
+# let lexer = moo.compile({
+#     //space: {match: /\s+/, lineBreaks: true},
+#     //true: 'true',
+#     //false: 'false',
+#     //null: 'null',
+#     line: { match: /----*\n/ },
+#     row: { match: /[.]+/, lineBreak: false },
+#     words: { match: /[^]+/, lineBreaks: true },
+# })
 
-%}
+# %}
 
-@lexer lexer
+# @lexer lexer
 
 
 @builtin "whitespace.ne" # `_` means arbitrary amount of whitespace
@@ -35,15 +36,15 @@ main -> block:* {% d=>`[${d.join(', ')}]` %}
 # ----------------------------------------------------
 # block -> _ line name line props contents {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
 # block -> _ line name line contents props {% d=>`{${d[2]}, ${d[4]}, ${d[5]}}` %}
-# block -> _ line name line contents {% d=>`{${d[2]}, ${d[4]}}` %}
-block -> _ %line name %line contents {% d=>`{${d[2]}, ${d[4]}}` %}
+block -> _ line name line contents {% d=>`{${d[2]}, ${d[4]}}` %}
+# block -> _ %line name %line contents {% d=>`{${d[2]}, ${d[4]}}` %}
 
 
 # ----------------------------------------------------
 # line
 # ----------------------------------------------------
-# line -> "----" "-":* [\n]   {% d=>null %}
-line -> %line {% d=>null %}
+line -> "----" "-":* [\n]   {% d=>null %}
+# line -> %line {% d=>null %}
 
 
 # ----------------------------------------------------
@@ -55,9 +56,14 @@ line -> %line {% d=>null %}
 # name -> [#a-zA-Z0-9'.,!@&(): ]:+ "\n"   
 
 name -> .:+ [\n]
+# name -> %words
+# name -> %row
+# name -> "#":* .:* "#":* [\n]
 
 {% 
-  d => `"name":"${d[0].join('')}"` 
+  //d=>d[0].text
+  d => `"name":"${d[1].join('')}"` 
+  //d => `"name":"${d[0].text}"` 
 %}
 
 
@@ -70,16 +76,17 @@ name -> .:+ [\n]
 # paragraph -> .:* [\n]   {% null %}
 # contents -> paragraph:* line
 
-# char -> . | [\n]
-# # contents -> char:* line
+char -> . | [\n]
+contents -> char:* line
 # contents -> char:* %line
 # # contents -> char:* %line [\n]:*
 # contents -> %words line
-contents -> %words
+# contents -> %words
 
 {% 
-  // d => `"description": "${d[0].join('').trim()}"` 
-  d => `"description": "${d[0].text.trim()}"` 
+d=>d
+  //d => `"description": "${d[0].join('').trim()}"` 
+  //d => `"description": "${d[0].text.trim()}"` 
 %}
 
 
