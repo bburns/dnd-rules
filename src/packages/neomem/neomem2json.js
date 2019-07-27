@@ -24,10 +24,11 @@ const regexps = {
 
 let state = 'start'
 let obj = createObj()
-
 const objs = []
 
+
 for (let i = 0; i < lines.length; i++) {
+
   const line = lines[i]
   const linetype = getLineType(line)
   console.log(linetype, ': ', line)
@@ -48,19 +49,21 @@ for (let i = 0; i < lines.length; i++) {
 
   } else if (state === 'exitHeader') {
     if (linetype === 'dashes') {
-      state = 'startContents'
+      state = 'inContents'
     }
 
-  } else if (state === 'startContents') {
+  } else if (state === 'inContents') {
     if (linetype === 'dashes') {
       state = 'startHeader'
       objs.push(obj)
       obj = createObj()
+    } else if (linetype === 'prop') {
+      const match = line.match(/(.+)[ ]*:[ ]*(.+)/)
+      const prop = match[1]
+      const value = match[2]
+      obj[prop] = value
     } else {
       obj.contents += line + '\n'
-      // const match = line.match(/(.+):(.+)/)
-      // const prop = match[1]
-      // const value = match[2]
     }
   }
 
