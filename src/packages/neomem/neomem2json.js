@@ -5,20 +5,11 @@ const fs = require('fs')
 
 // const s = fs.readFileSync(path.resolve(__dirname, '../../assets/rules.neomem'), 'utf-8')
 const s = fs.readFileSync(0).toString()
-// console.log(s)
 
 const lines = s.split('\n')
-// console.log(lines)
-
-// const states = {}
-
-
-// lines.forEach(line => {
-//   console.log(line)
-// })
 
 const regexps = {
-  dashes: /----+/,
+  dashes: /^----+$/,
   prop: /(.+):(.+)/,
 }
 
@@ -43,7 +34,7 @@ for (let i = 0; i < lines.length; i++) {
       state = 'exitHeader'
       // obj.name = line //. strip #'s
       // let name = line.trim()
-      const name = line.match(/#*[ ]*([^#]+)[ ]*#*/)[1]
+      const name = line.match(/#*[ ]*([^#]+)[ ]*#*/)[1] // eg "### some name ###"
       obj.name = name
     }
 
@@ -58,7 +49,7 @@ for (let i = 0; i < lines.length; i++) {
       objs.push(obj)
       obj = createObj()
     } else if (linetype === 'prop') {
-      const match = line.match(/(.+)[ ]*:[ ]*(.+)/)
+      const match = line.match(/([^ ]+):[ ]*(.+)/) // eg "weight: 15lbs"
       const prop = match[1]
       const value = match[2]
       obj[prop] = value
