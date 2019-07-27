@@ -30,7 +30,7 @@ const objs = []
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i]
   const linetype = getLineType(line)
-  console.log(line, linetype)
+  console.log(linetype, ': ', line)
 
   if (state === 'start') {
     if (linetype === 'dashes') {
@@ -40,7 +40,10 @@ for (let i = 0; i < lines.length; i++) {
   } else if (state === 'startHeader') {
     if (linetype === 'text') {
       state = 'exitHeader'
-      obj.name = line //. strip #'s
+      // obj.name = line //. strip #'s
+      // let name = line.trim()
+      const name = line.match(/#*[ ]*([^#]+)[ ]*#*/)[1]
+      obj.name = name
     }
 
   } else if (state === 'exitHeader') {
@@ -55,6 +58,9 @@ for (let i = 0; i < lines.length; i++) {
       obj = createObj()
     } else {
       obj.contents += line + '\n'
+      // const match = line.match(/(.+):(.+)/)
+      // const prop = match[1]
+      // const value = match[2]
     }
   }
 
@@ -74,6 +80,9 @@ function getLineType(line, state) {
   } else if (regexps.prop.test(line)) {
     linetype = 'prop'
     //. also use regexp to split? or just use split(':') - simplest for now
+    // const match = line.match(/(.+):(.+)/)
+    // const prop = match[1]
+    // const value = match[2]
   }
   return linetype
 }
