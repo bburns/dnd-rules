@@ -19,39 +19,51 @@ const lines = s.split('\n')
 
 const regexps = {
   dashes: /----+/,
+  prop: /(.+):(.+)/,
 }
 
 let state = 'start'
-let obj = {}
+let obj = createObj()
 
 const objs = []
+
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i]
   const linetype = getLineType(line)
   console.log(line, linetype)
+
   if (state === 'start') {
     if (linetype === 'dashes') {
-      state = 'inheader'
+      state = 'startHeader'
     }
-  } else if (state === 'inheader') {
+
+  } else if (state === 'startHeader') {
     if (linetype === 'text') {
-      state = 'outheader'
+      state = 'exitHeader'
       obj.name = line //. strip #'s
     }
-  } else if (state === 'outheader') {
+
+  } else if (state === 'exitHeader') {
     if (linetype === 'dashes') {
-      state = 'incontents'
+      state = 'startContents'
     }
-  } else if (state === 'incontents') {
+
+  } else if (state === 'startContents') {
     if (linetype === 'dashes') {
-      state = 'inheader'
-      console.log(obj)
-      obj = {}
+      state = 'startHeader'
+      objs.push(obj)
+      obj = createObj()
     } else {
       obj.contents += line + '\n'
     }
   }
+
 }
+
+// handle eof
+objs.push(obj)
+
+console.log(objs)
 
 
 // get type of line based on regexp and current state
@@ -59,9 +71,19 @@ function getLineType(line, state) {
   let linetype = 'text'
   if (regexps.dashes.test(line)) {
     linetype = 'dashes'
+  } else if (regexps.prop.test(line)) {
+    linetype = 'prop'
+    //. also use regexp to split? or just use split(':') - simplest for now
   }
   return linetype
 }
 
+
+function createObj() {
+  const obj = {}
+  obj.name = ''
+  obj.contents = ''
+  return obj  
+}
 
 
