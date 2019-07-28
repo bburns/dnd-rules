@@ -112,9 +112,8 @@ function Rules({ rulesByLevel }) {
 
 function Level({ level }) {
   return (
-    <div className="app-rules-section">
+    <div className="app-rules-section" id={level.id}>
       <h2>
-        {/* {levelNames[level.level]} */}
         {level.name}
       </h2>
       <div className="body rule-list">
