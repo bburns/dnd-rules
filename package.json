@@ -1,7 +1,7 @@
 {
   "name": "dnd-rules",
   "version": "0.1.0",
-  "homepage": "https://bburns.github.io/dnd-rules/",
+  "homepage": "https://dnd.pub",
   "private": true,
   "type": "module",
   "scripts": {
