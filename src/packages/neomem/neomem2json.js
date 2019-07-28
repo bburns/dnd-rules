@@ -69,19 +69,22 @@ for (let i = 0; i < lines.length; i++) {
 obj = finishObject(obj)
 objs.push(obj)
 
-console.log(objs)
+// console.log(objs)
+console.log(JSON.stringify(objs, null, 2))
+
+
 
 function finishObject(obj) {
   // finish object
-  if (!obj.id) obj.id = encodeURI(obj.name.replace(/ /g, '-').toLowerCase())
+  if (!obj.id) obj.id = getIdFromName(obj.name)
   idsByDepth[depth] = obj.id
   if (depth > 0) obj.parentId = idsByDepth[depth - 1]
   return obj
 }
 
-// function esc(s) {
-//   encodeURI
-// }
+function getIdFromName(s) {
+  return encodeURI(s.replace(/ /g, '-').toLowerCase())
+}
 
 // get type of line based on regexp and current state
 function getLineType(line, state) {
