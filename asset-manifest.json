@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dnd-rules/static/css/main.d162bd7f.chunk.css",
-    "main.js": "/dnd-rules/static/js/main.59f7b1d0.chunk.js",
-    "main.js.map": "/dnd-rules/static/js/main.59f7b1d0.chunk.js.map",
-    "runtime~main.js": "/dnd-rules/static/js/runtime~main.ee0ad39f.js",
-    "runtime~main.js.map": "/dnd-rules/static/js/runtime~main.ee0ad39f.js.map",
-    "static/css/2.764ccc25.chunk.css": "/dnd-rules/static/css/2.764ccc25.chunk.css",
-    "static/js/2.e5d0fc84.chunk.js": "/dnd-rules/static/js/2.e5d0fc84.chunk.js",
-    "static/js/2.e5d0fc84.chunk.js.map": "/dnd-rules/static/js/2.e5d0fc84.chunk.js.map",
-    "index.html": "/dnd-rules/index.html",
-    "precache-manifest.e19d038270b1c651a2fb4ea7e31a7aac.js": "/dnd-rules/precache-manifest.e19d038270b1c651a2fb4ea7e31a7aac.js",
-    "service-worker.js": "/dnd-rules/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/dnd-rules/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.d162bd7f.chunk.css.map": "/dnd-rules/static/css/main.d162bd7f.chunk.css.map"
+    "main.css": "/static/css/main.d162bd7f.chunk.css",
+    "main.js": "/static/js/main.4e11f2b4.chunk.js",
+    "main.js.map": "/static/js/main.4e11f2b4.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
+    "static/js/2.d5ab3ac4.chunk.js": "/static/js/2.d5ab3ac4.chunk.js",
+    "static/js/2.d5ab3ac4.chunk.js.map": "/static/js/2.d5ab3ac4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f5c3d88d06742dccbffa3dcc98f06969.js": "/precache-manifest.f5c3d88d06742dccbffa3dcc98f06969.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.d162bd7f.chunk.css.map": "/static/css/main.d162bd7f.chunk.css.map"
   }
 }
