@@ -29,7 +29,6 @@
     "remark-parse": "^6.0.3",
     "remark-react": "^5.0.1",
     "remark-rehype": "^4.0.1",
-    "sanitize.css": "^10.0.0",
     "unified": "^8.0.1"
   },
   "devDependencies": {
