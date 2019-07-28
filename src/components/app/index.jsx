@@ -11,25 +11,36 @@ import './print.css'
 import dragon from '../../assets/dragon-192x192x256.png'
 
 
-function idize(s) {
-  return s.replace(/ /g, '-').toLowerCase()
-}
+// function idize(s) {
+//   return s.replace(/ /g, '-').toLowerCase()
+// }
 
 // eg groupBy(rules, 'parentId')
 function groupBy(arr, key) {
   const d = {}
+  const d2 = {}
   arr.forEach(el => {
     const keyValue = el[key] || 'none' // eg parentId = 'basic'
     d[keyValue] = d[keyValue] || []
     d[keyValue].push(el) // add element to a list for each parentId
+    d2[el.id] = el
   })
   const ret = []
   for (let keyValue of Object.keys(d)) {
-    const group = { [key]: keyValue, values: d[keyValue] }
+    const group = { [key]: keyValue, values: d[keyValue], ...d2[keyValue] }
     ret.push(group)
   }
   return ret
 }
+
+
+// just include headers and dnd rules
+const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
+
+const rulesByLevel = groupBy(dndRules, 'parentId').filter(level => level.parentId!=='none')
+console.log(rulesByLevel)
+
+
 
 // using https://github.com/remarkjs/remark-react
 function markdownToReact(md) {
@@ -44,18 +55,6 @@ function markdownToReact(md) {
       }
     </div>
   )
-}
-
-
-const dndRules = rules.filter(rule => !!rule.dnd) // ie just include dnd rules
-// const rulesByLevel = groupBy(dndRules, 'level')
-const rulesByLevel = groupBy(dndRules, 'parentId')
-console.log(rulesByLevel)
-const levelNames = {
-  0: "Basic",
-  1: "Intermediate",
-  2: "Advanced",
-  3: "Optional",
 }
 
 
@@ -84,14 +83,12 @@ function TableOfContents({ rulesByLevel }) {
     <div className="toc">
       {/* <div className="toc-title">Table of Contents</div> */}
       {rulesByLevel.map(level => (
-        <div className="toc-level">
-          <a className="toc-level-title" key={level.id} href={"#" + level.id}>
-            {/* Level {level.level} */}
-            {/* {levelNames[level.level]} */}
+        <div className="toc-level" key={level.id}>
+          <a className="toc-level-title" href={"#" + level.id}>
             {level.name}
           </a>
           <div className="toc-rules">
-            {level.values.map(rule => (
+            {level.values && level.values.map(rule => (
               <a className="toc-rule" key={rule.id} href={"#" + rule.id}>
                 {rule.name}
               </a>
@@ -121,7 +118,7 @@ function Level({ level }) {
         {level.name}
       </h2>
       <div className="body rule-list">
-        {level.values.map(rule => <Rule key={rule.id} rule={rule} />)}
+        {level.values && level.values.map(rule => <Rule key={rule.id} rule={rule} />)}
       </div>
     </div>
   )
