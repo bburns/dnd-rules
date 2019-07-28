@@ -10,7 +10,9 @@ const lines = s.split('\n')
 
 const regexps = {
   dashes: /^----+$/,
-  prop: /(.+):(.+)/,
+  name: /(#*)[ ]*([^#]+)[ ]*#*/,
+  // prop: /^(.+):(.+)$/,
+  prop: /^([^ ]+):[ ]*(.+)$/,
 }
 
 let state = 'start'
@@ -35,11 +37,12 @@ for (let i = 0; i < lines.length; i++) {
       state = 'exitHeader'
       // obj.name = line //. strip #'s
       // let name = line.trim()
-      const match = line.match(/(#*)[ ]*([^#]+)[ ]*#*/) // eg "### some name ###"
+      // const match = line.match(/(#*)[ ]*([^#]+)[ ]*#*/) // eg "### some name ###"
+      const match = line.match(regexps.name) // eg "### some name ###"
       const hashes = match[1]
       depth = hashes.length
       // console.log(hashes, depth)
-      obj.name = match[2]
+      obj.name = match[2].trim()
     }
 
   } else if (state === 'exitHeader') {
@@ -54,12 +57,15 @@ for (let i = 0; i < lines.length; i++) {
       objs.push(obj)
       obj = createObj()
     } else if (linetype === 'prop') {
-      const match = line.match(/([^ ]+):[ ]*(.+)/) // eg "weight: 15lbs"
+      // const match = line.match(/^([^ ]+):[ ]*(.+)$/) // eg "weight: 15lbs"
+      const match = line.match(regexps.prop) // eg "weight: 15lbs"
       const prop = match[1]
       const value = match[2]
       obj[prop] = value
-    } else {
+    } else if (linetype === 'text') { 
       obj.contents += line + '\n'
+    } else {
+      throw new Error("syntax error")
     }
   }
 
@@ -79,6 +85,7 @@ function finishObject(obj) {
   if (!obj.id) obj.id = getIdFromName(obj.name)
   idsByDepth[depth] = obj.id
   if (depth > 0) obj.parentId = idsByDepth[depth - 1]
+  obj.contents = obj.contents.trim()
   return obj
 }
 

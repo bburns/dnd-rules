@@ -1,420 +1,418 @@
 [
   {
-    "name": "Basic ",
-    "contents": "\n",
-    "id": "basic-"
+    "name": "Basic",
+    "contents": "",
+    "id": "basic"
   },
   {
-    "name": "Ability Score ",
-    "contents": "\n\n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.\n\n\n\n",
+    "name": "Ability Score",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.",
     "dnd": "ph12,173",
     "subtype": "char",
-    "abilities": " ",
-    "id": "ability-score-",
-    "parentId": "basic-"
+    "id": "ability-score",
+    "parentId": "basic"
   },
   {
-    "name": "Class ",
-    "contents": "\nPrimary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.\n\n\n\n",
+    "name": "Class",
+    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.",
     "dnd": "ph45",
     "subtype": "char",
-    "id": "class-",
-    "parentId": "basic-"
+    "id": "class",
+    "parentId": "basic"
   },
   {
-    "name": "Combat (Basic) ",
-    "contents": "\nPlayers and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll] score\n* Add [Proficiency Bonus] if [Proficient] with current weapon\n* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]\n* Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.\n\nSee other sections for more advanced rules.\n\n\n\n",
+    "name": "Combat (Basic)",
+    "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll] score\n* Add [Proficiency Bonus] if [Proficient] with current weapon\n* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]\n* Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.\n\nSee other sections for more advanced rules.",
     "dnd": "ph189+,194",
     "subtype": "play",
-    "id": "combat-(basic)-",
-    "parentId": "basic-"
+    "id": "combat-(basic)",
+    "parentId": "basic"
   },
   {
-    "name": "Culture ",
-    "contents": "\nCorresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan\n\n\n\n",
+    "name": "Culture",
+    "contents": "Corresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan",
     "aime": "pg30",
     "subtype": "char",
-    "id": "culture-",
-    "parentId": "basic-"
+    "id": "culture",
+    "parentId": "basic"
   },
   {
-    "name": "Experience Points (XP) ",
-    "contents": "\nRepresent character's experience and determines their [Level]. Gain for monsters kills, significant actions etc. See table for when to advance a [Level].\n\n\n\n",
+    "name": "Experience Points (XP)",
+    "contents": "Represent character's experience and determines their [Level]. Gain for monsters kills, significant actions etc. See table for when to advance a [Level].",
     "dnd": "ph15",
     "subtype": "char",
-    "id": "experience-points-(xp)-",
-    "parentId": "basic-"
+    "id": "experience-points-(xp)",
+    "parentId": "basic"
   },
   {
-    "name": "Hit Dice (HD) ",
-    "contents": "\nThese determine how many [Hit Points (HP)] a character has. Different [Class]es have different types of Hit Dice, e.g. d8, d10.\n\n\n\n",
+    "name": "Hit Dice (HD)",
+    "contents": "These determine how many [Hit Points (HP)] a character has. Different [Class]es have different types of Hit Dice, e.g. d8, d10.",
     "dnd": "ph12",
     "subtype": "char",
-    "id": "hit-dice-(hd)-",
-    "parentId": "basic-"
+    "id": "hit-dice-(hd)",
+    "parentId": "basic"
   },
   {
-    "name": "Hit Points (HP) ",
-    "contents": "\nRepresents health. At first level, Hit Points = max of [Hit Dice] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice] max +1 + Constitution Modifier (avoids randomness).\n\nWhen reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]\n\n\n\n",
+    "name": "Hit Points (HP)",
+    "contents": "Represents health. At first level, Hit Points = max of [Hit Dice] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice] max +1 + Constitution Modifier (avoids randomness).\n\nWhen reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]",
     "dnd": "ph12,197",
     "subtype": "char",
-    "id": "hit-points-(hp)-",
-    "parentId": "basic-"
+    "id": "hit-points-(hp)",
+    "parentId": "basic"
   },
   {
-    "name": "Level ",
-    "contents": "\nCharacter Levels are based on [Experience Points (XP)] - as reach higher levels gain more abilities, skills, spells, etc.\n\n\n\n",
+    "name": "Level",
+    "contents": "Character Levels are based on [Experience Points (XP)] - as reach higher levels gain more abilities, skills, spells, etc.",
     "dnd": "ph15",
     "subtype": "char",
-    "id": "level-",
-    "parentId": "basic-"
+    "id": "level",
+    "parentId": "basic"
   },
   {
-    "name": "Race ",
-    "contents": "\nEstablishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.\n\n\n\n",
+    "name": "Race",
+    "contents": "Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.",
     "dnd": "ph17",
     "subtype": "char",
-    "id": "race-",
-    "parentId": "basic-"
+    "id": "race",
+    "parentId": "basic"
   },
   {
-    "name": "Speed ",
-    "contents": "\nHow far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.\n\n\n\n",
+    "name": "Speed",
+    "contents": "How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.",
     "dnd": "ph181",
     "subtype": "char",
-    "id": "speed-",
-    "parentId": "basic-"
+    "id": "speed",
+    "parentId": "basic"
   },
   {
-    "name": "Intermediate ",
-    "contents": "\n",
-    "id": "intermediate-"
+    "name": "Intermediate",
+    "contents": "",
+    "id": "intermediate"
   },
   {
-    "name": "Ability Check ",
-    "contents": "\nDo to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.\n\n\n\n",
+    "name": "Ability Check",
+    "contents": "Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.",
     "dnd": "ph174",
     "subtype": "play",
-    "id": "ability-check-",
-    "parentId": "intermediate-"
+    "id": "ability-check",
+    "parentId": "intermediate"
   },
   {
-    "name": "Ability Modifier ",
-    "contents": "\nBased on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1\n\n\n\n",
+    "name": "Ability Modifier",
+    "contents": "Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1",
     "dnd": "ph13,173",
     "subtype": "char",
-    "id": "ability-modifier-",
-    "parentId": "intermediate-"
+    "id": "ability-modifier",
+    "parentId": "intermediate"
   },
   {
-    "name": "Action ",
-    "contents": "\nAvailable actions during [Combat] include \n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks]\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw]s with [Advantage]\n* Help - aid someone and they gain [Advantage] on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!\n\n\n\n",
+    "name": "Action",
+    "contents": "Available actions during [Combat] include \n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks]\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw]s with [Advantage]\n* Help - aid someone and they gain [Advantage] on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
     "dnd": "ph192",
     "subtype": "play",
-    "id": "action-",
-    "parentId": "intermediate-"
+    "id": "action",
+    "parentId": "intermediate"
   },
   {
-    "name": "Advantage / Disadvantage ",
-    "contents": "\nSometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.\n\n\n\n",
+    "name": "Advantage / Disadvantage",
+    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.",
     "dnd": "ph173",
     "subtype": "play",
-    "id": "advantage-/-disadvantage-",
-    "parentId": "intermediate-"
+    "id": "advantage-/-disadvantage",
+    "parentId": "intermediate"
   },
   {
-    "name": "Background ",
-    "contents": "\nWhere character came from, how came to be an adventurer, their place in world. Provide benefits ([Features], [Proficiencies], and [Languages]), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment].\n\n\n\n",
+    "name": "Background",
+    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features], [Proficiencies], and [Languages]), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment].",
     "dnd": "ph125",
     "subtype": "char",
     "urls": "https://www.dndbeyond.com/backgrounds",
-    "id": "background-",
-    "parentId": "intermediate-"
+    "id": "background",
+    "parentId": "intermediate"
   },
   {
-    "name": "Combat (Intermediate) ",
-    "contents": "\nIn addition to Basic rules,\n\n* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])\n\n\n\n",
-    "roll": "Strength Modifier for melee weapon, Dexterity for ranged weapon",
+    "name": "Combat (Intermediate)",
+    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])",
     "dnd": "ph189+,194",
     "subtype": "play",
-    "id": "combat-(intermediate)-",
-    "parentId": "intermediate-"
+    "id": "combat-(intermediate)",
+    "parentId": "intermediate"
   },
   {
-    "name": "Conditions ",
-    "contents": "\nAlter capabilities in various ways.\n\n* Blinded\n* Charmed\n* Deafened\n* Exhaustion - see for table\n* Frightened\n* Grappled\n* Incapacitated\n* Invisible\n* Paralyzed\n* Petrified\n* Poisoned\n* Prone\n* Restrained\n* Stunned\n* Unconscious\n\n\n\n\n",
+    "name": "Conditions",
+    "contents": "Alter capabilities in various ways.\n\n* Blinded\n* Charmed\n* Deafened\n* Exhaustion - see for table\n* Frightened\n* Grappled\n* Incapacitated\n* Invisible\n* Paralyzed\n* Petrified\n* Poisoned\n* Prone\n* Restrained\n* Stunned\n* Unconscious",
     "dnd": "ph290",
     "subtype": "play",
-    "id": "conditions-",
-    "parentId": "intermediate-"
+    "id": "conditions",
+    "parentId": "intermediate"
   },
   {
-    "name": "Damage Types ",
-    "contents": "\nTypes of Damage include \n\n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\n\nCan have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.\n\n\n\n",
+    "name": "Damage Types",
+    "contents": "Types of Damage include \n\n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\n\nCan have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.",
     "dnd": "ph196",
     "subtype": "play",
-    "id": "damage-types-",
-    "parentId": "intermediate-"
+    "id": "damage-types",
+    "parentId": "intermediate"
   },
   {
-    "name": "Difficulty Class (DC) ",
-    "contents": "\nThe difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.\n\n\n\n",
+    "name": "Difficulty Class (DC)",
+    "contents": "The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.",
     "dnd": "ph174",
     "subtype": "play",
-    "id": "difficulty-class-(dc)-",
-    "parentId": "intermediate-"
+    "id": "difficulty-class-(dc)",
+    "parentId": "intermediate"
   },
   {
-    "name": "Exhaustion ",
-    "contents": "\nDue to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest]s reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage] on [Ability Check]s                 |\n|     2 | [Speed] halved                                   |\n|     3 | [Disadvantage] on [Attack Rolls] and [Saving Throws] |\n|     4 | [Hit Point] maximum halved                       |\n|     5 | [Speed] reduced to 0                             |\n|     6 | [Death]                                          |\n\n\n\n",
+    "name": "Exhaustion",
+    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest]s reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage] on [Ability Check]s                 |\n|     2 | [Speed] halved                                   |\n|     3 | [Disadvantage] on [Attack Rolls] and [Saving Throws] |\n|     4 | [Hit Point] maximum halved                       |\n|     5 | [Speed] reduced to 0                             |\n|     6 | [Death]                                          |",
     "dnd": "ph290",
     "subtype": "play",
-    "id": "exhaustion-",
-    "parentId": "intermediate-"
+    "id": "exhaustion",
+    "parentId": "intermediate"
   },
   {
-    "name": "Flaws ",
-    "contents": "\nA vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?\n\n\n\n",
+    "name": "Flaws",
+    "contents": "A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?",
     "dnd": "ph124",
     "subtype": "char",
-    "id": "flaws-",
-    "parentId": "intermediate-"
+    "id": "flaws",
+    "parentId": "intermediate"
   },
   {
-    "name": "Inspiration ",
-    "contents": "\nDungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.\n\n\n\n",
+    "name": "Inspiration",
+    "contents": "Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.",
     "dnd": "ph125",
     "subtype": "play",
-    "id": "inspiration-",
-    "parentId": "intermediate-"
+    "id": "inspiration",
+    "parentId": "intermediate"
   },
   {
-    "name": "Modifier ",
-    "contents": "\nSee [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier.\n\n\n\n",
+    "name": "Modifier",
+    "contents": "See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier.",
     "dnd": "ph",
     "subtype": "char",
-    "id": "modifier-",
-    "parentId": "intermediate-"
+    "id": "modifier",
+    "parentId": "intermediate"
   },
   {
-    "name": "Proficiencies ",
-    "contents": "\nCan have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.\n\n\n\n",
+    "name": "Proficiencies",
+    "contents": "Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.",
     "dnd": "ph173",
     "subtype": "char",
-    "id": "proficiencies-",
-    "parentId": "intermediate-"
+    "id": "proficiencies",
+    "parentId": "intermediate"
   },
   {
-    "name": "Proficiency Bonus ",
-    "contents": "\nValue added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.\n\n\n\n",
+    "name": "Proficiency Bonus",
+    "contents": "Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.",
     "dnd": "ph173",
     "subtype": "char",
-    "id": "proficiency-bonus-",
-    "parentId": "intermediate-"
+    "id": "proficiency-bonus",
+    "parentId": "intermediate"
   },
   {
-    "name": "Saving Throw ",
-    "contents": "\nRoll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success.\n\n\n\n",
+    "name": "Saving Throw",
+    "contents": "Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success.",
     "dnd": "ph179",
     "subtype": "play",
-    "id": "saving-throw-",
-    "parentId": "intermediate-"
+    "id": "saving-throw",
+    "parentId": "intermediate"
   },
   {
-    "name": "Searching ",
-    "contents": "\nUse a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.\n\n\n\n",
+    "name": "Searching",
+    "contents": "Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.",
     "dnd": "ph178",
     "subtype": "play",
-    "id": "searching-",
-    "parentId": "intermediate-"
+    "id": "searching",
+    "parentId": "intermediate"
   },
   {
-    "name": "Skills ",
-    "contents": "\nEach [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like \"Strength (Athletics)\". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.\n\n| Ability      | Skills          |\n|--------------|-----------------|\n| Strength     | Athletics       |\n| Constitution | (none)  |\n| Dexterity    | Acrobatics      |\n|              | Sleight of Hand |\n|              | Stealth         |\n| Intelligence | Arcana          |\n|              | History         |\n|              | Investigation   |\n|              | Nature          |\n|              | Religion        |\n| Wisdom       | Animal Handling |\n|              | Insight         |\n|              | Medicine        |\n|              | Perception      |\n|              | Survival        |\n| Charisma     | Deception       |\n|              | Intimidation    |\n|              | Performance     |\n|              | Persuasion      |\n\n\n\n",
+    "name": "Skills",
+    "contents": "Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like \"Strength (Athletics)\". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.\n\n| Ability      | Skills          |\n|--------------|-----------------|\n| Strength     | Athletics       |\n| Constitution | (none)  |\n| Dexterity    | Acrobatics      |\n|              | Sleight of Hand |\n|              | Stealth         |\n| Intelligence | Arcana          |\n|              | History         |\n|              | Investigation   |\n|              | Nature          |\n|              | Religion        |\n| Wisdom       | Animal Handling |\n|              | Insight         |\n|              | Medicine        |\n|              | Perception      |\n|              | Survival        |\n| Charisma     | Deception       |\n|              | Intimidation    |\n|              | Performance     |\n|              | Persuasion      |",
     "dnd": "ph174",
     "subtype": "char",
-    "id": "skills-",
-    "parentId": "intermediate-"
+    "id": "skills",
+    "parentId": "intermediate"
   },
   {
-    "name": "Advanced ",
-    "contents": "\n",
-    "id": "advanced-"
+    "name": "Advanced",
+    "contents": "",
+    "id": "advanced"
   },
   {
-    "name": "Alignment ",
-    "contents": "\nCombination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.\n\n\n\n",
+    "name": "Alignment",
+    "contents": "Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.",
     "dnd": "ph122",
     "subtype": "char",
-    "id": "alignment-",
-    "parentId": "advanced-"
+    "id": "alignment",
+    "parentId": "advanced"
   },
   {
-    "name": "Bonds ",
-    "contents": "\nConnection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.\n\n\n\n",
+    "name": "Bonds",
+    "contents": "Connection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.",
     "dnd": "ph124",
     "subtype": "char",
-    "id": "bonds-",
-    "parentId": "advanced-"
+    "id": "bonds",
+    "parentId": "advanced"
   },
   {
-    "name": "Bonus Action ",
-    "contents": "\nAn additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.\n\n\n\n",
+    "name": "Bonus Action",
+    "contents": "An additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.",
     "dnd": "ph189",
     "subtype": "play",
-    "id": "bonus-action-",
-    "parentId": "advanced-"
+    "id": "bonus-action",
+    "parentId": "advanced"
   },
   {
-    "name": "Carrying Capacity ",
-    "contents": "\nAmount of weight you can carry - [Speed] is affected as you carry more.\n\n\n\n",
+    "name": "Carrying Capacity",
+    "contents": "Amount of weight you can carry - [Speed] is affected as you carry more.",
     "dnd": "ph176",
     "subtype": "char",
-    "id": "carrying-capacity-",
-    "parentId": "advanced-"
+    "id": "carrying-capacity",
+    "parentId": "advanced"
   },
   {
-    "name": "Combat (Advanced) ",
-    "contents": "\nIn addition to Basic and Intermediate rules,\n\n* Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier]\n* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)\n* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier]\n* Can move a distance up to your [Speed] AND take one [Action]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. \n* Can talk/gesture and interact with one object for free (e.g. drawing a sword)\n* Take one [Bonus Action] if allowed\n* Each complete round lasts 6 seconds in the game world.\n\n\n\n",
+    "name": "Combat (Advanced)",
+    "contents": "In addition to Basic and Intermediate rules,\n\n* Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier]\n* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)\n* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier]\n* Can move a distance up to your [Speed] AND take one [Action]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. \n* Can talk/gesture and interact with one object for free (e.g. drawing a sword)\n* Take one [Bonus Action] if allowed\n* Each complete round lasts 6 seconds in the game world.",
     "dnd": "ph189+,194",
     "subtype": "play",
-    "id": "combat-(advanced)-",
-    "parentId": "advanced-"
+    "id": "combat-(advanced)",
+    "parentId": "advanced"
   },
   {
-    "name": "Cover ",
-    "contents": "\nCan [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.\n\n\n\n",
+    "name": "Cover",
+    "contents": "Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
     "dnd": "ph",
     "subtype": "play",
-    "id": "cover-",
-    "parentId": "advanced-"
+    "id": "cover",
+    "parentId": "advanced"
   },
   {
-    "name": "Crafting ",
-    "contents": "\nCan Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.\n\n\n\n",
+    "name": "Crafting",
+    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.",
     "dnd": "ph187",
     "subtype": "play",
-    "id": "crafting-",
-    "parentId": "advanced-"
+    "id": "crafting",
+    "parentId": "advanced"
   },
   {
-    "name": "Downtime ",
-    "contents": "\nBetween adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].\n\n\n\n",
+    "name": "Downtime",
+    "contents": "Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].",
     "dnd": "ph187",
     "subtype": "play",
-    "id": "downtime-",
-    "parentId": "advanced-"
+    "id": "downtime",
+    "parentId": "advanced"
   },
   {
-    "name": "Feats ",
-    "contents": "\nRepresents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.\n\n\n\n",
+    "name": "Feats",
+    "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.",
     "dnd": "ph165",
     "subtype": "char",
-    "id": "feats-",
-    "parentId": "advanced-"
+    "id": "feats",
+    "parentId": "advanced"
   },
   {
-    "name": "Food / Water ",
-    "contents": "\nNeed one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).\n\n\n\n",
+    "name": "Food / Water",
+    "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).",
     "dnd": "ph185",
     "subtype": "play",
-    "id": "food-/-water-",
-    "parentId": "advanced-"
+    "id": "food-/-water",
+    "parentId": "advanced"
   },
   {
-    "name": "Habits ",
-    "contents": "\nJust something to flesh out a character\n\n\n\n",
+    "name": "Habits",
+    "contents": "Just something to flesh out a character",
     "dnd": "none",
     "subtype": "char",
-    "id": "habits-",
-    "parentId": "advanced-"
+    "id": "habits",
+    "parentId": "advanced"
   },
   {
-    "name": "Hiding ",
-    "contents": "\naka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.\n\n\n\n",
+    "name": "Hiding",
+    "contents": "aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.",
     "dnd": "ph177",
     "subtype": "play",
-    "id": "hiding-",
-    "parentId": "advanced-"
+    "id": "hiding",
+    "parentId": "advanced"
   },
   {
-    "name": "Ideals ",
-    "contents": "\nSomething that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.\n\n\n\n",
+    "name": "Ideals",
+    "contents": "Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.",
     "dnd": "ph124",
     "subtype": "char",
-    "id": "ideals-",
-    "parentId": "advanced-"
+    "id": "ideals",
+    "parentId": "advanced"
   },
   {
-    "name": "Initiative ",
-    "contents": "\nDetermines order of turns taken in [Combat].\n\n\n\n",
+    "name": "Initiative",
+    "contents": "Determines order of turns taken in [Combat].",
     "dnd": "ph189",
     "subtype": "play",
-    "id": "initiative-",
-    "parentId": "advanced-"
+    "id": "initiative",
+    "parentId": "advanced"
   },
   {
-    "name": "Languages ",
-    "contents": "\nDefault language is given by [Race], can learn others - see [Training].\n\n\n\n",
+    "name": "Languages",
+    "contents": "Default language is given by [Race], can learn others - see [Training].",
     "dnd": "ph123",
     "subtype": "char",
-    "id": "languages-",
-    "parentId": "advanced-"
+    "id": "languages",
+    "parentId": "advanced"
   },
   {
-    "name": "Multiclassing ",
-    "contents": "\nCan gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.\n\n\n\n",
+    "name": "Multiclassing",
+    "contents": "Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.",
     "dnd": "ph163",
     "subtype": "char",
-    "id": "multiclassing-",
-    "parentId": "advanced-"
+    "id": "multiclassing",
+    "parentId": "advanced"
   },
   {
-    "name": "Passive Checks ",
-    "contents": "\nFor hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].\n\n\n\n",
+    "name": "Passive Checks",
+    "contents": "For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].",
     "dnd": "ph175",
     "subtype": "play",
-    "id": "passive-checks-",
-    "parentId": "advanced-"
+    "id": "passive-checks",
+    "parentId": "advanced"
   },
   {
-    "name": "Personality Traits ",
-    "contents": "\nSomething interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.\n\n\n\n",
+    "name": "Personality Traits",
+    "contents": "Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.",
     "dnd": "ph123",
     "subtype": "char",
-    "id": "personality-traits-",
-    "parentId": "advanced-"
+    "id": "personality-traits",
+    "parentId": "advanced"
   },
   {
-    "name": "Rest ",
-    "contents": "\nShort Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. \n\nLong Rests need at least 8 hours, and restore all [Hit Points].\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.\n\n\n\n",
+    "name": "Rest",
+    "contents": "Short Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. \n\nLong Rests need at least 8 hours, and restore all [Hit Points].\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.",
     "dnd": "ph186-7",
     "subtype": "play",
-    "id": "rest-",
-    "parentId": "advanced-"
+    "id": "rest",
+    "parentId": "advanced"
   },
   {
-    "name": "Subrace ",
-    "contents": "\nSome [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.\n\n\n\n",
+    "name": "Subrace",
+    "contents": "Some [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.",
     "dnd": "ph17",
     "subtype": "char",
-    "id": "subrace-",
-    "parentId": "advanced-"
+    "id": "subrace",
+    "parentId": "advanced"
   },
   {
-    "name": "Training ",
-    "contents": "\nCan train to learn new [Language], tool [Skill] [Proficiency] - must find instructor. Training lasts 250 days and costs 1gp per day.\n\n\n\n",
+    "name": "Training",
+    "contents": "Can train to learn new [Language], tool [Skill] [Proficiency] - must find instructor. Training lasts 250 days and costs 1gp per day.",
     "dnd": "ph187",
     "subtype": "play",
-    "id": "training-",
-    "parentId": "advanced-"
+    "id": "training",
+    "parentId": "advanced"
   },
   {
-    "name": "Travel ",
-    "contents": "\nCan travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.\n\n\n\n\n",
+    "name": "Travel",
+    "contents": "Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.",
     "dnd": "ph181",
     "subtype": "play",
-    "id": "travel-",
-    "parentId": "advanced-"
+    "id": "travel",
+    "parentId": "advanced"
   }
 ]
