@@ -2,7 +2,8 @@ import React from 'react';
 import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
-import 'sanitize.css'
+// import 'sanitize.css'
+import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 
 import rules from '../../assets/rules2.json'
