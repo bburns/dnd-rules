@@ -2,6 +2,9 @@
 # Basic #
 ---------------------------------------------------------------------------
 
+The basic rules are enough to get started and play a game - the intermediate and advanced rules can be added as desired.
+
+
 ---------------------------------------------------------------------------
 ## Ability Score ##
 ---------------------------------------------------------------------------
@@ -15,7 +18,9 @@ Measures of different abilities:
 * Wisdom
 * Charisma
 
-Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
+Max 20 for characters, 30 for monsters/divines. 
+
+(Intermediate: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)
 
 dnd: ph12,173
 subtype: char
@@ -26,7 +31,11 @@ subtype: char
 ## Class ##
 ---------------------------------------------------------------------------
 
-Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.
+Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. 
+
+(Intermediate: Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)
+
+(Advanced: Can [Multiclass] also.)
 
 dnd: ph45
 subtype: char
@@ -40,11 +49,10 @@ Players and adversaries take turns -
 
 * Choose a target
 * Roll d20 for base [Attack Roll] score
-* Add [Proficiency Bonus] if [Proficient] with current weapon
 * If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]
-* Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.
+* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.
 
-See other sections for more advanced rules.
+See also [Combat (Intermediate)] and [Combat (Advanced)].
 
 dnd: ph189+,194
 subtype: play
@@ -74,7 +82,7 @@ subtype: char
 ## Hit Dice (HD) ##
 ---------------------------------------------------------------------------
 
-These determine how many [Hit Points (HP)] a character has. Different [Class]es have different types of Hit Dice, e.g. d8, d10.
+These determine how many [Hit Points (HP)] a character has. Different [Class|Classes] have different types of Hit Dice, e.g. d8, d10.
 
 dnd: ph12
 subtype: char
@@ -203,6 +211,7 @@ urls: https://www.dndbeyond.com/backgrounds
 In addition to Basic rules,
 
 * Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon
+* Add [Proficiency Bonus] if [Proficient] with current weapon
 * Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]
 * Roll d20 twice if have Advantage or Disadvantage and take best/worst score
 * For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
