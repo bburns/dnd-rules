@@ -4,7 +4,7 @@ html, body {
   background: #f3ede5;
   color:#345;
   font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
-  font-size:14px;
+  font-size: 16px;
 }
 
 body {
@@ -61,6 +61,7 @@ th, td {
 .app-header h1 {
   margin: 0;
   font-weight: 300;
+  height: 52px;
 }
 
 .app-header img {
@@ -69,10 +70,10 @@ th, td {
 }
 
 .app-contents {
-  margin-top: 46px;
+  margin-top: 52px;
+  height: calc(100% - 52px);
   display: flex;
   flex-direction: row;
-  height: calc(100% - 46px);
 }
 
 .app-page {
@@ -120,9 +121,6 @@ th, td {
   cursor: pointer;
   text-decoration: none;
 }
-.toc a:visited {
-  /* color: rgb(26, 188, 156); */
-}
 .toc a:hover {
   background-color: #dbedff;
 }
@@ -131,6 +129,7 @@ th, td {
 }
 .toc-level-title {
   font-weight: bold;
+  font-size: 1.1em;
 }
 .toc-rule {
   margin-left: 1em;

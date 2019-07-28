@@ -59,6 +59,27 @@ function markdownToReact(md) {
 }
 
 
+export default function() {
+  // const [rules, setRules] = React.useState([])
+  // React.useEffect(async () => {
+  //   const data = await axios.get(url)
+  // }, [])
+
+  return (
+    <div className="app">
+      <Header />
+      <div className="app-contents">
+        <TableOfContents rulesByLevel={rulesByLevel} />
+        <div className="app-page">
+          <Rules rulesByLevel={rulesByLevel} />
+          <Footer />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
 function Header() {
   return (
     <div className="app-header" role="banner">
@@ -137,25 +158,4 @@ function Rule({ rule }) {
       }
     </div>
   )
-}
-
-
-export default function() {
-  // const [rules, setRules] = React.useState([])
-  // React.useEffect(async () => {
-  //   const data = await axios.get(url)
-  // }, [])
-
-  return (
-    <div className="app">
-      <Header />
-      <div className="app-contents">
-        <TableOfContents rulesByLevel={rulesByLevel} />
-        <div className="app-page">
-          <Rules rulesByLevel={rulesByLevel} />
-          <Footer />
-        </div>
-      </div>
-    </div>
-  );
 }
