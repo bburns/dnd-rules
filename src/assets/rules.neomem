@@ -6,9 +6,6 @@
 ## Ability Score ##
 ---------------------------------------------------------------------------
 
-dnd: ph12,173
-subtype: char
-
 Measures of different abilities: 
 
 * Strength
@@ -19,6 +16,9 @@ Measures of different abilities:
 * Charisma
 
 Max 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
+
+dnd: ph12,173
+subtype: char
 
 
 

@@ -1,1 +1,1 @@
-node neomem2json.js < ..\..\assets\rules.neomem > r.json
+node neomem2json.js < ..\..\assets\rules.neomem > ..\..\assets\rules2.json
