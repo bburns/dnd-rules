@@ -6,7 +6,7 @@ import remark2react from 'remark-react'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 
-import rules from '../../assets/rules2.json'
+import rules from '../../assets/rules.json'
 import './styles.css'
 import './print.css'
 import dragon from '../../assets/dragon-192x192x256.png'
