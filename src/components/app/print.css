@@ -24,7 +24,9 @@
     margin: 0;
   }
   .app-header h1 {
-    /* font-size: 1.2em; */
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
   }
   .app-header img {
     display: none;
@@ -38,9 +40,10 @@
   }
   .rule {
     border: 1px solid #ccc;
+    width: calc(33% - 1em);
   }
   .rule + .rule {
-    /* margin-left: 8px; */
+    margin-left: 1em;
   }
   .rule>h3 {
     color: black;

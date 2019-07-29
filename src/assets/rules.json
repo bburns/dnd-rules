@@ -14,7 +14,7 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclass) also.)",
+    "contents": "Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclassing) also.)",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",

@@ -12,11 +12,6 @@ import './styles.css'
 import './print.css'
 
 
-// function idize(s) {
-//   return s.replace(/ /g, '-').toLowerCase()
-// }
-
-
 // just include headers and dnd rules
 const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
 
@@ -64,10 +59,8 @@ export default function() {
 function Header() {
   return (
     <div className="app-header" role="banner">
-      <h1 className="h1">
-        <img src={dragon} alt=""/>
-        Dungeons &amp; Dragons Rules
-      </h1>
+      <img src={dragon} alt=""/>
+      <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
     </div>
   )
 }

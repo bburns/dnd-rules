@@ -36,7 +36,7 @@ Primary definition of what a character can do - their calling, e.g. Fighter, Dru
 
 (*Intermediate*: Gives special Features, like [Proficiency] in different weapons or armor.)
 
-(*Advanced*: Can [Multiclass] also.)
+(*Advanced*: Can [Multiclassing|Multiclass] also.)
 
 ^dnd: ph45
 ^subtype: char
