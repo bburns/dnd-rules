@@ -20,10 +20,11 @@ Measures of different abilities:
 
 Max 20 for characters, 30 for monsters/divines. 
 
-(Intermediate: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)
+*Intermediate*: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
 
-dnd: ph12,173
-subtype: char
+
+^dnd: ph12,173
+^subtype: char
 
 
 
@@ -33,12 +34,12 @@ subtype: char
 
 Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. 
 
-(Intermediate: Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)
+*Intermediate*: Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.
 
-(Advanced: Can [Multiclass] also.)
+*Advanced*: Can [Multiclass] also.
 
-dnd: ph45
-subtype: char
+^dnd: ph45
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -54,8 +55,8 @@ Players and adversaries take turns -
 
 See also [Combat (Intermediate)] and [Combat (Advanced)].
 
-dnd: ph189+,194
-subtype: play
+^dnd: ph189+,194
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -65,17 +66,17 @@ subtype: play
 Corresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan
 
 aime: pg30
-subtype: char
+^subtype: char
 
 
 ---------------------------------------------------------------------------
 ## Experience Points (XP) ##
 ---------------------------------------------------------------------------
 
-Represent character's experience and determines their [Level]. Gain for monsters kills, significant actions etc. See table for when to advance a [Level].
+Represent character's experience and determines their [Level]. Gain for monsters kills, significant actions, etc. See table for when to advance a [Level].
 
-dnd: ph15
-subtype: char
+^dnd: ph15
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -84,8 +85,8 @@ subtype: char
 
 These determine how many [Hit Points (HP)] a character has. Different [Class|Classes] have different types of Hit Dice, e.g. d8, d10.
 
-dnd: ph12
-subtype: char
+^dnd: ph12
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -96,8 +97,8 @@ Represents health. At first level, Hit Points = max of [Hit Dice] + Constitution
 
 When reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]
 
-dnd: ph12,197
-subtype: char
+^dnd: ph12,197
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -106,8 +107,8 @@ subtype: char
 
 Character Levels are based on [Experience Points (XP)] - as reach higher levels gain more abilities, skills, spells, etc.
 
-dnd: ph15
-subtype: char
+^dnd: ph15
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -116,8 +117,8 @@ subtype: char
 
 Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
 
-dnd: ph17
-subtype: char
+^dnd: ph17
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -126,8 +127,8 @@ subtype: char
 
 How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.
 
-dnd: ph181
-subtype: char
+^dnd: ph181
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -140,8 +141,8 @@ subtype: char
 
 Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.
 
-dnd: ph174
-subtype: play
+^dnd: ph174
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -150,8 +151,8 @@ subtype: play
 
 Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1
 
-dnd: ph13,173
-subtype: char
+^dnd: ph13,173
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -171,8 +172,8 @@ Available actions during [Combat] include
 * Use - if want to use more than one object in your turn
 * Other - improvise!
 
-dnd: ph192
-subtype: play
+^dnd: ph192
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -185,8 +186,8 @@ If some source gives you Advantage, roll twice and take the higher of the two ro
 
 Can use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.
 
-dnd: ph173
-subtype: play
+^dnd: ph173
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -199,8 +200,8 @@ Each Background gives a character [Proficiency] in two [Skills] and one or more 
 
 Also provides a package of starting [Equipment].
 
-dnd: ph125
-subtype: char
+^dnd: ph125
+^subtype: char
 urls: https://www.dndbeyond.com/backgrounds
 
 
@@ -217,8 +218,8 @@ In addition to Basic rules,
 * For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
 * For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])
 
-dnd: ph189+,194
-subtype: play
+^dnd: ph189+,194
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -244,8 +245,8 @@ Alter capabilities in various ways.
 * Unconscious
 
 
-dnd: ph290
-subtype: play
+^dnd: ph290
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -272,8 +273,8 @@ Types of Damage include
 
 Can have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.
 
-dnd: ph196
-subtype: play
+^dnd: ph196
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -282,8 +283,8 @@ subtype: play
 
 The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.
 
-dnd: ph174
-subtype: play
+^dnd: ph174
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -302,8 +303,8 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 |     5 | [Speed] reduced to 0                             |
 |     6 | [Death]                                          |
 
-dnd: ph290
-subtype: play
+^dnd: ph290
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -312,8 +313,8 @@ subtype: play
 
 A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?
 
-dnd: ph124
-subtype: char
+^dnd: ph124
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -322,8 +323,8 @@ subtype: char
 
 Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.
 
-dnd: ph125
-subtype: play
+^dnd: ph125
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -332,8 +333,8 @@ subtype: play
 
 See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier.
 
-dnd: ph
-subtype: char
+^dnd: ph
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -342,8 +343,8 @@ subtype: char
 
 Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.
 
-dnd: ph173
-subtype: char
+^dnd: ph173
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -352,8 +353,8 @@ subtype: char
 
 Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.
 
-dnd: ph173
-subtype: char
+^dnd: ph173
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -362,8 +363,8 @@ subtype: char
 
 Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success.
 
-dnd: ph179
-subtype: play
+^dnd: ph179
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -372,8 +373,8 @@ subtype: play
 
 Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.
 
-dnd: ph178
-subtype: play
+^dnd: ph178
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -404,8 +405,8 @@ Each [Ability Score] covers a set of Skills you can be [Proficient] in, and refe
 |              | Performance     |
 |              | Persuasion      |
 
-dnd: ph174
-subtype: char
+^dnd: ph174
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -418,8 +419,8 @@ subtype: char
 
 Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
 
-dnd: ph122
-subtype: char
+^dnd: ph122
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -428,8 +429,8 @@ subtype: char
 
 Connection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.
 
-dnd: ph124
-subtype: char
+^dnd: ph124
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -438,8 +439,8 @@ subtype: char
 
 An additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.
 
-dnd: ph189
-subtype: play
+^dnd: ph189
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -448,8 +449,8 @@ subtype: play
 
 Amount of weight you can carry - [Speed] is affected as you carry more.
 
-dnd: ph176
-subtype: char
+^dnd: ph176
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -466,8 +467,8 @@ In addition to Basic and Intermediate rules,
 * Take one [Bonus Action] if allowed
 * Each complete round lasts 6 seconds in the game world.
 
-dnd: ph189+,194
-subtype: play
+^dnd: ph189+,194
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -476,8 +477,8 @@ subtype: play
 
 Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
 
-dnd: ph
-subtype: play
+^dnd: ph
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -486,8 +487,8 @@ subtype: play
 
 Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.
 
-dnd: ph187
-subtype: play
+^dnd: ph187
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -496,8 +497,8 @@ subtype: play
 
 Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].
 
-dnd: ph187
-subtype: play
+^dnd: ph187
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -506,8 +507,8 @@ subtype: play
 
 Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.
 
-dnd: ph165
-subtype: char
+^dnd: ph165
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -516,8 +517,8 @@ subtype: char
 
 Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).
 
-dnd: ph185
-subtype: play
+^dnd: ph185
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -526,8 +527,8 @@ subtype: play
 
 Just something to flesh out a character
 
-dnd: none
-subtype: char
+^dnd: none
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -536,8 +537,8 @@ subtype: char
 
 aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.
 
-dnd: ph177
-subtype: play
+^dnd: ph177
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -546,8 +547,8 @@ subtype: play
 
 Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.
 
-dnd: ph124
-subtype: char
+^dnd: ph124
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -556,8 +557,8 @@ subtype: char
 
 Determines order of turns taken in [Combat].
 
-dnd: ph189
-subtype: play
+^dnd: ph189
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -566,8 +567,8 @@ subtype: play
 
 Default language is given by [Race], can learn others - see [Training].
 
-dnd: ph123
-subtype: char
+^dnd: ph123
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -576,8 +577,8 @@ subtype: char
 
 Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
 
-dnd: ph163
-subtype: char
+^dnd: ph163
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -586,8 +587,8 @@ subtype: char
 
 For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].
 
-dnd: ph175
-subtype: play
+^dnd: ph175
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -596,8 +597,8 @@ subtype: play
 
 Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.
 
-dnd: ph123
-subtype: char
+^dnd: ph123
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -612,8 +613,8 @@ Optionally, both require use of one Healer's Kit first.
 
 You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.
 
-dnd: ph186-7
-subtype: play
+^dnd: ph186-7
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -622,8 +623,8 @@ subtype: play
 
 Some [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
 
-dnd: ph17
-subtype: char
+^dnd: ph17
+^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -632,8 +633,8 @@ subtype: char
 
 Can train to learn new [Language], tool [Skill] [Proficiency] - must find instructor. Training lasts 250 days and costs 1gp per day.
 
-dnd: ph187
-subtype: play
+^dnd: ph187
+^subtype: play
 
 
 ---------------------------------------------------------------------------
@@ -642,7 +643,7 @@ subtype: play
 
 Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.
 
-dnd: ph181
-subtype: play
+^dnd: ph181
+^subtype: play
 
 

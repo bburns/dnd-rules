@@ -6,7 +6,7 @@
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n(Intermediate: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.)",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n*Intermediate*: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. \n\n(Intermediate: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)\n\n(Advanced: Can [Multiclass](#multiclass) also.)",
+    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. \n\n*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.\n\n*Advanced*: Can [Multiclass](#multiclass) also.",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",
@@ -30,15 +30,14 @@
   },
   {
     "name": "Culture",
-    "contents": "Corresponds to [Race](#race) in D&D - eg Hobbits of the Shire, Riders of Rohan",
-    "aime": "pg30",
+    "contents": "Corresponds to [Race](#race) in D&D - eg Hobbits of the Shire, Riders of Rohan\n\naime: pg30",
     "subtype": "char",
     "id": "culture",
     "parentId": "basic"
   },
   {
     "name": "Experience Points (XP)",
-    "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters kills, significant actions etc. See table for when to advance a [Level](#level).",
+    "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters kills, significant actions, etc. See table for when to advance a [Level](#level).",
     "dnd": "ph15",
     "subtype": "char",
     "id": "experience-points-(xp)",
@@ -123,10 +122,9 @@
   },
   {
     "name": "Background",
-    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features](#features), [Proficiencies](#proficiencies), and [Languages](#languages)), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency](#proficiency) in two [Skills](#skills) and one or more [Tools](#tools). Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment](#equipment).",
+    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features](#features), [Proficiencies](#proficiencies), and [Languages](#languages)), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency](#proficiency) in two [Skills](#skills) and one or more [Tools](#tools). Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment](#equipment).\n\nurls: https://www.dndbeyond.com/backgrounds",
     "dnd": "ph125",
     "subtype": "char",
-    "urls": "https://www.dndbeyond.com/backgrounds",
     "id": "background",
     "parentId": "intermediate"
   },

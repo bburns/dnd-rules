@@ -8,10 +8,11 @@ const s = fs.readFileSync(0).toString()
 
 const lines = s.split('\n')
 
+
 const regexps = {
-  dashes: /^----+$/,
-  name: /(#*)[ ]*([^#]+)[ ]*#*/,
-  prop: /^([^ (]+):[ ]*(.+)$/,
+  dashes: /^----+$/, // blocks are offset by 3 or more dashes
+  name: /(#*)[ ]*([^#]+)[ ]*#*/, // name is surrounded by 0 or more #'s
+  propvalue: /^\^(.+):[ ]*(.+)$/, // propvalues start with ^, e.g. ^type: fish
 }
 
 let state = 'start'
@@ -34,13 +35,9 @@ for (let i = 0; i < lines.length; i++) {
   } else if (state === 'startHeader') {
     if (linetype === 'text') {
       state = 'exitHeader'
-      // obj.name = line //. strip #'s
-      // let name = line.trim()
-      // const match = line.match(/(#*)[ ]*([^#]+)[ ]*#*/) // eg "### some name ###"
       const match = line.match(regexps.name) // eg "### some name ###"
       const hashes = match[1]
       depth = hashes.length
-      // console.log(hashes, depth)
       obj.name = match[2].trim()
     }
 
@@ -55,9 +52,8 @@ for (let i = 0; i < lines.length; i++) {
       obj = finishObject(obj)
       objs.push(obj)
       obj = createObj()
-    } else if (linetype === 'prop') {
-      // const match = line.match(/^([^ ]+):[ ]*(.+)$/) // eg "weight: 15lbs"
-      const match = line.match(regexps.prop) // eg "weight: 15lbs"
+    } else if (linetype === 'propvalue') {
+      const match = line.match(regexps.propvalue) // eg "^weight: 15lbs"
       const prop = match[1]
       const value = match[2]
       obj[prop] = value
@@ -70,12 +66,15 @@ for (let i = 0; i < lines.length; i++) {
 
 }
 
-// handle eof
+// handle eof - finish last object
 obj = finishObject(obj)
 objs.push(obj)
 
 // console.log(objs)
+
+// output results to stdout
 console.log(JSON.stringify(objs, null, 2))
+
 
 
 function finishObject(obj) {
@@ -89,15 +88,14 @@ function finishObject(obj) {
 
 
 // convert neomem-style links to markdown-style links
-// eg
-// [Something nice] --> [Something nice](#something-nice)
-// [Something|Somethings] --> [Something](#something "Somethings")
 function linkifyText(nm) {
   let md = nm
+  // eg [Something nice] --> [Something nice](#something-nice)
   md = md.replace(/\[([^|]+?)\]/g, (match, p1) => {
     return `[${p1}](#${getIdFromName(p1)})`
   })
-  md = md.replace(/\[(.+?)\|(.+?)\]/g, (match, p1, p2) => {
+  // eg [Something|Somethings] --> [Something](#something "Somethings")
+  md = md.replace(/\[([^|]+?)\|([^|]+?)\]/g, (match, p1, p2) => {
     return `[${p1}](#${getIdFromName(p1)} "${p2}")`
   })
   return md
@@ -113,12 +111,8 @@ function getLineType(line, state) {
   let linetype = 'text'
   if (regexps.dashes.test(line)) {
     linetype = 'dashes'
-  } else if (regexps.prop.test(line)) {
-    linetype = 'prop'
-    //. also use regexp to split? or just use split(':') - simplest for now
-    // const match = line.match(/(.+):(.+)/)
-    // const prop = match[1]
-    // const value = match[2]
+  } else if (regexps.propvalue.test(line)) {
+    linetype = 'propvalue'
   }
   return linetype
 }
@@ -132,3 +126,4 @@ function createObj() {
 }
 
 
+module.export = { linkifyText }
