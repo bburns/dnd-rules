@@ -3,7 +3,8 @@ html, body {
   /* background:#f1f3f5; from devhints.io */
   background: #f3ede5;
   color:#345;
-  font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+  /* font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif; */
+  font-family: georgia, serif;
   font-size: 16px;
 }
 
