@@ -6,6 +6,7 @@ import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 import dragon from '../../assets/images/dragon-192x192x256.png'
 import rules from '../../assets/rules.json'
+import * as lib from '../../lib'
 import './styles.css'
 import './print.css'
 
@@ -14,29 +15,11 @@ import './print.css'
 //   return s.replace(/ /g, '-').toLowerCase()
 // }
 
-// eg groupBy(rules, 'parentId')
-function groupBy(arr, key) {
-  const d = {}
-  const d2 = {}
-  arr.forEach(el => {
-    const keyValue = el[key] || 'none' // eg parentId = 'basic'
-    d[keyValue] = d[keyValue] || []
-    d[keyValue].push(el) // add element to a list for each parentId
-    d2[el.id] = el
-  })
-  const ret = []
-  for (let keyValue of Object.keys(d)) {
-    const group = { [key]: keyValue, values: d[keyValue], ...d2[keyValue] }
-    ret.push(group)
-  }
-  return ret
-}
-
 
 // just include headers and dnd rules
 const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
 
-const rulesByLevel = groupBy(dndRules, 'parentId').filter(level => level.parentId!=='none')
+const rulesByLevel = lib.groupBy(dndRules, 'parentId').filter(level => level.parentId!=='none')
 console.log(rulesByLevel)
 
 
