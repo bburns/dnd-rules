@@ -24,15 +24,15 @@ body {
 
 
 a {
-  color: #269e62;
-  /* color:#267e8e; */
-  /* font-weight: bold; */
+  color: #4dbc1a;
+  text-decoration: none;
+  border-bottom: none;
 }
 a:visited {
-  /* color:#15324d; */
 }
 a:hover {
-  color:#27e486;
+  color: #5ee71f;
+  border-bottom: 1px dotted #5ee71f;;
 }
 
 
@@ -94,13 +94,14 @@ th, td {
   overflow-y: auto;
   flex-basis: 14em;
   flex-shrink: 0;
-  color: rgb(77, 188, 26);
+  background: #444;
   font-size: 16px;
   line-height: 1.2em;
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
   padding-top: 1em;
+  /* margin-bottom: 3em; */
 }
 
 @media screen and (min-width: 500px) {
@@ -119,12 +120,13 @@ th, td {
   display: block;
   padding: 1px 5px;
   /* color: rgb(26, 188, 156); */
-  color: rgb(62, 188, 26);
+  /* color: rgb(62, 188, 26); */
   cursor: pointer;
   text-decoration: none;
 }
 .toc a:hover {
-  background-color: #dbedff;
+  /* background-color: #dbedff; */
+  border-bottom: none;
 }
 .toc-level {
   margin-bottom: 1em;
@@ -173,7 +175,7 @@ th, td {
 
 .rule>h3 {
   /* color: #745fb5; from devhints.io */
-  color: rgb(77, 188, 26);
+  color: #4dbc1a;
   font-weight: normal;
   margin-top: 8px;
   margin-bottom: 16px;
