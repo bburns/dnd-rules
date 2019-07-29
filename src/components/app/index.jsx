@@ -57,6 +57,25 @@ function markdownToReact(md) {
   )
 }
 
+// convert neomem text contents to markdown, as needed
+// esp internal links
+function linkifyText(nm) {
+  let md = nm
+  // [Something] --> [Something](#something)
+  md = md.replace(/\[([^|]+?)\]/g, (match, p1) => {
+    return '[' + p1 + '](#' + getIdFromName(p1) + ')'
+  })
+  // // [Something|Somethings] --> [Something](#something "Somethings")
+  // md = md.replace(/\[(.+?)\|(.+?)\]/g, match => {
+  //   return match[0] + '(#something "Somethings")'
+  // })
+  return md
+}
+
+// keep in synch with neomem's version
+function getIdFromName(s) {
+  return encodeURI(s.replace(/ /g, '-').toLowerCase())
+}
 
 export default function() {
   // const [rules, setRules] = React.useState([])
@@ -151,7 +170,7 @@ function Rule({ rule }) {
       <h3>{rule.name}</h3>
       {(rule.contents || rule.dnd) && 
         <div className="rule-body">
-          {markdownToReact(rule.contents)}
+          {markdownToReact(linkifyText(rule.contents))}
           <div className="rule-reference">{rule.dnd}</div>
         </div>
       }

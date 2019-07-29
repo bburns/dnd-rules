@@ -89,6 +89,7 @@ function finishObject(obj) {
   return obj
 }
 
+// keep in synch with components/app/index.jsx
 function getIdFromName(s) {
   return encodeURI(s.replace(/ /g, '-').toLowerCase())
 }
