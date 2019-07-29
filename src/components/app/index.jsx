@@ -6,6 +6,7 @@ import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 import dragon from '../../assets/images/dragon-192x192x256.png'
 import rules from '../../assets/rules.json'
+import TableOfContents from '../toc'
 import * as lib from '../../lib'
 import './styles.css'
 import './print.css'
@@ -79,28 +80,6 @@ function Footer() {
   )
 }
 
-
-function TableOfContents({ rulesByLevel }) {
-  return (
-    <div className="toc">
-      {/* <div className="toc-title">Table of Contents</div> */}
-      {rulesByLevel.map(level => (
-        <div className="toc-level" key={level.id}>
-          <a className="toc-level-title" href={"#" + level.id}>
-            {level.name}
-          </a>
-          <div className="toc-rules">
-            {level.values && level.values.map(rule => (
-              <a className="toc-rule" key={rule.id} href={"#" + rule.id}>
-                {rule.name}
-              </a>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  )
-}
 
 
 function Rules({ rulesByLevel }) {

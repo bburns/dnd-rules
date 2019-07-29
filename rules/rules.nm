@@ -139,7 +139,7 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 ## Ability Check ##
 ---------------------------------------------------------------------------
 
-Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.
+Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.
 
 ^dnd: ph174
 ^subtype: play
@@ -149,7 +149,11 @@ Do to test innate talent/training to overcome a challenge. Difficulty of task is
 ## Ability Modifier ##
 ---------------------------------------------------------------------------
 
-Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1
+Ability Modifiers range from -5 to +10. They are used more often than the raw [Ability Score|Ability Scores] on which they are based. 
+
+Ability Modifier = floor((Ability Score - 10) / 2)
+
+e.g. if Strength = 13 then Strength Modifier = +1
 
 ^dnd: ph13,173
 ^subtype: char
@@ -159,7 +163,8 @@ Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((
 ## Action ##
 ---------------------------------------------------------------------------
 
-Available actions during [Combat] include 
+Available actions during [Combat] include:
+
 * Attack
 * Cast Spell
 * Dash - move at double speed
@@ -180,7 +185,7 @@ Available actions during [Combat] include
 ## Advantage / Disadvantage ##
 ---------------------------------------------------------------------------
 
-Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. 
+Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. 
 
 If some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.
 
@@ -231,7 +236,7 @@ Alters capabilities in various ways.
 * Blinded
 * Charmed
 * Deafened
-* Exhaustion - see for table
+* Exhaustion - see [Exhaustion|here] for table
 * Frightened
 * Grappled
 * Incapacitated
@@ -269,7 +274,7 @@ Types of Damage include
 * Slashing - e.g. sword
 * Thunder - sound
 
-Can have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.
+Can have Resistance to different Damage Types, in which case damage is halved, or Vulnerability where damage is doubled.
 
 ^dnd: ph196
 ^subtype: play
@@ -279,7 +284,7 @@ Can have [Resistance] to different Damage Types, in which case damage is halved,
 ## Difficulty Class (DC) ##
 ---------------------------------------------------------------------------
 
-The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.
+The difficulty of a task from 1 to 20 - used for [Ability Check|Ability Checks], [Saving Throw|Saving Throws].
 
 ^dnd: ph174
 ^subtype: play
@@ -289,17 +294,17 @@ The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw
 ## Exhaustion ##
 ---------------------------------------------------------------------------
 
-Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest]s reduce Exhaustion level by 1. 
+Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest|Rests] reduce Exhaustion level by 1. 
 
 
 | Level | Effect  |
 | ----------- | ----------- |
-|     1 | [Disadvantage] on [Ability Check]s                 |
-|     2 | [Speed] halved                                   |
-|     3 | [Disadvantage] on [Attack Rolls] and [Saving Throws] |
-|     4 | [Hit Point] maximum halved                       |
-|     5 | [Speed] reduced to 0                             |
-|     6 | [Death]                                          |
+|     1 | [Disadvantage] on [Ability Check|Ability Checks]         |
+|     2 | [Speed] halved                       |
+|     3 | [Disadvantage] on Attack Rolls and Saving Throws |
+|     4 | [Hit Point (HP)] maximum halved               |
+|     5 | [Speed] reduced to 0                         |
+|     6 | [Death]                                    |
 
 ^dnd: ph290
 ^subtype: play
@@ -319,7 +324,7 @@ A vice, compulsion, fear, or weakness - anything someone could exploit to bring 
 ## Inspiration ##
 ---------------------------------------------------------------------------
 
-Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.
+The Dungeon Master can grant Inspiration when a player does something in character, or inspiring. The player can spend it for [Advantage / Disadvantage|Advantage] on any future roll, or give it to another character.
 
 ^dnd: ph125
 ^subtype: play
@@ -339,7 +344,7 @@ See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier
 ## Proficiency ##
 ---------------------------------------------------------------------------
 
-Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.
+Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to Attack Rolls and Damage Rolls - or for working with certain tools, etc.
 
 ^dnd: ph173
 ^subtype: char
@@ -349,7 +354,7 @@ Can have Proficiency in different weapons - during [Combat] can add [Proficiency
 ## Proficiency Bonus ##
 ---------------------------------------------------------------------------
 
-Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.
+Value added to rolls when player is [Proficiency|Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.
 
 ^dnd: ph173
 ^subtype: char
@@ -473,7 +478,7 @@ In addition to Basic and Intermediate rules,
 ## Cover ##
 ---------------------------------------------------------------------------
 
-Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
+Can [Hiding|Hide] behind things during [Combat]. Half Cover gives +2 [Armor Class (AC)]. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
 
 ^dnd: ph
 ^subtype: play
@@ -483,7 +488,7 @@ Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters
 ## Crafting ##
 ---------------------------------------------------------------------------
 
-Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.
+Can Craft adventuring equipment, works of art. Must be [Proficiency|Proficient] with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
 
 ^dnd: ph187
 ^subtype: play
@@ -493,7 +498,7 @@ Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools r
 ## Downtime ##
 ---------------------------------------------------------------------------
 
-Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].
+Between adventures - must spend money each day for Lifestyle Expenses. Can Can [Craft] items, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or tool [Skill].
 
 ^dnd: ph187
 ^subtype: play
@@ -503,7 +508,7 @@ Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] 
 ## Feat ##
 ---------------------------------------------------------------------------
 
-Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
+Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Score|Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
 
 ^dnd: ph165
 ^subtype: char
@@ -513,20 +518,10 @@ Represents a talent or area of expertise - embodies training, experience, and ab
 ## Food / Water ##
 ---------------------------------------------------------------------------
 
-Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).
+Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table in PH).
 
 ^dnd: ph185
 ^subtype: play
-
-
----------------------------------------------------------------------------
-## Habit ##
----------------------------------------------------------------------------
-
-Just something to flesh out a character
-
-^dnd: none
-^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -590,7 +585,7 @@ For hiding, exploration - to check for traps, secrets, etc. No die roll - for sc
 
 
 ---------------------------------------------------------------------------
-## Personality Traits ##
+## Personality Trait ##
 ---------------------------------------------------------------------------
 
 Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [Ability Score|Ability Scores] for some ideas - [Background|Backgrounds] also give some suggestions. 
@@ -603,13 +598,13 @@ Something interesting and fun about a character - their likes, past accomplishme
 ## Rest ##
 ---------------------------------------------------------------------------
 
-Short Rests need at least an hour. Can roll [Hit Dice (HD)] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points (HP)]. 
+Short Rests need at least an hour. Can roll [Hit Dice (HD)] x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)]. 
 
 Long Rests need at least 8 hours, and restore all [Hit Points (HP)].
 
 Optionally, both require use of one Healer's Kit first. 
 
-You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throw|Saving Throws] against one Disease or Poison.
+You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)] 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throw|Saving Throws] against one Disease or Poison.
 
 ^dnd: ph186-7
 ^subtype: play

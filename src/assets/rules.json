@@ -90,7 +90,7 @@
   },
   {
     "name": "Ability Check",
-    "contents": "Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)](#difficulty-class-(dc)), 1-20. Very easy 5, Easy 10, etc.",
+    "contents": "Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)](#difficulty-class-(dc)), 1-20. Very easy 5, Easy 10, etc.",
     "dnd": "ph174",
     "subtype": "play",
     "id": "ability-check",
@@ -98,7 +98,7 @@
   },
   {
     "name": "Ability Modifier",
-    "contents": "Based on raw [Ability Scores](#ability-scores) - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1",
+    "contents": "Ability Modifiers range from -5 to +10. They are used more often than the raw [Ability Scores](#ability-score) on which they are based. \n\nAbility Modifier = floor((Ability Score - 10) / 2)\n\ne.g. if Strength = 13 then Strength Modifier = +1",
     "dnd": "ph13,173",
     "subtype": "char",
     "id": "ability-modifier",
@@ -106,7 +106,7 @@
   },
   {
     "name": "Action",
-    "contents": "Available actions during [Combat](#combat) include \n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks](#opportunity-attacks)\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw](#saving-throw)s with [Advantage](#advantage)\n* Help - aid someone and they gain [Advantage](#advantage) on next [Ability Check](#ability-check) you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
+    "contents": "Available actions during [Combat](#combat) include:\n\n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks](#opportunity-attacks)\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw](#saving-throw)s with [Advantage](#advantage)\n* Help - aid someone and they gain [Advantage](#advantage) on next [Ability Check](#ability-check) you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
     "dnd": "ph192",
     "subtype": "play",
     "id": "action",
@@ -114,7 +114,7 @@
   },
   {
     "name": "Advantage / Disadvantage",
-    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls](#attack-rolls), [Ability Checks](#ability-checks), [Saving Throws](#saving-throws) in various situations.",
+    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls](#attack-rolls), [Ability Checks](#ability-checks), [Saving Throws](#saving-throws) in various situations.",
     "dnd": "ph173",
     "subtype": "play",
     "id": "advantage-/-disadvantage",
@@ -138,7 +138,7 @@
   },
   {
     "name": "Condition",
-    "contents": "Alters capabilities in various ways.\n\n* Blinded\n* Charmed\n* Deafened\n* Exhaustion - see for table\n* Frightened\n* Grappled\n* Incapacitated\n* Invisible\n* Paralyzed\n* Petrified\n* Poisoned\n* Prone\n* Restrained\n* Stunned\n* Unconscious",
+    "contents": "Alters capabilities in various ways.\n\n* Blinded\n* Charmed\n* Deafened\n* Exhaustion - see [here](#exhaustion) for table\n* Frightened\n* Grappled\n* Incapacitated\n* Invisible\n* Paralyzed\n* Petrified\n* Poisoned\n* Prone\n* Restrained\n* Stunned\n* Unconscious",
     "dnd": "ph290",
     "subtype": "play",
     "id": "condition",
@@ -146,7 +146,7 @@
   },
   {
     "name": "Damage Type",
-    "contents": "Types of Damage include \n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\nCan have [Resistance](#resistance) to different Damage Types, in which case damage is halved, or [Vulnerability](#vulnerability) where damage is doubled.",
+    "contents": "Types of Damage include \n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\nCan have Resistance to different Damage Types, in which case damage is halved, or Vulnerability where damage is doubled.",
     "dnd": "ph196",
     "subtype": "play",
     "id": "damage-type",
@@ -154,7 +154,7 @@
   },
   {
     "name": "Difficulty Class (DC)",
-    "contents": "The difficulty of a task from 1 to 20 - used for [Ability Check](#ability-check)s, [Saving Throw](#saving-throw)s.",
+    "contents": "The difficulty of a task from 1 to 20 - used for [Ability Checks](#ability-check), [Saving Throws](#saving-throw).",
     "dnd": "ph174",
     "subtype": "play",
     "id": "difficulty-class-(dc)",
@@ -162,7 +162,7 @@
   },
   {
     "name": "Exhaustion",
-    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest](#rest)s reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Check](#ability-check)s                 |\n|     2 | [Speed](#speed) halved                                   |\n|     3 | [Disadvantage](#disadvantage) on [Attack Rolls](#attack-rolls) and [Saving Throws](#saving-throws) |\n|     4 | [Hit Point](#hit-point) maximum halved                       |\n|     5 | [Speed](#speed) reduced to 0                             |\n|     6 | [Death](#death)                                          |",
+    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rests](#rest) reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Checks](#ability-check)         |\n|     2 | [Speed](#speed) halved                       |\n|     3 | [Disadvantage](#disadvantage) on Attack Rolls and Saving Throws |\n|     4 | [Hit Point (HP)](#hit-point-(hp)) maximum halved               |\n|     5 | [Speed](#speed) reduced to 0                         |\n|     6 | [Death](#death)                                    |",
     "dnd": "ph290",
     "subtype": "play",
     "id": "exhaustion",
@@ -178,7 +178,7 @@
   },
   {
     "name": "Inspiration",
-    "contents": "Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage](#advantage) on any future roll, or give it to another character.",
+    "contents": "The Dungeon Master can grant Inspiration when a player does something in character, or inspiring. The player can spend it for [Advantage](#advantage-/-disadvantage) on any future roll, or give it to another character.",
     "dnd": "ph125",
     "subtype": "play",
     "id": "inspiration",
@@ -194,7 +194,7 @@
   },
   {
     "name": "Proficiency",
-    "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to [Attack Rolls](#attack-rolls) and [Damage Rolls](#damage-rolls) - or Tools, etc.",
+    "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to Attack Rolls and Damage Rolls - or for working with certain tools, etc.",
     "dnd": "ph173",
     "subtype": "char",
     "id": "proficiency",
@@ -202,7 +202,7 @@
   },
   {
     "name": "Proficiency Bonus",
-    "contents": "Value added to rolls when player is [Proficient](#proficient) in a relevant [Skill](#skill). Based on player's [Level](#level) - e.g. first level is +2.",
+    "contents": "Value added to rolls when player is [Proficient](#proficiency) in a relevant [Skill](#skill). Based on player's [Level](#level) - e.g. first level is +2.",
     "dnd": "ph173",
     "subtype": "char",
     "id": "proficiency-bonus",
@@ -279,7 +279,7 @@
   },
   {
     "name": "Cover",
-    "contents": "Can [Hide](#hide) behind things during [Combat](#combat). Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
+    "contents": "Can [Hide](#hiding) behind things during [Combat](#combat). Half Cover gives +2 [Armor Class (AC)](#armor-class-(ac)). Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
     "dnd": "ph",
     "subtype": "play",
     "id": "cover",
@@ -287,7 +287,7 @@
   },
   {
     "name": "Crafting",
-    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficient) with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.",
+    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficiency) with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.",
     "dnd": "ph187",
     "subtype": "play",
     "id": "crafting",
@@ -295,7 +295,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - spend money each day for [Lifestyle Expenses](#lifestyle-expenses). Can [Craft](#craft) items, eg armor, work at a [Profession](#profession) to earn money, [Rest](#rest) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or [Tool](#tool) [Skill](#skill).",
+    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can Can [Craft](#craft) items, work at a [Profession](#profession) to earn money, [Rest](#rest) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or tool [Skill](#skill).",
     "dnd": "ph187",
     "subtype": "play",
     "id": "downtime",
@@ -303,7 +303,7 @@
   },
   {
     "name": "Feat",
-    "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores](#ability-scores) when advancing a [Level](#level). Can gain [Advantage](#advantage), [Proficiency](#proficiency) in different [Skills](#skills), etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer.",
+    "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores](#ability-score) when advancing a [Level](#level). Can gain [Advantage](#advantage), [Proficiency](#proficiency) in different [Skills](#skills), etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer.",
     "dnd": "ph165",
     "subtype": "char",
     "id": "feat",
@@ -311,18 +311,10 @@
   },
   {
     "name": "Food / Water",
-    "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion](#exhaustion) (see table).",
+    "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion](#exhaustion) (see table in PH).",
     "dnd": "ph185",
     "subtype": "play",
     "id": "food-/-water",
-    "parentId": "advanced"
-  },
-  {
-    "name": "Habit",
-    "contents": "Just something to flesh out a character",
-    "dnd": "none",
-    "subtype": "char",
-    "id": "habit",
     "parentId": "advanced"
   },
   {
@@ -374,16 +366,16 @@
     "parentId": "advanced"
   },
   {
-    "name": "Personality Traits",
+    "name": "Personality Trait",
     "contents": "Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [Ability Scores](#ability-score) for some ideas - [Backgrounds](#background) also give some suggestions.",
     "dnd": "ph123",
     "subtype": "char",
-    "id": "personality-traits",
+    "id": "personality-trait",
     "parentId": "advanced"
   },
   {
     "name": "Rest",
-    "contents": "Short Rests need at least an hour. Can roll [Hit Dice (HD)](#hit-dice-(hd)) n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points (HP)](#hit-points-(hp)). \n\nLong Rests need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw](#saving-throw) - on success gain [Advantage](#advantage) on [Saving Throws](#saving-throw) against one Disease or Poison.",
+    "contents": "Short Rests need at least an hour. Can roll [Hit Dice (HD)](#hit-dice-(hd)) x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)](#hit-points-(hp)). \n\nLong Rests need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)](#difficulty-class-(dc)) 15 Constitution [Saving Throw](#saving-throw) - on success gain [Advantage](#advantage) on [Saving Throws](#saving-throw) against one Disease or Poison.",
     "dnd": "ph186-7",
     "subtype": "play",
     "id": "rest",
