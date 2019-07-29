@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "build-rules": "node scripts/nm2json.js < rules/rules.nm > src/assets/rules.json",
-    "prestart": "yarn run build-rules && chokidar rules/rules.nm -c \"yarn run build-rules\"",
-    "start": "react-scripts start",
+    "watch-rules": "chokidar rules/rules.nm -c \"yarn run build-rules\"",
+    "//prestart": "yarn build-rules && yarn watch-rules",
+    "//start": "react-scripts start",
+    "start": "yarn build-rules && concurrently \"yarn watch-rules\" \"react-scripts start\"",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "chokidar-cli": "^1.2.2",
+    "concurrently": "^4.1.1",
     "gh-pages": "^2.0.1",
     "markdown-it": "^9.0.1",
     "nearley": "^2.16.0",

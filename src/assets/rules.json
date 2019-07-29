@@ -6,8 +6,7 @@
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines.",
-    "(Intermediate": "Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n (Intermediate: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
