@@ -6,7 +6,7 @@
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n (Intermediate: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n (Intermediate: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.)",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
@@ -24,7 +24,7 @@
   },
   {
     "name": "Combat (Basic)",
-    "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll] score\n* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]\n* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.\n\nSee also [Combat (Intermediate)] and [Combat (Advanced)].",
+    "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll](#attack-roll) score\n* If score >= target's [Armor Class (AC)](#armor-class-(ac)), it's a hit - roll appropriate dice (based on weapon) for [Damage Roll](#damage-roll)\n* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.\n\nSee also [Combat (Intermediate)](#combat-(intermediate)) and [Combat (Advanced)](#combat-(advanced)).",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(basic)",
@@ -32,7 +32,7 @@
   },
   {
     "name": "Culture",
-    "contents": "Corresponds to [Race] in D&D - eg Hobbits of the Shire, Riders of Rohan",
+    "contents": "Corresponds to [Race](#race) in D&D - eg Hobbits of the Shire, Riders of Rohan",
     "aime": "pg30",
     "subtype": "char",
     "id": "culture",
@@ -40,7 +40,7 @@
   },
   {
     "name": "Experience Points (XP)",
-    "contents": "Represent character's experience and determines their [Level]. Gain for monsters kills, significant actions etc. See table for when to advance a [Level].",
+    "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters kills, significant actions etc. See table for when to advance a [Level](#level).",
     "dnd": "ph15",
     "subtype": "char",
     "id": "experience-points-(xp)",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Hit Dice (HD)",
-    "contents": "These determine how many [Hit Points (HP)] a character has. Different [Class|Classes] have different types of Hit Dice, e.g. d8, d10.",
+    "contents": "These determine how many [Hit Points (HP)](#hit-points-(hp)) a character has. Different [Class](#hit-points-(hp)%5D(#hit-points-(hp))-a-character-has.-different-%5Bclass \"Classes\") have different types of Hit Dice, e.g. d8, d10.",
     "dnd": "ph12",
     "subtype": "char",
     "id": "hit-dice-(hd)",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Hit Points (HP)",
-    "contents": "Represents health. At first level, Hit Points = max of [Hit Dice] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice] max +1 + Constitution Modifier (avoids randomness).\n\nWhen reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]",
+    "contents": "Represents health. At first level, Hit Points = max of [Hit Dice](#hit-dice) + Constitution Modifier (see [Ability Modifiers](#ability-modifiers)). At subsequent levels, roll [Hit Dice](#hit-dice) and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice](#hit-dice) max +1 + Constitution Modifier (avoids randomness).\n\nWhen reach 0 or below HP, can be [Dead](#dead) or [Unconscious](#unconscious) - dead if get [Massive Damage](#massive-damage) (if remaining damage >= HP max). When Unconscious must make [Saving Throw](#saving-throw)s against Death [see ph197](#see-ph197)",
     "dnd": "ph12,197",
     "subtype": "char",
     "id": "hit-points-(hp)",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Level",
-    "contents": "Character Levels are based on [Experience Points (XP)] - as reach higher levels gain more abilities, skills, spells, etc.",
+    "contents": "Character Levels are based on [Experience Points (XP)](#experience-points-(xp)) - as reach higher levels gain more abilities, skills, spells, etc.",
     "dnd": "ph15",
     "subtype": "char",
     "id": "level",
@@ -72,7 +72,7 @@
   },
   {
     "name": "Race",
-    "contents": "Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.",
+    "contents": "Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice](#hit-dice), additions to [Ability Scores](#ability-scores), etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.",
     "dnd": "ph17",
     "subtype": "char",
     "id": "race",
@@ -93,7 +93,7 @@
   },
   {
     "name": "Ability Check",
-    "contents": "Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)], 1-20. Very easy 5, Easy 10, etc.",
+    "contents": "Do to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)](#difficulty-class-(dc)), 1-20. Very easy 5, Easy 10, etc.",
     "dnd": "ph174",
     "subtype": "play",
     "id": "ability-check",
@@ -101,7 +101,7 @@
   },
   {
     "name": "Ability Modifier",
-    "contents": "Based on raw [Ability Scores] - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1",
+    "contents": "Based on raw [Ability Scores](#ability-scores) - range from -5 to +10. Ability Modifier = floor((Ability Score - 10) / 2). e.g. if Strength = 13 then Strength Modifier = +1",
     "dnd": "ph13,173",
     "subtype": "char",
     "id": "ability-modifier",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Action",
-    "contents": "Available actions during [Combat] include \n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks]\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw]s with [Advantage]\n* Help - aid someone and they gain [Advantage] on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
+    "contents": "Available actions during [Combat](#combat) include \n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks](#opportunity-attacks)\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw](#saving-throw)s with [Advantage](#advantage)\n* Help - aid someone and they gain [Advantage](#advantage) on next [Ability Check](#ability-check) you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) Ability Check to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
     "dnd": "ph192",
     "subtype": "play",
     "id": "action",
@@ -117,7 +117,7 @@
   },
   {
     "name": "Advantage / Disadvantage",
-    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.",
+    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a **Prone** creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls](#attack-rolls), [Ability Checks](#ability-checks), [Saving Throws](#saving-throws) in various situations.",
     "dnd": "ph173",
     "subtype": "play",
     "id": "advantage-/-disadvantage",
@@ -125,7 +125,7 @@
   },
   {
     "name": "Background",
-    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features], [Proficiencies], and [Languages]), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment].",
+    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features](#features), [Proficiencies](#proficiencies), and [Languages](#languages)), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency](#proficiency) in two [Skills](#skills) and one or more [Tools](#tools). Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment](#equipment).",
     "dnd": "ph125",
     "subtype": "char",
     "urls": "https://www.dndbeyond.com/backgrounds",
@@ -134,7 +134,7 @@
   },
   {
     "name": "Combat (Intermediate)",
-    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus] if [Proficient] with current weapon\n* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])",
+    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier](#ability-modifier) for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus](#proficiency-bonus) if [Proficient](#proficient) with current weapon\n* Determine if have [Advantage / Disadvantage](#advantage-/-disadvantage) for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover](#cover)\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll](#damage-roll), add [Ability Modifier](#ability-modifier) (same as for [Attack Roll](#attack-roll))",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(intermediate)",
@@ -150,7 +150,7 @@
   },
   {
     "name": "Damage Types",
-    "contents": "Types of Damage include \n\n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\n\nCan have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.",
+    "contents": "Types of Damage include \n\n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\n\nCan have [Resistance](#resistance) to different Damage Types, in which case damage is halved, or [Vulnerability](#vulnerability) where damage is doubled.",
     "dnd": "ph196",
     "subtype": "play",
     "id": "damage-types",
@@ -158,7 +158,7 @@
   },
   {
     "name": "Difficulty Class (DC)",
-    "contents": "The difficulty of a task from 1 to 20 - used for [Ability Check]s, [Saving Throw]s.",
+    "contents": "The difficulty of a task from 1 to 20 - used for [Ability Check](#ability-check)s, [Saving Throw](#saving-throw)s.",
     "dnd": "ph174",
     "subtype": "play",
     "id": "difficulty-class-(dc)",
@@ -166,7 +166,7 @@
   },
   {
     "name": "Exhaustion",
-    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest]s reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage] on [Ability Check]s                 |\n|     2 | [Speed] halved                                   |\n|     3 | [Disadvantage] on [Attack Rolls] and [Saving Throws] |\n|     4 | [Hit Point] maximum halved                       |\n|     5 | [Speed] reduced to 0                             |\n|     6 | [Death]                                          |",
+    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rest](#rest)s reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Check](#ability-check)s                 |\n|     2 | [Speed](#speed) halved                                   |\n|     3 | [Disadvantage](#disadvantage) on [Attack Rolls](#attack-rolls) and [Saving Throws](#saving-throws) |\n|     4 | [Hit Point](#hit-point) maximum halved                       |\n|     5 | [Speed](#speed) reduced to 0                             |\n|     6 | [Death](#death)                                          |",
     "dnd": "ph290",
     "subtype": "play",
     "id": "exhaustion",
@@ -182,7 +182,7 @@
   },
   {
     "name": "Inspiration",
-    "contents": "Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage] on any future roll, or give it to another character.",
+    "contents": "Dungeon Master can grant Inspiration when player does something in character, or inspiring. Player can spend it for [Advantage](#advantage) on any future roll, or give it to another character.",
     "dnd": "ph125",
     "subtype": "play",
     "id": "inspiration",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Modifier",
-    "contents": "See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier.",
+    "contents": "See [Ability Modifier](#ability-modifier), e.g. Intelligence Modifier is a type of Ability Modifier.",
     "dnd": "ph",
     "subtype": "char",
     "id": "modifier",
@@ -198,7 +198,7 @@
   },
   {
     "name": "Proficiencies",
-    "contents": "Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.",
+    "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to [Attack Rolls](#attack-rolls) and [Damage Rolls](#damage-rolls) - or Tools, etc.",
     "dnd": "ph173",
     "subtype": "char",
     "id": "proficiencies",
@@ -206,7 +206,7 @@
   },
   {
     "name": "Proficiency Bonus",
-    "contents": "Value added to rolls when player is [Proficient] in a relevant [Skill]. Based on player's [Level] - e.g. first level is +2.",
+    "contents": "Value added to rolls when player is [Proficient](#proficient) in a relevant [Skill](#skill). Based on player's [Level](#level) - e.g. first level is +2.",
     "dnd": "ph173",
     "subtype": "char",
     "id": "proficiency-bonus",
@@ -214,7 +214,7 @@
   },
   {
     "name": "Saving Throw",
-    "contents": "Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)] of effect causing it, success.",
+    "contents": "Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)](#difficulty-class-(dc)) of effect causing it, success.",
     "dnd": "ph179",
     "subtype": "play",
     "id": "saving-throw",
@@ -222,7 +222,7 @@
   },
   {
     "name": "Searching",
-    "contents": "Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.",
+    "contents": "Use a Wisdom (Perception) [Ability Check](#ability-check). Must say specifically where are searching to find hidden things.",
     "dnd": "ph178",
     "subtype": "play",
     "id": "searching",
@@ -230,7 +230,7 @@
   },
   {
     "name": "Skills",
-    "contents": "Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like \"Strength (Athletics)\". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.\n\n| Ability      | Skills          |\n|--------------|-----------------|\n| Strength     | Athletics       |\n| Constitution | (none)  |\n| Dexterity    | Acrobatics      |\n|              | Sleight of Hand |\n|              | Stealth         |\n| Intelligence | Arcana          |\n|              | History         |\n|              | Investigation   |\n|              | Nature          |\n|              | Religion        |\n| Wisdom       | Animal Handling |\n|              | Insight         |\n|              | Medicine        |\n|              | Perception      |\n|              | Survival        |\n| Charisma     | Deception       |\n|              | Intimidation    |\n|              | Performance     |\n|              | Persuasion      |",
+    "contents": "Each [Ability Score](#ability-score) covers a set of Skills you can be [Proficient](#proficient) in, and referred to like \"Strength (Athletics)\". For [Ability Checks](#ability-checks) can add your [Proficiency Bonus](#proficiency-bonus) if a Skill is relevant.\n\n| Ability      | Skills          |\n|--------------|-----------------|\n| Strength     | Athletics       |\n| Constitution | (none)  |\n| Dexterity    | Acrobatics      |\n|              | Sleight of Hand |\n|              | Stealth         |\n| Intelligence | Arcana          |\n|              | History         |\n|              | Investigation   |\n|              | Nature          |\n|              | Religion        |\n| Wisdom       | Animal Handling |\n|              | Insight         |\n|              | Medicine        |\n|              | Perception      |\n|              | Survival        |\n| Charisma     | Deception       |\n|              | Intimidation    |\n|              | Performance     |\n|              | Persuasion      |",
     "dnd": "ph174",
     "subtype": "char",
     "id": "skills",
@@ -259,7 +259,7 @@
   },
   {
     "name": "Bonus Action",
-    "contents": "An additional [Action] you take on your [Combat] turn depending on various [Class] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.",
+    "contents": "An additional [Action](#action) you take on your [Combat](#combat) turn depending on various [Class](#class) features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.",
     "dnd": "ph189",
     "subtype": "play",
     "id": "bonus-action",
@@ -267,7 +267,7 @@
   },
   {
     "name": "Carrying Capacity",
-    "contents": "Amount of weight you can carry - [Speed] is affected as you carry more.",
+    "contents": "Amount of weight you can carry - [Speed](#speed) is affected as you carry more.",
     "dnd": "ph176",
     "subtype": "char",
     "id": "carrying-capacity",
@@ -275,7 +275,7 @@
   },
   {
     "name": "Combat (Advanced)",
-    "contents": "In addition to Basic and Intermediate rules,\n\n* Establish physical positions and roll [Initiative] to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier]\n* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)\n* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier]\n* Can move a distance up to your [Speed] AND take one [Action]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. \n* Can talk/gesture and interact with one object for free (e.g. drawing a sword)\n* Take one [Bonus Action] if allowed\n* Each complete round lasts 6 seconds in the game world.",
+    "contents": "In addition to Basic and Intermediate rules,\n\n* Establish physical positions and roll [Initiative](#initiative) to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier](#ability-modifier)\n* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)\n* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier](#ability-modifier)\n* Can move a distance up to your [Speed](#speed) AND take one [Action](#action). Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. \n* Can talk/gesture and interact with one object for free (e.g. drawing a sword)\n* Take one [Bonus Action](#bonus-action) if allowed\n* Each complete round lasts 6 seconds in the game world.",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(advanced)",
@@ -283,7 +283,7 @@
   },
   {
     "name": "Cover",
-    "contents": "Can [Hide] behind things during [Combat]. Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
+    "contents": "Can [Hide](#hide) behind things during [Combat](#combat). Half Cover gives +2 AC. Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
     "dnd": "ph",
     "subtype": "play",
     "id": "cover",
@@ -291,7 +291,7 @@
   },
   {
     "name": "Crafting",
-    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient] with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.",
+    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficient) with Tools related to object, access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that. e.g. plate armor (1500gp) takes 300 days to craft alone. Others can help.",
     "dnd": "ph187",
     "subtype": "play",
     "id": "crafting",
@@ -299,7 +299,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] items, eg armor, work at a [Profession] to earn money, [Rest] to recover from poisons, do [Research] to find information, [Train] to learn new [Language] or [Tool] [Skill].",
+    "contents": "Between adventures - spend money each day for [Lifestyle Expenses](#lifestyle-expenses). Can [Craft](#craft) items, eg armor, work at a [Profession](#profession) to earn money, [Rest](#rest) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or [Tool](#tool) [Skill](#skill).",
     "dnd": "ph187",
     "subtype": "play",
     "id": "downtime",
@@ -307,7 +307,7 @@
   },
   {
     "name": "Feats",
-    "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.",
+    "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores](#ability-scores) when advancing a [Level](#level). Can gain [Advantage](#advantage), [Proficiency](#proficiency) in different [Skills](#skills), etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.",
     "dnd": "ph165",
     "subtype": "char",
     "id": "feats",
@@ -315,7 +315,7 @@
   },
   {
     "name": "Food / Water",
-    "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion] (see table).",
+    "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion](#exhaustion) (see table).",
     "dnd": "ph185",
     "subtype": "play",
     "id": "food-/-water",
@@ -331,7 +331,7 @@
   },
   {
     "name": "Hiding",
-    "contents": "aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.",
+    "contents": "aka [Stealth](#stealth) - make a Dexterity (Stealth) [Ability Check](#ability-check) when attempting to hide from enemies etc.",
     "dnd": "ph177",
     "subtype": "play",
     "id": "hiding",
@@ -339,7 +339,7 @@
   },
   {
     "name": "Ideals",
-    "contents": "Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.",
+    "contents": "Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds](#backgrounds) give suggestions.",
     "dnd": "ph124",
     "subtype": "char",
     "id": "ideals",
@@ -347,7 +347,7 @@
   },
   {
     "name": "Initiative",
-    "contents": "Determines order of turns taken in [Combat].",
+    "contents": "Determines order of turns taken in [Combat](#combat).",
     "dnd": "ph189",
     "subtype": "play",
     "id": "initiative",
@@ -355,7 +355,7 @@
   },
   {
     "name": "Languages",
-    "contents": "Default language is given by [Race], can learn others - see [Training].",
+    "contents": "Default language is given by [Race](#race), can learn others - see [Training](#training).",
     "dnd": "ph123",
     "subtype": "char",
     "id": "languages",
@@ -363,7 +363,7 @@
   },
   {
     "name": "Multiclassing",
-    "contents": "Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.",
+    "contents": "Can gain [Levels](#levels) in multiple [Classes](#classes) - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.",
     "dnd": "ph163",
     "subtype": "char",
     "id": "multiclassing",
@@ -371,7 +371,7 @@
   },
   {
     "name": "Passive Checks",
-    "contents": "For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage], -5 if [Disadvantage].",
+    "contents": "For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage](#advantage), -5 if [Disadvantage](#disadvantage).",
     "dnd": "ph175",
     "subtype": "play",
     "id": "passive-checks",
@@ -379,7 +379,7 @@
   },
   {
     "name": "Personality Traits",
-    "contents": "Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.",
+    "contents": "Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores](#ability-scores) for ideas. [Backgrounds](#backgrounds) also give suggestions. Pet peeves, quotes, mannerisms.",
     "dnd": "ph123",
     "subtype": "char",
     "id": "personality-traits",
@@ -387,7 +387,7 @@
   },
   {
     "name": "Rest",
-    "contents": "Short Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. \n\nLong Rests need at least 8 hours, and restore all [Hit Points].\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.",
+    "contents": "Short Rests need at least an hour. Can roll [Hit Dice](#hit-dice) n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points](#hit-points). \n\nLong Rests need at least 8 hours, and restore all [Hit Points](#hit-points).\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw](#saving-throw) - on success gain [Advantage](#advantage) on [Saving Throws](#saving-throws) against one Disease or Poison.",
     "dnd": "ph186-7",
     "subtype": "play",
     "id": "rest",
@@ -395,7 +395,7 @@
   },
   {
     "name": "Subrace",
-    "contents": "Some [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.",
+    "contents": "Some [Races](#races) have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.",
     "dnd": "ph17",
     "subtype": "char",
     "id": "subrace",
@@ -403,7 +403,7 @@
   },
   {
     "name": "Training",
-    "contents": "Can train to learn new [Language], tool [Skill] [Proficiency] - must find instructor. Training lasts 250 days and costs 1gp per day.",
+    "contents": "Can train to learn new [Language](#language), tool [Skill](#skill) [Proficiency](#proficiency) - must find instructor. Training lasts 250 days and costs 1gp per day.",
     "dnd": "ph187",
     "subtype": "play",
     "id": "training",

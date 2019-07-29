@@ -79,20 +79,35 @@ objs.push(obj)
 console.log(JSON.stringify(objs, null, 2))
 
 
-
 function finishObject(obj) {
   // finish object
   if (!obj.id) obj.id = getIdFromName(obj.name)
   idsByDepth[depth] = obj.id
   if (depth > 0) obj.parentId = idsByDepth[depth - 1]
-  obj.contents = obj.contents.trim()
+  obj.contents = linkifyText(obj.contents.trim())
   return obj
 }
 
-// keep in synch with components/app/index.jsx
+
+// convert neomem-style links to markdown-style links
+// eg
+// [Something nice] --> [Something nice](#something-nice)
+// [Something|Somethings] --> [Something](#something "Somethings")
+function linkifyText(nm) {
+  let md = nm
+  md = md.replace(/\[([^|]+?)\]/g, (match, p1) => {
+    return `[${p1}](#${getIdFromName(p1)})`
+  })
+  md = md.replace(/\[(.+?)\|(.+?)\]/g, (match, p1, p2) => {
+    return `[${p1}](#${getIdFromName(p1)} "${p2}")`
+  })
+  return md
+}
+
 function getIdFromName(s) {
   return encodeURI(s.replace(/ /g, '-').toLowerCase())
 }
+
 
 // get type of line based on regexp and current state
 function getLineType(line, state) {
