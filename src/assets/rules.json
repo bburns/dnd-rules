@@ -6,7 +6,7 @@
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n*Intermediate*: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n(*Intermediate*: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.)",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. \n\n*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.\n\n*Advanced*: Can [Multiclass](#multiclass) also.",
+    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. E.g. Fighter, Druid, Ranger, etc.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclass) also.)",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",
@@ -193,11 +193,11 @@
     "parentId": "intermediate"
   },
   {
-    "name": "Proficiencies",
+    "name": "Proficiency",
     "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to [Attack Rolls](#attack-rolls) and [Damage Rolls](#damage-rolls) - or Tools, etc.",
     "dnd": "ph173",
     "subtype": "char",
-    "id": "proficiencies",
+    "id": "proficiency",
     "parentId": "intermediate"
   },
   {

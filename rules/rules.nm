@@ -20,7 +20,7 @@ Measures of different abilities:
 
 Max 20 for characters, 30 for monsters/divines. 
 
-*Intermediate*: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.
+(*Intermediate*: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)
 
 
 ^dnd: ph12,173
@@ -32,11 +32,11 @@ Max 20 for characters, 30 for monsters/divines.
 ## Class ##
 ---------------------------------------------------------------------------
 
-Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. 
+Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. E.g. Fighter, Druid, Ranger, etc.
 
-*Intermediate*: Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.
+(*Intermediate*: Gives special Features, like [Proficiency] in different weapons or armor.)
 
-*Advanced*: Can [Multiclass] also.
+(*Advanced*: Can [Multiclass] also.)
 
 ^dnd: ph45
 ^subtype: char
@@ -338,7 +338,7 @@ See [Ability Modifier], e.g. Intelligence Modifier is a type of Ability Modifier
 
 
 ---------------------------------------------------------------------------
-## Proficiencies ##
+## Proficiency ##
 ---------------------------------------------------------------------------
 
 Can have Proficiency in different weapons - during [Combat] can add [Proficiency Bonus] to [Attack Rolls] and [Damage Rolls] - or Tools, etc.
