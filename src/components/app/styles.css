@@ -94,10 +94,21 @@ th, td {
   display: flex;
   flex-direction: column;
 }
+.app-page h2 {
+  font-size: 1.8em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.app-intro {
+  padding: 1em;
+}
 
 .app-footer {
   padding: 1em;
-  text-align: right;
+}
+.app-footer span+span:before {
+  content: ' | ';
 }
 
 .app-rules {
@@ -108,11 +119,11 @@ th, td {
   clear: both;
 }
 
-.app-rules-section>h2 {
+/* .app-rules-section>h2 {
   font-size: 1.8em;
   padding-bottom: 4px;
   border-bottom: 1px solid #ccc;
-}
+} */
 
 
 .rule {

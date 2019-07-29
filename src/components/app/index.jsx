@@ -47,6 +47,16 @@ export default function() {
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
         <div className="app-page">
+          <div className="app-intro">
+            <h2>Introduction</h2>
+            <div>
+              The rules are split here into 3 sections - Basic, Intermediate, and Advanced. The Basic rules are the minimum needed to play a game - others can be added as desired.
+            </div>
+            <br />
+            <div>
+              The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.
+            </div>
+          </div>
           <Rules rulesByLevel={rulesByLevel} />
           <Footer />
         </div>
@@ -68,7 +78,8 @@ function Header() {
 function Footer() {
   return (
     <div className="app-footer">
-      Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a>
+      <span>Rules (c) Wizards of the Coast</span>
+      <span>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></span>
     </div>
   )
 }

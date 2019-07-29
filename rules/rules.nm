@@ -1,8 +1,6 @@
 ---------------------------------------------------------------------------
-# Basic #
+# Basic Rules #
 ---------------------------------------------------------------------------
-
-The basic rules are enough to get started and play a game - the intermediate and advanced rules can be added as desired.
 
 
 ---------------------------------------------------------------------------
@@ -27,6 +25,15 @@ Max 20 for characters, 30 for monsters/divines.
 ^subtype: char
 
 
+---------------------------------------------------------------------------
+## Armor Class (AC) ##
+---------------------------------------------------------------------------
+
+A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
+
+^dnd: ph
+^subtype: play
+
 
 ---------------------------------------------------------------------------
 ## Class ##
@@ -49,8 +56,8 @@ Primary definition of what a character can do - their calling, e.g. Fighter, Dru
 Players and adversaries take turns -
 
 * Choose a target
-* Roll d20 for base [Attack Roll] score
-* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]
+* Roll d20 for base Attack Roll score
+* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for Damage Roll
 * Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.
 
 See also [Combat (Intermediate)] and [Combat (Advanced)].
@@ -93,9 +100,9 @@ These determine how many [Hit Points (HP)] a character has. Different [Class|Cla
 ## Hit Points (HP) ##
 ---------------------------------------------------------------------------
 
-Represents health. At first level, Hit Points = max of [Hit Dice] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice] max +1 + Constitution Modifier (avoids randomness).
+Represents health. At first level, Hit Points = max of [Hit Dice (HD)] + Constitution Modifier (see [Ability Modifiers]). At subsequent levels, roll [Hit Dice (HD)] and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice (HD)] max +1 + Constitution Modifier (avoids randomness).
 
-When reach 0 or below HP, can be [Dead] or [Unconscious] - dead if get [Massive Damage] (if remaining damage >= HP max). When Unconscious must make [Saving Throw]s against Death [see ph197]
+(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [Saving Throw|Saving Throws] against Death (see ph197))
 
 ^dnd: ph12,197
 ^subtype: char
@@ -115,7 +122,7 @@ Character Levels are based on [Experience Points (XP)] - as reach higher levels 
 ## Race ##
 ---------------------------------------------------------------------------
 
-Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice], additions to [Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
+Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice (HD)], additions to [Ability Score|Ability Scores], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
 
 ^dnd: ph17
 ^subtype: char
@@ -132,7 +139,7 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 
 
 ---------------------------------------------------------------------------
-# Intermediate #
+# Intermediate Rules #
 ---------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------
@@ -168,12 +175,12 @@ Available actions during [Combat] include:
 * Attack
 * Cast Spell
 * Dash - move at double speed
-* Disengage - avoid [Opportunity Attacks]
-* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw]s with [Advantage]
-* Help - aid someone and they gain [Advantage] on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.
-* Hide - make Dexterity (Stealth) Ability Check to hide
+* Disengage - avoid [Opportunity Attack|Opportunity Attacks]
+* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throw|Saving Throws] with Advantage
+* Help - aid someone and they gain Advantage on next [Ability Check] you're helping them with. or aid in Attack so they gain Advantage.
+* Hide - make Dexterity (Stealth) [Ability Check] to hide
 * Ready - lets you act immediately on some trigger before start of your next turn
-* Search - make Wisdom (Perception) or Intelligence (Investigation) Ability Check
+* Search - make Wisdom (Perception) or Intelligence (Investigation) [Ability Check]
 * Use - if want to use more than one object in your turn
 * Other - improvise!
 
@@ -199,15 +206,11 @@ Can use for Attack Rolls, [Ability Check|Ability Checks], [Saving Throw|Saving T
 ## Background ##
 ---------------------------------------------------------------------------
 
-Where character came from, how came to be an adventurer, their place in world. Provide benefits (Features, [Proficiency|Proficiencies], and [Language|Languages]), and roleplaying suggestions. 
-
-Each Background gives a character [Proficiency] in two [Skill|Skills] and one or more Tools. Some also allow learning an additional language.
-
-Also provides a package of starting Equipment.
+Where character came from, how came to be an adventurer, their place in the world. Each Background gives a character [Proficiency] in two [Skill|Skills] and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [Language]. 
 
 ^dnd: ph125
 ^subtype: char
-urls: https://www.dndbeyond.com/backgrounds
+^urls: https://www.dndbeyond.com/backgrounds
 
 
 ---------------------------------------------------------------------------
@@ -217,10 +220,11 @@ urls: https://www.dndbeyond.com/backgrounds
 In addition to Basic rules,
 
 * Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon
-* Add [Proficiency Bonus] if [Proficient] with current weapon
+* Add [Proficiency Bonus] if [Proficiency|Proficient] with current weapon
 * Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]
 * Roll d20 twice if have Advantage or Disadvantage and take best/worst score
 * For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
+
 
 * For Damage Roll, add [Ability Modifier] (same as for Attack Roll)
 
@@ -375,7 +379,7 @@ Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class 
 ## Searching ##
 ---------------------------------------------------------------------------
 
-Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searching to find hidden things.
+Use a Wisdom (Perception) [Ability Check] to search for hidden things. Must say specifically where searching.
 
 ^dnd: ph178
 ^subtype: play
@@ -414,7 +418,7 @@ Each [Ability Score] covers a set of Skills you can be [Proficiency|Proficient] 
 
 
 ---------------------------------------------------------------------------
-# Advanced #
+# Advanced Rules #
 ---------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------
@@ -431,7 +435,9 @@ Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and
 ## Bond ##
 ---------------------------------------------------------------------------
 
-A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
+A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. 
+
+Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
 
 ^dnd: ph124
 ^subtype: char
@@ -509,7 +515,7 @@ Between adventures - must spend money each day for Lifestyle Expenses. Can Can [
 ## Feat ##
 ---------------------------------------------------------------------------
 
-Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Score|Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
+Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Score|Ability Scores] when advancing a [Level]. Can gain [Advantage / Disadvantage|Advantage], [Proficiency] in different [Skill|Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
 
 ^dnd: ph165
 ^subtype: char
@@ -529,7 +535,7 @@ Need one pound food and one gallon water/day, two gallons if hot. Below this suf
 ## Hiding ##
 ---------------------------------------------------------------------------
 
-aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.
+Make a Dexterity (Stealth) [Ability Check] when attempting to hide from enemies etc.
 
 ^dnd: ph177
 ^subtype: play
@@ -539,7 +545,7 @@ aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hi
 ## Ideal ##
 ---------------------------------------------------------------------------
 
-Something that drives your character - what principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Background|Backgrounds] give some suggestions.
+Something that drives your character. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Background|Backgrounds] give some suggestions.
 
 ^dnd: ph124
 ^subtype: char
@@ -549,7 +555,7 @@ Something that drives your character - what principals will you never betray? Wh
 ## Initiative ##
 ---------------------------------------------------------------------------
 
-Determines order of turns taken in [Combat].
+Determines order of turns taken in [Combat (Advanced)].
 
 ^dnd: ph189
 ^subtype: play
@@ -605,7 +611,7 @@ Long Rests need at least 8 hours, and restore all [Hit Points (HP)].
 
 Optionally, both require use of one Healer's Kit first. 
 
-You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)] 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throw|Saving Throws] against one Disease or Poison.
+You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)] 15 Constitution [Saving Throw] - on success gain Advantage on [Saving Throw|Saving Throws] against one Disease or Poison.
 
 ^dnd: ph186-7
 ^subtype: play
@@ -639,5 +645,4 @@ Can travel at normal, fast, or slow pace (table ph182). Can only do half speed i
 
 ^dnd: ph181
 ^subtype: play
-
 
