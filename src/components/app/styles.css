@@ -24,13 +24,15 @@ body {
 
 
 a {
-  color:#267e8e;
+  color: #269e62;
+  /* color:#267e8e; */
+  /* font-weight: bold; */
 }
 a:visited {
-  color:#15324d;
+  /* color:#15324d; */
 }
 a:hover {
-  color:#3acb83;
+  color:#27e486;
 }
 
 
@@ -163,6 +165,10 @@ th, td {
     padding-top: 0;
     width: 33%;
   }
+}
+
+.rule a {
+  /* font-weight: bold; */
 }
 
 .rule>h3 {

@@ -61,14 +61,14 @@ function markdownToReact(md) {
 // esp internal links
 function linkifyText(nm) {
   let md = nm
-  // [Something] --> [Something](#something)
+  // [Something nice] --> [Something nice](#something-nice)
   md = md.replace(/\[([^|]+?)\]/g, (match, p1) => {
-    return '[' + p1 + '](#' + getIdFromName(p1) + ')'
+    return `[${p1}](#${getIdFromName(p1)})`
   })
-  // // [Something|Somethings] --> [Something](#something "Somethings")
-  // md = md.replace(/\[(.+?)\|(.+?)\]/g, match => {
-  //   return match[0] + '(#something "Somethings")'
-  // })
+  // [Something|Somethings] --> [Something](#something "Somethings")
+  md = md.replace(/\[(.+?)\|(.+?)\]/g, (match, p1, p2) => {
+    return `[${p1}](#${getIdFromName(p1)} "${p2}")`
+  })
   return md
 }
 
