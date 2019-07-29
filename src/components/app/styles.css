@@ -72,6 +72,12 @@ th, td {
 .app-header h1 {
   margin: 0;
   font-weight: 300;
+  font-size: 1.4em;
+}
+@media(min-width:500px) {
+  .app-header h1 {
+    font-size: 2em;
+  }
 }
 
 .app-contents {
@@ -112,7 +118,6 @@ th, td {
   float: left;
   width: 100%
 }
-
 @media(min-width:770px) {
   .rule {
     padding-top: 0;
