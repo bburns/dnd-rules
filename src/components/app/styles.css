@@ -35,11 +35,13 @@ a:hover {
   border-bottom: 1px dotted #5ee71f;;
 }
 
-
+table {
+  border-collapse: collapse;
+}
 th, td {
   text-align: left;
   border: 1px solid #ddd;
-  padding: 0 1em;
+  padding: 1px 1em;
   /* white-space: nowrap; */
   word-break: normal;
 }

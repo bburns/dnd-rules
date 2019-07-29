@@ -20,7 +20,7 @@ Measures of different abilities:
 
 Max 20 for characters, 30 for monsters/divines. 
 
-(*Intermediate*: Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)
+(*Intermediate*: Used to calculate [Ability Modifier|Ability Modifiers]. Each has associated [Skill|Skills], e.g. Strength has Athletics.)
 
 
 ^dnd: ph12,173
@@ -223,10 +223,10 @@ In addition to Basic rules,
 
 
 ---------------------------------------------------------------------------
-## Conditions ##
+## Condition ##
 ---------------------------------------------------------------------------
 
-Alter capabilities in various ways.
+Alters capabilities in various ways.
 
 * Blinded
 * Charmed
@@ -250,11 +250,10 @@ Alter capabilities in various ways.
 
 
 ---------------------------------------------------------------------------
-## Damage Types ##
+## Damage Type ##
 ---------------------------------------------------------------------------
 
 Types of Damage include 
-
 
 * Acid
 * Bludgeoning - e.g. from a mace
@@ -269,7 +268,6 @@ Types of Damage include
 * Radiant - fire/spirit
 * Slashing - e.g. sword
 * Thunder - sound
-
 
 Can have [Resistance] to different Damage Types, in which case damage is halved, or [Vulnerability] where damage is doubled.
 
@@ -308,7 +306,7 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 
 
 ---------------------------------------------------------------------------
-## Flaws ##
+## Flaw ##
 ---------------------------------------------------------------------------
 
 A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?
@@ -378,10 +376,10 @@ Use a Wisdom (Perception) [Ability Check]. Must say specifically where are searc
 
 
 ---------------------------------------------------------------------------
-## Skills ##
+## Skill ##
 ---------------------------------------------------------------------------
 
-Each [Ability Score] covers a set of Skills you can be [Proficient] in, and referred to like "Strength (Athletics)". For [Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.
+Each [Ability Score] covers a set of Skills you can be [Proficiency|Proficient] in, and referred to like "Strength (Athletics)". For [Ability Check|Ability Checks] can add your [Proficiency Bonus] if a Skill is relevant.
 
 | Ability      | Skills          |
 |--------------|-----------------|
@@ -424,10 +422,10 @@ Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and
 
 
 ---------------------------------------------------------------------------
-## Bonds ##
+## Bond ##
 ---------------------------------------------------------------------------
 
-Connection to people, places, and events in the world. Tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Can gain new bonds over adventures. Create one for your character.
+A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
 
 ^dnd: ph124
 ^subtype: char
@@ -502,10 +500,10 @@ Between adventures - spend money each day for [Lifestyle Expenses]. Can [Craft] 
 
 
 ---------------------------------------------------------------------------
-## Feats ##
+## Feat ##
 ---------------------------------------------------------------------------
 
-Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. An optional rule.
+Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores] when advancing a [Level]. Can gain [Advantage], [Proficiency] in different [Skills], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
 
 ^dnd: ph165
 ^subtype: char
@@ -522,7 +520,7 @@ Need one pound food and one gallon water/day, two gallons if hot. Below this suf
 
 
 ---------------------------------------------------------------------------
-## Habits ##
+## Habit ##
 ---------------------------------------------------------------------------
 
 Just something to flesh out a character
@@ -542,10 +540,10 @@ aka [Stealth] - make a Dexterity (Stealth) [Ability Check] when attempting to hi
 
 
 ---------------------------------------------------------------------------
-## Ideals ##
+## Ideal ##
 ---------------------------------------------------------------------------
 
-Something that drives character - what balieve in most strongly, moral and ethical principals, life goals, core beliefs. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds] give suggestions.
+Something that drives your character - what principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Background|Backgrounds] give some suggestions.
 
 ^dnd: ph124
 ^subtype: char
@@ -562,7 +560,7 @@ Determines order of turns taken in [Combat].
 
 
 ---------------------------------------------------------------------------
-## Languages ##
+## Language ##
 ---------------------------------------------------------------------------
 
 Default language is given by [Race], can learn others - see [Training].
@@ -575,7 +573,7 @@ Default language is given by [Race], can learn others - see [Training].
 ## Multiclassing ##
 ---------------------------------------------------------------------------
 
-Can gain [Levels] in multiple [Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
+Can gain [Levels] in multiple [Class|Classes] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
 
 ^dnd: ph163
 ^subtype: char
@@ -595,7 +593,7 @@ For hiding, exploration - to check for traps, secrets, etc. No die roll - for sc
 ## Personality Traits ##
 ---------------------------------------------------------------------------
 
-Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, etc. Each character gets two. Could look at highest and lowest [Ability Scores] for ideas. [Backgrounds] also give suggestions. Pet peeves, quotes, mannerisms.
+Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [Ability Score|Ability Scores] for some ideas - [Background|Backgrounds] also give some suggestions. 
 
 ^dnd: ph123
 ^subtype: char
@@ -605,13 +603,13 @@ Something interesting and fun about a character - their likes, past accomplishme
 ## Rest ##
 ---------------------------------------------------------------------------
 
-Short Rests need at least an hour. Can roll [Hit Dice] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points]. 
+Short Rests need at least an hour. Can roll [Hit Dice (HD)] n times, where n = your Level number - add that plus your Constitution Modifier each time to your [Hit Points (HP)]. 
 
-Long Rests need at least 8 hours, and restore all [Hit Points].
+Long Rests need at least 8 hours, and restore all [Hit Points (HP)].
 
 Optionally, both require use of one Healer's Kit first. 
 
-You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throws] against one Disease or Poison.
+You can use [Downtime] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make DC 15 Constitution [Saving Throw] - on success gain [Advantage] on [Saving Throw|Saving Throws] against one Disease or Poison.
 
 ^dnd: ph186-7
 ^subtype: play
@@ -621,7 +619,7 @@ You can use [Downtime] between adventures to recover from debilitating Injury, D
 ## Subrace ##
 ---------------------------------------------------------------------------
 
-Some [Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
+Some [Race|Races] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
 
 ^dnd: ph17
 ^subtype: char
