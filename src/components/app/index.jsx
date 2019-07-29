@@ -52,9 +52,14 @@ export default function() {
             <div>
               The rules are split here into 3 sections - Basic, Intermediate, and Advanced. The Basic rules are the minimum needed to play a game - others can be added as desired.
             </div>
-            <br />
+            <br/>
             <div>
               The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.
+            </div>
+            <br/>
+            <div>
+              {/* (<a href="https://www.dndbeyond.com/marketplace/source/players-handbook">dndbeyond.com</a>, <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Amazon.com</a>)  */}
+              Sources used are the <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Player's Handbook 5th Edition</a>, with references to page numbers in the book given as e.g. ph152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.
             </div>
           </div>
           <Rules rulesByLevel={rulesByLevel} />
@@ -78,7 +83,7 @@ function Header() {
 function Footer() {
   return (
     <div className="app-footer">
-      <span>Rules (c) Wizards of the Coast</span>
+      <span>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2019 Wizards. </span>
       <span>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></span>
     </div>
   )
