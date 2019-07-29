@@ -11,8 +11,7 @@ const lines = s.split('\n')
 const regexps = {
   dashes: /^----+$/,
   name: /(#*)[ ]*([^#]+)[ ]*#*/,
-  // prop: /^(.+):(.+)$/,
-  prop: /^([^ ]+):[ ]*(.+)$/,
+  prop: /^([^ (]+):[ ]*(.+)$/,
 }
 
 let state = 'start'

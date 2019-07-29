@@ -1,12 +1,12 @@
 [
   {
     "name": "Basic",
-    "contents": "The basic rules are enough to get started and play a game - the intermediate and advanced rules can be added as desired.\nx",
+    "contents": "The basic rules are enough to get started and play a game - the intermediate and advanced rules can be added as desired.",
     "id": "basic"
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n (Intermediate: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.)",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n(Intermediate: Used to calculate [Ability Modifiers](#ability-modifiers). Each has associated [Skills](#skills), e.g. Strength has Athletics.)",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
@@ -14,9 +14,7 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people.",
-    "(Intermediate": "Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)",
-    "(Advanced": "Can [Multiclass] also.)",
+    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. \n\n(Intermediate: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)\n\n(Advanced: Can [Multiclass](#multiclass) also.)",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",
