@@ -189,7 +189,7 @@ Sometimes you have a better chance of succeeding at something - this is called h
 
 If some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.
 
-Can use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situations.
+Can use for Attack Rolls, [Ability Check|Ability Checks], [Saving Throw|Saving Throws] in various situations.
 
 ^dnd: ph173
 ^subtype: play
@@ -199,11 +199,11 @@ Can use for [Attack Rolls], [Ability Checks], [Saving Throws] in various situati
 ## Background ##
 ---------------------------------------------------------------------------
 
-Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features], [Proficiencies], and [Languages]), and roleplaying suggestions. 
+Where character came from, how came to be an adventurer, their place in world. Provide benefits (Features, [Proficiency|Proficiencies], and [Language|Languages]), and roleplaying suggestions. 
 
-Each Background gives a character [Proficiency] in two [Skills] and one or more [Tools]. Some also allow learning an additional language.
+Each Background gives a character [Proficiency] in two [Skill|Skills] and one or more Tools. Some also allow learning an additional language.
 
-Also provides a package of starting [Equipment].
+Also provides a package of starting Equipment.
 
 ^dnd: ph125
 ^subtype: char
@@ -221,7 +221,8 @@ In addition to Basic rules,
 * Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]
 * Roll d20 twice if have Advantage or Disadvantage and take best/worst score
 * For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage
-* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])
+
+* For Damage Roll, add [Ability Modifier] (same as for Attack Roll)
 
 ^dnd: ph189+,194
 ^subtype: play

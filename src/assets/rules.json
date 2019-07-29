@@ -114,7 +114,7 @@
   },
   {
     "name": "Advantage / Disadvantage",
-    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for [Attack Rolls](#attack-rolls), [Ability Checks](#ability-checks), [Saving Throws](#saving-throws) in various situations.",
+    "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for Attack Rolls, [Ability Checks](#ability-check), [Saving Throws](#saving-throw) in various situations.",
     "dnd": "ph173",
     "subtype": "play",
     "id": "advantage-/-disadvantage",
@@ -122,7 +122,7 @@
   },
   {
     "name": "Background",
-    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits ([Features](#features), [Proficiencies](#proficiencies), and [Languages](#languages)), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency](#proficiency) in two [Skills](#skills) and one or more [Tools](#tools). Some also allow learning an additional language.\n\nAlso provides a package of starting [Equipment](#equipment).\n\nurls: https://www.dndbeyond.com/backgrounds",
+    "contents": "Where character came from, how came to be an adventurer, their place in world. Provide benefits (Features, [Proficiencies](#proficiency), and [Languages](#language)), and roleplaying suggestions. \n\nEach Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more Tools. Some also allow learning an additional language.\n\nAlso provides a package of starting Equipment.\n\nurls: https://www.dndbeyond.com/backgrounds",
     "dnd": "ph125",
     "subtype": "char",
     "id": "background",
@@ -130,7 +130,7 @@
   },
   {
     "name": "Combat (Intermediate)",
-    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier](#ability-modifier) for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus](#proficiency-bonus) if [Proficient](#proficient) with current weapon\n* Determine if have [Advantage / Disadvantage](#advantage-/-disadvantage) for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover](#cover)\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll](#damage-roll), add [Ability Modifier](#ability-modifier) (same as for [Attack Roll](#attack-roll))",
+    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier](#ability-modifier) for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus](#proficiency-bonus) if [Proficient](#proficient) with current weapon\n* Determine if have [Advantage / Disadvantage](#advantage-/-disadvantage) for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover](#cover)\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n\n* For Damage Roll, add [Ability Modifier](#ability-modifier) (same as for Attack Roll)",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(intermediate)",
