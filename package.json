@@ -5,11 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build-rules": "node src/packages/neomem/neomem2json.js < src/assets/rules.nm > src/assets/rules2.json",
-    "//parser": "npm run parser:build && npm run parser:test",
-    "//parser:build": "nearleyc src/packages/neomem/grammar.ne -o src/packages/neomem/grammar.js",
-    "//parser:test": "node src/packages/neomem/testGrammar.js",
-    "//prepare": "csvtojson \"data/Rules-Rules by Level.csv\" > src/assets/rules.json",
+    "build-rules": "node scripts/nm2json.js < rules/rules.nm > src/assets/rules.json",
+    "prestart": "yarn run build-rules && chokidar rules/rules.nm -c \"yarn run build-rules\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",

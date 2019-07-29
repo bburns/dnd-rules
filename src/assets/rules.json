@@ -1,12 +1,13 @@
 [
   {
     "name": "Basic",
-    "contents": "",
+    "contents": "The basic rules are enough to get started and play a game - the intermediate and advanced rules can be added as desired.",
     "id": "basic"
   },
   {
     "name": "Ability Score",
-    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.",
+    "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines.",
+    "(Intermediate": "Used to calculate [Ability Modifiers]. Each has associated [Skills], e.g. Strength has Athletics.)",
     "dnd": "ph12,173",
     "subtype": "char",
     "id": "ability-score",
@@ -14,7 +15,9 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc. Can [Multiclass] also.",
+    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people.",
+    "(Intermediate": "Gives special Features, like [Proficiency] in different weapons or armor. E.g. Fighter, Druid, Ranger, etc.)",
+    "(Advanced": "Can [Multiclass] also.)",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",
@@ -22,7 +25,7 @@
   },
   {
     "name": "Combat (Basic)",
-    "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll] score\n* Add [Proficiency Bonus] if [Proficient] with current weapon\n* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]\n* Rolling a natural 20 is a [Critical Hit] - always hits - roll for Damage twice and add. A natural 1 is a [Critical Miss] - always misses.\n\nSee other sections for more advanced rules.",
+    "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base [Attack Roll] score\n* If score >= target's [Armor Class (AC)], it's a hit - roll appropriate dice (based on weapon) for [Damage Roll]\n* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.\n\nSee also [Combat (Intermediate)] and [Combat (Advanced)].",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(basic)",
@@ -46,7 +49,7 @@
   },
   {
     "name": "Hit Dice (HD)",
-    "contents": "These determine how many [Hit Points (HP)] a character has. Different [Class]es have different types of Hit Dice, e.g. d8, d10.",
+    "contents": "These determine how many [Hit Points (HP)] a character has. Different [Class|Classes] have different types of Hit Dice, e.g. d8, d10.",
     "dnd": "ph12",
     "subtype": "char",
     "id": "hit-dice-(hd)",
@@ -132,7 +135,7 @@
   },
   {
     "name": "Combat (Intermediate)",
-    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])",
+    "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier] for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus] if [Proficient] with current weapon\n* Determine if have [Advantage / Disadvantage] for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover]\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n* For [Damage Roll], add [Ability Modifier] (same as for [Attack Roll])",
     "dnd": "ph189+,194",
     "subtype": "play",
     "id": "combat-(intermediate)",

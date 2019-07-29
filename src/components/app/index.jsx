@@ -4,11 +4,10 @@ import parse from 'remark-parse'
 import remark2react from 'remark-react'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
-
+import dragon from '../../assets/images/dragon-192x192x256.png'
 import rules from '../../assets/rules.json'
 import './styles.css'
 import './print.css'
-import dragon from '../../assets/dragon-192x192x256.png'
 
 
 // function idize(s) {
