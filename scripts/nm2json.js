@@ -77,6 +77,13 @@ console.log(JSON.stringify(objs, null, 2))
 
 
 
+function createObj() {
+  const obj = {}
+  obj.name = ''
+  obj.contents = ''
+  return obj
+}
+
 function finishObject(obj) {
   // finish object
   if (!obj.id) obj.id = getIdFromName(obj.name)
@@ -91,12 +98,12 @@ function finishObject(obj) {
 function linkifyText(nm) {
   let md = nm
   // eg [Something nice] --> [Something nice](#something-nice)
-  md = md.replace(/\[([^|]+?)\]/g, (match, p1) => {
+  md = md.replace(/\[([^|\]]+?)\]/g, (match, p1) => {
     return `[${p1}](#${getIdFromName(p1)})`
   })
-  // eg [Something|Somethings] --> [Something](#something "Somethings")
-  md = md.replace(/\[([^|]+?)\|([^|]+?)\]/g, (match, p1, p2) => {
-    return `[${p1}](#${getIdFromName(p1)} "${p2}")`
+  // eg [Something|Somethings] --> [Somethings](#something)
+  md = md.replace(/\[([^|\]]+?)\|([^|\]]+?)\]/g, (match, p1, p2) => {
+    return `[${p2}](#${getIdFromName(p1)})`
   })
   return md
 }
@@ -117,13 +124,6 @@ function getLineType(line, state) {
   return linetype
 }
 
-
-function createObj() {
-  const obj = {}
-  obj.name = ''
-  obj.contents = ''
-  return obj
-}
 
 
 module.export = { linkifyText }

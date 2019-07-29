@@ -32,7 +32,7 @@ Max 20 for characters, 30 for monsters/divines.
 ## Class ##
 ---------------------------------------------------------------------------
 
-Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. E.g. Fighter, Druid, Ranger, etc.
+Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.
 
 (*Intermediate*: Gives special Features, like [Proficiency] in different weapons or armor.)
 

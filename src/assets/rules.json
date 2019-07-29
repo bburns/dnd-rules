@@ -14,7 +14,7 @@
   },
   {
     "name": "Class",
-    "contents": "Primary definition of what a character can do - their calling. Affects how they see and interact with the world and other people. E.g. Fighter, Druid, Ranger, etc.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclass) also.)",
+    "contents": "Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclass) also.)",
     "dnd": "ph45",
     "subtype": "char",
     "id": "class",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Hit Dice (HD)",
-    "contents": "These determine how many [Hit Points (HP)](#hit-points-(hp)) a character has. Different [Class](#hit-points-(hp)%5D(#hit-points-(hp))-a-character-has.-different-%5Bclass \"Classes\") have different types of Hit Dice, e.g. d8, d10.",
+    "contents": "These determine how many [Hit Points (HP)](#hit-points-(hp)) a character has. Different [Classes](#class) have different types of Hit Dice, e.g. d8, d10.",
     "dnd": "ph12",
     "subtype": "char",
     "id": "hit-dice-(hd)",
