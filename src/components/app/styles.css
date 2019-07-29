@@ -4,8 +4,9 @@ html, body {
   background: #f3ede5;
   color:#345;
   /* font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif; */
-  font-family: georgia, serif;
-  font-size: 16px;
+  font-family: garamond, georgia, serif;
+  /* font-size: 16px; */
+  font-size: 18px;
 }
 
 body {
