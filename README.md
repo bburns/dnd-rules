@@ -1,10 +1,9 @@
 # Dungeons and Dragons Rules
 
-This is an attempt to summarize the 5th edition rules, starting with the most basic and moving to more complex rules.
+This is an attempt to summarize the 5th edition rules, starting with the most basic and moving to more complex rules. 
 
-A work in progress.
+https://dnd.pub
 
-https://bburns.github.io/dnd-rules/
 
 
 ## Available Scripts
