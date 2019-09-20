@@ -11,7 +11,7 @@ https://bburns.github.io/dnd-rules/
 
 In the project directory, you can run:
 
-### `yarn run prepare`
+### `yarn prepare`
 
 Convert the `data/rules.csv` file to `src/assets/rules.json`, which gets bundled up into the site code. 
 
