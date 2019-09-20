@@ -38,7 +38,8 @@
   },
   {
     "name": "Culture",
-    "contents": "Corresponds to [Race](#race) in D&D - eg Hobbits of the Shire, Riders of Rohan\n\naime: pg30",
+    "contents": "Corresponds to [Race](#race) in D&D - eg Hobbits of the Shire, Riders of Rohan",
+    "aime": "pg30",
     "subtype": "char",
     "id": "culture",
     "parentId": "basic-rules"
