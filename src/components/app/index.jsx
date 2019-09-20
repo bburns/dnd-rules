@@ -50,7 +50,7 @@ export default function() {
           <div className="app-intro">
             <h2>Introduction</h2>
             <div>
-              The rules are split here into 3 sections - Basic, Intermediate, and Advanced. The Basic rules are the minimum needed to play a game - others can be added as desired.
+              The rules are split here into 3 sections - Basic, Intermediate, and Advanced. The Basic rules are the minimum needed to play a game - others could be added as needed.
             </div>
             <br/>
             <div>
