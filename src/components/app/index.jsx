@@ -50,7 +50,7 @@ export default function() {
           <div className="app-intro">
             <h2>Introduction</h2>
             <div>
-              The rules are split here into 3 sections - Basic, Intermediate, and Advanced. The Basic rules are the minimum needed to play a game - others could be added as needed.
+              This is a summary of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
             </div>
             <br/>
             <div>

@@ -4,7 +4,7 @@
   overflow-y: auto;
   flex-basis: 14em;
   flex-shrink: 0;
-  background: #dbdbda;
+  background: #333;
   line-height: 1.2em;
   list-style-image: none;
   list-style-position: outside;
@@ -28,6 +28,7 @@
 .toc a {
   display: block;
   padding: 1px 5px;
+  color: #ddd;
   /* color: rgb(26, 188, 156); */
   /* color: rgb(62, 188, 26); */
   cursor: pointer;
@@ -35,6 +36,7 @@
 }
 .toc a:hover {
   /* background-color: #dbedff; */
+  color: #fff;
   border-bottom: none;
 }
 .toc-level {
