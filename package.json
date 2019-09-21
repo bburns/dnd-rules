@@ -9,7 +9,9 @@
     "watch-rules": "chokidar rules/rules.nm scripts/nm2json.js -c \"yarn run build-rules\"",
     "start": "yarn build-rules && concurrently \"yarn watch-rules\" \"react-scripts start\"",
     "build": "yarn build-rules && react-scripts build",
-    "deploy": "gh-pages -d build",
+    "//deploy": "gh-pages -d build",
+    "deploy": "firebase deploy",
+    "build-deploy": "yarn build && yarn deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
