@@ -10,13 +10,19 @@
 
   html, body {
     font-size: 14px;
+    overflow: visible;
   }
 
   div {
     page-break-inside: avoid;
   }
   
+  .app-page {
+    overflow: visible;
+  }
+
   .app-header {
+    display: none;
     background: white;
     color: black;
     /* border-top: solid 1px gray; */
@@ -32,6 +38,12 @@
     display: none;
   }
 
+  .app-intro {
+    display: none;
+  }
+  .app-footer {
+    display: none;
+  }
 
   .app-rules-section>h2 {
     /* font-size: 1.1em; */

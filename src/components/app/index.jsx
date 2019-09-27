@@ -48,8 +48,8 @@ export default function() {
         <TableOfContents rulesByLevel={rulesByLevel} />
         <div className="app-page">
           <Introduction />
-          <Rules rulesByLevel={rulesByLevel} />
           <Footer />
+          <Rules rulesByLevel={rulesByLevel} />
         </div>
       </div>
     </div>

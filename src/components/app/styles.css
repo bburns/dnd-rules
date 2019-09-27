@@ -104,6 +104,7 @@ th, td {
 
 .app-footer {
   padding: 1em;
+  color: #aaa;
 }
 .app-footer span+span:before {
   content: ' | ';
