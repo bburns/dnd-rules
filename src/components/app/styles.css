@@ -4,6 +4,7 @@ html, body {
   color:#345;
   font-family: garamond, georgia, serif;
   font-size: 20px;
+  -webkit-overflow-scrolling: touch; /* enable momentum scrolling on ipad */
 }
 
 body {
