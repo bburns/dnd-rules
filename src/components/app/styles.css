@@ -128,7 +128,13 @@ th, td {
   float: left;
   width: 100%
 }
-@media(min-width:770px) {
+@media(min-width:700px) {
+  .rule {
+    padding-top: 0;
+    width: 49%;
+  }
+}
+@media(min-width:1025px) {
   .rule {
     padding-top: 0;
     width: 32%;
