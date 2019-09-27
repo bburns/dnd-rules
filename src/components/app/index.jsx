@@ -47,21 +47,7 @@ export default function() {
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
         <div className="app-page">
-          <div className="app-intro">
-            <h2>Introduction</h2>
-            <div>
-              This is an unofficial summary of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
-            </div>
-            <br/>
-            <div>
-              The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.
-            </div>
-            <br/>
-            <div>
-              {/* (<a href="https://www.dndbeyond.com/marketplace/source/players-handbook">dndbeyond.com</a>, <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Amazon.com</a>)  */}
-              Sources used are the <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Player's Handbook 5th Edition</a>, with references to page numbers in the book given as e.g. ph152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.
-            </div>
-          </div>
+          <Introduction />
           <Rules rulesByLevel={rulesByLevel} />
           <Footer />
         </div>
@@ -87,6 +73,27 @@ function Footer() {
       <span>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></span>
     </div>
   )
+}
+
+
+function Introduction() {
+  return (
+    <div className="app-intro">
+    <h2>Introduction</h2>
+    <div>
+      This is an unofficial summary of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
+    </div>
+    <br/>
+    <div>
+      The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.
+    </div>
+    <br/>
+    <div>
+      {/* (<a href="https://www.dndbeyond.com/marketplace/source/players-handbook">dndbeyond.com</a>, <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Amazon.com</a>)  */}
+      Sources used are the <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Player's Handbook 5th Edition</a>, with references to page numbers in the book given as e.g. ph152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.
+    </div>
+  </div>
+  )  
 }
 
 
