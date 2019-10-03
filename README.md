@@ -1,23 +1,25 @@
 # Dungeons and Dragons Rules
 
-This is an attempt to summarize the 5th edition rules, starting with the most basic and moving to more complex rules. 
+This is an unofficial summary of the 5th edition rules, starting with the most basic and moving to more complex rules. 
 
 https://dnd.pub
 
 
 
-## Available Scripts
+## Prepare
 
-In the project directory, you can run:
+Convert the `data/rules.csv` file to `src/assets/rules.json`, which gets bundled up into the site code - in the project directory, run
 
-### `yarn prepare`
+    yarn prepare
 
-Convert the `data/rules.csv` file to `src/assets/rules.json`, which gets bundled up into the site code. 
+## Develop
 
-### `yarn start`
+Run the app in the development mode - open [http://localhost:3000](http://localhost:3000) to view it in the browser - the page will reload as you make edits -
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
+    yarn start
 
-### `yarn deploy`
+## Deploy
 
-Deploys the site to GitHub Pages, https://bburns.github.io/dnd-rules/.
+Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
+
+    yarn deploy
