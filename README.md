@@ -5,21 +5,49 @@ This is an unofficial summary of the 5th edition rules, starting with the most b
 https://dnd.pub
 
 
+## Set Up
 
-## Prepare
+Clone the repository with git - 
 
-Convert the `data/rules.csv` file to `src/assets/rules.json`, which gets bundled up into the site code - in the project directory, run
+    git clone https://github.com/bburns/dnd-rules.git
+
+then grab the dependencies
+
+    yarn
+
+
+## Edit Rules
+
+The rules are located in `rules/rules.nm` - the format is simple - the number of hash (#) symbols in the header indicates the indentation level, and properties are marked with a hat (^) symbol, e.g. 
+
+    ---------------------------------------------------------------------------
+    ## Armor Class (AC) ##
+    ---------------------------------------------------------------------------
+
+    A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
+
+    ^dnd: ph
+    ^subtype: play
+
+
+## Prepare Rules
+
+To convert the `rules/rules.nm` file to `src/assets/rules.json`, which gets bundled up into the site code - in the project directory, run
 
     yarn prepare
 
-## Develop
 
-Run the app in the development mode - open [http://localhost:3000](http://localhost:3000) to view it in the browser - the page will reload as you make edits -
+## Develop Site
+
+To run the app in the development mode - 
 
     yarn start
 
-## Deploy
+It will open [http://localhost:3000](http://localhost:3000) in the browser - the page will reload as you make edits.
 
-Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
+
+## Deploy Site
+
+To deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
 
     yarn deploy
