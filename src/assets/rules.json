@@ -1,7 +1,18 @@
 [
   {
+    "name": "Introduction",
+    "contents": "This is an unofficial summary of the D&D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.",
+    "id": "introduction"
+  },
+  {
+    "name": "fiiiiie",
+    "contents": "oaijsoidjoa ssskajsknd",
+    "id": "fiiiiie",
+    "parentId": "introduction"
+  },
+  {
     "name": "Basic Rules",
-    "contents": "",
+    "contents": "The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.",
     "id": "basic-rules"
   },
   {

@@ -13,7 +13,8 @@ import './print.css'
 
 
 // just include headers and dnd rules
-const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
+// const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
+const dndRules = rules
 
 const rulesByLevel = lib.groupBy(dndRules, 'parentId').filter(level => level.parentId!=='none')
 console.log(rulesByLevel)
@@ -85,10 +86,6 @@ function Introduction() {
     </div>
     <br/>
     <div>
-      The core mechanic of Dungeons and Dragons is to roll a 20 sided die (d20), add relevant modifiers, and compare to a target number to determine success or failure.
-    </div>
-    <br/>
-    <div>
       {/* (<a href="https://www.dndbeyond.com/marketplace/source/players-handbook">dndbeyond.com</a>, <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Amazon.com</a>)  */}
       Sources used are the <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Player's Handbook 5th Edition</a>, with references to page numbers in the book given as e.g. ph152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.
     </div>
@@ -113,6 +110,7 @@ function Level({ level }) {
       <h2>
         {level.name}
       </h2>
+      {level.contents}
       <div className="body rule-list">
         {level.values && level.values.map(rule => <Rule key={rule.id} rule={rule} />)}
       </div>
