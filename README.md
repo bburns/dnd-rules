@@ -18,7 +18,7 @@ then grab the dependencies
 
 ## Edit Rules
 
-The rules are located in `rules/rules.nm` - the format is simple - the number of hash (#) symbols in the header indicates the indentation level, and properties are marked with a hat (^) symbol, e.g. 
+The rules are located in `rules/rules.nm` - the number of hash (#) symbols in the header indicates the indentation level, and properties are marked with a hat (^), e.g. 
 
     ---------------------------------------------------------------------------
     ## Armor Class (AC) ##
@@ -30,11 +30,11 @@ The rules are located in `rules/rules.nm` - the format is simple - the number of
     ^subtype: play
 
 
-## Prepare Rules
+## Build Rules
 
 To convert the `rules/rules.nm` file to `src/assets/rules.json`, which gets bundled up into the site code - in the project directory, run
 
-    yarn prepare
+    yarn build-rules
 
 
 ## Develop Site

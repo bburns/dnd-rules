@@ -1,14 +1,8 @@
 [
   {
     "name": "Introduction",
-    "contents": "This is an unofficial summary of the D&D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.",
+    "contents": "This is an unofficial glossary of the D&D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.",
     "id": "introduction"
-  },
-  {
-    "name": "fiiiiie",
-    "contents": "oaijsoidjoa ssskajsknd",
-    "id": "fiiiiie",
-    "parentId": "introduction"
   },
   {
     "name": "Basic Rules",

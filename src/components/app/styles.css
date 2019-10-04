@@ -125,6 +125,10 @@ th, td {
   border-bottom: 1px solid #ccc;
 } */
 
+.level-contents {
+  margin-bottom: 1em;
+}
+
 
 .rule {
   margin-bottom: 1.5em;
