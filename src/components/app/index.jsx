@@ -15,6 +15,7 @@ import './print.css'
 // just include headers and dnd rules
 // const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
 const dndRules = rules
+console.log(rules)
 
 const rulesByLevel = lib.groupBy(dndRules, 'parentId').filter(level => level.parentId!=='none')
 console.log(rulesByLevel)
@@ -48,9 +49,9 @@ export default function() {
       <div className="app-contents">
         <TableOfContents rulesByLevel={rulesByLevel} />
         <div className="app-page">
-          <Introduction />
-          <Footer />
+          {/* <Introduction /> */}
           <Rules rulesByLevel={rulesByLevel} />
+          <Footer />
         </div>
       </div>
     </div>
@@ -70,6 +71,10 @@ function Header() {
 function Footer() {
   return (
     <div className="app-footer">
+      <div>
+        {/* (<a href="https://www.dndbeyond.com/marketplace/source/players-handbook">dndbeyond.com</a>, <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Amazon.com</a>)  */}
+        Sources used are the <a href="https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15">Player's Handbook 5th Edition</a>, with references to page numbers in the book given as e.g. ph152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.
+      </div>
       <span>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2019 Wizards. </span>
       <span>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></span>
     </div>
@@ -110,7 +115,9 @@ function Level({ level }) {
       <h2>
         {level.name}
       </h2>
-      {level.contents}
+      <div className="level-contents">
+        {level.contents}
+      </div>
       <div className="body rule-list">
         {level.values && level.values.map(rule => <Rule key={rule.id} rule={rule} />)}
       </div>
