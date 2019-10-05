@@ -12,6 +12,7 @@ import './print.css'
 import { arrayToTree } from 'performant-array-to-tree'
 
 
+// make tree of levels and rules
 // lib fn requires parentId fields
 // see https://github.com/philipstanislaus/performant-array-to-tree
 for (let rule of rules) {

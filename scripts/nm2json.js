@@ -97,12 +97,12 @@ function finishObject(obj) {
 // convert neomem-style links to markdown-style links
 function linkifyText(nm) {
   let md = nm
-  // eg [Something nice] --> [Something nice](#something-nice)
-  md = md.replace(/\[([^|\]]+?)\]/g, (match, p1) => {
+  // eg [[Something nice]] --> [Something nice](#something-nice)
+  md = md.replace(/\[\[([^|\]]+?)\]\]/g, (match, p1) => {
     return `[${p1}](#${getIdFromName(p1)})`
   })
-  // eg [Something|Somethings] --> [Somethings](#something)
-  md = md.replace(/\[([^|\]]+?)\|([^|\]]+?)\]/g, (match, p1, p2) => {
+  // eg [[Something|Somethings]] --> [Somethings](#something)
+  md = md.replace(/\[\[([^|\]]+?)\|([^|\]]+?)\]\]/g, (match, p1, p2) => {
     return `[${p2}](#${getIdFromName(p1)})`
   })
   return md
