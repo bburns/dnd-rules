@@ -139,7 +139,7 @@ th, td {
 
 .rule {
   margin-bottom: 1.5em;
-  float: left;
+  /* float: left; */
   /* width: 90%; */
   /* margin: 0 4px 8px; */
   background: #fff;
@@ -154,9 +154,9 @@ th, td {
 }
 @media(min-width:1025px) {
   .rule {
-    padding-top: 0;
+    /* padding-top: 0; */
     width: calc(33% - 1em);
-    margin-right: 1em;
+    /* margin-right: 1em; */
   }
 }
 
@@ -188,3 +188,19 @@ th, td {
   text-align: right;
   color: #ccc;
 }
+
+
+.rule-list {
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+.my-masonry-grid_column > .rule {
+  width: 14em;
+  margin-bottom: 30px;
+}
+
