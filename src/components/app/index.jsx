@@ -7,20 +7,18 @@ import 'normalize.css'
 import dragon from '../../assets/images/dragon-192x192x256.png'
 import rules from '../../assets/rules.json'
 import TableOfContents from '../toc'
-import * as lib from '../../lib'
+// import * as lib from '../../lib'
 import './styles.css'
 import './print.css'
 import { arrayToTree } from 'performant-array-to-tree'
 
 
-// just include headers and dnd rules
-// const dndRules = rules.filter(rule => (!rule.parentId) || (!!rule.dnd))
-
-// const levels = lib.groupBy(dndRules, 'parentId') //.filter(level => level.parentId!=='none')
-// const levels = lib.groupBy(rules, 'parentId') //.filter(level => level.parentId!=='none')
-// console.log(levels)
-console.log(rules)
-const levels = arrayToTree(rules)
+// lib fn requires parentId fields
+// see https://github.com/philipstanislaus/performant-array-to-tree
+for (let rule of rules) {
+  rule.parentId = rule.parentId || null
+}
+const levels = arrayToTree(rules, {dataField:null})
 console.log(levels)
 
 
