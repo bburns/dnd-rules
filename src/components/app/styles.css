@@ -125,6 +125,13 @@ th, td {
   border-bottom: 1px solid #ccc;
 } */
 
+.links {
+  padding: 1em;
+}
+.links-disclaimer {
+  /* color: gray; */
+}
+
 .level-contents {
   margin-bottom: 1em;
 }

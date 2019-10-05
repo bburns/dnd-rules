@@ -1,7 +1,7 @@
 [
   {
     "name": "Introduction",
-    "contents": "This is an unofficial glossary of the D&D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. \n\nFor sources used and how to contribute see [About](#about) section.",
+    "contents": "This is an unofficial listing of the D&D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. \n\nFor sources used and how to contribute see [About](#about) section.",
     "id": "introduction"
   },
   {
@@ -128,7 +128,7 @@
   },
   {
     "name": "Background",
-    "contents": "Where character came from, how came to be an adventurer, their place in the world. Each Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [Language](#language).",
+    "contents": "Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [Language](#language).",
     "dnd": "ph125",
     "subtype": "char",
     "urls: https": "//www.dndbeyond.com/backgrounds",

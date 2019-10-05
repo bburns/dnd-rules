@@ -2,6 +2,7 @@ import React from 'react';
 import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
+import { arrayToTree } from 'performant-array-to-tree'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 import dragon from '../../assets/images/dragon-192x192x256.png'
@@ -9,7 +10,6 @@ import rules from '../../assets/rules.json'
 import TableOfContents from '../toc'
 import './styles.css'
 import './print.css'
-import { arrayToTree } from 'performant-array-to-tree'
 
 
 // make tree of levels and rules
@@ -31,6 +31,7 @@ export default function() {
         <TableOfContents levels={levels} />
         <div className="app-page">
           <Levels levels={levels} />
+          <Links />
         </div>
       </div>
     </div>
@@ -43,6 +44,21 @@ function Header() {
     <div className="app-header" role="banner">
       <img src={dragon} alt=""/>
       <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
+    </div>
+  )
+}
+
+
+function Links() {
+  return (
+    <div className="links">
+      <span className="links-link">
+        <a target="_blank" href="https://www.amazon.com/gp/product/0786966831/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786966831&linkCode=as2&tag=bburnskm-20&linkId=2bb4f26c9206c6e67677e23ee43beda1">
+          <img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786966831&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" />
+        </a>
+        <img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786966831" width="1" height="1" border="0" alt="" />
+      </span>
+      <div className="links-disclaimer">Note: As an Amazon Associate I earn from qualifying purchases.</div>
     </div>
   )
 }
