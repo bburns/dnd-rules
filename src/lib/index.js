@@ -23,25 +23,3 @@ export function groupBy(arr, key) {
   }
   return groups
 }
-
-
-// export function getTree(items) {
-
-//   // get dictionary of parent lists and dictionary of items
-//   const parents = {}
-//   const itemDict = {}
-//   for (let item of items) {
-//     const parentId = item.parentId || 'none'
-//     parents[parentId] = parents[parentId] || []
-//     parents[parentId].push(item)
-//     itemDict[item.id] = item
-//   }
-
-//   // build tree
-//   const tree = []
-//   // const parentIds = Object.keys(parents) // eg none, 
-//   // for (let parentId of parentIds) {
-//   // }
-
-
-// }
