@@ -10,8 +10,8 @@ import rules from '../../assets/rules.json'
 import TableOfContents from '../toc'
 import './styles.css'
 import './print.css'
-// import Masonry from 'masonry-layout'
-import Masonry from 'react-masonry-css'
+import Masonry from 'masonry-layout' // see https://masonry.desandro.com
+// import Masonry from 'react-masonry-css' // see https://github.com/paulcollett/react-masonry-css
 
 
 // make tree of levels and rules
@@ -26,15 +26,17 @@ console.log(levels)
 
 
 export default function() {
-  // React.useEffect(() => {
-  //   var elem = document.querySelector('.rule-list');
-  //   var msnry = new Masonry(elem, {
-  //     itemSelector: '.rule',
-  //     columnWidth: 200,
-  //     horizontalOrder: true,
-  //   });
-  //   console.log(msnry)
-  // }, [])
+  React.useEffect(() => {
+    var elems = document.querySelectorAll('.rule-list')
+    for (let elem of elems) {
+      var msnry = new Masonry(elem, {
+        itemSelector: '.rule',
+        // columnWidth: 200,
+        // horizontalOrder: true,
+      })
+      console.log(msnry)
+    }
+  }, [])
   return (
     <div className="app">
       <Header />
@@ -85,12 +87,12 @@ function Levels({ levels }) {
 
 
 function Level({ level }) {
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 3,
-    700: 2,
-    500: 1,
-  }  
+  // const breakpointColumnsObj = {
+  //   default: 3,
+  //   1100: 3,
+  //   700: 2,
+  //   500: 1,
+  // }  
   return (
     <div className="app-rules-section" id={level.id}>
       <h2>
@@ -100,15 +102,15 @@ function Level({ level }) {
         {markdownToReact(level.contents)}
       </div>
       {/* data-masonry="{'itemSelector': '.rule', 'columnWidth': 200 }" */}
-      {/* <div className="body rule-list"> */}
-      <Masonry
+      <div className="body rule-list">
+      {/* <Masonry
         breakpointCols={breakpointColumnsObj}
         className="rule-list"
         columnClassName="my-masonry-grid_column"
-      >
+      > */}
         {level.children && level.children.map(rule => <Rule key={rule.id} rule={rule} />)}
-      </Masonry>
-      {/* </div> */}
+      {/* </Masonry> */}
+      </div>
     </div>
   )
 }
