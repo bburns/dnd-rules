@@ -127,9 +127,15 @@ th, td {
 
 .links {
   padding: 1em;
+  text-align: center;
 }
 .links-disclaimer {
+  margin-top: 1em;
   /* color: gray; */
+}
+.links-link {
+  margin-right: 1em;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .level-contents {

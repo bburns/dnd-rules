@@ -20,12 +20,12 @@ import Masonry from 'masonry-layout' // see https://masonry.desandro.com
 for (let rule of rules) {
   rule.parentId = rule.parentId || null
 }
-const levels = arrayToTree(rules, {dataField:null})
+const levels = arrayToTree(rules, { dataField: null })
 console.log(levels)
 
 
 
-export default function() {
+export default function () {
   React.useEffect(() => {
     var elems = document.querySelectorAll('.rule-list')
     for (let elem of elems) {
@@ -55,7 +55,7 @@ export default function() {
 function Header() {
   return (
     <div className="app-header" role="banner">
-      <img src={dragon} alt=""/>
+      <img src={dragon} alt="" />
       <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
     </div>
   )
@@ -65,11 +65,20 @@ function Header() {
 function Links() {
   return (
     <div className="links">
+      {/* essentials kit */}
       <span className="links-link">
         <a target="_blank" href="https://www.amazon.com/gp/product/0786966831/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786966831&linkCode=as2&tag=bburnskm-20&linkId=2bb4f26c9206c6e67677e23ee43beda1">
           <img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786966831&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" />
         </a>
         <img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786966831" width="1" height="1" border="0" alt="" />
+      </span>
+      {/* players handbook */}
+      <span className="links-link">
+        <a target="_blank" href="https://www.amazon.com/gp/product/0786965606/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965606&linkCode=as2&tag=bburnskm-20&linkId=16ab017f0aad078aec7e89b26b250b2e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965606&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965606" width="1" height="1" border="0" alt="" />
+      </span>
+      {/* dungeon masters guide */}
+      <span className="links-link">
+        <a target="_blank" href="https://www.amazon.com/gp/product/0786965622/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965622&linkCode=as2&tag=bburnskm-20&linkId=94784984c15f4e262bea5208b318d655"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965622&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965622" width="1" height="1" border="0" alt="" />
       </span>
       <div className="links-disclaimer">Note: As an Amazon Associate I earn from qualifying purchases.</div>
     </div>
@@ -103,13 +112,13 @@ function Level({ level }) {
       </div>
       {/* data-masonry="{'itemSelector': '.rule', 'columnWidth': 200 }" */}
       <div className="body rule-list">
-      {/* <Masonry
+        {/* <Masonry
         breakpointCols={breakpointColumnsObj}
         className="rule-list"
         columnClassName="my-masonry-grid_column"
       > */}
         {level.children && level.children.map(rule => <Rule key={rule.id} rule={rule} />)}
-      {/* </Masonry> */}
+        {/* </Masonry> */}
       </div>
     </div>
   )
@@ -120,7 +129,7 @@ function Rule({ rule }) {
   return (
     <div key={rule.name} id={rule.id} className="rule">
       <h3>{rule.name}</h3>
-      {(rule.contents || rule.dnd) && 
+      {(rule.contents || rule.dnd) &&
         <div className="rule-body">
           {markdownToReact(rule.contents)}
           <div className="rule-reference">{rule.dnd}</div>
