@@ -64,7 +64,7 @@ function Level({ level }) {
         {level.name}
       </h2>
       <div className="level-contents">
-        {level.contents}
+        {markdownToReact(level.contents)}
       </div>
       <div className="body rule-list">
         {level.children && level.children.map(rule => <Rule key={rule.id} rule={rule} />)}
