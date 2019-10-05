@@ -41,7 +41,7 @@ table {
 th, td {
   text-align: left;
   border: 1px solid #ddd;
-  padding: 1px 1em;
+  padding: 1px 8px;
   /* white-space: nowrap; */
   word-break: normal;
 }
