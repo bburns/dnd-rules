@@ -20,7 +20,7 @@
   .app-header {
     /* display: none; */
     /* display: block; */
-    position: auto;
+    position: static;
     background: #fff;
     color: black;
     text-align: left;
@@ -33,6 +33,10 @@
   }
   .app-footer {
     display: none;
+  }
+
+  .app-contents {
+    margin: 0;
   }
 
   .app-rules {
