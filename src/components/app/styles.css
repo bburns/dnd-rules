@@ -224,7 +224,7 @@ th, td {
 
 .rule-col {
   float: left;
-  width: 32%;
-  margin-right: 1%;
-  background: #DDD;
+  width: 31%;
+  margin-right: 2%;
+  /* background: #DDD; */
 }

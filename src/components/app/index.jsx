@@ -60,7 +60,7 @@ export default function () {
 
 function Header() {
   return (
-    <div className="app-header" role="banner">
+    <div className="app-header">
       <img src={dragon} alt="" />
       <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
     </div>

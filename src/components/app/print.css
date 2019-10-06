@@ -9,7 +9,7 @@
 @media print {
 
   html, body {
-    font-size: 12px;
+    font-size: 11px;
     overflow: visible;
   }
 
@@ -18,7 +18,15 @@
   }
 
   .app-header {
-    display: none;
+    /* display: none; */
+    /* display: block; */
+    position: auto;
+    background: #fff;
+    color: black;
+    text-align: left;
+  }
+  .app-header img {
+    filter: invert(100%);
   }
   .app-intro {
     display: none;
@@ -28,7 +36,8 @@
   }
 
   .app-rules {
-    padding-top: 0;
+    /* padding-top: 0; */
+    padding: 0;
   }
 
   .app-rules-section#introduction {
@@ -46,7 +55,7 @@
     color: black;
   }
   .rule {
-    /* page-break-inside: avoid; */
+    page-break-inside: avoid;
   }
   .rule + .rule {
   }
