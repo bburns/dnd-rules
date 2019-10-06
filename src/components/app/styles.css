@@ -148,20 +148,21 @@ th, td {
   /* float: left; */
   /* width: 90%; */
   /* margin: 0 4px 8px; */
+  width: 100%;
   background: #fff;
   box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
 }
 @media(min-width:700px) {
   .rule {
     padding-top: 0;
-    width: calc(50% - 1em);
+    /* width: calc(50% - 1em); */
     margin-right: 1em;
   }
 }
 @media(min-width:1025px) {
   .rule {
     /* padding-top: 0; */
-    width: calc(33% - 1em);
+    /* width: calc(33% - 1em); */
     /* margin-right: 1em; */
   }
 }
@@ -215,3 +216,10 @@ th, td {
   margin-bottom: 30px;
 }
 
+
+.rule-col {
+  float: left;
+  width: 32%;
+  margin-right: 1%;
+  background: #DDD;
+}
