@@ -13,10 +13,6 @@
     overflow: visible;
   }
 
-  div {
-    page-break-inside: avoid;
-  }
-  
   .app-page {
     overflow: visible;
   }
@@ -31,25 +27,34 @@
     display: none;
   }
 
+  .app-rules {
+    padding-top: 0;
+  }
+
+  .app-rules-section#introduction {
+    display: none;
+  }
+  .app-rules-section#about {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+
   .app-rules-section>h2 {
-    /* font-size: 1.1em; */
     font-weight: normal;
     color: black;
   }
   .rule {
-    /* border: 1px solid #ccc; */
-    width: calc(33% - 1em);
-    /* width: calc(50% - 1em); */
+    /* page-break-inside: avoid; */
   }
   .rule + .rule {
-    margin-left: 1em;
   }
   .rule>h3 {
     color: black;
   }
   .rule-body {
     box-shadow: none;
-    /* padding: 4px; */
   }
 
 }

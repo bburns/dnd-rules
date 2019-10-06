@@ -1,3 +1,5 @@
+/* see print.css for print style overrides */
+
 html, body {
   height: 100%;
   background: #f3ede5;
@@ -125,6 +127,8 @@ th, td {
   border-bottom: 1px solid #ccc;
 } */
 
+
+/* affiliate links */
 .links {
   padding: 1em;
   text-align: center;
@@ -137,6 +141,7 @@ th, td {
   margin-right: 1em;
   box-shadow: 5px 5px 5px gray;
 }
+
 
 .level-contents {
   margin-bottom: 1em;
@@ -156,7 +161,7 @@ th, td {
   .rule {
     padding-top: 0;
     /* width: calc(50% - 1em); */
-    margin-right: 1em;
+    /* margin-right: 1em; */
   }
 }
 @media(min-width:1025px) {
@@ -198,23 +203,23 @@ th, td {
 
 
 .rule-list {
-  display: flex;
+  /* display: flex; */
   /* margin-left: 0; */
   /* gutter size offset */
   /* margin-left: -30px; */
-  width: auto;
+  /* width: auto; */
 }
-.my-masonry-grid_column {
+/* .my-masonry-grid_column { */
   /* gutter size */
   /* padding-left: 30px; */
-  background-clip: padding-box;
-}
-.my-masonry-grid_column > .rule {
+  /* background-clip: padding-box; */
+/* } */
+/* .my-masonry-grid_column > .rule { */
   /* width: 12em; */
   /* width: calc(33% - 1em); */
-  width: calc(100% - 1em);
-  margin-bottom: 30px;
-}
+  /* width: calc(100% - 1em); */
+  /* margin-bottom: 30px; */
+/* } */
 
 
 .rule-col {
