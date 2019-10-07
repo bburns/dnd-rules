@@ -1,12 +1,53 @@
 
 ---------------------------------------------------------------------------
-# Basic Rules #
+# Basic #
 ---------------------------------------------------------------------------
 
 The core mechanic of Dungeons and Dragons is to roll a 20 sided die ("d20"), add relevant modifiers, and compare to a target number to determine success or failure.
 
+^type: complexity
+
 ---------------------------------------------------------------------------
-## Ability Score ##
+# Intermediate #
+---------------------------------------------------------------------------
+^type: complexity
+
+---------------------------------------------------------------------------
+# Advanced #
+---------------------------------------------------------------------------
+^type: complexity
+
+
+---------------------------------------------------------------------------
+# Ability Check #
+---------------------------------------------------------------------------
+
+Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [[Difficulty Class (DC)]], 1-20. Very easy 5, Easy 10, etc.
+
+^type: rule
+^ref: ph174
+^phase: play
+^complexity: intermediate
+
+
+---------------------------------------------------------------------------
+# Ability Modifier #
+---------------------------------------------------------------------------
+
+Ability Modifiers range from -5 to +10. They are used more often than the raw [[Ability Score|Ability Scores]] on which they are based. 
+
+Ability Modifier = floor((Ability Score - 10) / 2)
+
+e.g. if Strength = 13 then Strength Modifier = +1
+
+^type: rule
+^ref: ph13,173
+^phase: character
+^complexity: intermediate
+
+
+---------------------------------------------------------------------------
+# Ability Score #
 ---------------------------------------------------------------------------
 
 Measures of different abilities: 
@@ -30,161 +71,7 @@ Max 20 for characters, 30 for monsters/divines.
 
 
 ---------------------------------------------------------------------------
-## Armor Class (AC) ##
----------------------------------------------------------------------------
-
-A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
-
-^type: rule
-^ref: ph___
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Class ##
----------------------------------------------------------------------------
-
-Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.
-
-(*Intermediate*: Gives special Features, like [[Proficiency]] in different weapons or armor.)
-
-(*Advanced*: Can [[Multiclassing|Multiclass]] also.)
-
-^type: rule
-^ref: ph45
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Combat (Basic) ##
----------------------------------------------------------------------------
-
-Players and adversaries take turns -
-
-* Choose a target
-* Roll d20 for base Attack Roll score
-* If score >= target's [[Armor Class (AC)]], it's a hit - roll appropriate dice (based on weapon) for Damage Roll
-* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.
-
-See also [[Combat (Intermediate)]] and [[Combat (Advanced)]].
-
-^type: rule
-^ref: ph189+,194
-^phase: combat
-^complexity: basic
-
-
-
----------------------------------------------------------------------------
-## Experience Points (XP) ##
----------------------------------------------------------------------------
-
-Represent character's experience and determines their [[Level]]. Gain for monsters kills, significant actions, etc. See table for when to advance a [[Level]].
-
-^type: rule
-^ref: ph15
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Hit Dice (HD) ##
----------------------------------------------------------------------------
-
-These determine how many [[Hit Points (HP)]] a character has. Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10.
-
-^type: rule
-^ref: ph12
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Hit Points (HP) ##
----------------------------------------------------------------------------
-
-Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Constitution Modifier (see [[Ability Modifiers]]). At subsequent levels, roll [[Hit Dice (HD)]] and add that with Constitution Modifier to obtain new HP, OR add half of [[Hit Dice (HD)]] max +1 + Constitution Modifier (avoids randomness).
-
-(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [[Saving Throw|Saving Throws]] against Death (see ph197))
-
-^type: rule
-^ref: ph12,197
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Level ##
----------------------------------------------------------------------------
-
-Character Levels are based on [[Experience Points (XP)]] - as reach higher levels gain more abilities, skills, spells, etc.
-
-^type: rule
-^ref: ph15
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Race ##
----------------------------------------------------------------------------
-
-Establishes fundamental qualities that exist throughout character's life. Determines [[Hit Dice (HD)]], additions to [[Ability Score|Ability Scores]], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
-
-^type: rule
-^ref: ph17
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-## Speed ##
----------------------------------------------------------------------------
-
-How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.
-
-^type: rule
-^ref: ph181
-^phase: character
-^complexity: basic
-
-
----------------------------------------------------------------------------
-# Intermediate Rules #
----------------------------------------------------------------------------
-
----------------------------------------------------------------------------
-## Ability Check ##
----------------------------------------------------------------------------
-
-Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [[Difficulty Class (DC)]], 1-20. Very easy 5, Easy 10, etc.
-
-^type: rule
-^ref: ph174
-^phase: play
-^complexity: intermediate
-
-
----------------------------------------------------------------------------
-## Ability Modifier ##
----------------------------------------------------------------------------
-
-Ability Modifiers range from -5 to +10. They are used more often than the raw [[Ability Score|Ability Scores]] on which they are based. 
-
-Ability Modifier = floor((Ability Score - 10) / 2)
-
-e.g. if Strength = 13 then Strength Modifier = +1
-
-^type: rule
-^ref: ph13,173
-^phase: character
-^complexity: intermediate
-
-
----------------------------------------------------------------------------
-## Action ##
+# Action #
 ---------------------------------------------------------------------------
 
 Available actions during [[Combat]] include:
@@ -208,7 +95,7 @@ Available actions during [[Combat]] include:
 
 
 ---------------------------------------------------------------------------
-## Advantage / Disadvantage ##
+# Advantage / Disadvantage #
 ---------------------------------------------------------------------------
 
 Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. 
@@ -224,7 +111,31 @@ Can use for Attack Rolls, [[Ability Check|Ability Checks]], [[Saving Throw|Savin
 
 
 ---------------------------------------------------------------------------
-## Background ##
+# Alignment #
+---------------------------------------------------------------------------
+
+Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
+
+^type: rule
+^ref: ph122
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Armor Class (AC) #
+---------------------------------------------------------------------------
+
+A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
+
+^type: rule
+^ref: ph___
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Background #
 ---------------------------------------------------------------------------
 
 Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [[Proficiency]] in two [[Skill|Skills]] and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [[Language]]. 
@@ -237,7 +148,80 @@ Where character came from, how came to be an adventurer, place in the world. Eac
 
 
 ---------------------------------------------------------------------------
-## Combat (Intermediate) ##
+# Bond #
+---------------------------------------------------------------------------
+
+A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. 
+
+Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
+
+^type: rule
+^ref: ph124
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Bonus Action #
+---------------------------------------------------------------------------
+
+An additional [[Action]] you take on your [[Combat]] turn depending on various [[Class]] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.
+
+^type: rule
+^ref: ph189
+^phase: combat
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Carrying Capacity #
+---------------------------------------------------------------------------
+
+Amount of weight you can carry - [[Speed]] is affected as you carry more.
+
+^type: rule
+^ref: ph176
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Class #
+---------------------------------------------------------------------------
+
+Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.
+
+(*Intermediate*: Gives special Features, like [[Proficiency]] in different weapons or armor.)
+
+(*Advanced*: Can [[Multiclassing|Multiclass]] also.)
+
+^type: rule
+^ref: ph45
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Combat (Basic) #
+---------------------------------------------------------------------------
+
+Players and adversaries take turns -
+
+* Choose a target
+* Roll d20 for base Attack Roll score
+* If score >= target's [[Armor Class (AC)]], it's a hit - roll appropriate dice (based on weapon) for Damage Roll
+* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.
+
+See also [[Combat (Intermediate)]] and [[Combat (Advanced)]].
+
+^type: rule
+^ref: ph189+,194
+^phase: combat
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Combat (Intermediate) #
 ---------------------------------------------------------------------------
 
 In addition to Basic rules,
@@ -258,7 +242,27 @@ In addition to Basic rules,
 
 
 ---------------------------------------------------------------------------
-## Condition ##
+# Combat (Advanced) #
+---------------------------------------------------------------------------
+
+In addition to Basic and Intermediate rules,
+
+* Establish physical positions and roll [[Initiative]] to determine turn order (including adversaries) = d20 + Dexterity [[Ability Modifier]]
+* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)
+* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [[Ability Modifier]]
+* Can move a distance up to your [[Speed]] AND take one [[Action]]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. 
+* Can talk/gesture and interact with one object for free (e.g. drawing a sword)
+* Take one [[Bonus Action]] if allowed
+* Each complete round lasts 6 seconds in the game world.
+
+^type: rule
+^ref: ph189+,194
+^phase: combat
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Condition #
 ---------------------------------------------------------------------------
 
 Alters capabilities in various ways.
@@ -287,7 +291,31 @@ Alters capabilities in various ways.
 
 
 ---------------------------------------------------------------------------
-## Damage Type ##
+# Cover #
+---------------------------------------------------------------------------
+
+Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor Class (AC)]]. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
+
+^type: rule
+^ref: ph
+^phase: combat
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Crafting #
+---------------------------------------------------------------------------
+
+Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]] with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
+
+^type: rule
+^ref: ph187
+^phase: rest
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Damage Type #
 ---------------------------------------------------------------------------
 
 Types of Damage include 
@@ -315,7 +343,7 @@ Can have Resistance to different Damage Types, in which case damage is halved, o
 
 
 ---------------------------------------------------------------------------
-## Difficulty Class (DC) ##
+# Difficulty Class (DC) #
 ---------------------------------------------------------------------------
 
 The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]], [[Saving Throw|Saving Throws]].
@@ -327,7 +355,19 @@ The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]
 
 
 ---------------------------------------------------------------------------
-## Exhaustion ##
+# Downtime #
+---------------------------------------------------------------------------
+
+Between adventures - must spend money each day for Lifestyle Expenses. Can Can [[Craft]] items, work at a [[Profession]] to earn money, [[Rest]] to recover from poisons, do [[Research]] to find information, [[Train]] to learn new [[Language]] or tool [[Skill]].
+
+^type: rule
+^ref: ph187
+^phase: rest
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Exhaustion #
 ---------------------------------------------------------------------------
 
 Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [[Rest|Rests]] reduce Exhaustion level by 1. 
@@ -349,7 +389,31 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 
 
 ---------------------------------------------------------------------------
-## Flaw ##
+# Experience Points (XP) #
+---------------------------------------------------------------------------
+
+Represent character's experience and determines their [[Level]]. Gain for monsters kills, significant actions, etc. See table for when to advance a [[Level]].
+
+^type: rule
+^ref: ph15
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Feat #
+---------------------------------------------------------------------------
+
+Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [[Ability Score|Ability Scores]] when advancing a [[Level]]. Can gain [[Advantage / Disadvantage|Advantage]], [[Proficiency]] in different [[Skill|Skills]], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
+
+^type: rule
+^ref: ph165
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Flaw #
 ---------------------------------------------------------------------------
 
 A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?
@@ -361,7 +425,81 @@ A vice, compulsion, fear, or weakness - anything someone could exploit to bring 
 
 
 ---------------------------------------------------------------------------
-## Inspiration ##
+# Food / Water #
+---------------------------------------------------------------------------
+
+Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [[Exhaustion]] (see table in PH).
+
+^type: rule
+^ref: ph185
+^phase: play
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Hiding #
+---------------------------------------------------------------------------
+
+Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemies etc.
+
+^type: rule
+^ref: ph177
+^phase: play
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Hit Dice (HD) #
+---------------------------------------------------------------------------
+
+These determine how many [[Hit Points (HP)]] a character has. Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10.
+
+^type: rule
+^ref: ph12
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Hit Points (HP) #
+---------------------------------------------------------------------------
+
+Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Constitution Modifier (see [[Ability Modifiers]]). At subsequent levels, roll [[Hit Dice (HD)]] and add that with Constitution Modifier to obtain new HP, OR add half of [[Hit Dice (HD)]] max +1 + Constitution Modifier (avoids randomness).
+
+(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [[Saving Throw|Saving Throws]] against Death (see ph197))
+
+^type: rule
+^ref: ph12,197
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Ideal #
+---------------------------------------------------------------------------
+
+Something that drives your character. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [[Background|Backgrounds]] give some suggestions.
+
+^type: rule
+^ref: ph124
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Initiative #
+---------------------------------------------------------------------------
+
+Determines order of turns taken in [[Combat (Advanced)]].
+
+^type: rule
+^ref: ph189
+^phase: combat
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Inspiration #
 ---------------------------------------------------------------------------
 
 The Dungeon Master can grant Inspiration when a player does something in character, or inspiring. The player can spend it for [[Advantage / Disadvantage|Advantage]] on any future roll, or give it to another character.
@@ -373,7 +511,31 @@ The Dungeon Master can grant Inspiration when a player does something in charact
 
 
 ---------------------------------------------------------------------------
-## Modifier ##
+# Language #
+---------------------------------------------------------------------------
+
+Default language is given by [[Race]], can learn others - see [[Training]].
+
+^type: rule
+^ref: ph123
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Level #
+---------------------------------------------------------------------------
+
+Character Levels are based on [[Experience Points (XP)]] - as reach higher levels gain more abilities, skills, spells, etc.
+
+^type: rule
+^ref: ph15
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Modifier #
 ---------------------------------------------------------------------------
 
 See [[Ability Modifier]], e.g. Intelligence Modifier is a type of Ability Modifier.
@@ -385,7 +547,43 @@ See [[Ability Modifier]], e.g. Intelligence Modifier is a type of Ability Modifi
 
 
 ---------------------------------------------------------------------------
-## Proficiency ##
+# Multiclassing #
+---------------------------------------------------------------------------
+
+Can gain [[Levels]] in multiple [[Class|Classes]] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
+
+^type: rule
+^ref: ph163
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Passive Checks #
+---------------------------------------------------------------------------
+
+For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [[Advantage]], -5 if [[Disadvantage]].
+
+^type: rule
+^ref: ph175
+^phase: play
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Personality Trait #
+---------------------------------------------------------------------------
+
+Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [[Ability Score|Ability Scores]] for some ideas - [[Background|Backgrounds]] also give some suggestions. 
+
+^type: rule
+^ref: ph123
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Proficiency #
 ---------------------------------------------------------------------------
 
 Can have Proficiency in different weapons - during [[Combat]] can add [[Proficiency Bonus]] to Attack Rolls and Damage Rolls - or for working with certain tools, etc.
@@ -397,7 +595,7 @@ Can have Proficiency in different weapons - during [[Combat]] can add [[Proficie
 
 
 ---------------------------------------------------------------------------
-## Proficiency Bonus ##
+# Proficiency Bonus #
 ---------------------------------------------------------------------------
 
 Value added to rolls when player is [[Proficiency|Proficient]] in a relevant [[Skill]]. Based on player's [[Level]] - e.g. first level is +2.
@@ -409,7 +607,37 @@ Value added to rolls when player is [[Proficiency|Proficient]] in a relevant [[S
 
 
 ---------------------------------------------------------------------------
-## Saving Throw ##
+# Race #
+---------------------------------------------------------------------------
+
+Establishes fundamental qualities that exist throughout character's life. Determines [[Hit Dice (HD)]], additions to [[Ability Score|Ability Scores]], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
+
+^type: rule
+^ref: ph17
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Rest #
+---------------------------------------------------------------------------
+
+Short Rests need at least an hour. Can roll [[Hit Dice (HD)]] x your Level - add that plus your Constitution Modifier to your [[Hit Points (HP)]]. 
+
+Long Rests need at least 8 hours, and restore all [[Hit Points (HP)]].
+
+Optionally, both require use of one Healer's Kit first. 
+
+You can use [[Downtime]] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [[Difficulty Class (DC)]] 15 Constitution [[Saving Throw]] - on success gain Advantage on [[Saving Throw|Saving Throws]] against one Disease or Poison.
+
+^type: rule
+^ref: ph186-7
+^phase: rest
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Saving Throw #
 ---------------------------------------------------------------------------
 
 Roll d20 to resist spells, traps, poison, disease etc - if >= [[Difficulty Class (DC)]] of effect causing it, success.
@@ -421,7 +649,7 @@ Roll d20 to resist spells, traps, poison, disease etc - if >= [[Difficulty Class
 
 
 ---------------------------------------------------------------------------
-## Searching ##
+# Searching #
 ---------------------------------------------------------------------------
 
 Use a Wisdom (Perception) [[Ability Check]] to search for hidden things. Must say specifically where searching.
@@ -433,7 +661,7 @@ Use a Wisdom (Perception) [[Ability Check]] to search for hidden things. Must sa
 
 
 ---------------------------------------------------------------------------
-## Skill ##
+# Skill #
 ---------------------------------------------------------------------------
 
 Each [[Ability Score]] covers a set of Skills you can be [[Proficiency|Proficient]] in, and referred to like "Strength (Athletics)". For [[Ability Check|Ability Checks]] can add your [[Proficiency Bonus]] if a Skill is relevant.
@@ -467,243 +695,19 @@ Each [[Ability Score]] covers a set of Skills you can be [[Proficiency|Proficien
 
 
 ---------------------------------------------------------------------------
-# Advanced Rules #
+# Speed #
 ---------------------------------------------------------------------------
 
----------------------------------------------------------------------------
-## Alignment ##
----------------------------------------------------------------------------
-
-Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
+How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.
 
 ^type: rule
-^ref: ph122
+^ref: ph181
 ^phase: character
-^complexity: advanced
+^complexity: basic
 
 
 ---------------------------------------------------------------------------
-## Bond ##
----------------------------------------------------------------------------
-
-A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. 
-
-Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
-
-^type: rule
-^ref: ph124
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Bonus Action ##
----------------------------------------------------------------------------
-
-An additional [[Action]] you take on your [[Combat]] turn depending on various [[Class]] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.
-
-^type: rule
-^ref: ph189
-^phase: combat
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Carrying Capacity ##
----------------------------------------------------------------------------
-
-Amount of weight you can carry - [[Speed]] is affected as you carry more.
-
-^type: rule
-^ref: ph176
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Combat (Advanced) ##
----------------------------------------------------------------------------
-
-In addition to Basic and Intermediate rules,
-
-* Establish physical positions and roll [[Initiative]] to determine turn order (including adversaries) = d20 + Dexterity [[Ability Modifier]]
-* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)
-* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [[Ability Modifier]]
-* Can move a distance up to your [[Speed]] AND take one [[Action]]. Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. 
-* Can talk/gesture and interact with one object for free (e.g. drawing a sword)
-* Take one [[Bonus Action]] if allowed
-* Each complete round lasts 6 seconds in the game world.
-
-^type: rule
-^ref: ph189+,194
-^phase: combat
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Cover ##
----------------------------------------------------------------------------
-
-Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor Class (AC)]]. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
-
-^type: rule
-^ref: ph
-^phase: combat
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Crafting ##
----------------------------------------------------------------------------
-
-Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]] with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
-
-^type: rule
-^ref: ph187
-^phase: rest
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Downtime ##
----------------------------------------------------------------------------
-
-Between adventures - must spend money each day for Lifestyle Expenses. Can Can [[Craft]] items, work at a [[Profession]] to earn money, [[Rest]] to recover from poisons, do [[Research]] to find information, [[Train]] to learn new [[Language]] or tool [[Skill]].
-
-^type: rule
-^ref: ph187
-^phase: rest
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Feat ##
----------------------------------------------------------------------------
-
-Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [[Ability Score|Ability Scores]] when advancing a [[Level]]. Can gain [[Advantage / Disadvantage|Advantage]], [[Proficiency]] in different [[Skill|Skills]], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
-
-^type: rule
-^ref: ph165
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Food / Water ##
----------------------------------------------------------------------------
-
-Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [[Exhaustion]] (see table in PH).
-
-^type: rule
-^ref: ph185
-^phase: play
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Hiding ##
----------------------------------------------------------------------------
-
-Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemies etc.
-
-^type: rule
-^ref: ph177
-^phase: play
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Ideal ##
----------------------------------------------------------------------------
-
-Something that drives your character. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [[Background|Backgrounds]] give some suggestions.
-
-^type: rule
-^ref: ph124
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Initiative ##
----------------------------------------------------------------------------
-
-Determines order of turns taken in [[Combat (Advanced)]].
-
-^type: rule
-^ref: ph189
-^phase: combat
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Language ##
----------------------------------------------------------------------------
-
-Default language is given by [[Race]], can learn others - see [[Training]].
-
-^type: rule
-^ref: ph123
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Multiclassing ##
----------------------------------------------------------------------------
-
-Can gain [[Levels]] in multiple [[Class|Classes]] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
-
-^type: rule
-^ref: ph163
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Passive Checks ##
----------------------------------------------------------------------------
-
-For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [[Advantage]], -5 if [[Disadvantage]].
-
-^type: rule
-^ref: ph175
-^phase: play
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Personality Trait ##
----------------------------------------------------------------------------
-
-Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [[Ability Score|Ability Scores]] for some ideas - [[Background|Backgrounds]] also give some suggestions. 
-
-^type: rule
-^ref: ph123
-^phase: character
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Rest ##
----------------------------------------------------------------------------
-
-Short Rests need at least an hour. Can roll [[Hit Dice (HD)]] x your Level - add that plus your Constitution Modifier to your [[Hit Points (HP)]]. 
-
-Long Rests need at least 8 hours, and restore all [[Hit Points (HP)]].
-
-Optionally, both require use of one Healer's Kit first. 
-
-You can use [[Downtime]] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [[Difficulty Class (DC)]] 15 Constitution [[Saving Throw]] - on success gain Advantage on [[Saving Throw|Saving Throws]] against one Disease or Poison.
-
-^type: rule
-^ref: ph186-7
-^phase: rest
-^complexity: advanced
-
-
----------------------------------------------------------------------------
-## Subrace ##
+# Subrace #
 ---------------------------------------------------------------------------
 
 Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
@@ -715,7 +719,7 @@ Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs
 
 
 ---------------------------------------------------------------------------
-## Training ##
+# Training #
 ---------------------------------------------------------------------------
 
 Can train to learn new [[Language]], tool [[Skill]] [[Proficiency]] - must find instructor. Training lasts 250 days and costs 1gp per day.
@@ -727,7 +731,7 @@ Can train to learn new [[Language]], tool [[Skill]] [[Proficiency]] - must find 
 
 
 ---------------------------------------------------------------------------
-## Travel ##
+# Travel #
 ---------------------------------------------------------------------------
 
 Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.
@@ -736,4 +740,3 @@ Can travel at normal, fast, or slow pace (table ph182). Can only do half speed i
 ^ref: ph181
 ^phase: play
 ^complexity: advanced
-
