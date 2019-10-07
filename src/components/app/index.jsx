@@ -17,6 +17,7 @@ import './print.css'
 // this works but not for print view
 // import Masonry from 'masonry-layout' // see https://masonry.desandro.com
 
+// this works for screen and print view
 import 'colcade'
 
 
@@ -25,8 +26,9 @@ import 'colcade'
 // see https://github.com/philipstanislaus/performant-array-to-tree
 for (let rule of rules) {
   rule.parentId = rule.parentId || null
+  rule.phase = rule.phase || null
 }
-const levels = arrayToTree(rules, { dataField: null })
+const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
 console.log(levels)
 
 

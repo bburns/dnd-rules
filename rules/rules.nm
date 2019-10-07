@@ -18,6 +18,28 @@ The core mechanic of Dungeons and Dragons is to roll a 20 sided die ("d20"), add
 ^type: complexity
 
 
+
+---------------------------------------------------------------------------
+# Character #
+---------------------------------------------------------------------------
+^type: phase
+
+---------------------------------------------------------------------------
+# Play #
+---------------------------------------------------------------------------
+^type: phase
+
+---------------------------------------------------------------------------
+# Combat #
+---------------------------------------------------------------------------
+^type: phase
+
+---------------------------------------------------------------------------
+# Rest #
+---------------------------------------------------------------------------
+^type: phase
+
+
 ---------------------------------------------------------------------------
 # Ability Check #
 ---------------------------------------------------------------------------
@@ -358,7 +380,7 @@ The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]
 # Downtime #
 ---------------------------------------------------------------------------
 
-Between adventures - must spend money each day for Lifestyle Expenses. Can Can [[Craft]] items, work at a [[Profession]] to earn money, [[Rest]] to recover from poisons, do [[Research]] to find information, [[Train]] to learn new [[Language]] or tool [[Skill]].
+Between adventures - must spend money each day for Lifestyle Expenses. Can Can [[Craft]] items, work at a [[Profession]] to earn money, [[Resting|Rest]] to recover from poisons, do [[Research]] to find information, [[Train]] to learn new [[Language]] or tool [[Skill]].
 
 ^type: rule
 ^ref: ph187
@@ -370,7 +392,7 @@ Between adventures - must spend money each day for Lifestyle Expenses. Can Can [
 # Exhaustion #
 ---------------------------------------------------------------------------
 
-Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [[Rest|Rests]] reduce Exhaustion level by 1. 
+Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [[Resting|Rests]] reduce Exhaustion level by 1. 
 
 
 | Level | Effect  |
@@ -619,7 +641,7 @@ Establishes fundamental qualities that exist throughout character's life. Determ
 
 
 ---------------------------------------------------------------------------
-# Rest #
+# Resting #
 ---------------------------------------------------------------------------
 
 Short Rests need at least an hour. Can roll [[Hit Dice (HD)]] x your Level - add that plus your Constitution Modifier to your [[Hit Points (HP)]]. 

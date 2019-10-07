@@ -18,6 +18,30 @@
     "id": "advanced"
   },
   {
+    "name": "Character",
+    "contents": "",
+    "type": "phase",
+    "id": "character"
+  },
+  {
+    "name": "Play",
+    "contents": "",
+    "type": "phase",
+    "id": "play"
+  },
+  {
+    "name": "Combat",
+    "contents": "",
+    "type": "phase",
+    "id": "combat"
+  },
+  {
+    "name": "Rest",
+    "contents": "",
+    "type": "phase",
+    "id": "rest"
+  },
+  {
     "name": "Ability Check",
     "contents": "Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)](#difficulty-class-(dc)), 1-20. Very easy 5, Easy 10, etc.",
     "type": "rule",
@@ -200,7 +224,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can Can [Craft](#craft) items, work at a [Profession](#profession) to earn money, [Rest](#rest) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or tool [Skill](#skill).",
+    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can Can [Craft](#craft) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or tool [Skill](#skill).",
     "type": "rule",
     "ref": "ph187",
     "phase": "rest",
@@ -209,7 +233,7 @@
   },
   {
     "name": "Exhaustion",
-    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rests](#rest) reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Checks](#ability-check)         |\n|     2 | [Speed](#speed) halved                       |\n|     3 | [Disadvantage](#disadvantage) on Attack Rolls and Saving Throws |\n|     4 | [Hit Point (HP)](#hit-point-(hp)) maximum halved               |\n|     5 | [Speed](#speed) reduced to 0                         |\n|     6 | [Death](#death)                                    |",
+    "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rests](#resting) reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Checks](#ability-check)         |\n|     2 | [Speed](#speed) halved                       |\n|     3 | [Disadvantage](#disadvantage) on Attack Rolls and Saving Throws |\n|     4 | [Hit Point (HP)](#hit-point-(hp)) maximum halved               |\n|     5 | [Speed](#speed) reduced to 0                         |\n|     6 | [Death](#death)                                    |",
     "type": "rule",
     "ref": "ph290",
     "phase": "play",
@@ -388,13 +412,13 @@
     "id": "race"
   },
   {
-    "name": "Rest",
+    "name": "Resting",
     "contents": "Short Rests need at least an hour. Can roll [Hit Dice (HD)](#hit-dice-(hd)) x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)](#hit-points-(hp)). \n\nLong Rests need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)](#difficulty-class-(dc)) 15 Constitution [Saving Throw](#saving-throw) - on success gain Advantage on [Saving Throws](#saving-throw) against one Disease or Poison.",
     "type": "rule",
     "ref": "ph186-7",
     "phase": "rest",
     "complexity": "advanced",
-    "id": "rest"
+    "id": "resting"
   },
   {
     "name": "Saving Throw",
