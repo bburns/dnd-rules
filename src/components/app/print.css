@@ -15,6 +15,7 @@
 
   .app-page {
     overflow: visible;
+    padding: 0;
   }
 
   .app-header {
@@ -41,7 +42,7 @@
 
   .app-rules {
     /* padding-top: 0; */
-    padding: 0;
+    /* padding: 0; */
   }
 
   .app-rules-section#introduction {

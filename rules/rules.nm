@@ -31,8 +31,8 @@ Max 20 for characters, 30 for monsters/divines.
 (*Intermediate*: Used to calculate [[Ability Modifier|Ability Modifiers]]. Each has associated [[Skill|Skills]], e.g. Strength has Athletics.)
 
 
+^phase: char
 ^dnd: ph12,173
-^subtype: char
 
 
 ---------------------------------------------------------------------------
@@ -42,7 +42,7 @@ Max 20 for characters, 30 for monsters/divines.
 A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
 
 ^dnd: ph
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -56,7 +56,7 @@ Primary definition of what a character can do - their calling, e.g. Fighter, Dru
 (*Advanced*: Can [[Multiclassing|Multiclass]] also.)
 
 ^dnd: ph45
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -73,7 +73,7 @@ Players and adversaries take turns -
 See also [[Combat (Intermediate)]] and [[Combat (Advanced)]].
 
 ^dnd: ph189+,194
-^subtype: play
+^phase: play
 
 
 
@@ -84,7 +84,7 @@ See also [[Combat (Intermediate)]] and [[Combat (Advanced)]].
 Represent character's experience and determines their [[Level]]. Gain for monsters kills, significant actions, etc. See table for when to advance a [[Level]].
 
 ^dnd: ph15
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -94,7 +94,7 @@ Represent character's experience and determines their [[Level]]. Gain for monste
 These determine how many [[Hit Points (HP)]] a character has. Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10.
 
 ^dnd: ph12
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -106,7 +106,7 @@ Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Const
 (*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [[Saving Throw|Saving Throws]] against Death (see ph197))
 
 ^dnd: ph12,197
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -116,7 +116,7 @@ Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Const
 Character Levels are based on [[Experience Points (XP)]] - as reach higher levels gain more abilities, skills, spells, etc.
 
 ^dnd: ph15
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -126,7 +126,7 @@ Character Levels are based on [[Experience Points (XP)]] - as reach higher level
 Establishes fundamental qualities that exist throughout character's life. Determines [[Hit Dice (HD)]], additions to [[Ability Score|Ability Scores]], etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.
 
 ^dnd: ph17
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -136,7 +136,7 @@ Establishes fundamental qualities that exist throughout character's life. Determ
 How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.
 
 ^dnd: ph181
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -150,7 +150,7 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [[Difficulty Class (DC)]], 1-20. Very easy 5, Easy 10, etc.
 
 ^dnd: ph174
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -164,7 +164,7 @@ Ability Modifier = floor((Ability Score - 10) / 2)
 e.g. if Strength = 13 then Strength Modifier = +1
 
 ^dnd: ph13,173
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -186,7 +186,7 @@ Available actions during [[Combat]] include:
 * Other - improvise!
 
 ^dnd: ph192
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -200,7 +200,7 @@ If some source gives you Advantage, roll twice and take the higher of the two ro
 Can use for Attack Rolls, [[Ability Check|Ability Checks]], [[Saving Throw|Saving Throws]] in various situations.
 
 ^dnd: ph173
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -210,7 +210,7 @@ Can use for Attack Rolls, [[Ability Check|Ability Checks]], [[Saving Throw|Savin
 Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [[Proficiency]] in two [[Skill|Skills]] and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [[Language]]. 
 
 ^dnd: ph125
-^subtype: char
+^phase: char
 ^urls: https://www.dndbeyond.com/backgrounds
 
 
@@ -230,7 +230,7 @@ In addition to Basic rules,
 * For Damage Roll, add [[Ability Modifier]] (same as for Attack Roll)
 
 ^dnd: ph189+,194
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -257,7 +257,7 @@ Alters capabilities in various ways.
 
 
 ^dnd: ph290
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -283,7 +283,7 @@ Types of Damage include
 Can have Resistance to different Damage Types, in which case damage is halved, or Vulnerability where damage is doubled.
 
 ^dnd: ph196
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -293,7 +293,7 @@ Can have Resistance to different Damage Types, in which case damage is halved, o
 The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]], [[Saving Throw|Saving Throws]].
 
 ^dnd: ph174
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -313,7 +313,7 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 |     6 | [[Death]]                                    |
 
 ^dnd: ph290
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -323,7 +323,7 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?
 
 ^dnd: ph124
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -333,7 +333,7 @@ A vice, compulsion, fear, or weakness - anything someone could exploit to bring 
 The Dungeon Master can grant Inspiration when a player does something in character, or inspiring. The player can spend it for [[Advantage / Disadvantage|Advantage]] on any future roll, or give it to another character.
 
 ^dnd: ph125
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -343,7 +343,7 @@ The Dungeon Master can grant Inspiration when a player does something in charact
 See [[Ability Modifier]], e.g. Intelligence Modifier is a type of Ability Modifier.
 
 ^dnd: ph
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -353,7 +353,7 @@ See [[Ability Modifier]], e.g. Intelligence Modifier is a type of Ability Modifi
 Can have Proficiency in different weapons - during [[Combat]] can add [[Proficiency Bonus]] to Attack Rolls and Damage Rolls - or for working with certain tools, etc.
 
 ^dnd: ph173
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -363,7 +363,7 @@ Can have Proficiency in different weapons - during [[Combat]] can add [[Proficie
 Value added to rolls when player is [[Proficiency|Proficient]] in a relevant [[Skill]]. Based on player's [[Level]] - e.g. first level is +2.
 
 ^dnd: ph173
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -373,7 +373,7 @@ Value added to rolls when player is [[Proficiency|Proficient]] in a relevant [[S
 Roll d20 to resist spells, traps, poison, disease etc - if >= [[Difficulty Class (DC)]] of effect causing it, success.
 
 ^dnd: ph179
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -383,7 +383,7 @@ Roll d20 to resist spells, traps, poison, disease etc - if >= [[Difficulty Class
 Use a Wisdom (Perception) [[Ability Check]] to search for hidden things. Must say specifically where searching.
 
 ^dnd: ph178
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -415,7 +415,7 @@ Each [[Ability Score]] covers a set of Skills you can be [[Proficiency|Proficien
 |              | Persuasion      |
 
 ^dnd: ph174
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -429,7 +429,7 @@ Each [[Ability Score]] covers a set of Skills you can be [[Proficiency|Proficien
 Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
 
 ^dnd: ph122
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -441,7 +441,7 @@ A connection to people, places, and events in the world. They tie you to things 
 Whom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures. 
 
 ^dnd: ph124
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -451,7 +451,7 @@ Whom do you care about? What is most treasured possession? Create one for your c
 An additional [[Action]] you take on your [[Combat]] turn depending on various [[Class]] features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.
 
 ^dnd: ph189
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -461,7 +461,7 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 Amount of weight you can carry - [[Speed]] is affected as you carry more.
 
 ^dnd: ph176
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -479,7 +479,7 @@ In addition to Basic and Intermediate rules,
 * Each complete round lasts 6 seconds in the game world.
 
 ^dnd: ph189+,194
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -489,7 +489,7 @@ In addition to Basic and Intermediate rules,
 Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor Class (AC)]]. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
 
 ^dnd: ph
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -499,7 +499,7 @@ Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor
 Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]] with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
 
 ^dnd: ph187
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -509,7 +509,7 @@ Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]
 Between adventures - must spend money each day for Lifestyle Expenses. Can Can [[Craft]] items, work at a [[Profession]] to earn money, [[Rest]] to recover from poisons, do [[Research]] to find information, [[Train]] to learn new [[Language]] or tool [[Skill]].
 
 ^dnd: ph187
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -519,7 +519,7 @@ Between adventures - must spend money each day for Lifestyle Expenses. Can Can [
 Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [[Ability Score|Ability Scores]] when advancing a [[Level]]. Can gain [[Advantage / Disadvantage|Advantage]], [[Proficiency]] in different [[Skill|Skills]], etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer. 
 
 ^dnd: ph165
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -529,7 +529,7 @@ Represents a talent or area of expertise - embodies training, experience, and ab
 Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [[Exhaustion]] (see table in PH).
 
 ^dnd: ph185
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -539,7 +539,7 @@ Need one pound food and one gallon water/day, two gallons if hot. Below this suf
 Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemies etc.
 
 ^dnd: ph177
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -549,7 +549,7 @@ Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemie
 Something that drives your character. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [[Background|Backgrounds]] give some suggestions.
 
 ^dnd: ph124
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -559,7 +559,7 @@ Something that drives your character. What principals will you never betray? Why
 Determines order of turns taken in [[Combat (Advanced)]].
 
 ^dnd: ph189
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -569,7 +569,7 @@ Determines order of turns taken in [[Combat (Advanced)]].
 Default language is given by [[Race]], can learn others - see [[Training]].
 
 ^dnd: ph123
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -579,7 +579,7 @@ Default language is given by [[Race]], can learn others - see [[Training]].
 Can gain [[Levels]] in multiple [[Class|Classes]] - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.
 
 ^dnd: ph163
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -589,7 +589,7 @@ Can gain [[Levels]] in multiple [[Class|Classes]] - choose which to advance in w
 For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [[Advantage]], -5 if [[Disadvantage]].
 
 ^dnd: ph175
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -599,7 +599,7 @@ For hiding, exploration - to check for traps, secrets, etc. No die roll - for sc
 Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [[Ability Score|Ability Scores]] for some ideas - [[Background|Backgrounds]] also give some suggestions. 
 
 ^dnd: ph123
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -615,7 +615,7 @@ Optionally, both require use of one Healer's Kit first.
 You can use [[Downtime]] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [[Difficulty Class (DC)]] 15 Constitution [[Saving Throw]] - on success gain Advantage on [[Saving Throw|Saving Throws]] against one Disease or Poison.
 
 ^dnd: ph186-7
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -625,7 +625,7 @@ You can use [[Downtime]] between adventures to recover from debilitating Injury,
 Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.
 
 ^dnd: ph17
-^subtype: char
+^phase: char
 
 
 ---------------------------------------------------------------------------
@@ -635,7 +635,7 @@ Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs
 Can train to learn new [[Language]], tool [[Skill]] [[Proficiency]] - must find instructor. Training lasts 250 days and costs 1gp per day.
 
 ^dnd: ph187
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
@@ -645,14 +645,14 @@ Can train to learn new [[Language]], tool [[Skill]] [[Proficiency]] - must find 
 Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.
 
 ^dnd: ph181
-^subtype: play
+^phase: play
 
 
 ---------------------------------------------------------------------------
 # About #
 ---------------------------------------------------------------------------
 
-Sources used are the [Player's Handbook 5th Edition](https://www.amazon.com/Players-Handbook-Dungeons-Dragons-Wizards/dp/0786965606/ref=sr_1_15), with references to page numbers in the book given as e.g. "ph152" for page 152 - and the [System Reference Document (SRD) rules online](https://www.dndbeyond.com/sources/basic-rules).
+Sources used are the Player's Handbook 5th Edition, with references to page numbers in the book given as e.g. "ph152" for page 152 - and the [System Reference Document (SRD) rules online](https://www.dndbeyond.com/sources/basic-rules).
 
 Dragon icon by [Zeila on Clipart library](http://clipart-library.com/clipart/8cxKqA59i.htm)
 

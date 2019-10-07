@@ -93,6 +93,7 @@ th, td {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  padding: 1em;
 }
 .app-page h2 {
   font-size: 1.8em;
@@ -101,11 +102,11 @@ th, td {
 }
 
 .app-intro {
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .app-footer {
-  padding: 1em;
+  /* padding: 1em; */
   color: #aaa;
 }
 .app-footer span+span:before {
@@ -114,7 +115,7 @@ th, td {
 
 .app-rules {
   /* margin-left: 1em; */
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .app-rules-section {
@@ -130,7 +131,7 @@ th, td {
 
 /* affiliate links */
 .links {
-  padding: 1em;
+  /* padding: 1em; */
   text-align: center;
 }
 .links-disclaimer {

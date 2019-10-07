@@ -49,6 +49,7 @@ export default function () {
       <div className="app-contents">
         <TableOfContents levels={levels} />
         <div className="app-page">
+          <Introduction/>
           <Levels levels={levels} />
           <Links />
         </div>
@@ -67,6 +68,16 @@ function Header() {
   )
 }
 
+
+function Introduction() {
+  return (
+    <div className="introduction">
+      This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
+      <br/>
+      For sources used and how to contribute see [[About]] section.
+    </div>
+  )
+}
 
 function Levels({ levels }) {
   return (
