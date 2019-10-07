@@ -25,10 +25,11 @@ import 'colcade'
 // lib fn requires parentId fields
 // see https://github.com/philipstanislaus/performant-array-to-tree
 for (let rule of rules) {
-  rule.parentId = rule.parentId || null
+  rule.complexity = rule.complexity || null
   rule.phase = rule.phase || null
 }
-const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
+const levels = arrayToTree(rules, { parentId: "complexity", dataField: null })
+// const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
 console.log(levels)
 
 
