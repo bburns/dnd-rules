@@ -224,7 +224,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can Can [Craft](#craft) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#train) to learn new [Language](#language) or tool [Skill](#skill).",
+    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#training) to learn new [Language](#language) or tool [Skill](#skill).",
     "type": "rule",
     "ref": "ph187",
     "phase": "rest",

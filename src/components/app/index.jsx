@@ -28,8 +28,8 @@ for (let rule of rules) {
   rule.complexity = rule.complexity || null
   rule.phase = rule.phase || null
 }
-const levels = arrayToTree(rules, { parentId: "complexity", dataField: null })
-// const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
+// const levels = arrayToTree(rules, { parentId: "complexity", dataField: null })
+const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
 console.log(levels)
 
 
