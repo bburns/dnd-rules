@@ -32,17 +32,6 @@ console.log(levels)
 
 
 export default function () {
-  // React.useEffect(() => {
-  //   var elems = document.querySelectorAll('.rule-list')
-  //   for (let elem of elems) {
-  //     var msnry = new Masonry(elem, {
-  //       itemSelector: '.rule',
-  //       // columnWidth: 200,
-  //       // horizontalOrder: true,
-  //     })
-  //     console.log(msnry)
-  //   }
-  // }, [])
   return (
     <div className="app">
       <Header />
@@ -80,6 +69,7 @@ function Introduction() {
     </div>
   )
 }
+
 
 function Levels({ levels }) {
   return (
@@ -149,7 +139,7 @@ Sources used are the Player's Handbook 5th Edition, with references to page numb
 
 Dragon icon by [Zeila on Clipart library](http://clipart-library.com/clipart/8cxKqA59i.htm)
 
-Dungeons & Dragons, D&D, their respective logos, and all Wizards titles and characters are property of [Wizards of the Coast](https://dnd.wizards.com/) LLC in the U.S.A. and other countries. ©2019 Wizards.
+Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of [Wizards of the Coast](https://dnd.wizards.com/) LLC in the U.S.A. and other countries. ©2019 Wizards.
 
     </div>
   )
@@ -161,17 +151,17 @@ function Links() {
       {/* essentials kit */}
       <span className="links-link">
         <a target="_blank" href="https://www.amazon.com/gp/product/0786966831/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786966831&linkCode=as2&tag=bburnskm-20&linkId=2bb4f26c9206c6e67677e23ee43beda1">
-          <img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786966831&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" />
+          <img border="0" alt="" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786966831&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" />
         </a>
         <img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786966831" width="1" height="1" border="0" alt="" />
       </span>
       {/* players handbook */}
       <span className="links-link">
-        <a target="_blank" href="https://www.amazon.com/gp/product/0786965606/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965606&linkCode=as2&tag=bburnskm-20&linkId=16ab017f0aad078aec7e89b26b250b2e"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965606&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965606" width="1" height="1" border="0" alt="" />
+        <a target="_blank" href="https://www.amazon.com/gp/product/0786965606/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965606&linkCode=as2&tag=bburnskm-20&linkId=16ab017f0aad078aec7e89b26b250b2e"><img border="0" alt="" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965606&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965606" width="1" height="1" border="0" alt="" />
       </span>
       {/* dungeon masters guide */}
       <span className="links-link">
-        <a target="_blank" href="https://www.amazon.com/gp/product/0786965622/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965622&linkCode=as2&tag=bburnskm-20&linkId=94784984c15f4e262bea5208b318d655"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965622&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965622" width="1" height="1" border="0" alt="" />
+        <a target="_blank" href="https://www.amazon.com/gp/product/0786965622/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0786965622&linkCode=as2&tag=bburnskm-20&linkId=94784984c15f4e262bea5208b318d655"><img border="0" alt="" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0786965622&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bburnskm-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=bburnskm-20&l=am2&o=1&a=0786965622" width="1" height="1" border="0" alt="" />
       </span>
       <div className="links-disclaimer">Note: As an Amazon Associate I earn from qualifying purchases.</div>
     </div>
