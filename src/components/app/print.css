@@ -19,8 +19,6 @@
   }
 
   .app-header {
-    /* display: none; */
-    /* display: block; */
     position: static;
     background: #fff;
     color: black;
@@ -29,7 +27,7 @@
   .app-header img {
     filter: invert(100%);
   }
-  .app-intro {
+  .app-introduction {
     display: none;
   }
   .app-footer {

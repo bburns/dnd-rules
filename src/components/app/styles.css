@@ -101,12 +101,10 @@ th, td {
   border-bottom: 1px solid #ccc;
 }
 
-.app-intro {
-  /* padding: 1em; */
+.app-introduction {
 }
 
 .app-footer {
-  /* padding: 1em; */
   color: #aaa;
 }
 .app-footer span+span:before {
@@ -114,29 +112,20 @@ th, td {
 }
 
 .app-rules {
-  /* margin-left: 1em; */
-  /* padding: 1em; */
 }
 
 .app-rules-section {
   clear: both;
 }
 
-/* .app-rules-section>h2 {
-  font-size: 1.8em;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #ccc;
-} */
-
 
 /* affiliate links */
 .links {
-  /* padding: 1em; */
   text-align: center;
+  padding-bottom: 2em;
 }
 .links-disclaimer {
   margin-top: 1em;
-  /* color: gray; */
 }
 .links-link {
   margin-right: 1em;
@@ -151,9 +140,6 @@ th, td {
 
 .rule {
   margin-bottom: 1.5em;
-  /* float: left; */
-  /* width: 90%; */
-  /* margin: 0 4px 8px; */
   width: 100%;
   background: #fff;
   box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
@@ -174,7 +160,6 @@ th, td {
 }
 
 .rule a {
-  /* font-weight: bold; */
 }
 .rule>h3 {
   color: #4dbc1a;
@@ -204,28 +189,10 @@ th, td {
 
 
 .rule-list {
-  /* display: flex; */
-  /* margin-left: 0; */
-  /* gutter size offset */
-  /* margin-left: -30px; */
-  /* width: auto; */
 }
-/* .my-masonry-grid_column { */
-  /* gutter size */
-  /* padding-left: 30px; */
-  /* background-clip: padding-box; */
-/* } */
-/* .my-masonry-grid_column > .rule { */
-  /* width: 12em; */
-  /* width: calc(33% - 1em); */
-  /* width: calc(100% - 1em); */
-  /* margin-bottom: 30px; */
-/* } */
-
 
 .rule-col {
   float: left;
   width: 31%;
   margin-right: 2%;
-  /* background: #DDD; */
 }

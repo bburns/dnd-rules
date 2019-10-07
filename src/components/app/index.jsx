@@ -64,11 +64,12 @@ function Header() {
 
 function Introduction() {
   return (
-    <div className="introduction">
-      This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
-      <br/>
-      <br/>
-      For sources used and how to contribute see [[About]] section.
+    <div className="introduction" id="introduction">
+      <h2>Introduction</h2>
+      
+      <p>This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
+
+      <p>For sources used and how to contribute see <a href="#about">About</a> section.</p>
     </div>
   )
 }
@@ -132,17 +133,14 @@ function Rule({ rule }) {
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
+      <h2>About</h2>
+      
+      <p>Sources used are the Player's Handbook 5th Edition, with references to page numbers in the book given as e.g. "ph152" for page 152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.</p>
 
----------------------------------------------------------------------------
-# About #
----------------------------------------------------------------------------
+      <p>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></p>
 
-Sources used are the Player's Handbook 5th Edition, with references to page numbers in the book given as e.g. "ph152" for page 152 - and the [System Reference Document (SRD) rules online](https://www.dndbeyond.com/sources/basic-rules).
-
-Dragon icon by [Zeila on Clipart library](http://clipart-library.com/clipart/8cxKqA59i.htm)
-
-Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of [Wizards of the Coast](https://dnd.wizards.com/) LLC in the U.S.A. and other countries. ©2019 Wizards.
+      <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast</a> LLC in the U.S.A. and other countries. ©2019 Wizards.</p>
 
     </div>
   )
