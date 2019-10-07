@@ -51,6 +51,7 @@ export default function () {
         <div className="app-page">
           <Introduction/>
           <Levels levels={levels} />
+          <About />
           <Links />
         </div>
       </div>
@@ -73,6 +74,7 @@ function Introduction() {
   return (
     <div className="introduction">
       This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed. 
+      <br/>
       <br/>
       For sources used and how to contribute see [[About]] section.
     </div>
@@ -103,10 +105,7 @@ function Level({ level }) {
       <div className="level-contents">
         {markdownToReact(level.contents)}
       </div>
-      {/* data-masonry="{'itemSelector': '.rule', 'columnWidth': 200 }" */}
-      <div className="body rule-list"
-        data-colcade="columns: .rule-col, items: .rule"
-      >
+      <div className="body rule-list" data-colcade="columns: .rule-col, items: .rule">
         <div className="rule-col"></div>
         <div className="rule-col"></div>
         <div className="rule-col"></div>
@@ -127,16 +126,34 @@ function Rule({ rule }) {
   return (
     <div key={rule.name} id={rule.id} className="rule">
       <h3>{rule.name}</h3>
-      {(rule.contents || rule.dnd) &&
+      {(rule.contents || rule.ref) &&
         <div className="rule-body">
           {markdownToReact(rule.contents)}
-          <div className="rule-reference">{rule.dnd}</div>
+          <div className="rule-reference">{rule.ref}</div>
         </div>
       }
     </div>
   )
 }
 
+
+function About() {
+  return (
+    <div className="about">
+
+---------------------------------------------------------------------------
+# About #
+---------------------------------------------------------------------------
+
+Sources used are the Player's Handbook 5th Edition, with references to page numbers in the book given as e.g. "ph152" for page 152 - and the [System Reference Document (SRD) rules online](https://www.dndbeyond.com/sources/basic-rules).
+
+Dragon icon by [Zeila on Clipart library](http://clipart-library.com/clipart/8cxKqA59i.htm)
+
+Dungeons & Dragons, D&D, their respective logos, and all Wizards titles and characters are property of [Wizards of the Coast](https://dnd.wizards.com/) LLC in the U.S.A. and other countries. ©2019 Wizards.
+
+    </div>
+  )
+}
 
 function Links() {
   return (
