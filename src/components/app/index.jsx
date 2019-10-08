@@ -29,11 +29,10 @@ for (let item of items) {
   item.phase = item.phase || null
 }
 const items2 = items.filter(item => item.type==="phase" || item.type==="rule")
-// const rulesFiltered = items2.filter(rule => rule.complexity === "basic")
 // const groups = arrayToTree(items2, { parentId: "complexity", dataField: null })
 const groups = arrayToTree(items2, { parentId: "phase", dataField: null })
 console.log(groups)
-
+const groupsExtended = [{id:'introduction', name:"Introduction"}, ...groups, {id:'about', name: "About"}]
 
 
 export default function () {
@@ -41,7 +40,7 @@ export default function () {
     <div className="app">
       <Header />
       <div className="app-contents">
-        <TableOfContents groups={groups} />
+        <TableOfContents groups={groupsExtended} />
         <div className="app-page">
           <Introduction/>
           <Groups groups={groups} />
