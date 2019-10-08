@@ -40,7 +40,10 @@ export default function () {
     <div className="app">
       <Header />
       <div className="app-contents">
-        <TableOfContents groups={groupsExtended} />
+        <div className="app-sidebar">
+          <Controls />
+          <TableOfContents groups={groupsExtended} />
+        </div>
         <div className="app-page">
           <Introduction/>
           <Groups groups={groups} />
@@ -58,6 +61,15 @@ function Header() {
     <div className="header">
       <img src={dragon} alt="" />
       <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
+    </div>
+  )
+}
+
+
+function Controls() {
+  return (
+    <div className="controls">
+      Controls
     </div>
   )
 }

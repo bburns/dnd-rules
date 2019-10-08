@@ -2,8 +2,6 @@
 .toc {
   display: none;
   overflow-y: auto;
-  flex-basis: 14em;
-  flex-shrink: 0;
   background: #333;
   line-height: 1.2em;
   list-style-image: none;
@@ -49,5 +47,3 @@
 .toc-rule {
   margin-left: 1em;
 }
-
-

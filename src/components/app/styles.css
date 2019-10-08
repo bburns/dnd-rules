@@ -74,6 +74,12 @@ th, td {
   border-bottom: 1px solid #ccc;
 }
 
+.app-sidebar {
+  flex-basis: 14em;
+  flex-shrink: 0;
+}
+
+
 .header {
   background: black;
   color: white;
@@ -166,7 +172,6 @@ th, td {
   margin-right: 2%;
 }
 
-/* affiliate links */
 .links {
   text-align: center;
   padding-bottom: 2em;
