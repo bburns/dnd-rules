@@ -21,16 +21,16 @@ import './print.css'
 import 'colcade'
 
 
-// make tree of levels and rules
+// make tree of groups and rules
 // lib fn requires parentId fields
 // see https://github.com/philipstanislaus/performant-array-to-tree
 for (let rule of rules) {
   rule.complexity = rule.complexity || null
   rule.phase = rule.phase || null
 }
-// const levels = arrayToTree(rules, { parentId: "complexity", dataField: null })
-const levels = arrayToTree(rules, { parentId: "phase", dataField: null })
-console.log(levels)
+// const groups = arrayToTree(rules, { parentId: "complexity", dataField: null })
+const groups = arrayToTree(rules, { parentId: "phase", dataField: null })
+console.log(groups)
 
 
 
@@ -39,10 +39,10 @@ export default function () {
     <div className="app">
       <Header />
       <div className="app-contents">
-        <TableOfContents levels={levels} />
+        <TableOfContents groups={groups} />
         <div className="app-page">
           <Introduction/>
-          <Levels levels={levels} />
+          <Groups groups={groups} />
           <About />
           <Links />
         </div>
@@ -66,25 +66,23 @@ function Introduction() {
   return (
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
-      
       <p>This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
-
       <p>For sources used and how to contribute see <a href="#about">About</a> section.</p>
     </div>
   )
 }
 
 
-function Levels({ levels }) {
+function Groups({ groups }) {
   return (
     <div className="app-rules">
-      {levels.map(level => <Level key={level.id} level={level} />)}
+      {groups.map(group => <Group key={group.id} group={group} />)}
     </div>
   )
 }
 
 
-function Level({ level }) {
+function Group({ group }) {
   // const breakpointColumnsObj = {
   //   default: 3,
   //   1100: 3,
@@ -92,12 +90,12 @@ function Level({ level }) {
   //   500: 1,
   // }  
   return (
-    <div className="app-rules-section" id={level.id}>
+    <div className="app-rules-section" id={group.id}>
       <h2>
-        {level.name}
+        {group.name}
       </h2>
-      <div className="level-contents">
-        {markdownToReact(level.contents)}
+      <div className="group-contents">
+        {markdownToReact(group.contents)}
       </div>
       <div className="body rule-list" data-colcade="columns: .rule-col, items: .rule">
         <div className="rule-col"></div>
@@ -108,7 +106,7 @@ function Level({ level }) {
         className="rule-list"
         columnClassName="my-masonry-grid_column"
       > */}
-        {level.children && level.children.map(rule => <Rule key={rule.id} rule={rule} />)}
+        {group.children && group.children.map(rule => <Rule key={rule.id} rule={rule} />)}
         {/* </Masonry> */}
       </div>
     </div>
