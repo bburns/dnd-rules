@@ -6,7 +6,7 @@ import { arrayToTree } from 'performant-array-to-tree'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
 import dragon from '../../assets/images/dragon-192x192x256.png'
-import rules from '../../assets/rules.json'
+import items from '../../assets/rules.json'
 import TableOfContents from '../toc'
 import './styles.css'
 import './print.css'
@@ -24,12 +24,14 @@ import 'colcade'
 // make tree of groups and rules
 // lib fn requires parentId fields
 // see https://github.com/philipstanislaus/performant-array-to-tree
-for (let rule of rules) {
-  rule.complexity = rule.complexity || null
-  rule.phase = rule.phase || null
+for (let item of items) {
+  item.complexity = item.complexity || null
+  item.phase = item.phase || null
 }
-// const groups = arrayToTree(rules, { parentId: "complexity", dataField: null })
-const groups = arrayToTree(rules, { parentId: "phase", dataField: null })
+const items2 = items.filter(item => item.type==="phase" || item.type==="rule")
+// const rulesFiltered = items2.filter(rule => rule.complexity === "basic")
+// const groups = arrayToTree(items2, { parentId: "complexity", dataField: null })
+const groups = arrayToTree(items2, { parentId: "phase", dataField: null })
 console.log(groups)
 
 
