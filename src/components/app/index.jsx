@@ -84,7 +84,7 @@ function Groups({ groups }) {
 
 function Group({ group }) {
   return (
-    <div className="rules-section" id={group.id}>
+    <div className="group" id={group.id}>
       <h2>
         {group.name}
       </h2>
