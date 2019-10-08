@@ -75,8 +75,11 @@ th, td {
 }
 
 .app-sidebar {
+  overflow-y: auto;
   flex-basis: 14em;
   flex-shrink: 0;
+  padding: 1px 5px;
+  background: #333;
 }
 
 
