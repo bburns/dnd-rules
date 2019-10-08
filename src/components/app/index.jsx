@@ -54,7 +54,7 @@ export default function () {
 
 function Header() {
   return (
-    <div className="app-header">
+    <div className="header">
       <img src={dragon} alt="" />
       <h1 className="h1">Dungeons &amp; Dragons Rules</h1>
     </div>
@@ -75,7 +75,7 @@ function Introduction() {
 
 function Groups({ groups }) {
   return (
-    <div className="app-rules">
+    <div className="groups">
       {groups.map(group => <Group key={group.id} group={group} />)}
     </div>
   )
@@ -83,14 +83,8 @@ function Groups({ groups }) {
 
 
 function Group({ group }) {
-  // const breakpointColumnsObj = {
-  //   default: 3,
-  //   1100: 3,
-  //   700: 2,
-  //   500: 1,
-  // }  
   return (
-    <div className="app-rules-section" id={group.id}>
+    <div className="rules-section" id={group.id}>
       <h2>
         {group.name}
       </h2>
@@ -116,6 +110,8 @@ function Rule({ rule }) {
         <div className="rule-body">
           {markdownToReact(rule.contents)}
           <div className="rule-reference">{rule.ref}</div>
+          {/* <div className="rule-reference">{rule.phase}</div> */}
+          {/* <div className="rule-reference">{rule.complexity}</div> */}
         </div>
       }
     </div>

@@ -101,20 +101,20 @@ th, td {
   border-bottom: 1px solid #ccc;
 }
 
-.app-introduction {
+.introduction {
 }
 
-.app-footer {
+.footer {
   color: #aaa;
 }
-.app-footer span+span:before {
+.footer span+span:before {
   content: ' | ';
 }
 
-.app-rules {
+.rules {
 }
 
-.app-rules-section {
+.rules-section {
   clear: both;
 }
 
