@@ -91,7 +91,7 @@ function Group({ group }) {
       <div className="group-contents">
         {markdownToReact(group.contents)}
       </div>
-      <div className="body rule-list" data-colcade="columns: .rule-col, items: .rule">
+      <div className="rule-list" data-colcade="columns: .rule-col, items: .rule">
         <div className="rule-col"></div>
         <div className="rule-col"></div>
         <div className="rule-col"></div>

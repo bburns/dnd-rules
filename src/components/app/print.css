@@ -13,60 +13,52 @@
     overflow: visible;
   }
 
+  h2 {
+    font-weight: normal;
+    color: black;
+  }
+
   .app-page {
     overflow: visible;
     padding: 0;
-  }
-
-  .app-header {
-    position: static;
-    background: #fff;
-    color: black;
-    text-align: left;
-  }
-  .app-header img {
-    filter: invert(100%);
-  }
-  .app-introduction {
-    display: none;
-  }
-  .app-footer {
-    display: none;
   }
 
   .app-contents {
     margin: 0;
   }
 
-  .app-rules {
-    /* padding-top: 0; */
-    /* padding: 0; */
-  }
-
-  .app-rules-section#introduction {
-    display: none;
-  }
-  .app-rules-section#about {
-    display: none;
-  }
-  .links {
-    display: none;
-  }
-
-  .app-rules-section>h2 {
-    font-weight: normal;
+  .header {
+    position: static;
+    background: #fff;
     color: black;
+    text-align: left;
   }
+  .header img {
+    filter: invert(100%);
+  }
+
+  .introduction {
+    display: none;
+  }
+
   .rule {
     page-break-inside: avoid;
   }
   .rule + .rule {
   }
-  .rule>h3 {
+  .rule > h3 {
     color: black;
   }
   .rule-body {
     box-shadow: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .links {
+    display: none;
   }
 
 }
