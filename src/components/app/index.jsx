@@ -101,13 +101,7 @@ function Group({ group }) {
         <div className="rule-col"></div>
         <div className="rule-col"></div>
         <div className="rule-col"></div>
-        {/* <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="rule-list"
-        columnClassName="my-masonry-grid_column"
-      > */}
         {group.children && group.children.map(rule => <Rule key={rule.id} rule={rule} />)}
-        {/* </Masonry> */}
       </div>
     </div>
   )
@@ -133,13 +127,9 @@ function About() {
   return (
     <div className="about" id="about">
       <h2>About</h2>
-      
       <p>Sources used are the Player's Handbook 5th Edition, with references to page numbers in the book given as e.g. "ph152" for page 152 - and the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD) rules online</a>.</p>
-
       <p>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a></p>
-
       <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast</a> LLC in the U.S.A. and other countries. ©2019 Wizards.</p>
-
     </div>
   )
 }
