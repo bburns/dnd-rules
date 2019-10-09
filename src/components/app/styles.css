@@ -110,6 +110,11 @@ th, td {
   }
 }
 
+.controls {
+  color: #eee;
+  /* display: none; */
+}
+
 .introduction {
 }
 

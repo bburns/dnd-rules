@@ -31,10 +31,8 @@ for (let item of items) {
 
 
 export default function () {
-  const [groupBy, setGroupBy] = React.useState("complexity")
+  const [groupBy, setGroupBy] = React.useState("complexity") // or "phase"
   const items2 = items.filter(item => item.type===groupBy || item.type==="rule")
-  // const groups = arrayToTree(items2, { parentId: "complexity", dataField: null })
-  // const groups = arrayToTree(items2, { parentId: "phase", dataField: null })
   const groups = arrayToTree(items2, { parentId: groupBy, dataField: null })
   console.log(groups)
   const groupsExtended = [{id:'introduction', name:"Introduction"}, ...groups, {id:'about', name: "About"}]
@@ -43,7 +41,7 @@ export default function () {
       <Header />
       <div className="app-contents">
         <div className="app-sidebar">
-          <Controls />
+          {/* <Controls groupBy={groupBy} setGroupBy={setGroupBy} /> */}
           <TableOfContents groups={groupsExtended} />
         </div>
         <div className="app-page">
@@ -68,10 +66,18 @@ function Header() {
 }
 
 
-function Controls() {
+function Controls({ groupBy, setGroupBy }) {
+  function onChange(evt) {
+    const newGroupBy = evt.target.value
+    setGroupBy(newGroupBy)
+  }
   return (
     <div className="controls">
-      Controls
+      Group By
+      <select name="groupBy" id="groupBy" onChange={onChange}>
+        <option value="complexity">Complexity</option>
+        <option value="phase">Phase</option>
+      </select>
     </div>
   )
 }
