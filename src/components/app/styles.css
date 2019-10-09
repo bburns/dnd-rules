@@ -74,14 +74,19 @@ th, td {
   border-bottom: 1px solid #ccc;
 }
 
-.app-sidebar {
+.sidebar {
   overflow-y: auto;
   flex-basis: 14em;
   flex-shrink: 0;
   padding: 1px 5px;
   background: #333;
+  display: none;
 }
-
+@media screen and (min-width: 500px) {
+  .sidebar {
+    display: block;
+  }
+}
 
 .header {
   background: black;
@@ -176,9 +181,13 @@ th, td {
 
 .rule-col {
   float: left;
-  width: 31%;
-  margin-right: 2%;
+  width: 100%;
+  /* width: 32%; */
+  /* margin-right: 2%; */
 }
+.rule-col--2 { display: none; }
+.rule-col--3 { display: none; }
+
 
 .links {
   text-align: center;

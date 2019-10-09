@@ -40,7 +40,7 @@ export default function () {
     <div className="app">
       <Header />
       <div className="app-contents">
-        <div className="app-sidebar">
+        <div className="sidebar">
           {/* <Controls groupBy={groupBy} setGroupBy={setGroupBy} /> */}
           <TableOfContents groups={groupsExtended} />
         </div>
@@ -113,9 +113,9 @@ function Group({ group }) {
         {markdownToReact(group.contents)}
       </div>
       <div className="rule-list" data-colcade="columns: .rule-col, items: .rule">
-        <div className="rule-col"></div>
-        <div className="rule-col"></div>
-        <div className="rule-col"></div>
+        <div className="rule-col rule-col--1"></div>
+        <div className="rule-col rule-col--2"></div>
+        <div className="rule-col rule-col--3"></div>
         {group.children && group.children.map(rule => <Rule key={rule.id} rule={rule} />)}
       </div>
     </div>
