@@ -53,6 +53,10 @@
     box-shadow: none;
   }
 
+  .rule-col { width: 31%; margin-right: 2%; }
+  .rule-col--2 { display: block; }
+  .rule-col--3 { display: block; }
+
   .about {
     display: none;
   }
