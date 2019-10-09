@@ -28,14 +28,16 @@ for (let item of items) {
   item.complexity = item.complexity || null
   item.phase = item.phase || null
 }
-const items2 = items.filter(item => item.type==="phase" || item.type==="rule")
-// const groups = arrayToTree(items2, { parentId: "complexity", dataField: null })
-const groups = arrayToTree(items2, { parentId: "phase", dataField: null })
-console.log(groups)
-const groupsExtended = [{id:'introduction', name:"Introduction"}, ...groups, {id:'about', name: "About"}]
 
 
 export default function () {
+  const [groupBy, setGroupBy] = React.useState("complexity")
+  const items2 = items.filter(item => item.type===groupBy || item.type==="rule")
+  // const groups = arrayToTree(items2, { parentId: "complexity", dataField: null })
+  // const groups = arrayToTree(items2, { parentId: "phase", dataField: null })
+  const groups = arrayToTree(items2, { parentId: groupBy, dataField: null })
+  console.log(groups)
+  const groupsExtended = [{id:'introduction', name:"Introduction"}, ...groups, {id:'about', name: "About"}]
   return (
     <div className="app">
       <Header />
