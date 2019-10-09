@@ -76,13 +76,13 @@ th, td {
 
 .sidebar {
   overflow-y: auto;
-  flex-basis: 14em;
+  flex-basis: 12em;
   flex-shrink: 0;
   padding: 1px 5px;
   background: #333;
   display: none;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   .sidebar {
     display: block;
   }
@@ -107,7 +107,7 @@ th, td {
 .header h1 {
   margin: 0;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 @media(min-width:500px) {
   .header h1 {
