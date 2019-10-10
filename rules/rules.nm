@@ -199,7 +199,7 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 # Cantrip #
 ---------------------------------------------------------------------------
 
-Simple magic 
+Simple magic [[Spells]] that are retained in memory, not a spellbook. 
 
 ^type: rule
 ^ref: ph___
@@ -754,6 +754,28 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 
 ^type: rule
 ^ref: ph181
+^phase: character
+^complexity: basic
+
+
+---------------------------------------------------------------------------
+# Spells #
+---------------------------------------------------------------------------
+
+Some character [[Class|Classes]] have the ability to cast spells - as they reacher higher [[Level|Levels]] they are able to learn more powerful spells (as indicated by the Spell Level). 
+
+Wizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are able to record). For example, a first level Wizard can record two spells of Spell Level 1. 
+
+Casting a spell requires Preparing it first - you can Prepare a number of spells equal to your Intelligence [[Ability Modifier]] + Wizard [[Level]]. For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. 
+
+Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [[Rest|Long Rest]]. 
+
+[[Cantrips]] are simple spells that can be retained in memory without a spellbook.
+
+Some Spells are Rituals and can be cast without preparation. 
+
+^type: rule
+^ref: ph___
 ^phase: character
 ^complexity: basic
 

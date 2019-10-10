@@ -134,7 +134,7 @@
   },
   {
     "name": "Cantrip",
-    "contents": "Simple magic",
+    "contents": "Simple magic [Spells](#spells) that are retained in memory, not a spellbook.",
     "type": "rule",
     "ref": "ph___",
     "phase": "character",
@@ -473,6 +473,15 @@
     "phase": "character",
     "complexity": "basic",
     "id": "speed"
+  },
+  {
+    "name": "Spells",
+    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reacher higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are able to record). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can Prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\n[Cantrips](#cantrips) are simple spells that can be retained in memory without a spellbook.\n\nSome Spells are Rituals and can be cast without preparation.",
+    "type": "rule",
+    "ref": "ph___",
+    "phase": "character",
+    "complexity": "basic",
+    "id": "spells"
   },
   {
     "name": "Subrace",
