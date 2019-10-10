@@ -57,12 +57,8 @@
   .rule-col--2 { display: block; }
   .rule-col--3 { display: block; }
 
-  .about {
-    display: none;
-  }
-
-  .links {
-    display: none;
-  }
+  .about { display: none; }
+  .links { display: none; }
+  .license { display: none; }
 
 }
