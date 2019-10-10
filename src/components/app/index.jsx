@@ -153,6 +153,7 @@ function About() {
   )
 }
 
+
 function Links() {
   return (
     <div className="links">
@@ -181,9 +182,7 @@ function License() {
   return (
     <div className="license" id="license">
       <h2>License</h2>
-      <div className="license-contents">
-
-OPEN GAME LICENSE Version 1.0a
+      <div className="license-contents">{`OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
 
@@ -224,6 +223,7 @@ System Reference Document 5.1 Copyright 2016, Wizards of the Coast, Inc.
 Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
 
 END OF LICENSE
+`}
       </div>
     </div>
   )
