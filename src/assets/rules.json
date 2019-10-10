@@ -134,9 +134,9 @@
   },
   {
     "name": "Cantrip",
-    "contents": "Simple magic [Spells](#spell) that are retained in memory, not a spellbook.",
+    "contents": "Simple magic [Spells](#spell) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.",
     "type": "rule",
-    "ref": "ph___",
+    "ref": "ph201",
     "phase": "character",
     "complexity": "basic",
     "id": "cantrip"
@@ -269,9 +269,9 @@
   },
   {
     "name": "Feature",
-    "contents": "Different [Classes](#class) have different Features available, and gain more as they advance to higher [[Level|Levels]. \n\nFor example, Spellcasting is a Feature of the Wizard class, and at higher levels they gain the Arcane Recovery Feature, which allows them to regain magical energy over short Rests.",
+    "contents": "Different [Classes](#class) have different Features available, and gain more as they advance to higher [[Level|Levels]. \n\nFor example, Spellcasting is a Feature of the Wizard class, and at higher levels they gain the Arcane Recovery Feature, which allows them to regain magical energy over Short [Rests](#resting).",
     "type": "rule",
-    "ref": "ph___",
+    "ref": "ph11",
     "phase": "character",
     "complexity": "intermediate",
     "id": "feature"
@@ -368,9 +368,8 @@
   },
   {
     "name": "Modifier",
-    "contents": "See [Ability Modifier](#ability-modifier), e.g. Intelligence Modifier is a type of Ability Modifier.",
+    "contents": "See [Ability Modifier](#ability-modifier), e.g. \"Intelligence Modifier\" is a type of Ability Modifier.",
     "type": "rule",
-    "ref": "ph___",
     "phase": "character",
     "complexity": "intermediate",
     "id": "modifier"
@@ -476,9 +475,9 @@
   },
   {
     "name": "Spell",
-    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are allowed). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. \n\nSee also [Cantrip](#cantrip).",
+    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph113 for how many spells of each Spell Level they are allowed). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. \n\nSee also [Cantrip](#cantrip).",
     "type": "rule",
-    "ref": "ph___",
+    "ref": "ph114",
     "phase": "character",
     "complexity": "basic",
     "id": "spell"
@@ -496,7 +495,7 @@
     "name": "Tools",
     "contents": "Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools. The latter includes a small file, a set of lock picks, a small mirror on a handle, a set of narrow scissors, and a pair of pliers - can be used to disarm traps or open locks. \n\nYour Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock.",
     "type": "rule",
-    "ref": "ph___",
+    "ref": "ph154",
     "phase": "play",
     "complexity": "advanced",
     "id": "tools"
