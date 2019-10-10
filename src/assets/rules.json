@@ -52,7 +52,7 @@
   },
   {
     "name": "Ability Modifier",
-    "contents": "Ability Modifiers range from -5 to +10. They are used more often than the raw [Ability Scores](#ability-score) on which they are based. \n\nAbility Modifier = floor((Ability Score - 10) / 2)\n\ne.g. if Strength = 13 then Strength Modifier = +1",
+    "contents": "Ability Modifiers range from -5 to +10. They are used more often than the raw [Ability Scores](#ability-score) on which they are based. \n\nAbility Modifier = floor((Ability Score - 10) / 2)\n\ne.g. if Strength = 13 then \"Strength Modifier\" = +1",
     "type": "rule",
     "ref": "ph13,173",
     "phase": "character",
@@ -97,9 +97,9 @@
   },
   {
     "name": "Armor Class (AC)",
-    "contents": "A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number.",
+    "contents": "A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. With no armor or shield a character's AC is 10 + their Dexterity [Ability Modifier](#ability-modifier).\n\n*Intermediate*: You must be [Proficient](#proficiency) with the type of armor worn to use it without drawback.",
     "type": "rule",
-    "ref": "ph___",
+    "ref": "ph14",
     "phase": "character",
     "complexity": "basic",
     "id": "armor-class-(ac)"
@@ -134,7 +134,7 @@
   },
   {
     "name": "Cantrip",
-    "contents": "Simple magic [Spells](#spells) that are retained in memory, not a spellbook.",
+    "contents": "Simple magic [Spells](#spell) that are retained in memory, not a spellbook.",
     "type": "rule",
     "ref": "ph___",
     "phase": "character",
@@ -475,13 +475,13 @@
     "id": "speed"
   },
   {
-    "name": "Spells",
-    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reacher higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are able to record). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can Prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\n[Cantrips](#cantrips) are simple spells that can be retained in memory without a spellbook.\n\nSome Spells are Rituals and can be cast without preparation.",
+    "name": "Spell",
+    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are allowed). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. \n\nSee also [Cantrip](#cantrip).",
     "type": "rule",
     "ref": "ph___",
     "phase": "character",
     "complexity": "basic",
-    "id": "spells"
+    "id": "spell"
   },
   {
     "name": "Subrace",

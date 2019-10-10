@@ -40,6 +40,7 @@ The core mechanic of Dungeons and Dragons is to roll a 20 sided die ("d20"), add
 ^type: phase
 
 
+
 ---------------------------------------------------------------------------
 # Ability Check #
 ---------------------------------------------------------------------------
@@ -60,7 +61,7 @@ Ability Modifiers range from -5 to +10. They are used more often than the raw [[
 
 Ability Modifier = floor((Ability Score - 10) / 2)
 
-e.g. if Strength = 13 then Strength Modifier = +1
+e.g. if Strength = 13 then "Strength Modifier" = +1
 
 ^type: rule
 ^ref: ph13,173
@@ -148,10 +149,12 @@ Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and
 # Armor Class (AC) #
 ---------------------------------------------------------------------------
 
-A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. 
+A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. With no armor or shield a character's AC is 10 + their Dexterity [[Ability Modifier]].
+
+*Intermediate*: You must be [[Proficiency|Proficient]] with the type of armor worn to use it without drawback. 
 
 ^type: rule
-^ref: ph___
+^ref: ph14
 ^phase: character
 ^complexity: basic
 
@@ -199,7 +202,7 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 # Cantrip #
 ---------------------------------------------------------------------------
 
-Simple magic [[Spells]] that are retained in memory, not a spellbook. 
+Simple magic [[Spell|Spells]] that are retained in memory, not a spellbook. 
 
 ^type: rule
 ^ref: ph___
@@ -759,20 +762,20 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 
 
 ---------------------------------------------------------------------------
-# Spells #
+# Spell #
 ---------------------------------------------------------------------------
 
-Some character [[Class|Classes]] have the ability to cast spells - as they reacher higher [[Level|Levels]] they are able to learn more powerful spells (as indicated by the Spell Level). 
+Some character [[Class|Classes]] have the ability to cast spells - as they reach higher [[Level|Levels]] they are able to learn more powerful spells (as indicated by the Spell Level). 
 
-Wizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are able to record). For example, a first level Wizard can record two spells of Spell Level 1. 
+Wizards record their spells in a Spellbook (see ph___ for how many spells of each Spell Level they are allowed). For example, a first level Wizard can record two spells of Spell Level 1. 
 
-Casting a spell requires Preparing it first - you can Prepare a number of spells equal to your Intelligence [[Ability Modifier]] + Wizard [[Level]]. For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. 
+Casting a spell requires Preparing it first - you can prepare a number of spells equal to your Intelligence [[Ability Modifier]] + Wizard [[Level]]. For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. 
 
 Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [[Rest|Long Rest]]. 
 
-[[Cantrips]] are simple spells that can be retained in memory without a spellbook.
-
 Some Spells are Rituals and can be cast without preparation. 
+
+See also [[Cantrip]].
 
 ^type: rule
 ^ref: ph___
