@@ -106,7 +106,7 @@
   },
   {
     "name": "Background",
-    "contents": "Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [Language](#language).",
+    "contents": "Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more [Tools](#tools), as well as a package of starting Equipment. Some also allow learning an additional [Language](#language).",
     "type": "rule",
     "ref": "ph125",
     "phase": "character",
@@ -131,6 +131,15 @@
     "phase": "combat",
     "complexity": "advanced",
     "id": "bonus-action"
+  },
+  {
+    "name": "Cantrip",
+    "contents": "Simple magic",
+    "type": "rule",
+    "ref": "ph___",
+    "phase": "character",
+    "complexity": "basic",
+    "id": "cantrip"
   },
   {
     "name": "Carrying Capacity",
@@ -197,7 +206,7 @@
   },
   {
     "name": "Crafting",
-    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficiency) with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.",
+    "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficiency) with [Tools](#tools) related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.",
     "type": "rule",
     "ref": "ph187",
     "phase": "rest",
@@ -224,7 +233,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#training) to learn new [Language](#language) or tool [Skill](#skill).",
+    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#training) to learn new [Language](#language) or [Tool](#tools) [Skill](#skill).",
     "type": "rule",
     "ref": "ph187",
     "phase": "rest",
@@ -259,6 +268,15 @@
     "id": "feat"
   },
   {
+    "name": "Feature",
+    "contents": "Different [Classes](#class) have different Features available, and gain more as they advance to higher [[Level|Levels]. \n\nFor example, Spellcasting is a Feature of the Wizard class, and at higher levels they gain the Arcane Recovery Feature, which allows them to regain magical energy over short Rests.",
+    "type": "rule",
+    "ref": "ph___",
+    "phase": "character",
+    "complexity": "intermediate",
+    "id": "feature"
+  },
+  {
     "name": "Flaw",
     "contents": "A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?",
     "type": "rule",
@@ -287,7 +305,7 @@
   },
   {
     "name": "Hit Dice (HD)",
-    "contents": "These determine how many [Hit Points (HP)](#hit-points-(hp)) a character has. Different [Classes](#class) have different types of Hit Dice, e.g. d8, d10.",
+    "contents": "Different [Classes](#class) have different types of Hit Dice, e.g. d8, d10, which determines how many [Hit Points (HP)](#hit-points-(hp)) they gain between levels (see Hit Points for more details).",
     "type": "rule",
     "ref": "ph12",
     "phase": "character",
@@ -386,7 +404,7 @@
   },
   {
     "name": "Proficiency",
-    "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to Attack Rolls and Damage Rolls - or for working with certain tools, etc.",
+    "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to Attack Rolls and Damage Rolls - or for working with certain [Tools](#tools), etc.",
     "type": "rule",
     "ref": "ph173",
     "phase": "character",
@@ -413,7 +431,7 @@
   },
   {
     "name": "Resting",
-    "contents": "Short Rests need at least an hour. Can roll [Hit Dice (HD)](#hit-dice-(hd)) x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)](#hit-points-(hp)). \n\nLong Rests need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)](#difficulty-class-(dc)) 15 Constitution [Saving Throw](#saving-throw) - on success gain Advantage on [Saving Throws](#saving-throw) against one Disease or Poison.",
+    "contents": "Resting can restore your character's health. \n\n**Short Rests** need at least an hour - can roll [Hit Dice (HD)](#hit-dice-(hd)) x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)](#hit-points-(hp)). \n\n**Long Rests** need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nLong Rests also restore all Spells. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)](#difficulty-class-(dc)) 15 Constitution [Saving Throw](#saving-throw) - on success gain Advantage on [Saving Throws](#saving-throw) against one Disease or Poison.",
     "type": "rule",
     "ref": "ph186-7",
     "phase": "rest",
@@ -464,6 +482,15 @@
     "phase": "character",
     "complexity": "advanced",
     "id": "subrace"
+  },
+  {
+    "name": "Tools",
+    "contents": "Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools. The latter includes a small file, a set of lock picks, a small mirror on a handle, a set of narrow scissors, and a pair of pliers - can be used to disarm traps or open locks. \n\nYour Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock.",
+    "type": "rule",
+    "ref": "ph___",
+    "phase": "play",
+    "complexity": "advanced",
+    "id": "tools"
   },
   {
     "name": "Training",

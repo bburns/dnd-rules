@@ -87,7 +87,7 @@ function Introduction() {
   return (
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
-      <p>This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
+      <p>This is an unofficial listing of the D&amp;D (5th edition) rules, split into three sections - Basic, Intermediate, and Advanced. You could start by playing with the Basic rules and add more as needed.</p>
       <p>For sources used and how to contribute see <a href="#about">About</a> section.</p>
     </div>
   )

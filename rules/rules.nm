@@ -160,7 +160,7 @@ A measure of how difficult something is to hit, 1-20+. To score a hit must roll 
 # Background #
 ---------------------------------------------------------------------------
 
-Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [[Proficiency]] in two [[Skill|Skills]] and one or more Tools, as well as a package of starting Equipment. Some also allow learning an additional [[Language]]. 
+Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [[Proficiency]] in two [[Skill|Skills]] and one or more [[Tools]], as well as a package of starting Equipment. Some also allow learning an additional [[Language]]. 
 
 ^type: rule
 ^ref: ph125
@@ -193,6 +193,18 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 ^ref: ph189
 ^phase: combat
 ^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Cantrip #
+---------------------------------------------------------------------------
+
+Simple magic 
+
+^type: rule
+^ref: ph___
+^phase: character
+^complexity: basic
 
 
 ---------------------------------------------------------------------------
@@ -328,7 +340,7 @@ Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor
 # Crafting #
 ---------------------------------------------------------------------------
 
-Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]] with Tools related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
+Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]] with [[Tools]] related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.
 
 ^type: rule
 ^ref: ph187
@@ -380,7 +392,7 @@ The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]
 # Downtime #
 ---------------------------------------------------------------------------
 
-Between adventures - must spend money each day for Lifestyle Expenses. Can [[Crafting|Craft]] items, work at a [[Profession]] to earn money, [[Resting|Rest]] to recover from poisons, do [[Research]] to find information, [[Training|Train]] to learn new [[Language]] or tool [[Skill]].
+Between adventures - must spend money each day for Lifestyle Expenses. Can [[Crafting|Craft]] items, work at a [[Profession]] to earn money, [[Resting|Rest]] to recover from poisons, do [[Research]] to find information, [[Training|Train]] to learn new [[Language]] or [[Tools|Tool]] [[Skill]].
 
 ^type: rule
 ^ref: ph187
@@ -435,6 +447,20 @@ Represents a talent or area of expertise - embodies training, experience, and ab
 
 
 ---------------------------------------------------------------------------
+# Feature #
+---------------------------------------------------------------------------
+
+Different [[Class|Classes]] have different Features available, and gain more as they advance to higher [[Level|Levels]. 
+
+For example, Spellcasting is a Feature of the Wizard class, and at higher levels they gain the Arcane Recovery Feature, which allows them to regain magical energy over short Rests. 
+
+^type: rule
+^ref: ph___
+^phase: character
+^complexity: intermediate
+
+
+---------------------------------------------------------------------------
 # Flaw #
 ---------------------------------------------------------------------------
 
@@ -474,7 +500,7 @@ Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemie
 # Hit Dice (HD) #
 ---------------------------------------------------------------------------
 
-These determine how many [[Hit Points (HP)]] a character has. Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10.
+Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10, which determines how many [[Hit Points (HP)]] they gain between levels (see Hit Points for more details).
 
 ^type: rule
 ^ref: ph12
@@ -608,7 +634,7 @@ Something interesting and fun about a character - their likes, past accomplishme
 # Proficiency #
 ---------------------------------------------------------------------------
 
-Can have Proficiency in different weapons - during [[Combat]] can add [[Proficiency Bonus]] to Attack Rolls and Damage Rolls - or for working with certain tools, etc.
+Can have Proficiency in different weapons - during [[Combat]] can add [[Proficiency Bonus]] to Attack Rolls and Damage Rolls - or for working with certain [[Tools]], etc.
 
 ^type: rule
 ^ref: ph173
@@ -644,11 +670,15 @@ Establishes fundamental qualities that exist throughout character's life. Determ
 # Resting #
 ---------------------------------------------------------------------------
 
-Short Rests need at least an hour. Can roll [[Hit Dice (HD)]] x your Level - add that plus your Constitution Modifier to your [[Hit Points (HP)]]. 
+Resting can restore your character's health. 
 
-Long Rests need at least 8 hours, and restore all [[Hit Points (HP)]].
+**Short Rests** need at least an hour - can roll [[Hit Dice (HD)]] x your Level - add that plus your Constitution Modifier to your [[Hit Points (HP)]]. 
+
+**Long Rests** need at least 8 hours, and restore all [[Hit Points (HP)]].
 
 Optionally, both require use of one Healer's Kit first. 
+
+Long Rests also restore all Spells. 
 
 You can use [[Downtime]] between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [[Difficulty Class (DC)]] 15 Constitution [[Saving Throw]] - on success gain Advantage on [[Saving Throw|Saving Throws]] against one Disease or Poison.
 
@@ -737,6 +767,20 @@ Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs
 ^type: rule
 ^ref: ph17
 ^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
+# Tools #
+---------------------------------------------------------------------------
+
+Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools. The latter includes a small file, a set of lock picks, a small mirror on a handle, a set of narrow scissors, and a pair of pliers - can be used to disarm traps or open locks. 
+
+Your Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock.
+
+^type: rule
+^ref: ph___
+^phase: play
 ^complexity: advanced
 
 
