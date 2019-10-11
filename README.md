@@ -7,7 +7,7 @@ https://dnd.pub
 
 ## Contribute
 
-To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the file `rules/rules.nm` directly</a>. See below for an explanation of the format.
+To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the rules directly</a>. See below for an explanation of the format.
 
 To file an issue, see the <a href="https://github.com/bburns/dnd-rules/issues">Issues page</a>.
 
@@ -45,7 +45,7 @@ The rules are located in `rules/rules.nm` - the rule name is offset by dashes, t
 
 The site itself is made with React, with <a href="https://github.com/desandro/colcade">Colcade</a> to fit the rules into tiles, and <a href="https://github.com/remarkjs/remark">Remark</a> to convert Markdown to HTML. 
 
-The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, and are bundled into the final site.
+The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, which is then bundled into the final site.
 
 
 ## Set Up
@@ -56,6 +56,7 @@ Clone the repository with git -
 
 then grab the dependencies
 
+    cd dnd-rules
     yarn
 
 
@@ -77,5 +78,5 @@ To deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
 
 ## License
 
-This site is GPL. The rule contents are OGL (Open Game License) - see <a href="https://github.com/bburns/dnd-rules/blob/master/OGL">here</a>.
+This site is GPL. The rule contents are OGL (Open Game License) - see <a href="https://raw.githubusercontent.com/bburns/dnd-rules/master/OGL">here</a>.
 
