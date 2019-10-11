@@ -49,7 +49,7 @@ Make an Ability Check to test innate talent/training to overcome a challenge. Di
 
 ^type: rule
 ^ref: ph174
-^srd: using-ability-scores#AbilityChecks
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#AbilityChecks
 ^phase: play
 ^complexity: intermediate
 
