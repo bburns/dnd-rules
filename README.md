@@ -7,27 +7,14 @@ https://dnd.pub
 
 ## Contribute
 
-To update the rules directly, edit the file `rules/rules.nm` directly <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">here</a>. See below for an explanation of the format.
+To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the file `rules/rules.nm` directly</a>. See below for an explanation of the format.
 
-To file an issue, see the Issues page <a href="https://github.com/bburns/dnd-rules/issues">here</a>.
+To file an issue, see the <a href="https://github.com/bburns/dnd-rules/issues">Issues page</a>.
 
 Or send an email to <a href="mailto:brian@dnd.pub">brian@dnd.pub</a>.
 
-The site itself is made with React, with <a href="https://github.com/desandro/colcade">Colcade</a> to fit the rules into tiles, and <a href="https://github.com/remarkjs/remark">Remark</a> to convert Markdown to HTML. 
 
-
-## Set Up
-
-Clone the repository with git - 
-
-    git clone https://github.com/bburns/dnd-rules.git
-
-then grab the dependencies
-
-    yarn
-
-
-## Edit Rules
+## Rule Format
 
 The rules are located in `rules/rules.nm` - the rule name is offset by dashes, the rule contents are Markdown, with Wiki-like internal links to other rules, and properties are marked with a hat (^), e.g. 
 
@@ -52,6 +39,24 @@ The rules are located in `rules/rules.nm` - the rule name is offset by dashes, t
         ^ref: ph12,173
         ^phase: character
         ^complexity: basic
+
+
+## About
+
+The site itself is made with React, with <a href="https://github.com/desandro/colcade">Colcade</a> to fit the rules into tiles, and <a href="https://github.com/remarkjs/remark">Remark</a> to convert Markdown to HTML. 
+
+The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, and are bundled into the final site.
+
+
+## Set Up
+
+Clone the repository with git - 
+
+    git clone https://github.com/bburns/dnd-rules.git
+
+then grab the dependencies
+
+    yarn
 
 
 ## Develop Site
