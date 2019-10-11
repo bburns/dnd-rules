@@ -133,13 +133,13 @@
     "id": "bonus-action"
   },
   {
-    "name": "Cantrip",
-    "contents": "Simple magic [Spells](#spell) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.",
+    "name": "Cantrips",
+    "contents": "Simple magic [Spells](#spells) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.",
     "type": "rule",
     "ref": "ph201",
     "phase": "character",
     "complexity": "basic",
-    "id": "cantrip"
+    "id": "cantrips"
   },
   {
     "name": "Carrying Capacity",
@@ -233,7 +233,7 @@
   },
   {
     "name": "Downtime",
-    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a [Profession](#profession) to earn money, [Rest](#resting) to recover from poisons, do [Research](#research) to find information, [Train](#training) to learn new [Language](#language) or [Tool](#tools) [Skill](#skill).",
+    "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a Profession to earn money, [Rest](#resting) to recover from poisons, do Research to find information, [Train](#training) to learn new [Language](#language) or [Tool](#tools) [Skill](#skill).",
     "type": "rule",
     "ref": "ph187",
     "phase": "rest",
@@ -474,13 +474,13 @@
     "id": "speed"
   },
   {
-    "name": "Spell",
-    "contents": "Some [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more, and more powerful spells. Wizards record their spells in a Spellbook.\n\nCasting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. See also [Cantrip](#cantrip).",
+    "name": "Spells",
+    "contents": "Some [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more, and more powerful spells. Wizards record their spells in a Spellbook.\n\nCasting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#resting). \n\nSome Spells are Rituals and can be cast without preparation. See also [Cantrips](#cantrips).",
     "type": "rule",
     "ref": "ph114",
     "phase": "character",
     "complexity": "basic",
-    "id": "spell"
+    "id": "spells"
   },
   {
     "name": "Subrace",

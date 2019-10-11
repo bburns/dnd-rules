@@ -146,7 +146,8 @@ function About() {
   return (
     <div className="about" id="about">
       <h2>About</h2>
-      <p>Source used is the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD5) rules online</a>. Additional references are given for the Dungeons &amp; Dragons Player's Handbook 5th Edition, e.g. "ph152" for page 152.</p>
+      <p>To Print the rules, make sure the browser is wide enough to see 3 columns, then do Ctrl+P. Chrome currently works better than Firefox. They should fit on 4 pages, for now.</p>
+      <p>Rules are summarized from the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD5) rules online</a>. Additional references are given for the Dungeons &amp; Dragons Player's Handbook 5th Edition, e.g. "ph152" for page 152.</p>
       <p>To contribute changes/updates, see the site's project page at <a href="https://github.com/bburns/dnd-rules">https://github.com/bburns/dnd-rules</a>.</p>
       <p>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a>.</p>
       <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast</a> LLC in the U.S.A. and other countries. ©2019 Wizards.</p>

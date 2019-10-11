@@ -198,10 +198,10 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 
 
 ---------------------------------------------------------------------------
-# Cantrip #
+# Cantrips #
 ---------------------------------------------------------------------------
 
-Simple magic [[Spell|Spells]] that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.
+Simple magic [[Spells]] that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.
 
 ^type: rule
 ^ref: ph201
@@ -394,7 +394,7 @@ The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]
 # Downtime #
 ---------------------------------------------------------------------------
 
-Between adventures - must spend money each day for Lifestyle Expenses. Can [[Crafting|Craft]] items, work at a [[Profession]] to earn money, [[Resting|Rest]] to recover from poisons, do [[Research]] to find information, [[Training|Train]] to learn new [[Language]] or [[Tools|Tool]] [[Skill]].
+Between adventures - must spend money each day for Lifestyle Expenses. Can [[Crafting|Craft]] items, work at a Profession to earn money, [[Resting|Rest]] to recover from poisons, do Research to find information, [[Training|Train]] to learn new [[Language]] or [[Tools|Tool]] [[Skill]].
 
 ^type: rule
 ^ref: ph187
@@ -760,14 +760,14 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 
 
 ---------------------------------------------------------------------------
-# Spell #
+# Spells #
 ---------------------------------------------------------------------------
 
 Some [[Class|Classes]] have the ability to cast spells - as they reach higher [[Level|Levels]] they are able to learn more, and more powerful spells. Wizards record their spells in a Spellbook.
 
-Casting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [[Ability Modifier]] + Wizard [[Level]]. Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [[Rest|Long Rest]]. 
+Casting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [[Ability Modifier]] + Wizard [[Level]]. Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [[Resting|Long Rest]]. 
 
-Some Spells are Rituals and can be cast without preparation. See also [[Cantrip]].
+Some Spells are Rituals and can be cast without preparation. See also [[Cantrips]].
 
 ^type: rule
 ^ref: ph114
