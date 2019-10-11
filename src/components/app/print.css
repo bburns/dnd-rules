@@ -32,6 +32,7 @@
     background: #fff;
     color: black;
     text-align: left;
+    height: auto;
   }
   .header img {
     filter: invert(100%);
@@ -53,7 +54,7 @@
     box-shadow: none;
   }
 
-  .rule-col { width: 31%; margin-right: 2%; }
+  .rule-col { width: 32%; margin-right: 1%; }
   .rule-col--2 { display: block; }
   .rule-col--3 { display: block; }
 

@@ -1,7 +1,7 @@
 [
   {
     "name": "Basic",
-    "contents": "The core mechanic of Dungeons and Dragons is to roll a 20 sided die (\"d20\"), add relevant modifiers, and compare to a target number to determine success or failure.",
+    "contents": "The core mechanic of the game is to roll a 20 sided die (\"d20\"), add relevant modifiers, and compare to a target number to determine success or failure.",
     "type": "complexity",
     "id": "basic"
   },
@@ -475,7 +475,7 @@
   },
   {
     "name": "Spell",
-    "contents": "Some character [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more powerful spells (as indicated by the Spell Level). \n\nWizards record their spells in a Spellbook (see ph113 for how many spells of each Spell Level they are allowed). For example, a first level Wizard can record two spells of Spell Level 1. \n\nCasting a spell requires Preparing it first - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). For example, a first level Wizard with an Intelligence of 16 has an Intelligence Modifier of 3, so at first Level they could prepare 4 spells for use. \n\nEach time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. \n\nSee also [Cantrip](#cantrip).",
+    "contents": "Some [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more, and more powerful spells. Wizards record their spells in a Spellbook.\n\nCasting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#rest). \n\nSome Spells are Rituals and can be cast without preparation. See also [Cantrip](#cantrip).",
     "type": "rule",
     "ref": "ph114",
     "phase": "character",
@@ -493,7 +493,7 @@
   },
   {
     "name": "Tools",
-    "contents": "Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools. The latter includes a small file, a set of lock picks, a small mirror on a handle, a set of narrow scissors, and a pair of pliers - can be used to disarm traps or open locks. \n\nYour Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock.",
+    "contents": "Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools.\n\nYour Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock or disarming a trap.",
     "type": "rule",
     "ref": "ph154",
     "phase": "play",
