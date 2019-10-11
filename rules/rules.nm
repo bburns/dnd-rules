@@ -511,6 +511,7 @@ Need one pound food and one gallon water/day, two gallons if hot. Below this suf
 
 ^type: rule
 ^ref: ph185
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#FoodandWater
 ^phase: play
 ^complexity: advanced
 
@@ -523,6 +524,7 @@ Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemie
 
 ^type: rule
 ^ref: ph177
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#Hide
 ^phase: play
 ^complexity: advanced
 
@@ -531,10 +533,11 @@ Make a Dexterity (Stealth) [[Ability Check]] when attempting to hide from enemie
 # Hit Dice (HD) #
 ---------------------------------------------------------------------------
 
-Different [[Class|Classes]] have different types of Hit Dice, e.g. d8, d10, which determines how many [[Hit Points (HP)]] they gain between levels (see Hit Points for more details).
+Different [[Class|Classes]] have different types of Hit Dice (short for Hit Point Dice), e.g. d8, d10, which determines how many [[Hit Points (HP)]] they gain between levels (see Hit Points for more details).
 
 ^type: rule
 ^ref: ph12
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#ClassFeaturesandHitDice
 ^phase: character
 ^complexity: basic
 
@@ -549,6 +552,7 @@ Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Const
 
 ^type: rule
 ^ref: ph12,197
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#HitPointsandHitDice
 ^phase: character
 ^complexity: basic
 
@@ -561,6 +565,7 @@ Something that drives your character. What principals will you never betray? Why
 
 ^type: rule
 ^ref: ph124
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Ideals
 ^phase: character
 ^complexity: advanced
 
@@ -573,6 +578,7 @@ Determines order of turns taken in [[Combat (Advanced)]].
 
 ^type: rule
 ^ref: ph189
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#Initiative
 ^phase: combat
 ^complexity: advanced
 
@@ -585,6 +591,7 @@ The Dungeon Master can grant Inspiration when a player does something in charact
 
 ^type: rule
 ^ref: ph125
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Inspiration
 ^phase: play
 ^complexity: intermediate
 
@@ -597,6 +604,7 @@ Default language is given by [[Race]], can learn others - see [[Training]].
 
 ^type: rule
 ^ref: ph123
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Languages
 ^phase: character
 ^complexity: advanced
 
@@ -609,6 +617,7 @@ Character Levels are based on [[Experience Points (XP)]] - as reach higher level
 
 ^type: rule
 ^ref: ph15
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#Beyond1stLevel
 ^phase: character
 ^complexity: basic
 
@@ -632,6 +641,7 @@ Can gain [[Levels]] in multiple [[Class|Classes]] - choose which to advance in w
 
 ^type: rule
 ^ref: ph163
+^srd: https://www.dndbeyond.com/sources/basic-rules/customization-options#Multiclassing
 ^phase: character
 ^complexity: advanced
 
@@ -644,6 +654,7 @@ For hiding, exploration - to check for traps, secrets, etc. No die roll - for sc
 
 ^type: rule
 ^ref: ph175
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#PassiveChecks
 ^phase: play
 ^complexity: advanced
 
@@ -656,6 +667,7 @@ Something interesting and fun about a character - their likes, past accomplishme
 
 ^type: rule
 ^ref: ph123
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#PersonalityTraits
 ^phase: character
 ^complexity: advanced
 
@@ -668,6 +680,7 @@ Can have Proficiency in different weapons - during [[Combat]] can add [[Proficie
 
 ^type: rule
 ^ref: ph173
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#ProficiencyBonus
 ^phase: character
 ^complexity: intermediate
 
@@ -680,6 +693,7 @@ Value added to rolls when player is [[Proficiency|Proficient]] in a relevant [[S
 
 ^type: rule
 ^ref: ph173
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#ProficiencyBonus
 ^phase: character
 ^complexity: intermediate
 
@@ -692,6 +706,7 @@ Establishes fundamental qualities that exist throughout character's life. Determ
 
 ^type: rule
 ^ref: ph17
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#1ChooseaRace
 ^phase: character
 ^complexity: basic
 
@@ -714,6 +729,7 @@ You can use [[Downtime]] between adventures to recover from debilitating Injury,
 
 ^type: rule
 ^ref: ph186-7
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#Resting
 ^phase: rest
 ^complexity: advanced
 
@@ -726,6 +742,7 @@ Roll d20 to resist spells, traps, poison, disease etc - if >= [[Difficulty Class
 
 ^type: rule
 ^ref: ph179
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#SavingThrows
 ^phase: play
 ^complexity: intermediate
 
@@ -738,6 +755,7 @@ Use a Wisdom (Perception) [[Ability Check]] to search for hidden things. Must sa
 
 ^type: rule
 ^ref: ph178
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#Perception
 ^phase: play
 ^complexity: intermediate
 
@@ -772,6 +790,7 @@ Each [[Ability Score]] covers a set of Skills you can be [[Proficiency|Proficien
 
 ^type: rule
 ^ref: ph174
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#Skills
 ^phase: character
 ^complexity: intermediate
 
@@ -784,6 +803,7 @@ How far can travel in one combat Round (6 seconds) with short bursts of energy. 
 
 ^type: rule
 ^ref: ph181
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#Speed
 ^phase: character
 ^complexity: basic
 
@@ -800,6 +820,7 @@ Some Spells are Rituals and can be cast without preparation. See also [[Cantrips
 
 ^type: rule
 ^ref: ph114
+^srd: https://www.dndbeyond.com/sources/basic-rules/spellcasting
 ^phase: character
 ^complexity: basic
 
@@ -812,6 +833,7 @@ Some [[Race|Races]] have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs
 
 ^type: rule
 ^ref: ph17
+^srd: https://www.dndbeyond.com/sources/basic-rules/races#Subraces
 ^phase: character
 ^complexity: advanced
 
@@ -826,6 +848,7 @@ Your Race, Class, Background, or Feats give you Proficiency with certain Tools -
 
 ^type: rule
 ^ref: ph154
+^srd: https://www.dndbeyond.com/sources/basic-rules/equipment#Tools
 ^phase: play
 ^complexity: advanced
 
@@ -838,6 +861,7 @@ Can train to learn new [[Language]], tool [[Skill]] [[Proficiency]] - must find 
 
 ^type: rule
 ^ref: ph187
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#Training
 ^phase: rest
 ^complexity: advanced
 
@@ -850,5 +874,6 @@ Can travel at normal, fast, or slow pace (table ph182). Can only do half speed i
 
 ^type: rule
 ^ref: ph181
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#Speed
 ^phase: play
 ^complexity: advanced

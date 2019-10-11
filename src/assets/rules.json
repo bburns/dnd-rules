@@ -317,6 +317,7 @@
     "contents": "Need one pound food and one gallon water/day, two gallons if hot. Below this suffer increasing levels of [Exhaustion](#exhaustion) (see table in PH).",
     "type": "rule",
     "ref": "ph185",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#FoodandWater",
     "phase": "play",
     "complexity": "advanced",
     "id": "food-/-water"
@@ -326,15 +327,17 @@
     "contents": "Make a Dexterity (Stealth) [Ability Check](#ability-check) when attempting to hide from enemies etc.",
     "type": "rule",
     "ref": "ph177",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#Hide",
     "phase": "play",
     "complexity": "advanced",
     "id": "hiding"
   },
   {
     "name": "Hit Dice (HD)",
-    "contents": "Different [Classes](#class) have different types of Hit Dice, e.g. d8, d10, which determines how many [Hit Points (HP)](#hit-points-(hp)) they gain between levels (see Hit Points for more details).",
+    "contents": "Different [Classes](#class) have different types of Hit Dice (short for Hit Point Dice), e.g. d8, d10, which determines how many [Hit Points (HP)](#hit-points-(hp)) they gain between levels (see Hit Points for more details).",
     "type": "rule",
     "ref": "ph12",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#ClassFeaturesandHitDice",
     "phase": "character",
     "complexity": "basic",
     "id": "hit-dice-(hd)"
@@ -344,6 +347,7 @@
     "contents": "Represents health. At first level, Hit Points = max of [Hit Dice (HD)](#hit-dice-(hd)) + Constitution Modifier (see [Ability Modifiers](#ability-modifiers)). At subsequent levels, roll [Hit Dice (HD)](#hit-dice-(hd)) and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice (HD)](#hit-dice-(hd)) max +1 + Constitution Modifier (avoids randomness).\n\n(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [Saving Throws](#saving-throw) against Death (see ph197))",
     "type": "rule",
     "ref": "ph12,197",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#HitPointsandHitDice",
     "phase": "character",
     "complexity": "basic",
     "id": "hit-points-(hp)"
@@ -353,6 +357,7 @@
     "contents": "Something that drives your character. What principals will you never betray? Why would you make sacrifices? What guides your goals and ambitions? What single thing do you strive for? [Backgrounds](#background) give some suggestions.",
     "type": "rule",
     "ref": "ph124",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Ideals",
     "phase": "character",
     "complexity": "advanced",
     "id": "ideal"
@@ -362,6 +367,7 @@
     "contents": "Determines order of turns taken in [Combat (Advanced)](#combat-(advanced)).",
     "type": "rule",
     "ref": "ph189",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#Initiative",
     "phase": "combat",
     "complexity": "advanced",
     "id": "initiative"
@@ -371,6 +377,7 @@
     "contents": "The Dungeon Master can grant Inspiration when a player does something in character, or inspiring. The player can spend it for [Advantage](#advantage-/-disadvantage) on any future roll, or give it to another character.",
     "type": "rule",
     "ref": "ph125",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Inspiration",
     "phase": "play",
     "complexity": "intermediate",
     "id": "inspiration"
@@ -380,6 +387,7 @@
     "contents": "Default language is given by [Race](#race), can learn others - see [Training](#training).",
     "type": "rule",
     "ref": "ph123",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Languages",
     "phase": "character",
     "complexity": "advanced",
     "id": "language"
@@ -389,6 +397,7 @@
     "contents": "Character Levels are based on [Experience Points (XP)](#experience-points-(xp)) - as reach higher levels gain more abilities, skills, spells, etc.",
     "type": "rule",
     "ref": "ph15",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#Beyond1stLevel",
     "phase": "character",
     "complexity": "basic",
     "id": "level"
@@ -406,6 +415,7 @@
     "contents": "Can gain [Levels](#levels) in multiple [Classes](#class) - choose which to advance in when gain a Level. Your character Level is the sum of your different Levels.",
     "type": "rule",
     "ref": "ph163",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/customization-options#Multiclassing",
     "phase": "character",
     "complexity": "advanced",
     "id": "multiclassing"
@@ -415,6 +425,7 @@
     "contents": "For hiding, exploration - to check for traps, secrets, etc. No die roll - for score just use 10 + all modifiers relevant to check, with +5 if have [Advantage](#advantage), -5 if [Disadvantage](#disadvantage).",
     "type": "rule",
     "ref": "ph175",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#PassiveChecks",
     "phase": "play",
     "complexity": "advanced",
     "id": "passive-checks"
@@ -424,6 +435,7 @@
     "contents": "Something interesting and fun about a character - their likes, past accomplishments, what they dislike or fear, self-attitude, mannerisms, pet peeves, quotes, etc. Each character gets two. Look at highest and lowest [Ability Scores](#ability-score) for some ideas - [Backgrounds](#background) also give some suggestions.",
     "type": "rule",
     "ref": "ph123",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#PersonalityTraits",
     "phase": "character",
     "complexity": "advanced",
     "id": "personality-trait"
@@ -433,6 +445,7 @@
     "contents": "Can have Proficiency in different weapons - during [Combat](#combat) can add [Proficiency Bonus](#proficiency-bonus) to Attack Rolls and Damage Rolls - or for working with certain [Tools](#tools), etc.",
     "type": "rule",
     "ref": "ph173",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#ProficiencyBonus",
     "phase": "character",
     "complexity": "intermediate",
     "id": "proficiency"
@@ -442,6 +455,7 @@
     "contents": "Value added to rolls when player is [Proficient](#proficiency) in a relevant [Skill](#skill). Based on player's [Level](#level) - e.g. first level is +2.",
     "type": "rule",
     "ref": "ph173",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#ProficiencyBonus",
     "phase": "character",
     "complexity": "intermediate",
     "id": "proficiency-bonus"
@@ -451,6 +465,7 @@
     "contents": "Establishes fundamental qualities that exist throughout character's life. Determines [Hit Dice (HD)](#hit-dice-(hd)), additions to [Ability Scores](#ability-score), etc. E.g. Human, Elf, Halfling, Dragonborn, Drow.",
     "type": "rule",
     "ref": "ph17",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#1ChooseaRace",
     "phase": "character",
     "complexity": "basic",
     "id": "race"
@@ -460,6 +475,7 @@
     "contents": "Resting can restore your character's health. \n\n**Short Rests** need at least an hour - can roll [Hit Dice (HD)](#hit-dice-(hd)) x your Level - add that plus your Constitution Modifier to your [Hit Points (HP)](#hit-points-(hp)). \n\n**Long Rests** need at least 8 hours, and restore all [Hit Points (HP)](#hit-points-(hp)).\n\nOptionally, both require use of one Healer's Kit first. \n\nLong Rests also restore all Spells. \n\nYou can use [Downtime](#downtime) between adventures to recover from debilitating Injury, Disease, or Poison. After 3 days of Downtime can make [Difficulty Class (DC)](#difficulty-class-(dc)) 15 Constitution [Saving Throw](#saving-throw) - on success gain Advantage on [Saving Throws](#saving-throw) against one Disease or Poison.",
     "type": "rule",
     "ref": "ph186-7",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#Resting",
     "phase": "rest",
     "complexity": "advanced",
     "id": "resting"
@@ -469,6 +485,7 @@
     "contents": "Roll d20 to resist spells, traps, poison, disease etc - if >= [Difficulty Class (DC)](#difficulty-class-(dc)) of effect causing it, success.",
     "type": "rule",
     "ref": "ph179",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#SavingThrows",
     "phase": "play",
     "complexity": "intermediate",
     "id": "saving-throw"
@@ -478,6 +495,7 @@
     "contents": "Use a Wisdom (Perception) [Ability Check](#ability-check) to search for hidden things. Must say specifically where searching.",
     "type": "rule",
     "ref": "ph178",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#Perception",
     "phase": "play",
     "complexity": "intermediate",
     "id": "searching"
@@ -487,6 +505,7 @@
     "contents": "Each [Ability Score](#ability-score) covers a set of Skills you can be [Proficient](#proficiency) in, and referred to like \"Strength (Athletics)\". For [Ability Checks](#ability-check) can add your [Proficiency Bonus](#proficiency-bonus) if a Skill is relevant.\n\n| Ability      | Skills          |\n|--------------|-----------------|\n| Strength     | Athletics       |\n| Constitution | (none)  |\n| Dexterity    | Acrobatics      |\n|              | Sleight of Hand |\n|              | Stealth         |\n| Intelligence | Arcana          |\n|              | History         |\n|              | Investigation   |\n|              | Nature          |\n|              | Religion        |\n| Wisdom       | Animal Handling |\n|              | Insight         |\n|              | Medicine        |\n|              | Perception      |\n|              | Survival        |\n| Charisma     | Deception       |\n|              | Intimidation    |\n|              | Performance     |\n|              | Persuasion      |",
     "type": "rule",
     "ref": "ph174",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#Skills",
     "phase": "character",
     "complexity": "intermediate",
     "id": "skill"
@@ -496,6 +515,7 @@
     "contents": "How far can travel in one combat Round (6 seconds) with short bursts of energy. Normal movement and travel pace is slower.",
     "type": "rule",
     "ref": "ph181",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#Speed",
     "phase": "character",
     "complexity": "basic",
     "id": "speed"
@@ -505,6 +525,7 @@
     "contents": "Some [Classes](#class) have the ability to cast spells - as they reach higher [Levels](#level) they are able to learn more, and more powerful spells. Wizards record their spells in a Spellbook.\n\nCasting a spell requires Preparation - you can prepare a number of spells equal to your Intelligence [Ability Modifier](#ability-modifier) + Wizard [Level](#level). Each time you cast a spell you expend a Slot of the spell's level or higher. To regain all spell slots the character can complete a [Long Rest](#resting). \n\nSome Spells are Rituals and can be cast without preparation. See also [Cantrips](#cantrips).",
     "type": "rule",
     "ref": "ph114",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/spellcasting",
     "phase": "character",
     "complexity": "basic",
     "id": "spells"
@@ -514,6 +535,7 @@
     "contents": "Some [Races](#race) have Subraces available, e.g. Hill Dwarfs vs Mountain Dwarfs.",
     "type": "rule",
     "ref": "ph17",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/races#Subraces",
     "phase": "character",
     "complexity": "advanced",
     "id": "subrace"
@@ -523,6 +545,7 @@
     "contents": "Tools can be used to craft or repair items, pick a lock, forge a document, etc. Artisan tools include woodworking, leatherworking, thieves' tools.\n\nYour Race, Class, Background, or Feats give you Proficiency with certain Tools - and if you are Proficient you can add your Proficiency Bonus to any Ability Checks you make with them, e.g. when picking a lock or disarming a trap.",
     "type": "rule",
     "ref": "ph154",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/equipment#Tools",
     "phase": "play",
     "complexity": "advanced",
     "id": "tools"
@@ -532,6 +555,7 @@
     "contents": "Can train to learn new [Language](#language), tool [Skill](#skill) [Proficiency](#proficiency) - must find instructor. Training lasts 250 days and costs 1gp per day.",
     "type": "rule",
     "ref": "ph187",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#Training",
     "phase": "rest",
     "complexity": "advanced",
     "id": "training"
@@ -541,6 +565,7 @@
     "contents": "Can travel at normal, fast, or slow pace (table ph182). Can only do half speed in Difficult Terrain.",
     "type": "rule",
     "ref": "ph181",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#Speed",
     "phase": "play",
     "complexity": "advanced",
     "id": "travel"
