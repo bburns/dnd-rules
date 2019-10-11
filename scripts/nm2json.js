@@ -12,7 +12,7 @@ const lines = s.split('\n')
 const regexps = {
   dashes: /^----+$/, // blocks are offset by 3 or more dashes
   name: /(#*)[ ]*([^#]+)[ ]*#*/, // name is surrounded by 0 or more #'s
-  propvalue: /^\^(.+):[ ]*(.+)$/, // propvalues start with ^, e.g. ^type: fish
+  propvalue: /^\^([^:]+):[ ]*(.+)$/, // propvalues start with ^, e.g. ^type: fish
 }
 
 let state = 'start'
