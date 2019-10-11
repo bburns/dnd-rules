@@ -15,7 +15,8 @@
   }
 
   html, body {
-    font-size: 11px;
+    font-size: 14.5px;
+    color:#222;
   }
 
   h2 {
@@ -40,6 +41,9 @@
   .header img {
     filter: invert(100%);
   }
+  .header h1 {
+    font-size: 2em;
+  }
 
   .introduction {
     display: none;
@@ -47,14 +51,21 @@
 
   .rule {
     page-break-inside: avoid;
+    box-shadow: none;
   }
   .rule + .rule {
+  }
+  .rule a {
+    color: black;
   }
   .rule > h3 {
     color: black;
   }
   .rule-body {
     box-shadow: none;
+  }
+  .rule-srd {
+    display: none;
   }
 
   .rule-col { width: 32%; margin-right: 1%; }

@@ -134,7 +134,10 @@ function Rule({ rule }) {
       {(rule.contents || rule.ref) &&
         <div className="rule-body">
           {markdownToReact(rule.contents)}
-          <div className="rule-reference"><a href={rule.srd}>srd</a>, {rule.ref}</div>
+          <div className="rule-reference">
+            <span className="rule-srd"><a href={rule.srd}>srd</a>, </span>
+            <span className="rule-ref">{rule.ref}</span>
+          </div>
           {/* <div className="rule-reference">{rule.phase}</div> */}
           {/* <div className="rule-reference">{rule.complexity}</div> */}
         </div>
