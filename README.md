@@ -5,6 +5,12 @@ This is an unofficial summary of the SRD5 rules, starting with the most basic an
 https://dnd.pub
 
 
+## Goals
+
+- Make a compact and printable summary of the rules
+- Organize rules into basic, intermediate, and complex to aid in learning
+
+
 ## Contribute
 
 To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the rules directly</a>. Please note that I'd like to keep the rules compact, rather than comprehensive, so they can be printed easily. See below for an explanation of the format.
