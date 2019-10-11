@@ -86,7 +86,6 @@ Max 20 for characters, 30 for monsters/divines.
 
 (*Intermediate*: Used to calculate [[Ability Modifier|Ability Modifiers]]. Each has associated [[Skill|Skills]], e.g. Strength has Athletics.)
 
-
 ^type: rule
 ^ref: ph12,173
 ^phase: character
