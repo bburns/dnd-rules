@@ -49,6 +49,7 @@ Make an Ability Check to test innate talent/training to overcome a challenge. Di
 
 ^type: rule
 ^ref: ph174
+^srd: using-ability-scores#AbilityChecks
 ^phase: play
 ^complexity: intermediate
 
@@ -65,6 +66,7 @@ e.g. if Strength = 13 then "Strength Modifier" = +1
 
 ^type: rule
 ^ref: ph13,173
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#AbilityScoresandModifiers
 ^phase: character
 ^complexity: intermediate
 
@@ -88,6 +90,7 @@ Max 20 for characters, 30 for monsters/divines.
 
 ^type: rule
 ^ref: ph12,173
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#AbilityScoresandModifiers
 ^phase: character
 ^complexity: basic
 
@@ -112,6 +115,7 @@ Available actions during [[Combat]] include:
 
 ^type: rule
 ^ref: ph192
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#ActionsinCombat
 ^phase: combat
 ^complexity: intermediate
 
@@ -128,20 +132,9 @@ Can use for Attack Rolls, [[Ability Check|Ability Checks]], [[Saving Throw|Savin
 
 ^type: rule
 ^ref: ph173
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#AdvantageandDisadvantage
 ^phase: play
 ^complexity: intermediate
-
-
----------------------------------------------------------------------------
-# Alignment #
----------------------------------------------------------------------------
-
-Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
-
-^type: rule
-^ref: ph122
-^phase: character
-^complexity: advanced
 
 
 ---------------------------------------------------------------------------
@@ -154,6 +147,7 @@ A measure of how difficult something is to hit, 1-20+. To score a hit must roll 
 
 ^type: rule
 ^ref: ph14
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#ArmorClass
 ^phase: character
 ^complexity: basic
 
@@ -166,9 +160,10 @@ Where character came from, how came to be an adventurer, place in the world. Eac
 
 ^type: rule
 ^ref: ph125
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#4DescribeYourCharacter
+^urls: https://www.dndbeyond.com/backgrounds
 ^phase: character
 ^complexity: intermediate
-^urls: https://www.dndbeyond.com/backgrounds
 
 
 ---------------------------------------------------------------------------
@@ -181,6 +176,7 @@ Whom do you care about? What is most treasured possession? Create one for your c
 
 ^type: rule
 ^ref: ph124
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Bonds
 ^phase: character
 ^complexity: advanced
 

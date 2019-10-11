@@ -11,7 +11,7 @@
   /* trying to get printing to work on firefox - no luck */
   * {
     overflow: visible !important;
-    height: auto;
+    /* height: auto; */
   }
 
   html, body {

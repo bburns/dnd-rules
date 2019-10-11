@@ -46,6 +46,7 @@
     "contents": "Make an Ability Check to test innate talent/training to overcome a challenge. Difficulty of task is the [Difficulty Class (DC)](#difficulty-class-(dc)), 1-20. Very easy 5, Easy 10, etc.",
     "type": "rule",
     "ref": "ph174",
+    "srd": "using-ability-scores#AbilityChecks",
     "phase": "play",
     "complexity": "intermediate",
     "id": "ability-check"
@@ -55,6 +56,7 @@
     "contents": "Ability Modifiers range from -5 to +10. They are used more often than the raw [Ability Scores](#ability-score) on which they are based. \n\nAbility Modifier = floor((Ability Score - 10) / 2)\n\ne.g. if Strength = 13 then \"Strength Modifier\" = +1",
     "type": "rule",
     "ref": "ph13,173",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#AbilityScoresandModifiers",
     "phase": "character",
     "complexity": "intermediate",
     "id": "ability-modifier"
@@ -64,6 +66,7 @@
     "contents": "Measures of different abilities: \n\n* Strength\n* Dexterity\n* Constitution\n* Intelligence\n* Wisdom\n* Charisma\n\nMax 20 for characters, 30 for monsters/divines. \n\n(*Intermediate*: Used to calculate [Ability Modifiers](#ability-modifier). Each has associated [Skills](#skill), e.g. Strength has Athletics.)",
     "type": "rule",
     "ref": "ph12,173",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#AbilityScoresandModifiers",
     "phase": "character",
     "complexity": "basic",
     "id": "ability-score"
@@ -73,6 +76,7 @@
     "contents": "Available actions during [Combat](#combat) include:\n\n* Attack\n* Cast Spell\n* Dash - move at double speed\n* Disengage - avoid [Opportunity Attacks](#opportunity-attack)\n* Dodge - any attack against you has disadvantage if you can see them, and make Dexterity [Saving Throws](#saving-throw) with Advantage\n* Help - aid someone and they gain Advantage on next [Ability Check](#ability-check) you're helping them with. or aid in Attack so they gain Advantage.\n* Hide - make Dexterity (Stealth) [Ability Check](#ability-check) to hide\n* Ready - lets you act immediately on some trigger before start of your next turn\n* Search - make Wisdom (Perception) or Intelligence (Investigation) [Ability Check](#ability-check)\n* Use - if want to use more than one object in your turn\n* Other - improvise!",
     "type": "rule",
     "ref": "ph192",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#ActionsinCombat",
     "phase": "combat",
     "complexity": "intermediate",
     "id": "action"
@@ -82,24 +86,17 @@
     "contents": "Sometimes you have a better chance of succeeding at something - this is called having Advantage - e.g. an attack roll made within 5 feet of a Prone creature has Advantage. \n\nIf some source gives you Advantage, roll twice and take the higher of the two rolls - if some source gives you Disadvantage, take the lower score.\n\nCan use for Attack Rolls, [Ability Checks](#ability-check), [Saving Throws](#saving-throw) in various situations.",
     "type": "rule",
     "ref": "ph173",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#AdvantageandDisadvantage",
     "phase": "play",
     "complexity": "intermediate",
     "id": "advantage-/-disadvantage"
-  },
-  {
-    "name": "Alignment",
-    "contents": "Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.",
-    "type": "rule",
-    "ref": "ph122",
-    "phase": "character",
-    "complexity": "advanced",
-    "id": "alignment"
   },
   {
     "name": "Armor Class (AC)",
     "contents": "A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. With no armor or shield a character's AC is 10 + their Dexterity [Ability Modifier](#ability-modifier).\n\n*Intermediate*: You must be [Proficient](#proficiency) with the type of armor worn to use it without drawback.",
     "type": "rule",
     "ref": "ph14",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#ArmorClass",
     "phase": "character",
     "complexity": "basic",
     "id": "armor-class-(ac)"
@@ -109,9 +106,10 @@
     "contents": "Where character came from, how came to be an adventurer, place in the world. Each Background gives a character [Proficiency](#proficiency) in two [Skills](#skill) and one or more [Tools](#tools), as well as a package of starting Equipment. Some also allow learning an additional [Language](#language).",
     "type": "rule",
     "ref": "ph125",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#4DescribeYourCharacter",
+    "urls: https": "//www.dndbeyond.com/backgrounds",
     "phase": "character",
     "complexity": "intermediate",
-    "urls: https": "//www.dndbeyond.com/backgrounds",
     "id": "background"
   },
   {
@@ -119,6 +117,7 @@
     "contents": "A connection to people, places, and events in the world. They tie you to things in your background, inspire you to heroism, drive motivations and goals. \n\nWhom do you care about? What is most treasured possession? Create one for your character. Can gain new bonds over adventures.",
     "type": "rule",
     "ref": "ph124",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Bonds",
     "phase": "character",
     "complexity": "advanced",
     "id": "bond"
