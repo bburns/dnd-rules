@@ -28,6 +28,7 @@ for (let item of items) {
   item.complexity = item.complexity || null
   item.phase = item.phase || null
 }
+console.log(items)
 
 
 export default function () {
@@ -132,7 +133,7 @@ function Rule({ rule }) {
       {(rule.contents || rule.ref) &&
         <div className="rule-body">
           {markdownToReact(rule.contents)}
-          <div className="rule-reference">{rule.ref}</div>
+          <div className="rule-reference"><a href={rule.srd}>srd</a>, {rule.ref}</div>
           {/* <div className="rule-reference">{rule.phase}</div> */}
           {/* <div className="rule-reference">{rule.complexity}</div> */}
         </div>
@@ -148,7 +149,7 @@ function About() {
       <h2>About</h2>
       <p>Rules are summarized from the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD5) rules online</a>. Additional references are given for the Dungeons &amp; Dragons Player's Handbook 5th Edition, e.g. "ph152" for page 152.</p>
       <p>To contribute changes/updates, see the site's project page at <a href="https://github.com/bburns/dnd-rules">https://github.com/bburns/dnd-rules</a>.</p>
-      <p>Printing currently doesn't work on Firefox - it just prints the first page - but Chrome works okay. Make sure the browser is wide enough to see 3 columns, then do Ctrl+P. It should fit on 4 pages, for now.</p>
+      <p>Printing currently doesn't work on Firefox - it just prints the first page - but Chrome works okay. Make sure the browser is wide enough to see 3 columns, then do Ctrl+P. It should fit on 4-5 pages, for now.</p>
       <p>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a>.</p>
       <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast</a> LLC in the U.S.A. and other countries. ©2019 Wizards.</p>
     </div>

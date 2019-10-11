@@ -165,6 +165,10 @@ th, td {
   text-align: right;
   color: #ccc;
 }
+.rule-reference a {
+  color: #ccc;
+  border-bottom: 1px dotted #ccc;
+}
 
 .rule-col {
   float: left;
