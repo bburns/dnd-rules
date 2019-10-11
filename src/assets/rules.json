@@ -92,6 +92,16 @@
     "id": "advantage-/-disadvantage"
   },
   {
+    "name": "Alignment",
+    "contents": "Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.",
+    "type": "rule",
+    "ref": "ph122",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Alignment",
+    "phase": "character",
+    "complexity": "advanced",
+    "id": "alignment"
+  },
+  {
     "name": "Armor Class (AC)",
     "contents": "A measure of how difficult something is to hit, 1-20+. To score a hit must roll a d20 with at least that AC. Better armor gives a higher number. With no armor or shield a character's AC is 10 + their Dexterity [Ability Modifier](#ability-modifier).\n\n*Intermediate*: You must be [Proficient](#proficiency) with the type of armor worn to use it without drawback.",
     "type": "rule",
@@ -127,24 +137,27 @@
     "contents": "An additional [Action](#action) you take on your [Combat](#combat) turn depending on various [Class](#class) features, spells, or other abilities - e.g. a Rogue can do an additional Action due to their Cunning Action feature.",
     "type": "rule",
     "ref": "ph189",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#BonusActions",
     "phase": "combat",
     "complexity": "advanced",
     "id": "bonus-action"
   },
   {
     "name": "Cantrips",
-    "contents": "Simple magic [Spells](#spells) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.",
+    "contents": "Simple magic [Spells](#spells) (level 0) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.",
     "type": "rule",
     "ref": "ph201",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/spellcasting#Cantrips",
     "phase": "character",
     "complexity": "basic",
     "id": "cantrips"
   },
   {
     "name": "Carrying Capacity",
-    "contents": "Amount of weight you can carry - [Speed](#speed) is affected as you carry more.",
+    "contents": "Amount of weight you can carry = Strength * 15 lbs. \n\nYou are *encumbered* if carry over 5x Strength - [Speed](#speed) drops by 10 feet; you're *heavily encumbered* over 10x Strength - speed drops by 20ft and have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.",
     "type": "rule",
     "ref": "ph176",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#LiftingandCarrying",
     "phase": "character",
     "complexity": "advanced",
     "id": "carrying-capacity"
@@ -154,6 +167,7 @@
     "contents": "Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclassing) also.)",
     "type": "rule",
     "ref": "ph45",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#2ChooseaClass",
     "phase": "character",
     "complexity": "basic",
     "id": "class"
@@ -163,6 +177,7 @@
     "contents": "Players and adversaries take turns -\n\n* Choose a target\n* Roll d20 for base Attack Roll score\n* If score >= target's [Armor Class (AC)](#armor-class-(ac)), it's a hit - roll appropriate dice (based on weapon) for Damage Roll\n* Rolling a natural 20 is a Critical Hit - always hits - roll for Damage twice and add. A natural 1 is a Critical Miss - always misses.\n\nSee also [Combat (Intermediate)](#combat-(intermediate)) and [Combat (Advanced)](#combat-(advanced)).",
     "type": "rule",
     "ref": "ph189+,194",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat",
     "phase": "combat",
     "complexity": "basic",
     "id": "combat-(basic)"
@@ -172,6 +187,7 @@
     "contents": "In addition to Basic rules,\n\n* Add [Ability Modifier](#ability-modifier) for attack roll: Strength Modifier for melee weapon, Dexterity for ranged weapon\n* Add [Proficiency Bonus](#proficiency-bonus) if [Proficient](#proficiency) with current weapon\n* Determine if have [Advantage / Disadvantage](#advantage-/-disadvantage) for attack - e.g. have Advantage if they can't see you, Disadvantage if they have [Cover](#cover)\n* Roll d20 twice if have Advantage or Disadvantage and take best/worst score\n* For Ranged attacks - if long range or *any* enemy within 5ft have Disadvantage\n\n\n* For Damage Roll, add [Ability Modifier](#ability-modifier) (same as for Attack Roll)",
     "type": "rule",
     "ref": "ph189+,194",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat",
     "phase": "combat",
     "complexity": "intermediate",
     "id": "combat-(intermediate)"
@@ -181,6 +197,7 @@
     "contents": "In addition to Basic and Intermediate rules,\n\n* Establish physical positions and roll [Initiative](#initiative) to determine turn order (including adversaries) = d20 + Dexterity [Ability Modifier](#ability-modifier)\n* Make sure weapon is within range - melee attacks (e.g. with sword) should be within 5ft, ranged attacks (e.g. crossbow) should be in range of weapon (normal or long range)\n* If no weapon can use fists etc - on hit do Bludgeon Damage of 1+Strength [Ability Modifier](#ability-modifier)\n* Can move a distance up to your [Speed](#speed) AND take one [Action](#action). Can break up movement around action. Difficult Terrain or Obstructions takes up extra foot per foot moved. \n* Can talk/gesture and interact with one object for free (e.g. drawing a sword)\n* Take one [Bonus Action](#bonus-action) if allowed\n* Each complete round lasts 6 seconds in the game world.",
     "type": "rule",
     "ref": "ph189+,194",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat",
     "phase": "combat",
     "complexity": "advanced",
     "id": "combat-(advanced)"
@@ -190,6 +207,7 @@
     "contents": "Alters capabilities in various ways.\n\n* Blinded\n* Charmed\n* Deafened\n* Exhaustion - see [here](#exhaustion) for table\n* Frightened\n* Grappled\n* Incapacitated\n* Invisible\n* Paralyzed\n* Petrified\n* Poisoned\n* Prone\n* Restrained\n* Stunned\n* Unconscious",
     "type": "rule",
     "ref": "ph290",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/appendix-a-conditions",
     "phase": "play",
     "complexity": "intermediate",
     "id": "condition"
@@ -198,7 +216,8 @@
     "name": "Cover",
     "contents": "Can [Hide](#hiding) behind things during [Combat](#combat). Half Cover gives +2 [Armor Class (AC)](#armor-class-(ac)). Three quarters gives +5, and with total cover can't be attacked except by certain spells.",
     "type": "rule",
-    "ref": "ph",
+    "ref": "ph___",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#Cover",
     "phase": "combat",
     "complexity": "advanced",
     "id": "cover"
@@ -208,6 +227,7 @@
     "contents": "Can Craft adventuring equipment, works of art. Must be [Proficient](#proficiency) with [Tools](#tools) related to object and have access to materials. For each day spent crafting can make market value up to 5gp, with cost of half that - e.g. plate armor (1500gp) takes 300 days to craft alone, though others can help out to reduce time.",
     "type": "rule",
     "ref": "ph187",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#Crafting",
     "phase": "rest",
     "complexity": "advanced",
     "id": "crafting"
@@ -217,6 +237,7 @@
     "contents": "Types of Damage include \n\n* Acid\n* Bludgeoning - e.g. from a mace\n* Cold\n* Fire\n* Force - magic\n* Lightning\n* Necrotic - withers matter and soul\n* Piercing - e.g. teeth\n* Poison\n* Psychic\n* Radiant - fire/spirit\n* Slashing - e.g. sword\n* Thunder - sound\n\nCan have Resistance to different Damage Types, in which case damage is halved, or Vulnerability where damage is doubled.",
     "type": "rule",
     "ref": "ph196",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/combat#DamageTypes",
     "phase": "combat",
     "complexity": "intermediate",
     "id": "damage-type"
@@ -226,6 +247,7 @@
     "contents": "The difficulty of a task from 1 to 20 - used for [Ability Checks](#ability-check), [Saving Throws](#saving-throw).",
     "type": "rule",
     "ref": "ph174",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/using-ability-scores#TypicalDifficultyClasses",
     "phase": "play",
     "complexity": "intermediate",
     "id": "difficulty-class-(dc)"
@@ -235,6 +257,7 @@
     "contents": "Between adventures - must spend money each day for Lifestyle Expenses. Can [Craft](#crafting) items, work at a Profession to earn money, [Rest](#resting) to recover from poisons, do Research to find information, [Train](#training) to learn new [Language](#language) or [Tool](#tools) [Skill](#skill).",
     "type": "rule",
     "ref": "ph187",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/adventuring#BetweenAdventures",
     "phase": "rest",
     "complexity": "advanced",
     "id": "downtime"
@@ -244,6 +267,7 @@
     "contents": "Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels 1 and 2 apply also. Long [Rests](#resting) reduce Exhaustion level by 1. \n\n\n| Level | Effect  |\n| ----------- | ----------- |\n|     1 | [Disadvantage](#disadvantage) on [Ability Checks](#ability-check)         |\n|     2 | [Speed](#speed) halved                       |\n|     3 | [Disadvantage](#disadvantage) on Attack Rolls and Saving Throws |\n|     4 | [Hit Point (HP)](#hit-point-(hp)) maximum halved               |\n|     5 | [Speed](#speed) reduced to 0                         |\n|     6 | [Death](#death)                                    |",
     "type": "rule",
     "ref": "ph290",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/appendix-a-conditions#Exhaustion",
     "phase": "play",
     "complexity": "intermediate",
     "id": "exhaustion"
@@ -253,6 +277,7 @@
     "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters kills, significant actions, etc. See table for when to advance a [Level](#level).",
     "type": "rule",
     "ref": "ph15",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/step-by-step-characters#XPandProficiencyBonusProgression",
     "phase": "character",
     "complexity": "basic",
     "id": "experience-points-(xp)"
@@ -262,6 +287,7 @@
     "contents": "Represents a talent or area of expertise - embodies training, experience, and abilities. Can choose to add a Feat instead of increasing [Ability Scores](#ability-score) when advancing a [Level](#level). Can gain [Advantage](#advantage-/-disadvantage), [Proficiency](#proficiency) in different [Skills](#skill), etc. E.g. Alert, Dual Wielder, Healer, Mage Slayer.",
     "type": "rule",
     "ref": "ph165",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/customization-options#Feats",
     "phase": "character",
     "complexity": "advanced",
     "id": "feat"
@@ -271,6 +297,7 @@
     "contents": "Different [Classes](#class) have different Features available, and gain more as they advance to higher [[Level|Levels]. \n\nFor example, Spellcasting is a Feature of the Wizard class, and at higher levels they gain the Arcane Recovery Feature, which allows them to regain magical energy over Short [Rests](#resting).",
     "type": "rule",
     "ref": "ph11",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/customization-options#ClassFeatures",
     "phase": "character",
     "complexity": "intermediate",
     "id": "feature"
@@ -280,6 +307,7 @@
     "contents": "A vice, compulsion, fear, or weakness - anything someone could exploit to bring you to ruin. What enrages you? What's the one person, concept, or event you are terrified of? What are your vices?",
     "type": "rule",
     "ref": "ph124",
+    "srd: https": "//www.dndbeyond.com/sources/basic-rules/personality-and-background#Flaws",
     "phase": "character",
     "complexity": "intermediate",
     "id": "flaw"

@@ -138,6 +138,19 @@ Can use for Attack Rolls, [[Ability Check|Ability Checks]], [[Saving Throw|Savin
 
 
 ---------------------------------------------------------------------------
+# Alignment #
+---------------------------------------------------------------------------
+
+Combination of Morality (Good, Evil, Neutral), and attitudes towards Society and Order (Lawful, Chaotic, or Neutral). E.g. a character or monster can be Lawful Good, Chaotic Evil, etc.
+
+^type: rule
+^ref: ph122
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Alignment
+^phase: character
+^complexity: advanced
+
+
+---------------------------------------------------------------------------
 # Armor Class (AC) #
 ---------------------------------------------------------------------------
 
@@ -189,6 +202,7 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 
 ^type: rule
 ^ref: ph189
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#BonusActions
 ^phase: combat
 ^complexity: advanced
 
@@ -197,10 +211,11 @@ An additional [[Action]] you take on your [[Combat]] turn depending on various [
 # Cantrips #
 ---------------------------------------------------------------------------
 
-Simple magic [[Spells]] that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.
+Simple magic [[Spells]] (level 0) that are retained in memory, not a spellbook. Can be cast without using a spell slot or being prepared in advance.
 
 ^type: rule
 ^ref: ph201
+^srd: https://www.dndbeyond.com/sources/basic-rules/spellcasting#Cantrips
 ^phase: character
 ^complexity: basic
 
@@ -209,10 +224,13 @@ Simple magic [[Spells]] that are retained in memory, not a spellbook. Can be cas
 # Carrying Capacity #
 ---------------------------------------------------------------------------
 
-Amount of weight you can carry - [[Speed]] is affected as you carry more.
+Amount of weight you can carry = Strength * 15 lbs. 
+
+You are *encumbered* if carry over 5x Strength - [[Speed]] drops by 10 feet; you're *heavily encumbered* over 10x Strength - speed drops by 20ft and have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
 
 ^type: rule
 ^ref: ph176
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#LiftingandCarrying
 ^phase: character
 ^complexity: advanced
 
@@ -229,6 +247,7 @@ Primary definition of what a character can do - their calling, e.g. Fighter, Dru
 
 ^type: rule
 ^ref: ph45
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#2ChooseaClass
 ^phase: character
 ^complexity: basic
 
@@ -248,6 +267,7 @@ See also [[Combat (Intermediate)]] and [[Combat (Advanced)]].
 
 ^type: rule
 ^ref: ph189+,194
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat
 ^phase: combat
 ^complexity: basic
 
@@ -269,6 +289,7 @@ In addition to Basic rules,
 
 ^type: rule
 ^ref: ph189+,194
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat
 ^phase: combat
 ^complexity: intermediate
 
@@ -289,6 +310,7 @@ In addition to Basic and Intermediate rules,
 
 ^type: rule
 ^ref: ph189+,194
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat
 ^phase: combat
 ^complexity: advanced
 
@@ -318,6 +340,7 @@ Alters capabilities in various ways.
 
 ^type: rule
 ^ref: ph290
+^srd: https://www.dndbeyond.com/sources/basic-rules/appendix-a-conditions
 ^phase: play
 ^complexity: intermediate
 
@@ -329,7 +352,8 @@ Alters capabilities in various ways.
 Can [[Hiding|Hide]] behind things during [[Combat]]. Half Cover gives +2 [[Armor Class (AC)]]. Three quarters gives +5, and with total cover can't be attacked except by certain spells.
 
 ^type: rule
-^ref: ph
+^ref: ph___
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#Cover
 ^phase: combat
 ^complexity: advanced
 
@@ -342,6 +366,7 @@ Can Craft adventuring equipment, works of art. Must be [[Proficiency|Proficient]
 
 ^type: rule
 ^ref: ph187
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#Crafting
 ^phase: rest
 ^complexity: advanced
 
@@ -370,6 +395,7 @@ Can have Resistance to different Damage Types, in which case damage is halved, o
 
 ^type: rule
 ^ref: ph196
+^srd: https://www.dndbeyond.com/sources/basic-rules/combat#DamageTypes
 ^phase: combat
 ^complexity: intermediate
 
@@ -382,6 +408,7 @@ The difficulty of a task from 1 to 20 - used for [[Ability Check|Ability Checks]
 
 ^type: rule
 ^ref: ph174
+^srd: https://www.dndbeyond.com/sources/basic-rules/using-ability-scores#TypicalDifficultyClasses
 ^phase: play
 ^complexity: intermediate
 
@@ -394,6 +421,7 @@ Between adventures - must spend money each day for Lifestyle Expenses. Can [[Cra
 
 ^type: rule
 ^ref: ph187
+^srd: https://www.dndbeyond.com/sources/basic-rules/adventuring#BetweenAdventures
 ^phase: rest
 ^complexity: advanced
 
@@ -416,6 +444,7 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 
 ^type: rule
 ^ref: ph290
+^srd: https://www.dndbeyond.com/sources/basic-rules/appendix-a-conditions#Exhaustion
 ^phase: play
 ^complexity: intermediate
 
@@ -428,6 +457,7 @@ Represent character's experience and determines their [[Level]]. Gain for monste
 
 ^type: rule
 ^ref: ph15
+^srd: https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#XPandProficiencyBonusProgression
 ^phase: character
 ^complexity: basic
 
@@ -440,6 +470,7 @@ Represents a talent or area of expertise - embodies training, experience, and ab
 
 ^type: rule
 ^ref: ph165
+^srd: https://www.dndbeyond.com/sources/basic-rules/customization-options#Feats
 ^phase: character
 ^complexity: advanced
 
@@ -454,6 +485,7 @@ For example, Spellcasting is a Feature of the Wizard class, and at higher levels
 
 ^type: rule
 ^ref: ph11
+^srd: https://www.dndbeyond.com/sources/basic-rules/customization-options#ClassFeatures
 ^phase: character
 ^complexity: intermediate
 
@@ -466,6 +498,7 @@ A vice, compulsion, fear, or weakness - anything someone could exploit to bring 
 
 ^type: rule
 ^ref: ph124
+^srd: https://www.dndbeyond.com/sources/basic-rules/personality-and-background#Flaws
 ^phase: character
 ^complexity: intermediate
 
