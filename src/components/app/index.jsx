@@ -12,14 +12,25 @@ import TableOfContents from '../toc'
 import './styles.css'
 import './print.css'
 
-// this only does horizontal layout (alpha order gets out of synch)
+// this layout engine only does horizontal layout (alpha order gets out of synch)
 // import Masonry from 'react-masonry-css' // see https://github.com/paulcollett/react-masonry-css
 
-// this works but not for print view
+// this layout engine works but not for print view
 // import Masonry from 'masonry-layout' // see https://masonry.desandro.com
 
-// this works for screen and print view
+// this layout engine works for screen and print view
 import 'colcade'
+
+
+// handle back button
+function hashHandler() {
+  const id = window.location.hash.slice(1)
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView()
+  }
+}
+window.addEventListener('hashchange', hashHandler, false)
 
 
 // make tree of groups and rules
@@ -65,9 +76,10 @@ export default function () {
 function Header() {
   return (
     <div className="header">
-      <img src={dragon} alt="" />
-      {/* <h1 className="h1">Dungeons &amp; Dragons Rules</h1> */}
-      <h1 className="h1">System Reference Document (SRD) 5 Rules</h1>
+      <a className="header-link" href="#introduction">
+        <img src={dragon} alt="" />
+        <h1 className="h1">System Reference Document (SRD) 5 Rules</h1>
+      </a>
     </div>
   )
 }
@@ -95,10 +107,10 @@ function Introduction() {
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
       <p>This is an unofficial listing of Wizards of the Coast's System Reference Document (SRD) 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
-      <p>What is the SRD, you ask? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>.</p>
+      <p>What is the SRD? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>.</p>
       <p>This site is NOT intended as a replacement for the rulebooks, which include lots of other details, but as a starting point for new players. The idea is to provide a compact summary of the rules - you can print just the sections you're interested in - make sure the browser is wide enough to see three columns before printing. Chrome is recommended - Firefox only prints one page.</p>
       <p>References to the relevant section of the SRD are given with the "srd" links - additional references for the Dungeons &amp; Dragons Player's Handbook 5th Edition are given with "ph" numbers, e.g. "ph152" for page 152.</p>
-      <p>For how to contribute see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
+      <p>For how to contribute and additional sources see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
     </div>
   )
 }
@@ -168,7 +180,7 @@ function About() {
 function Links() {
   return (
     <div className="links">
-      <div className="links-about">The <b>D&amp;D Essentials Kit</b> is a great starting point for new players.</div>
+      <div className="links-about">The D&amp;D Essentials Kit is a great starting point for new players.</div>
       <div className="links-books">
 
         {/* essentials kit */}

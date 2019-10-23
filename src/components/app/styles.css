@@ -95,10 +95,17 @@ th, td {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 52px;
+}
+.header-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
+  color: white;
+}
+.header-link:hover {
+  color: white;
+  border-bottom: none;
 }
 .header img {
   height: 42px;
