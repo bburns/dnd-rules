@@ -49,6 +49,10 @@
     display: none;
   }
 
+  .group {
+    break-after: page;
+  }
+
   .rule {
     page-break-inside: avoid;
     box-shadow: none;
