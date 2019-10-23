@@ -209,4 +209,7 @@ th, td {
 
 .license-contents {
   white-space: pre-wrap;
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 2em;
 }

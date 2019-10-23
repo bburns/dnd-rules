@@ -111,7 +111,7 @@ function Group({ group }) {
   return (
     <div className="group" id={group.id}>
       <h2>
-        {group.name}
+        {group.name} Rules
       </h2>
       <div className="group-contents">
         {markdownToReact(group.contents)}
@@ -135,8 +135,8 @@ function Rule({ rule }) {
         <div className="rule-body">
           {markdownToReact(rule.contents)}
           <div className="rule-reference">
-            <span className="rule-srd"><a href={rule.srd}>srd</a>, </span>
             <span className="rule-ref">{rule.ref}</span>
+            <span className="rule-srd">, <a href={rule.srd}>srd</a></span>
           </div>
           {/* <div className="rule-reference">{rule.phase}</div> */}
           {/* <div className="rule-reference">{rule.complexity}</div> */}
@@ -201,8 +201,8 @@ function License() {
   return (
     <div className="license" id="license">
       <h2>License</h2>
-      <div className="license-contents">{`This site's code is GPL - the content is Open Game License:
-
+      <div>This site's code is GPL - the content is Open Game License (OGL):</div>
+      <div className="license-contents">{`
 OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
