@@ -236,6 +236,19 @@ You are *encumbered* if carry over 5x Strength - [[Speed]] drops by 10 feet; you
 
 
 ---------------------------------------------------------------------------
+# Challenge Rating (CR) #
+---------------------------------------------------------------------------
+
+A rough measure of how great a threat a monster is - a monster with a challenge rating of 1 should be a worthy challenge for a party of four 1st-level characters. 
+
+^type: rule
+^ref: dmg82
+^srd: https://www.dndbeyond.com/sources/basic-rules/monsters#Challenge
+^phase: combat
+^complexity: basic
+
+
+---------------------------------------------------------------------------
 # Class #
 ---------------------------------------------------------------------------
 
@@ -453,7 +466,7 @@ Due to starvation etc. Effects are cumulative, e.g. at Exhaustion level 3 levels
 # Experience Points (XP) #
 ---------------------------------------------------------------------------
 
-Represent character's experience and determines their [[Level]]. Gain for monsters kills, significant actions, etc. See table for when to advance a [[Level]].
+Represent character's experience and determines their [[Level]]. Gain for monsters killed, significant actions, etc. See table for when to advance a [[Level]].
 
 ^type: rule
 ^ref: ph15
@@ -547,6 +560,8 @@ Different [[Class|Classes]] have different types of Hit Dice (short for Hit Poin
 ---------------------------------------------------------------------------
 
 Represents health. At first level, Hit Points = max of [[Hit Dice (HD)]] + Constitution Modifier (see [[Ability Modifiers]]). At subsequent levels, roll [[Hit Dice (HD)]] and add that with Constitution Modifier to obtain new HP, OR add half of [[Hit Dice (HD)]] max +1 + Constitution Modifier (avoids randomness).
+
+Note: a monster's hit points are usually given as an average and a die expression, e.g. "9 (2d8)".
 
 (*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [[Saving Throw|Saving Throws]] against Death (see ph197))
 

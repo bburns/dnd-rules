@@ -163,6 +163,16 @@
     "id": "carrying-capacity"
   },
   {
+    "name": "Challenge Rating (CR)",
+    "contents": "A rough measure of how great a threat a monster is - a monster with a challenge rating of 1 should be a worthy challenge for a party of four 1st-level characters.",
+    "type": "rule",
+    "ref": "dmg82",
+    "srd": "https://www.dndbeyond.com/sources/basic-rules/monsters#Challenge",
+    "phase": "combat",
+    "complexity": "basic",
+    "id": "challenge-rating-(cr)"
+  },
+  {
     "name": "Class",
     "contents": "Primary definition of what a character can do - their calling, e.g. Fighter, Druid, Ranger, etc. Affects how they see and interact with the world and other people.\n\n(*Intermediate*: Gives special Features, like [Proficiency](#proficiency) in different weapons or armor.)\n\n(*Advanced*: Can [Multiclass](#multiclassing) also.)",
     "type": "rule",
@@ -274,7 +284,7 @@
   },
   {
     "name": "Experience Points (XP)",
-    "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters kills, significant actions, etc. See table for when to advance a [Level](#level).",
+    "contents": "Represent character's experience and determines their [Level](#level). Gain for monsters killed, significant actions, etc. See table for when to advance a [Level](#level).",
     "type": "rule",
     "ref": "ph15",
     "srd": "https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#XPandProficiencyBonusProgression",
@@ -344,7 +354,7 @@
   },
   {
     "name": "Hit Points (HP)",
-    "contents": "Represents health. At first level, Hit Points = max of [Hit Dice (HD)](#hit-dice-(hd)) + Constitution Modifier (see [Ability Modifiers](#ability-modifiers)). At subsequent levels, roll [Hit Dice (HD)](#hit-dice-(hd)) and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice (HD)](#hit-dice-(hd)) max +1 + Constitution Modifier (avoids randomness).\n\n(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [Saving Throws](#saving-throw) against Death (see ph197))",
+    "contents": "Represents health. At first level, Hit Points = max of [Hit Dice (HD)](#hit-dice-(hd)) + Constitution Modifier (see [Ability Modifiers](#ability-modifiers)). At subsequent levels, roll [Hit Dice (HD)](#hit-dice-(hd)) and add that with Constitution Modifier to obtain new HP, OR add half of [Hit Dice (HD)](#hit-dice-(hd)) max +1 + Constitution Modifier (avoids randomness).\n\nNote: a monster's hit points are usually given as an average and a die expression, e.g. \"9 (2d8)\".\n\n(*Advanced*: When reach 0 or below HP, can be Dead or Unconscious - dead if get Massive Damage (if remaining damage >= HP max). When Unconscious must make [Saving Throws](#saving-throw) against Death (see ph197))",
     "type": "rule",
     "ref": "ph12,197",
     "srd": "https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#HitPointsandHitDice",
