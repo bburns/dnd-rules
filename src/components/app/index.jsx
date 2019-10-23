@@ -168,6 +168,7 @@ function About() {
 function Links() {
   return (
     <div className="links">
+      <div className="links-about">The <b>D&amp;D Essentials Kit</b> is a great starting point for new players.</div>
       <div className="links-books">
 
         {/* essentials kit */}

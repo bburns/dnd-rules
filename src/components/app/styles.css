@@ -198,6 +198,9 @@ th, td {
   text-align: center;
   padding-bottom: 2em;
 }
+.links-about {
+  margin-bottom: 1em;
+}
 .links-books {
   /* display: flex; */
 }
