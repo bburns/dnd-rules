@@ -103,6 +103,7 @@ th, td {
 .header img {
   height: 42px;
   width: 42px;
+  margin-right: 8px;
 }
 .header h1 {
   margin: 0;

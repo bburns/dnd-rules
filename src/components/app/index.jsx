@@ -5,7 +5,8 @@ import remark2react from 'remark-react'
 import { arrayToTree } from 'performant-array-to-tree'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
-import dragon from '../../assets/images/dragon-192x192x256.png'
+// import dragon from '../../assets/images/dragon-192x192x256.png'
+import dragon from '../../assets/images/dragon.png'
 import items from '../../assets/rules.json'
 import TableOfContents from '../toc'
 import './styles.css'
@@ -91,7 +92,7 @@ function Introduction() {
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
       <p>This is an unofficial listing of Wizards of the Coast's System Reference Document 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
-      <p>The idea is to have a compact summary for printing / learning, not an exhaustive reference. Before printing, make sure the browser is wide enough to see 3 columns. Chrome is recommended - Firefox only prints one page.</p>
+      <p>The idea is to have a compact summary for printing / learning. Before printing, make sure the browser is wide enough to see 3 columns. Chrome is recommended - Firefox only prints one page.</p>
       <p>For sources used and how to contribute see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
     </div>
   )
@@ -153,8 +154,8 @@ function About() {
       <h2>About</h2>
       <p>Rules are summarized from the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD5) rules online</a>. Additional references are given for the Dungeons &amp; Dragons Player's Handbook 5th Edition, e.g. "ph152" for page 152.</p>
       <p>To contribute changes/updates, see the site's project page at <a href="https://github.com/bburns/dnd-rules">https://github.com/bburns/dnd-rules</a>.</p>
-      <p>Dragon icon by <a href="http://clipart-library.com/clipart/8cxKqA59i.htm">Zeila on Clipart library</a>.</p>
-      <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast</a> LLC in the U.S.A. and other countries. ©2019 Wizards.</p>
+      <p>Dragon icon from <a href="https://www.visualpharm.com/free-icons/dragon-595b40b75ba036ed117d5ceb">visualpharm.com</a>.</p>
+      <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast LLC</a> in the USA and other countries. © 2019 Wizards.</p>
     </div>
   )
 }
