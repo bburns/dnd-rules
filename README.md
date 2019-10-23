@@ -1,4 +1,4 @@
-# System Reference Document 5 Rules
+# System Reference Document (SRD) 5 Rules
 
 This is an unofficial summary of the SRD5 rules, starting with the most basic and moving to more complex rules. 
 
@@ -51,7 +51,7 @@ The rules are located in `rules/rules.nm` - the rule name is offset by dashes, t
 
 The site itself is made with React, with <a href="https://github.com/desandro/colcade">Colcade</a> to fit the rules into tiles, and <a href="https://github.com/remarkjs/remark">Remark</a> to convert Markdown to HTML. 
 
-The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, which is then bundled into the final site.
+The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, which is then bundled into the final site. "nm" is for Neomem, which is another project I'm working on. 
 
 
 ## Set Up
