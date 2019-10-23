@@ -91,8 +91,9 @@ function Introduction() {
   return (
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
-      <p>This is an unofficial listing of Wizards of the Coast's System Reference Document 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
-      <p>The idea is to have a compact summary for printing - make sure the browser is wide enough to see three columns before printing. Chrome is recommended - Firefox only prints one page.</p>
+      <p>This is an unofficial listing of Wizards of the Coast's System Reference Document (SRD) 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
+      <p>What is the SRD, you ask? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>. </p>
+      <p>The idea for this site is to provide a compact summary of the rules - you can print just the sections you're interested in - make sure the browser is wide enough to see three columns before printing. Chrome is recommended - Firefox only prints one page.</p>
       <p>For sources used and how to contribute see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
     </div>
   )
