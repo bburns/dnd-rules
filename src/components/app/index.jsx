@@ -28,6 +28,9 @@ import 'colcade'
 for (let item of items) {
   item.complexity = item.complexity || null
   item.phase = item.phase || null
+  if (item.type==='complexity') {
+    item.name += " Rules"
+  }
 }
 console.log(items)
 
@@ -64,7 +67,7 @@ function Header() {
     <div className="header">
       <img src={dragon} alt="" />
       {/* <h1 className="h1">Dungeons &amp; Dragons Rules</h1> */}
-      <h1 className="h1">System Reference Document 5 Rules</h1>
+      <h1 className="h1">System Reference Document (SRD) 5 Rules</h1>
     </div>
   )
 }
@@ -92,9 +95,10 @@ function Introduction() {
     <div className="introduction" id="introduction">
       <h2>Introduction</h2>
       <p>This is an unofficial listing of Wizards of the Coast's System Reference Document (SRD) 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
-      <p>What is the SRD, you ask? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>. </p>
-      <p>The idea for this site is to provide a compact summary of the rules - you can print just the sections you're interested in - make sure the browser is wide enough to see three columns before printing. Chrome is recommended - Firefox only prints one page.</p>
-      <p>For sources used and how to contribute see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
+      <p>What is the SRD, you ask? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>.</p>
+      <p>This site is NOT intended as a replacement for the rulebooks, which include lots of other details, but as a starting point for new players. The idea is to provide a compact summary of the rules - you can print just the sections you're interested in - make sure the browser is wide enough to see three columns before printing. Chrome is recommended - Firefox only prints one page.</p>
+      <p>References to the relevant section of the SRD are given with the "srd" links - additional references for the Dungeons &amp; Dragons Player's Handbook 5th Edition are given with "ph" numbers, e.g. "ph152" for page 152.</p>
+      <p>For how to contribute see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
     </div>
   )
 }
@@ -113,7 +117,7 @@ function Group({ group }) {
   return (
     <div className="group" id={group.id}>
       <h2>
-        {group.name} Rules
+        {group.name}
       </h2>
       <div className="group-contents">
         {markdownToReact(group.contents)}
@@ -153,7 +157,6 @@ function About() {
   return (
     <div className="about" id="about">
       <h2>About</h2>
-      <p>Rules are summarized from the <a href="https://www.dndbeyond.com/sources/basic-rules">System Reference Document (SRD5) rules online</a>, with links to the relevant sections. Additional references are given for the Dungeons &amp; Dragons Player's Handbook 5th Edition, e.g. "ph152" for page 152.</p>
       <p>To contribute changes/updates, see the site's project page at <a href="https://github.com/bburns/dnd-rules">https://github.com/bburns/dnd-rules</a>.</p>
       <p>Dragon icon from <a href="https://www.visualpharm.com/free-icons/dragon-595b40b75ba036ed117d5ceb">visualpharm.com</a>.</p>
       <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast LLC</a> in the USA and other countries. © 2019 Wizards.</p>
