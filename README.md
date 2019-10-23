@@ -13,7 +13,7 @@ https://dnd.pub
 
 ## Contribute
 
-To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the rules directly</a>. Please note that I'd like to keep the rules compact, rather than comprehensive, so they can be printed easily. See below for an explanation of the format.
+To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the rules directly</a>. I'd like to keep the rules compact so they can be printed easily. See below for an explanation of the format.
 
 To file an issue, see the <a href="https://github.com/bburns/dnd-rules/issues">Issues page</a>.
 
