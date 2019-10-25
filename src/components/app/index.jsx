@@ -5,31 +5,31 @@ import remark2react from 'remark-react'
 import { arrayToTree } from 'performant-array-to-tree'
 import 'normalize.css'
 // import remarkGridTables from 'remark-grid-tables'
-// import dragon from '../../assets/images/dragon-192x192x256.png'
 import dragon from '../../assets/images/dragon.png'
 import items from '../../assets/rules.json'
 import TableOfContents from '../toc'
 import './styles.css'
 import './print.css'
 
-// this layout engine only does horizontal layout (alpha order gets out of synch)
-// import Masonry from 'react-masonry-css' // see https://github.com/paulcollett/react-masonry-css
-
-// this layout engine works but not for print view
-// import Masonry from 'masonry-layout' // see https://masonry.desandro.com
-
-// this layout engine works for screen and print view
+// import layout engine
+// this lib only does horizontal layout (alpha order gets out of synch)
+// // import Masonry from 'react-masonry-css' // see https://github.com/paulcollett/react-masonry-css
+// this lib works but not for print view
+// // import Masonry from 'masonry-layout' // see https://masonry.desandro.com
+// but colcade works for screen and print view
 import 'colcade'
+
+
+const pdf = "pdfs/dnd-rules_v0.1.pdf"
 
 
 // handle back/fwd buttons
 function hashHandler() {
   const id = window.location.hash.slice(1) || 'introduction' // remove leading '#'
   const el = document.getElementById(id)
-  console.log(id, el)
   if (el) {
     el.scrollIntoView()
-  }  
+  }
 }
 window.addEventListener('hashchange', hashHandler, false)
 
@@ -86,21 +86,21 @@ function Header() {
 }
 
 
-function Controls({ groupBy, setGroupBy }) {
-  function onChange(evt) {
-    const newGroupBy = evt.target.value
-    setGroupBy(newGroupBy)
-  }
-  return (
-    <div className="controls">
-      Group By
-      <select name="groupBy" id="groupBy" onChange={onChange}>
-        <option value="complexity">Complexity</option>
-        <option value="phase">Phase</option>
-      </select>
-    </div>
-  )
-}
+// function Controls({ groupBy, setGroupBy }) {
+//   function onChange(evt) {
+//     const newGroupBy = evt.target.value
+//     setGroupBy(newGroupBy)
+//   }
+//   return (
+//     <div className="controls">
+//       Group By
+//       <select name="groupBy" id="groupBy" onChange={onChange}>
+//         <option value="complexity">Complexity</option>
+//         <option value="phase">Phase</option>
+//       </select>
+//     </div>
+//   )
+// }
 
 
 function Introduction() {
@@ -109,7 +109,8 @@ function Introduction() {
       <h2>Introduction</h2>
       <p>This is an unofficial listing of Wizards of the Coast's System Reference Document (SRD) 5 game rules, split into three sections - Basic, Intermediate, and Advanced. You can start by playing with the Basic rules and add more as needed.</p>
       <p>What is the SRD? It's a 400 page distillation of the D&amp;D rulebooks, published according to the <a href="#license">Open Gaming License</a>. It's available as a PDF <a href="https://dnd.wizards.com/articles/features/systems-reference-document-srd">here</a>, and as a website <a href="https://www.dndbeyond.com/sources/basic-rules">here</a>.</p>
-      <p>This site is not intended as a replacement for the rulebooks, which include lots of other details, but as a starting point for new players. The idea is to provide a compact summary of the rules - you can print just the sections you're interested in - make sure the browser is wide enough to see three columns before printing. Microsoft Edge is recommended - Chrome doesn't follow page breaks, and Firefox only prints one page.</p>
+      <p>This site is not intended as a replacement for the rulebooks, which include lots of other details, but as a starting point for new players. The idea is to provide a compact summary of the rules - you can print just the sections you're interested in - a PDF is available <a href={pdf}>here</a>.</p>
+      {/* - make sure the browser is wide enough to see three columns before printing. Microsoft Edge is recommended - Chrome doesn't follow page breaks, and Firefox only prints one page. */}
       <p>References to the relevant section of the SRD are given with the "srd" links - additional references for the Dungeons &amp; Dragons Player's Handbook 5th Edition are given with "ph" numbers, e.g. "ph152" for page 152.</p>
       <p>For how to contribute and additional sources see <a href="#about">About</a> section; for license see <a href="#license">License</a>.</p>
     </div>

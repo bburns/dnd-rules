@@ -22,7 +22,7 @@ Or send an email to <a href="mailto:brian@dnd.pub">brian@dnd.pub</a>.
 
 ## Rule Format
 
-The rules are located in `rules/rules.nm` - the rule name is offset by dashes, the rule contents are Markdown, with Wiki-like internal links to other rules, and properties are marked with a hat (^), e.g. 
+The rules are located in `rules/rules.nm` - the rule name is offset by dashes, the rule contents are Markdown, with Wiki-like internal links to other rules, and properties marked with a hat (^), e.g. 
 
         ---------------------------------------------------------------------------
         # Ability Score #
@@ -54,7 +54,7 @@ The site itself is made with React, with <a href="https://github.com/desandro/co
 The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rules/blob/master/scripts/nm2json.js">nm2json.js</a>, which is then bundled into the final site. "nm" is for Neomem, which is another project I'm working on. 
 
 
-## Set Up
+## Setup
 
 Clone the repository with git - 
 
@@ -66,18 +66,27 @@ then grab the dependencies
     yarn
 
 
-## Develop Site
+## Develop
 
-To run the app in the development mode - 
+Run the app in the development mode - 
 
     yarn start
 
 It will open [http://localhost:3000](http://localhost:3000) in the browser - the page will reload as you make edits, including to the rules file.
 
 
-## Deploy Site
+## Print
 
-To deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
+Print the site to a pdf using Microsoft Edge and add it to the `public/pdf` folder, then update the link in `src/components/app/index.jsx`.
+
+I've tried printing the site with Firefox, Chrome, and Microsoft Edge, all on Windows - Edge is the only one that works well - Firefox only prints one page, and Chrome doesn't do the page breaks. 
+
+So until I'm able to fix those issues (if ever?) I'll print the site to a pdf after changes made to the rules, using Edge. 
+
+
+## Deploy
+
+Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
 
     yarn deploy
 
@@ -85,4 +94,3 @@ To deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
 ## License
 
 This site is GPL. The rule contents are OGL (Open Game License) - see <a href="https://raw.githubusercontent.com/bburns/dnd-rules/master/OGL">here</a>.
-
