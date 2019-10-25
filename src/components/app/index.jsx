@@ -65,7 +65,7 @@ export default function () {
           <Introduction />
           <Groups groups={groups} />
           <About />
-          <Links />
+          {/* <Links /> */}
           <License />
         </div>
       </div>
@@ -172,6 +172,7 @@ function About() {
     <div className="about" id="about">
       <h2>About</h2>
       <p>To contribute changes/updates, see the site's project page at <a href="https://github.com/bburns/dnd-rules">https://github.com/bburns/dnd-rules</a>.</p>
+      <Links />
       <p>Dragon icon from <a href="https://www.visualpharm.com/free-icons/dragon-595b40b75ba036ed117d5ceb">visualpharm.com</a>.</p>
       <p>Dungeons &amp; Dragons, D&amp;D, their respective logos, and all Wizards titles and characters are property of <a href="https://dnd.wizards.com/">Wizards of the Coast LLC</a> in the USA and other countries. © 2019 Wizards.</p>
     </div>
@@ -183,6 +184,7 @@ function Links() {
   return (
     <div className="links">
       {/* <div className="links-about">The D&amp;D Essentials Kit is a great starting point for new players.</div> */}
+      <div className="links-disclaimer">For the more complete D&amp;D rules, see these books (note: as an Amazon Associate I earn from qualifying purchases):</div>
       <div className="links-books">
 
         {/* essentials kit */}
@@ -211,7 +213,7 @@ function Links() {
         </span>
       </div>
       
-      <div className="links-disclaimer">Note: As an Amazon Associate I earn from qualifying purchases.</div>
+      {/* <div className="links-disclaimer">Note: As an Amazon Associate I earn from qualifying purchases.</div> */}
     </div>
   )
 }

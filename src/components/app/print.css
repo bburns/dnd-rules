@@ -65,6 +65,7 @@
   .rule {
     page-break-inside: avoid;
     box-shadow: none;
+    border: 1px solid #eee;
   }
   .rule + .rule {
   }
