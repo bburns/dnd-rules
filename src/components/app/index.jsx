@@ -22,13 +22,14 @@ import './print.css'
 import 'colcade'
 
 
-// handle back button
+// handle back/fwd buttons
 function hashHandler() {
-  const id = window.location.hash.slice(1)
+  const id = window.location.hash.slice(1) || 'introduction' // remove leading '#'
   const el = document.getElementById(id)
+  console.log(id, el)
   if (el) {
     el.scrollIntoView()
-  }
+  }  
 }
 window.addEventListener('hashchange', hashHandler, false)
 
@@ -61,7 +62,7 @@ export default function () {
           <TableOfContents groups={groupsExtended} />
         </div>
         <div className="app-page">
-          <Introduction/>
+          <Introduction />
           <Groups groups={groups} />
           <About />
           <Links />
