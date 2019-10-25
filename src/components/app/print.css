@@ -51,18 +51,8 @@
     display: none;
   }
 
-  /* .group {
-    break-after: page;
-  } */
-  /* #basic,  */
-  /* #intermediate {
-    break-before: page;
-    break-after: page;
-  } */
- #intermediate h2 {
-    break-before: page;
-  }
-  #advanced h2 {
+ #intermediate h2,
+ #advanced h2 {
     break-before: page;
   }
 
