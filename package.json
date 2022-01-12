@@ -37,7 +37,7 @@
     "chokidar-cli": "^1.2.2",
     "concurrently": "^4.1.1",
     "gh-pages": "^2.0.1",
-    "markdown-it": "^9.0.1",
+    "markdown-it": "^12.3.2",
     "nearley": "^2.16.0",
     "react-scripts": "3.0.1"
   },
