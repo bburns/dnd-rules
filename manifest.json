@@ -1,10 +1,10 @@
 {
-  "short_name": "D&D Rules",
-  "name": "Dungeons & Dragons Rules",
+  "short_name": "SRD5 Rules",
+  "name": "System Reference Document 5 Rules",
   "icons": [
     {
-      "src": "dragon-192x192x256.png",
-      "sizes": "192x192",
+      "src": "dragon.png",
+      "sizes": "384x384",
       "type": "image/png"
     }
   ],
