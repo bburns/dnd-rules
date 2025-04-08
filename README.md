@@ -4,7 +4,8 @@ This is an unofficial summary of the SRD5 rules, starting with the most basic an
 
 ![](./public/images/screenshot1200px.jpg)
 
-See https://dnd-pub.web.app/
+See https://bburns.github.io/dnd-rules/
+
 
 ## Goals
 
@@ -17,8 +18,6 @@ See https://dnd-pub.web.app/
 To update the rules, you can <a href="https://github.com/bburns/dnd-rules/edit/master/rules/rules.nm">edit the rules directly</a>. I'd like to keep the rules compact so they can be printed easily. See below for an explanation of the format.
 
 To file an issue, see the <a href="https://github.com/bburns/dnd-rules/issues">Issues page</a>.
-
-Or send an email to <a href="mailto:brian@dnd.pub">brian@dnd.pub</a>.
 
 
 ## Rule Format
@@ -89,7 +88,7 @@ So until I'm able to fix those issues (if ever?) I'll print the site to a pdf af
 
 ## Deploy
 
-Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/. This will also run the build step (yarn run build). 
+Deploy the site to the GitHub Pages site, https://bburns.github.io/dnd-rules/. This will also run the build step (yarn run build). 
 
     yarn deploy
 
