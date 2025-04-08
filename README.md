@@ -2,8 +2,9 @@
 
 This is an unofficial summary of the SRD5 rules, starting with the most basic and moving to more complex rules. 
 
-https://dnd.pub
+![](./public/images/screenshot1200px.jpg)
 
+Published here - https://dnd-pub.web.app/
 
 ## Goals
 
