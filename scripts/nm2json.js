@@ -1,6 +1,7 @@
 // given raw neomem text, output json
 
-const fs = require('fs')
+// const fs = require('fs')
+import fs from 'node:fs'
 // const path = require('path')
 
 // const s = fs.readFileSync(path.resolve(__dirname, '../../assets/rules.neomem'), 'utf-8')
@@ -126,4 +127,6 @@ function getLineType(line, state) {
 
 
 
-module.export = { linkifyText }
+// module.export = { linkifyText }
+
+export { linkifyText }

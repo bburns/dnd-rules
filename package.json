@@ -1,7 +1,7 @@
 {
   "name": "dnd-rules",
   "version": "0.1.0",
-  "homepage": "https://dnd.pub",
+  "homepage": "https://bburns.github.io/dnd-rules",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,36 +10,38 @@
     "start": "yarn build-rules && concurrently \"yarn watch-rules\" \"react-scripts start\"",
     "build": "yarn build-rules && react-scripts build",
     "//deploy": "gh-pages -d build",
-    "deploy": "firebase deploy",
-    "build-deploy": "yarn build && yarn deploy",
+    "--deploy": "firebase deploy",
+    "--build-deploy": "yarn build && yarn deploy",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "colcade": "^0.2.0",
-    "csv": "^5.1.1",
-    "fs-extra": "^8.1.0",
-    "masonry-layout": "^4.2.2",
-    "normalize.css": "^8.0.1",
-    "performant-array-to-tree": "^1.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-masonry-css": "^1.0.12",
-    "rehype-stringify": "^6.0.0",
-    "remark-grid-tables": "^1.6.1",
-    "remark-parse": "^6.0.3",
-    "remark-react": "^5.0.1",
-    "remark-rehype": "^4.0.1",
-    "unified": "^8.0.1"
+    "axios": "0.19.0",
+    "colcade": "0.2.0",
+    "csv": "5.1.1",
+    "fs-extra": "8.1.0",
+    "masonry-layout": "4.2.2",
+    "normalize.css": "8.0.1",
+    "performant-array-to-tree": "1.2.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-masonry-css": "1.0.12",
+    "rehype-stringify": "6.0.0",
+    "remark-grid-tables": "1.6.1",
+    "remark-parse": "6.0.3",
+    "remark-react": "5.0.1",
+    "remark-rehype": "4.0.1",
+    "unified": "8.0.1"
   },
   "devDependencies": {
-    "chokidar-cli": "^1.2.2",
-    "concurrently": "^4.1.1",
-    "gh-pages": "^2.0.1",
-    "markdown-it": "^9.0.1",
-    "nearley": "^2.16.0",
-    "react-scripts": "3.0.1"
+    "chokidar-cli": "1.2.2",
+    "concurrently": "4.1.1",
+    "gh-pages": "2.0.1",
+    "markdown-it": "9.0.1",
+    "nearley": "2.16.0",
+    "react-scripts": "5.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,5 +57,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

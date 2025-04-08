@@ -4,7 +4,7 @@ This is an unofficial summary of the SRD5 rules, starting with the most basic an
 
 ![](./public/images/screenshot1200px.jpg)
 
-Published here - https://dnd-pub.web.app/
+See https://dnd-pub.web.app/
 
 ## Goals
 
@@ -57,11 +57,13 @@ The rules are converted to JSON with <a href="https://github.com/bburns/dnd-rule
 
 ## Setup
 
-Clone the repository with git - 
+Install [git](https://git-scm.com/downloads) and [yarn](https://yarnpkg.com/getting-started/install).
+
+Clone this repository with git - 
 
     git clone https://github.com/bburns/dnd-rules.git
 
-then grab the dependencies
+then grab the dependencies with yarn
 
     cd dnd-rules
     yarn
@@ -87,7 +89,7 @@ So until I'm able to fix those issues (if ever?) I'll print the site to a pdf af
 
 ## Deploy
 
-Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/ -
+Deploy the site to the Firebase Hosting page, https://dnd-pub.web.app/. This will also run the build step (yarn run build). 
 
     yarn deploy
 
